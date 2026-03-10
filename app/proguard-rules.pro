@@ -16,7 +16,7 @@
 #   public *;
 #}
 
--keep class rkr.simplekeyboard.inputmethod.R
--keep class rkr.simplekeyboard.inputmethod.latin.settings.SettingsFragment
--keep class rkr.simplekeyboard.inputmethod.latin.settings.LanguagesSettingsFragment
--keep class rkr.simplekeyboard.inputmethod.latin.settings.SingleLanguageSettingsFragment
+-keep class de.kuix.widekeykeyboard.R
+-keep class de.kuix.widekeykeyboard.latin.settings.SettingsFragment
+-keep class de.kuix.widekeykeyboard.latin.settings.LanguagesSettingsFragment
+-keep class de.kuix.widekeykeyboard.latin.settings.SingleLanguageSettingsFragment
