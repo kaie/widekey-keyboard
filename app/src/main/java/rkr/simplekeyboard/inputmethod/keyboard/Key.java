@@ -461,6 +461,8 @@ public class Key implements Comparable<Key> {
                 key.getOutputText(),
                 key.mActionFlags,
                 key.mLabelFlags,
+                key.mSecondaryCode,
+                key.mSecondaryLabel,
                 // Key can be distinguishable without the following members.
                 // key.mOptionalAttributes.mAltCode,
                 // key.mOptionalAttributes.mDisabledIconId,
@@ -485,7 +487,9 @@ public class Key implements Comparable<Key> {
                 && Arrays.equals(o.mMoreKeys, mMoreKeys)
                 && TextUtils.equals(o.getOutputText(), getOutputText())
                 && o.mActionFlags == mActionFlags
-                && o.mLabelFlags == mLabelFlags;
+                && o.mLabelFlags == mLabelFlags
+                && o.mSecondaryCode == mSecondaryCode
+                && TextUtils.equals(o.mSecondaryLabel, mSecondaryLabel);
     }
 
     @Override
