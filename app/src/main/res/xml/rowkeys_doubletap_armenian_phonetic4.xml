@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Armenian Phonetic row 4: զ·ղ  ց·վ  բ·ն  մ·շ  (4 pairs × 17.75%; shift=10.8%, delete=fillRight) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- զ·ղ (U+0566·U+0572) -->
+    <Key latin:keySpec="&#x0566;" latin:keySecondarySpec="&#x0572;" />
+    <!-- ց·վ (U+0581·U+057E) -->
+    <Key latin:keySpec="&#x0581;" latin:keySecondarySpec="&#x057E;" />
+    <!-- բ·ն (U+0562·U+0576) -->
+    <Key latin:keySpec="&#x0562;" latin:keySecondarySpec="&#x0576;" />
+    <!-- մ·շ (U+0574·U+0577) -->
+    <Key latin:keySpec="&#x0574;" latin:keySecondarySpec="&#x0577;" />
+</merge>

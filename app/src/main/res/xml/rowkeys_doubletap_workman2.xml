@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Workman row 2: a·s  h·t  g·y  n·e  o·i  (5 pairs × 20%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="a" latin:keySecondarySpec="s" />
+    <Key latin:keySpec="h" latin:keySecondarySpec="t" />
+    <Key latin:keySpec="g" latin:keySecondarySpec="y" />
+    <Key latin:keySpec="n" latin:keySecondarySpec="e" />
+    <Key latin:keySpec="o" latin:keySecondarySpec="i" />
+</merge>

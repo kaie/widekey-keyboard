@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Armenian Phonetic layout rows.
+     Row 1: 5 pairs × 20% = 100% (no shift/delete)
+     Row 2: 5 pairs × 20% = 100% (no shift/delete)
+     Row 3: 5 pairs × 20% = 100% (no shift/delete; all 10 chars fit as pairs)
+     Row 4: shift(10.8%) + 4 pairs × 17.75% + delete(fillRight) ≈ 100%
+     Row 5: doubletap spacebar row -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Row latin:keyWidth="20%p">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_armenian_phonetic1" />
+    </Row>
+    <Row latin:keyWidth="20%p">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_armenian_phonetic2" />
+    </Row>
+    <Row latin:keyWidth="20%p">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_armenian_phonetic3" />
+    </Row>
+    <Row latin:keyWidth="17.75%p">
+        <Key
+            latin:keyStyle="shiftKeyStyle"
+            latin:keyWidth="10.8%p" />
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_armenian_phonetic4" />
+        <Key
+            latin:keyStyle="deleteKeyStyle"
+            latin:keyWidth="fillRight" />
+    </Row>
+    <include latin:keyboardLayout="@xml/row_doubletap_qwerty4" />
+</merge>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Mongolian row 1: ф·ц  у·ж  э·н  г·ш  ү·з  [к solo]  (5 pairs + 1 solo × 16.667%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ф·ц (U+0444·U+0446) -->
+    <Key latin:keySpec="&#x0444;" latin:keySecondarySpec="&#x0446;" />
+    <!-- у·ж (U+0443·U+0436) -->
+    <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x0436;" />
+    <!-- э·н (U+044D·U+043D) -->
+    <Key latin:keySpec="&#x044D;" latin:keySecondarySpec="&#x043D;" />
+    <!-- г·ш (U+0433·U+0448) -->
+    <Key latin:keySpec="&#x0433;" latin:keySecondarySpec="&#x0448;" />
+    <!-- ү·з (U+04AF·U+0437) -->
+    <Key latin:keySpec="&#x04AF;" latin:keySecondarySpec="&#x0437;" />
+    <!-- к solo (U+043A) -->
+    <Key latin:keySpec="&#x043A;" />
+</merge>

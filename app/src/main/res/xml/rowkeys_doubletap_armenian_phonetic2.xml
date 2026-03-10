@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Armenian Phonetic row 2: ք·ո  ե·ռ  տ·ը  ւ·ի  օ·պ  (5 pairs × 20%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ք·ո (U+0584·U+0578) -->
+    <Key latin:keySpec="&#x0584;" latin:keySecondarySpec="&#x0578;" />
+    <!-- ե·ռ (U+0565·U+057C) -->
+    <Key latin:keySpec="&#x0565;" latin:keySecondarySpec="&#x057C;" />
+    <!-- տ·ը (U+057F·U+0568) -->
+    <Key latin:keySpec="&#x057F;" latin:keySecondarySpec="&#x0568;" />
+    <!-- ւ·ի (U+0582·U+056B) -->
+    <Key latin:keySpec="&#x0582;" latin:keySecondarySpec="&#x056B;" />
+    <!-- օ·պ (U+0585·U+057A) -->
+    <Key latin:keySpec="&#x0585;" latin:keySecondarySpec="&#x057A;" />
+</merge>

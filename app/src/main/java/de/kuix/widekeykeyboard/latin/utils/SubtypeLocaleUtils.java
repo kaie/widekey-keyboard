@@ -265,6 +265,14 @@ public final class SubtypeLocaleUtils {
     public static final String LAYOUT_DOUBLETAP_MACEDONIAN = "doubletap_macedonian";
     public static final String LAYOUT_DOUBLETAP_SERBIAN = "doubletap_serbian";
     public static final String LAYOUT_DOUBLETAP_SAKHA = "doubletap_sakha";
+    public static final String LAYOUT_DOUBLETAP_ABC = "doubletap_abc";
+    public static final String LAYOUT_DOUBLETAP_COLEMAK = "doubletap_colemak";
+    public static final String LAYOUT_DOUBLETAP_DVORAK = "doubletap_dvorak";
+    public static final String LAYOUT_DOUBLETAP_WORKMAN = "doubletap_workman";
+    public static final String LAYOUT_DOUBLETAP_GREEK = "doubletap_greek";
+    public static final String LAYOUT_DOUBLETAP_ARMENIAN_PHONETIC = "doubletap_armenian_phonetic";
+    public static final String LAYOUT_DOUBLETAP_GEORGIAN = "doubletap_georgian";
+    public static final String LAYOUT_DOUBLETAP_MONGOLIAN = "doubletap_mongolian";
     public static final String LAYOUT_SAKHA = "sakha";
     public static final String LAYOUT_SERBIAN = "serbian";
     public static final String LAYOUT_SERBIAN_QWERTZ = "serbian_qwertz";
@@ -515,7 +523,7 @@ public final class SubtypeLocaleUtils {
                     addLayout(LAYOUT_BENGALI);
                     break;
                 case LOCALE_GREEK:
-                    addLayout(LAYOUT_GREEK);
+                    addLayout(LAYOUT_DOUBLETAP_GREEK);
                     break;
                 case LOCALE_PERSIAN:
                     addLayout(LAYOUT_FARSI);
@@ -525,14 +533,14 @@ public final class SubtypeLocaleUtils {
                     addLayout(LAYOUT_HINDI_COMPACT, R.string.subtype_compact);
                     break;
                 case LOCALE_ARMENIAN_ARMENIA:
-                    addLayout(LAYOUT_ARMENIAN_PHONETIC);
+                    addLayout(LAYOUT_DOUBLETAP_ARMENIAN_PHONETIC);
                     break;
                 case LOCALE_HEBREW_1:
                 case LOCALE_HEBREW_2:
                     addLayout(LAYOUT_HEBREW);
                     break;
                 case LOCALE_GEORGIAN_GEORGIA:
-                    addLayout(LAYOUT_GEORGIAN);
+                    addLayout(LAYOUT_DOUBLETAP_GEORGIAN);
                     break;
                 case LOCALE_KHMER_CAMBODIA:
                     addLayout(LAYOUT_KHMER);
@@ -550,7 +558,7 @@ public final class SubtypeLocaleUtils {
                     addLayout(LAYOUT_MALAYALAM);
                     break;
                 case LOCALE_MONGOLIAN_MONGOLIA:
-                    addLayout(LAYOUT_MONGOLIAN);
+                    addLayout(LAYOUT_DOUBLETAP_MONGOLIAN);
                     break;
                 case LOCALE_MARATHI_INDIA:
                     addLayout(LAYOUT_MARATHI);

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Dvorak row 1: '·,  .·p  y·f  g·c  r·l  (5 pairs × 20%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="\'" latin:keySecondarySpec="\," />
+    <Key latin:keySpec="." latin:keySecondarySpec="p" />
+    <Key latin:keySpec="y" latin:keySecondarySpec="f" />
+    <Key latin:keySpec="g" latin:keySecondarySpec="c" />
+    <Key latin:keySpec="r" latin:keySecondarySpec="l" />
+</merge>

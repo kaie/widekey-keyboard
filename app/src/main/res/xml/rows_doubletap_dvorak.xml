@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Dvorak layout rows.
+     Row 1: 5 pairs × 20% = 100%
+     Row 2: 5 pairs × 20% = 100%
+     Row 3: shift(14%) + 3 pairs + 1 solo × 17.75% + delete(14%) ≈ 100%
+     Row 4: doubletap spacebar row -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Row latin:keyWidth="20%p">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_dvorak1" />
+    </Row>
+    <Row latin:keyWidth="20%p">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_dvorak2" />
+    </Row>
+    <Row latin:keyWidth="17.75%p">
+        <Key
+            latin:keyStyle="shiftKeyStyle"
+            latin:keyWidth="14%p" />
+        <include
+            latin:keyXPos="15%p"
+            latin:keyboardLayout="@xml/rowkeys_doubletap_dvorak3" />
+        <Key
+            latin:keyStyle="deleteKeyStyle"
+            latin:keyXPos="86%p"
+            latin:keyWidth="14%p" />
+    </Row>
+    <include latin:keyboardLayout="@xml/row_doubletap_qwerty4" />
+</merge>

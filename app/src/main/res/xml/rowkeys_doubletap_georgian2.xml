@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Georgian row 2: ა·ს  დ·ფ  გ·ჰ  ჯ·კ  ლ·ძ  (5 pairs × 20%; ძ moved up from row 3) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ა·ს (U+10D0·U+10E1) -->
+    <Key latin:keySpec="&#x10D0;" latin:keySecondarySpec="&#x10E1;" />
+    <!-- დ·ფ (U+10D3·U+10E4) -->
+    <Key latin:keySpec="&#x10D3;" latin:keySecondarySpec="&#x10E4;" />
+    <!-- გ·ჰ (U+10D2·U+10F0) -->
+    <Key latin:keySpec="&#x10D2;" latin:keySecondarySpec="&#x10F0;" />
+    <!-- ჯ·კ (U+10EF·U+10D9) -->
+    <Key latin:keySpec="&#x10EF;" latin:keySecondarySpec="&#x10D9;" />
+    <!-- ლ·ძ (U+10DA·U+10EB) -->
+    <Key latin:keySpec="&#x10DA;" latin:keySecondarySpec="&#x10EB;" />
+</merge>

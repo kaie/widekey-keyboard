@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Colemak row 2: a·r  s·t  d·h  n·e  i·o  (5 pairs × 20%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="a" latin:keySecondarySpec="r" />
+    <Key latin:keySpec="s" latin:keySecondarySpec="t" />
+    <Key latin:keySpec="d" latin:keySecondarySpec="h" />
+    <Key latin:keySpec="n" latin:keySecondarySpec="e" />
+    <Key latin:keySpec="i" latin:keySecondarySpec="o" />
+</merge>
