@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Ergol row 2: a·s  e·n  f·l  r·t  i·u  (5 pairs × 20%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="a"
+        latin:keySecondarySpec="s"
+        latin:moreKeys="!text/morekeys_a,!text/morekeys_s" />
+    <Key latin:keySpec="e"
+        latin:keySecondarySpec="n"
+        latin:moreKeys="!text/morekeys_e,!text/morekeys_n" />
+    <Key latin:keySpec="f"
+        latin:keySecondarySpec="l"
+        latin:moreKeys="!text/morekeys_l" />
+    <Key latin:keySpec="r"
+        latin:keySecondarySpec="t"
+        latin:moreKeys="!text/morekeys_r,!text/morekeys_t" />
+    <Key latin:keySpec="i"
+        latin:keySecondarySpec="u"
+        latin:moreKeys="!text/morekeys_i,!text/morekeys_u" />
+</merge>

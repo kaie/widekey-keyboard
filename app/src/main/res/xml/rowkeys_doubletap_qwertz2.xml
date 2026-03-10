@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap QWERTZ row 2: a·s  d·f  g·h  j·k  l·m  (5 pairs × 20%, no stagger)
+     'm' moved up from row 3 to make both rows even. -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- morekeys_s included for ß access (normally on long-press of 's') -->
+    <Key latin:keySpec="a"
+        latin:keySecondarySpec="s"
+        latin:moreKeys="!text/morekeys_a,!text/morekeys_s" />
+    <Key latin:keySpec="d"
+        latin:keySecondarySpec="f"
+        latin:moreKeys="!text/morekeys_d" />
+    <Key latin:keySpec="g"
+        latin:keySecondarySpec="h"
+        latin:moreKeys="!text/morekeys_g,!text/morekeys_h" />
+    <Key latin:keySpec="j"
+        latin:keySecondarySpec="k"
+        latin:moreKeys="!text/morekeys_j,!text/morekeys_k" />
+    <Key latin:keySpec="l"
+        latin:keySecondarySpec="m"
+        latin:moreKeys="!text/morekeys_l" />
+</merge>

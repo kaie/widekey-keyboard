@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Turkish F row 1: f·g  ğ·ı  o·d  r·n  h·p  q·w  (6 pairs × 16.667%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="f"
+        latin:keySecondarySpec="g"
+        latin:moreKeys="!text/morekeys_g" />
+    <!-- ğ: LATIN SMALL LETTER G WITH BREVE  ı: LATIN SMALL LETTER DOTLESS I -->
+    <Key latin:keySpec="ğ"
+        latin:keySecondarySpec="ı"
+        latin:moreKeys="!text/morekeys_i" />
+    <Key latin:keySpec="o"
+        latin:keySecondarySpec="d"
+        latin:moreKeys="!text/morekeys_o,!text/morekeys_d" />
+    <Key latin:keySpec="r"
+        latin:keySecondarySpec="n"
+        latin:moreKeys="!text/morekeys_r,!text/morekeys_n" />
+    <Key latin:keySpec="h"
+        latin:keySecondarySpec="p"
+        latin:moreKeys="!text/morekeys_h" />
+    <Key latin:keySpec="q"
+        latin:keySecondarySpec="w"
+        latin:moreKeys="!text/morekeys_w" />
+</merge>

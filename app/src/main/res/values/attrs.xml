@@ -188,6 +188,8 @@
         </attr>
         <!-- The label, icon to display on the key. And code, outputText of the key. -->
         <attr name="keySpec" format="string" />
+        <!-- The secondary key spec for double-tap keys: single-tap gives keySpec, double-tap gives this. -->
+        <attr name="keySecondarySpec" format="string" />
         <!-- The hint label to display on the key in conjunction with the label. -->
         <attr name="keyHintLabel" format="string" />
         <!-- The vertical adjustment of key hint label in proportion to its height. -->

@@ -53,6 +53,11 @@ public class Key implements Comparable<Key> {
      */
     private final int mCode;
 
+    /** Secondary code for double-tap keys. CODE_UNSPECIFIED means this is not a double-tap key. */
+    private final int mSecondaryCode;
+    /** Label for the secondary (double-tap) character. */
+    private final String mSecondaryLabel;
+
     /** Label to display */
     private final String mLabel;
     /** Hint label to display on the key in conjunction with the label */
@@ -199,6 +204,8 @@ public class Key implements Comparable<Key> {
         mLabel = label;
         mOptionalAttributes = OptionalAttributes.newInstance(outputText, CODE_UNSPECIFIED);
         mCode = code;
+        mSecondaryCode = CODE_UNSPECIFIED;
+        mSecondaryLabel = null;
         mIconId = iconId;
         mKeyVisualAttributes = null;
 
@@ -358,6 +365,28 @@ public class Key implements Comparable<Key> {
                 : altCodeInAttr;
         mOptionalAttributes = OptionalAttributes.newInstance(outputText, altCode);
         mKeyVisualAttributes = KeyVisualAttributes.newInstance(keyAttr);
+
+        final String secondarySpec = style.getString(keyAttr,
+                R.styleable.Keyboard_Key_keySecondarySpec);
+        if (secondarySpec != null) {
+            final String secLabel = KeySpecParser.getLabel(secondarySpec);
+            mSecondaryLabel = needsToUpcase
+                    ? StringUtils.toTitleCaseOfKeyLabel(secLabel, localeForUpcasing)
+                    : secLabel;
+            final int secCode = KeySpecParser.getCode(secondarySpec);
+            if (secCode == CODE_UNSPECIFIED && !TextUtils.isEmpty(mSecondaryLabel)
+                    && StringUtils.codePointCount(mSecondaryLabel) == 1) {
+                mSecondaryCode = mSecondaryLabel.codePointAt(0);
+            } else {
+                mSecondaryCode = needsToUpcase
+                        ? StringUtils.toTitleCaseOfKeyCode(secCode, localeForUpcasing)
+                        : secCode;
+            }
+        } else {
+            mSecondaryCode = CODE_UNSPECIFIED;
+            mSecondaryLabel = null;
+        }
+
         mHashCode = computeHashCode(this);
     }
 
@@ -370,9 +399,11 @@ public class Key implements Comparable<Key> {
         this(key, key.mMoreKeys);
     }
 
-    private Key(final Key key,final MoreKeySpec[] moreKeys) {
+    private Key(final Key key, final MoreKeySpec[] moreKeys) {
         // Final attributes.
         mCode = key.mCode;
+        mSecondaryCode = key.mSecondaryCode;
+        mSecondaryLabel = key.mSecondaryLabel;
         mLabel = key.mLabel;
         mHintLabel = key.mHintLabel;
         mLabelFlags = key.mLabelFlags;
@@ -489,6 +520,18 @@ public class Key implements Comparable<Key> {
 
     public int getCode() {
         return mCode;
+    }
+
+    public int getSecondaryCode() {
+        return mSecondaryCode;
+    }
+
+    public String getSecondaryLabel() {
+        return mSecondaryLabel;
+    }
+
+    public boolean hasSecondaryCode() {
+        return mSecondaryCode != CODE_UNSPECIFIED;
     }
 
     public String getLabel() {

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Turkish F row 3: j·ö  v·c  ç·z  s·b  (4 pairs × 17.75%)
+     x moved UP to row 2. -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- j  ö: LATIN SMALL LETTER O WITH DIAERESIS -->
+    <Key latin:keySpec="j"
+        latin:keySecondarySpec="ö"
+        latin:moreKeys="!text/morekeys_j,!text/morekeys_o" />
+    <Key latin:keySpec="v"
+        latin:keySecondarySpec="c"
+        latin:moreKeys="!text/morekeys_v,!text/morekeys_c" />
+    <!-- ç: LATIN SMALL LETTER C WITH CEDILLA -->
+    <Key latin:keySpec="ç"
+        latin:keySecondarySpec="z"
+        latin:moreKeys="!text/morekeys_c,!text/morekeys_z" />
+    <Key latin:keySpec="s"
+        latin:keySecondarySpec="b"
+        latin:moreKeys="!text/morekeys_s" />
+</merge>

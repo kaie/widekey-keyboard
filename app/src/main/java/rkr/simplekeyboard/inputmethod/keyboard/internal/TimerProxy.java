@@ -82,4 +82,16 @@ public interface TimerProxy {
      * @return true if detecting double tapped shift key is on going.
      */
     boolean isInDoubleTapShiftKeyTimeout();
+
+    /**
+     * Start a timer to commit the primary code of a pending double-tap key.
+     * If no second tap arrives before the timer fires, the primary code is committed.
+     * @param tracker the {@link PointerTracker} to notify when the timer fires.
+     */
+    void startPendingSingleTapTimer(PointerTracker tracker);
+
+    /**
+     * Cancel the pending single-tap timer (e.g. because a second tap arrived).
+     */
+    void cancelPendingSingleTapTimer();
 }

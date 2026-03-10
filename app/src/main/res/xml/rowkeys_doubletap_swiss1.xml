@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Swiss row 1: q·w  e·r  t·z  u·i  o·p  [solo:swiss11]  (5 pairs + 1 solo × 16.667%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="q"
+        latin:keySecondarySpec="w"
+        latin:moreKeys="!text/morekeys_w" />
+    <Key latin:keySpec="e"
+        latin:keySecondarySpec="r"
+        latin:moreKeys="!text/morekeys_e,!text/morekeys_r" />
+    <Key latin:keySpec="t"
+        latin:keySecondarySpec="z"
+        latin:moreKeys="!text/morekeys_t,!text/morekeys_z" />
+    <Key latin:keySpec="u"
+        latin:keySecondarySpec="i"
+        latin:moreKeys="!text/morekeys_u,!text/morekeys_i" />
+    <Key latin:keySpec="o"
+        latin:keySecondarySpec="p"
+        latin:moreKeys="!text/morekeys_o" />
+    <!-- Solo key: locale-specific 11th key (é, è, ö, etc.) -->
+    <Key latin:keySpec="!text/keyspec_swiss_row1_11"
+        latin:moreKeys="!text/morekeys_swiss_row1_11" />
+</merge>

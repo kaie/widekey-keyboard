@@ -246,6 +246,19 @@ public final class SubtypeLocaleUtils {
     public static final String LAYOUT_NORDIC = "nordic";
     public static final String LAYOUT_QWERTY = "qwerty";
     public static final String LAYOUT_QWERTZ = "qwertz";
+    public static final String LAYOUT_DOUBLETAP_QWERTY = "doubletap_qwerty";
+    public static final String LAYOUT_DOUBLETAP_QWERTZ = "doubletap_qwertz";
+    public static final String LAYOUT_DOUBLETAP_AZERTY = "doubletap_azerty";
+    public static final String LAYOUT_DOUBLETAP_SPANISH = "doubletap_spanish";
+    public static final String LAYOUT_DOUBLETAP_NORDIC = "doubletap_nordic";
+    public static final String LAYOUT_DOUBLETAP_SWISS = "doubletap_swiss";
+    public static final String LAYOUT_DOUBLETAP_UZBEK = "doubletap_uzbek";
+    public static final String LAYOUT_DOUBLETAP_BEPO = "doubletap_bepo";
+    public static final String LAYOUT_DOUBLETAP_ERGOL = "doubletap_ergol";
+    public static final String LAYOUT_DOUBLETAP_HCESAR = "doubletap_hcesar";
+    public static final String LAYOUT_DOUBLETAP_SERBIAN_QWERTZ = "doubletap_serbian_qwertz";
+    public static final String LAYOUT_DOUBLETAP_TURKISH_Q = "doubletap_turkish_q";
+    public static final String LAYOUT_DOUBLETAP_TURKISH_F = "doubletap_turkish_f";
     public static final String LAYOUT_SAKHA = "sakha";
     public static final String LAYOUT_SERBIAN = "serbian";
     public static final String LAYOUT_SERBIAN_QWERTZ = "serbian_qwertz";
@@ -403,11 +416,14 @@ public final class SubtypeLocaleUtils {
                 case LOCALE_SWAHILI:
                 case LOCALE_VIETNAMESE:
                 case LOCALE_ZULU:
-                    addLayout(LAYOUT_QWERTY);
+                    addLayout(LAYOUT_DOUBLETAP_QWERTY);
+                    addGenericLayouts();
+                    break;
+                case LOCALE_GERMAN:
+                    addLayout(LAYOUT_DOUBLETAP_QWERTZ);
                     addGenericLayouts();
                     break;
                 case LOCALE_CZECH:
-                case LOCALE_GERMAN:
                 case LOCALE_CROATIAN:
                 case LOCALE_HUNGARIAN:
                 case LOCALE_SLOVENIAN:
@@ -415,18 +431,18 @@ public final class SubtypeLocaleUtils {
                     addGenericLayouts();
                     break;
                 case LOCALE_FRENCH_CANADA:
-                    addLayout(LAYOUT_QWERTY);
-                    addLayout(LAYOUT_ERGOL, R.string.subtype_ergol);
+                    addLayout(LAYOUT_DOUBLETAP_QWERTY);
+                    addLayout(LAYOUT_DOUBLETAP_ERGOL, R.string.subtype_ergol);
                     addGenericLayouts();
                     break;
                 case LOCALE_FRENCH:
-                    addLayout(LAYOUT_AZERTY);
-                    addLayout(LAYOUT_BEPO);
-                    addLayout(LAYOUT_ERGOL, R.string.subtype_ergol);
+                    addLayout(LAYOUT_DOUBLETAP_AZERTY);
+                    addLayout(LAYOUT_DOUBLETAP_BEPO);
+                    addLayout(LAYOUT_DOUBLETAP_ERGOL, R.string.subtype_ergol);
                     addGenericLayouts();
                     break;
                 case LOCALE_DUTCH_BELGIUM:
-                    addLayout(LAYOUT_AZERTY);
+                    addLayout(LAYOUT_DOUBLETAP_AZERTY);
                     addGenericLayouts();
                     break;
                 case LOCALE_CATALAN:
@@ -436,39 +452,39 @@ public final class SubtypeLocaleUtils {
                 case LOCALE_BASQUE_SPAIN:
                 case LOCALE_GALICIAN_SPAIN:
                 case LOCALE_TAGALOG:
-                    addLayout(LAYOUT_SPANISH);
+                    addLayout(LAYOUT_DOUBLETAP_SPANISH);
                     addGenericLayouts();
                     break;
                 case LOCALE_ESPERANTO:
-                    addLayout(LAYOUT_SPANISH);
+                    addLayout(LAYOUT_DOUBLETAP_SPANISH);
                     break;
                 case LOCALE_DANISH:
                 case LOCALE_ESTONIAN_ESTONIA:
                 case LOCALE_FINNISH:
                 case LOCALE_NORWEGIAN_BOKMAL:
                 case LOCALE_SWEDISH:
-                    addLayout(LAYOUT_NORDIC);
+                    addLayout(LAYOUT_DOUBLETAP_NORDIC);
                     addGenericLayouts();
                     break;
                 case LOCALE_FRENCH_SWITZERLAND:
-                    addLayout(LAYOUT_SWISS);
-                    addLayout(LAYOUT_BEPO);
-                    addLayout(LAYOUT_ERGOL, R.string.subtype_ergol);
+                    addLayout(LAYOUT_DOUBLETAP_SWISS);
+                    addLayout(LAYOUT_DOUBLETAP_BEPO);
+                    addLayout(LAYOUT_DOUBLETAP_ERGOL, R.string.subtype_ergol);
                     addGenericLayouts();
                     break;
                 case LOCALE_GERMAN_SWITZERLAND:
                 case LOCALE_ITALIAN_SWITZERLAND:
-                    addLayout(LAYOUT_SWISS);
+                    addLayout(LAYOUT_DOUBLETAP_SWISS);
                     addGenericLayouts();
                     break;
                 case LOCALE_TURKISH:
-                    addLayout(LAYOUT_QWERTY);
-                    addLayout(LAYOUT_TURKISH_Q, R.string.subtype_q);
-                    addLayout(LAYOUT_TURKISH_F, R.string.subtype_f);
+                    addLayout(LAYOUT_DOUBLETAP_QWERTY);
+                    addLayout(LAYOUT_DOUBLETAP_TURKISH_Q, R.string.subtype_q);
+                    addLayout(LAYOUT_DOUBLETAP_TURKISH_F, R.string.subtype_f);
                     addGenericLayouts();
                     break;
                 case LOCALE_UZBEK_UZBEKISTAN:
-                    addLayout(LAYOUT_UZBEK);
+                    addLayout(LAYOUT_DOUBLETAP_UZBEK);
                     addGenericLayouts();
                     break;
                 case LOCALE_ARABIC:
@@ -543,7 +559,7 @@ public final class SubtypeLocaleUtils {
                     addLayout(LAYOUT_SERBIAN);
                     break;
                 case LOCALE_SERBIAN_LATIN:
-                    addLayout(LAYOUT_SERBIAN_QWERTZ);
+                    addLayout(LAYOUT_DOUBLETAP_SERBIAN_QWERTZ);
                     addGenericLayouts();
                     break;
                 case LOCALE_TAMIL_INDIA:
@@ -561,8 +577,8 @@ public final class SubtypeLocaleUtils {
                     break;
                 case LOCALE_PORTUGUESE_BRAZIL:
                 case LOCALE_PORTUGUESE_PORTUGAL:
-                    addLayout(LAYOUT_QWERTY);
-                    addLayout(LAYOUT_HCESAR, R.string.subtype_hcesar);
+                    addLayout(LAYOUT_DOUBLETAP_QWERTY);
+                    addLayout(LAYOUT_DOUBLETAP_HCESAR, R.string.subtype_hcesar);
                     addGenericLayouts();
                     break;
             }

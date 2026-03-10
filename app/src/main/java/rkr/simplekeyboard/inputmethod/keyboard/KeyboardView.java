@@ -28,6 +28,7 @@ import android.graphics.Paint;
 import android.graphics.Paint.Align;
 import android.graphics.PorterDuff;
 import android.graphics.Rect;
+import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
@@ -348,6 +349,12 @@ public class KeyboardView extends View {
     // Draw key top visuals.
     protected void onDrawKeyTopVisuals(final Key key,final Canvas canvas,
             final Paint paint, final KeyDrawParams params) {
+        // Double-tap keys: render primary char in left half, secondary in right half.
+        if (key.hasSecondaryCode()) {
+            onDrawDoubleTapKeyTopVisuals(key, canvas, paint, params);
+            return;
+        }
+
         final int keyWidth = key.getWidth();
         final int keyHeight = key.getHeight();
         final float centerX = keyWidth * 0.5f;
@@ -458,6 +465,58 @@ public class KeyboardView extends View {
             final int iconX = (keyWidth - iconWidth) / 2; // Align horizontally center.
             drawIcon(canvas, icon, iconX, iconY, iconWidth, iconHeight);
         }
+    }
+
+    private void onDrawDoubleTapKeyTopVisuals(final Key key, final Canvas canvas,
+            final Paint paint, final KeyDrawParams params) {
+        final int keyWidth = key.getWidth();
+        final int keyHeight = key.getHeight();
+        final float centerX = keyWidth * 0.5f;
+        final float centerY = keyHeight * 0.5f;
+
+        paint.setTypeface(key.selectTypeface(params));
+        paint.setTextSize(key.selectTextSize(params));
+        final float charHeight = TypefaceUtils.getReferenceCharHeight(paint);
+        final float baseline = centerY + charHeight / 2.0f;
+
+        paint.setColor(key.selectTextColor(params));
+        if (mKeyTextShadowRadius > 0.0f) {
+            paint.setShadowLayer(mKeyTextShadowRadius, 0.0f, 0.0f, params.mTextShadowColor);
+        } else {
+            paint.clearShadowLayer();
+        }
+        blendAlpha(paint, params.mAnimAlpha);
+        paint.setTextAlign(Align.CENTER);
+
+        final String label = key.getLabel();
+        if (label != null) {
+            canvas.drawText(label, 0, label.length(), centerX * 0.5f, baseline, paint);
+        }
+        final String secondaryLabel = key.getSecondaryLabel();
+        if (secondaryLabel != null) {
+            canvas.drawText(secondaryLabel, 0, secondaryLabel.length(), centerX * 1.5f, baseline, paint);
+        }
+
+        paint.clearShadowLayer();
+        paint.setTextScaleX(1.0f);
+
+        // Border around the key group + faint center divider
+        final int textColor = key.selectTextColor(params);
+        final int borderAlpha = 70;
+        paint.setColor(Color.argb(borderAlpha,
+                Color.red(textColor), Color.green(textColor), Color.blue(textColor)));
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setStrokeWidth(1.5f);
+        final float inset = 2.0f;
+        final float radius = keyHeight * 0.18f;
+        canvas.drawRoundRect(new RectF(inset, inset, keyWidth - inset, keyHeight - inset),
+                radius, radius, paint);
+        // Faint center divider
+        paint.setColor(Color.argb(borderAlpha / 2,
+                Color.red(textColor), Color.green(textColor), Color.blue(textColor)));
+        canvas.drawLine(centerX, keyHeight * 0.15f, centerX, keyHeight * 0.85f, paint);
+        paint.setStyle(Paint.Style.FILL);
+        paint.setStrokeWidth(0);
     }
 
     protected static void drawIcon(final Canvas canvas, final Drawable icon,

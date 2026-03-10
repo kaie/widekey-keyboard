@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap HCesar row 1: h·c  e·s  a·r  o·p  z·,  (5 pairs × 20%)
+     The conditional «/, key is simplified to comma secondary with « in moreKeys. -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="h"
+        latin:keySecondarySpec="c"
+        latin:moreKeys="!text/morekeys_c" />
+    <Key latin:keySpec="e"
+        latin:keySecondarySpec="s"
+        latin:moreKeys="!text/morekeys_e" />
+    <Key latin:keySpec="a"
+        latin:keySecondarySpec="r"
+        latin:moreKeys="!text/morekeys_a" />
+    <Key latin:keySpec="o"
+        latin:keySecondarySpec="p"
+        latin:moreKeys="!text/morekeys_o" />
+    <!-- U+00AB: "«" LEFT-POINTING DOUBLE ANGLE QUOTATION MARK in moreKeys -->
+    <Key latin:keySpec="z"
+        latin:keySecondarySpec=","
+        latin:moreKeys="&#x00AB;" />
+</merge>

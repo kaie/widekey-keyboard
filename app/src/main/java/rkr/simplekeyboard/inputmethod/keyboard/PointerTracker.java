@@ -112,6 +112,17 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
     // the more keys panel currently being shown. equals null if no panel is active.
     private MoreKeysPanel mMoreKeysPanel;
 
+    // Timeout (ms) to wait for a second tap before committing the primary code.
+    public static final int DOUBLETAP_TIMEOUT_MS = 333;
+
+    // Pending double-tap state: the key whose primary code is deferred waiting for a second tap.
+    private static Key sPendingDoubleTapKey = null;
+    private static int sPendingDoubleTapKeyX;
+    private static int sPendingDoubleTapKeyY;
+
+    // True when this tracker's current down is the second tap of a double-tap sequence.
+    private boolean mIsSecondDoubleTap = false;
+
     private static final int MULTIPLIER_FOR_LONG_PRESS_TIMEOUT_IN_SLIDING_INPUT = 3;
     // true if this pointer is in the dragging finger mode.
     boolean mIsInDraggingFinger;
@@ -352,7 +363,8 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         // Even if the key is disabled, it should respond if it is in the altCodeWhileTyping state.
         final boolean altersCode = key.altCodeWhileTyping() && sTimerProxy.isTypingState();
 
-        sDrawingProxy.onKeyPressed(key, true);
+        // Suppress popup preview on second tap of a double-tap key (it would show the wrong char).
+        sDrawingProxy.onKeyPressed(key, !mIsSecondDoubleTap);
 
         if (key.isShift()) {
             for (final Key shiftKey : mKeyboard.mShiftKeys) {
@@ -495,6 +507,18 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
 
     private void onDownEventInternal(final int x, final int y) {
         Key key = onDownKey(x, y);
+        // Resolve any pending double-tap from a previous key press.
+        if (sPendingDoubleTapKey != null) {
+            if (key == sPendingDoubleTapKey) {
+                // Second tap on the same key: cancel the timer and flag this as the second tap.
+                sTimerProxy.cancelPendingSingleTapTimer();
+                sPendingDoubleTapKey = null;
+                mIsSecondDoubleTap = true;
+            } else {
+                // Different key pressed: commit the pending primary code immediately.
+                flushPendingDoubleTap();
+            }
+        }
         // Key selection by dragging finger is allowed when 1) key selection by dragging finger is
         // enabled by configuration, 2) this pointer starts dragging from modifier key, or 3) this
         // pointer's KeyDetector always allows key selection by dragging finger, such as
@@ -726,7 +750,24 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
                 && (currentKey.getCode() == currentRepeatingKeyCode) && !isInDraggingFinger) {
             return;
         }
-        detectAndSendKey(currentKey, mKeyX, mKeyY);
+        if (currentKey != null && currentKey.hasSecondaryCode() && !isInDraggingFinger) {
+            if (mIsSecondDoubleTap) {
+                // Second tap confirmed: commit secondary code immediately.
+                mIsSecondDoubleTap = false;
+                callListenerOnCodeInput(currentKey, currentKey.getSecondaryCode(),
+                        mKeyX, mKeyY, false /* isKeyRepeat */);
+                callListenerOnRelease(currentKey, currentKey.getSecondaryCode(),
+                        false /* withSliding */);
+            } else {
+                // First tap: defer commit until timeout or second tap.
+                sPendingDoubleTapKey = currentKey;
+                sPendingDoubleTapKeyX = mKeyX;
+                sPendingDoubleTapKeyY = mKeyY;
+                sTimerProxy.startPendingSingleTapTimer(this);
+            }
+        } else {
+            detectAndSendKey(currentKey, mKeyX, mKeyY);
+        }
         if (isInSlidingKeyInput) {
             callListenerOnFinishSlidingInput();
         }
@@ -883,6 +924,29 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         final int code = key.getCode();
         callListenerOnCodeInput(key, code, x, y, false /* isKeyRepeat */);
         callListenerOnRelease(key, code, false /* withSliding */);
+    }
+
+    /** Commit the pending primary code immediately (called when a different key is pressed). */
+    private void flushPendingDoubleTap() {
+        sTimerProxy.cancelPendingSingleTapTimer();
+        final Key key = sPendingDoubleTapKey;
+        final int x = sPendingDoubleTapKeyX;
+        final int y = sPendingDoubleTapKeyY;
+        sPendingDoubleTapKey = null;
+        if (key == null) return;
+        callListenerOnCodeInput(key, key.getCode(), x, y, false /* isKeyRepeat */);
+        callListenerOnRelease(key, key.getCode(), false /* withSliding */);
+    }
+
+    /** Called by TimerHandler when the single-tap timeout expires with no second tap. */
+    public void onPendingSingleTapTimeout() {
+        final Key key = sPendingDoubleTapKey;
+        final int x = sPendingDoubleTapKeyX;
+        final int y = sPendingDoubleTapKeyY;
+        sPendingDoubleTapKey = null;
+        if (key == null) return;
+        callListenerOnCodeInput(key, key.getCode(), x, y, false /* isKeyRepeat */);
+        callListenerOnRelease(key, key.getCode(), false /* withSliding */);
     }
 
     private void startRepeatKey(final Key key) {

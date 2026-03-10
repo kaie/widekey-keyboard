@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Swiss row 2: a·s  d·f  g·h  j·k  l·swiss10  (5 pairs × 20%)
+     swiss_row2_11 is moved DOWN to row 3. -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="a"
+        latin:keySecondarySpec="s"
+        latin:moreKeys="!text/morekeys_a,!text/morekeys_s" />
+    <Key latin:keySpec="d"
+        latin:keySecondarySpec="f"
+        latin:moreKeys="!text/morekeys_d" />
+    <Key latin:keySpec="g"
+        latin:keySecondarySpec="h"
+        latin:moreKeys="!text/morekeys_g,!text/morekeys_h" />
+    <Key latin:keySpec="j"
+        latin:keySecondarySpec="k"
+        latin:moreKeys="!text/morekeys_j,!text/morekeys_k" />
+    <Key latin:keySpec="l"
+        latin:keySecondarySpec="!text/keyspec_swiss_row2_10"
+        latin:moreKeys="!text/morekeys_l,!text/morekeys_swiss_row2_10" />
+</merge>

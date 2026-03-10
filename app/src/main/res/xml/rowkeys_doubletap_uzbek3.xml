@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Uzbek row 3: z·x  c·v  b·n  m·ʼ  (4 pairs × 17.75%)
+     U+02BC "ʼ" MODIFIER LETTER APOSTROPHE moved DOWN from row 2. -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="z"
+        latin:keySecondarySpec="x"
+        latin:moreKeys="!text/morekeys_z,!text/morekeys_x" />
+    <Key latin:keySpec="c"
+        latin:keySecondarySpec="v"
+        latin:moreKeys="!text/morekeys_c,!text/morekeys_v" />
+    <Key latin:keySpec="b"
+        latin:keySecondarySpec="n"
+        latin:moreKeys="!text/morekeys_n" />
+    <!-- U+02BC "ʼ" MODIFIER LETTER APOSTROPHE -->
+    <Key latin:keySpec="m"
+        latin:keySecondarySpec="&#x02BC;" />
+</merge>

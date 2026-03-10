@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap symbols row 1: 1·2 3·4 5·6 7·8 9·0 (5 pairs × 20%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="1" latin:keySecondarySpec="2"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_1"
+        latin:moreKeys="!text/morekeys_symbols_1" />
+    <Key latin:keySpec="3" latin:keySecondarySpec="4"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_3"
+        latin:moreKeys="!text/morekeys_symbols_3" />
+    <Key latin:keySpec="5" latin:keySecondarySpec="6"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_5"
+        latin:moreKeys="!text/morekeys_symbols_5" />
+    <Key latin:keySpec="7" latin:keySecondarySpec="8"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_7"
+        latin:moreKeys="!text/morekeys_symbols_7" />
+    <Key latin:keySpec="9" latin:keySecondarySpec="0"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_9"
+        latin:moreKeys="!text/morekeys_symbols_9" />
+</merge>

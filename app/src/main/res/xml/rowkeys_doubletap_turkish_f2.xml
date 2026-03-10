@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Turkish F row 2: u·i  e·a  ü·t  k·m  l·y  ş·x  (6 pairs × 16.667%)
+     x moved UP from row 3 to pair with ş. -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="u"
+        latin:keySecondarySpec="i"
+        latin:moreKeys="!text/morekeys_u,!text/morekeys_i" />
+    <Key latin:keySpec="e"
+        latin:keySecondarySpec="a"
+        latin:moreKeys="!text/morekeys_e,!text/morekeys_a" />
+    <!-- ü: LATIN SMALL LETTER U WITH DIAERESIS -->
+    <Key latin:keySpec="ü"
+        latin:keySecondarySpec="t"
+        latin:moreKeys="!text/morekeys_u,!text/morekeys_t" />
+    <Key latin:keySpec="k"
+        latin:keySecondarySpec="m"
+        latin:moreKeys="!text/morekeys_k" />
+    <Key latin:keySpec="l"
+        latin:keySecondarySpec="y"
+        latin:moreKeys="!text/morekeys_l,!text/morekeys_y" />
+    <!-- ş: LATIN SMALL LETTER S WITH CEDILLA  x moved up from row 3 -->
+    <Key latin:keySpec="ş"
+        latin:keySecondarySpec="x"
+        latin:moreKeys="!text/morekeys_s,!text/morekeys_x" />
+</merge>

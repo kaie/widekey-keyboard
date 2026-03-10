@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap symbols row 3: "·' :·; !·? (3 pairs × 23.667%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="&quot;" latin:keySecondarySpec="\'"
+        latin:moreKeys="!text/morekeys_double_quote,!text/morekeys_single_quote" />
+    <Key latin:keySpec=":" latin:keySecondarySpec="!text/keyspec_symbols_semicolon"
+        latin:moreKeys="!text/morekeys_symbols_semicolon" />
+    <Key latin:keySpec="!" latin:keySecondarySpec="!text/keyspec_symbols_question"
+        latin:moreKeys="!text/morekeys_exclamation,!text/morekeys_question" />
+</merge>

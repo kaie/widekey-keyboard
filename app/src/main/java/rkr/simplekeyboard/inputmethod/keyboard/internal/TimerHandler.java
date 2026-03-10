@@ -32,6 +32,7 @@ public final class TimerHandler extends LeakGuardHandlerWrapper<DrawingProxy>
     private static final int MSG_LONGPRESS_KEY = 2;
     private static final int MSG_LONGPRESS_SHIFT_KEY = 3;
     private static final int MSG_DOUBLE_TAP_SHIFT_KEY = 4;
+    private static final int MSG_PENDING_SINGLE_TAP = 5;
     private static final int MSG_DISMISS_KEY_PREVIEW = 6;
 
     private final int mIgnoreAltCodeKeyTimeout;
@@ -48,6 +49,10 @@ public final class TimerHandler extends LeakGuardHandlerWrapper<DrawingProxy>
             return;
         }
         switch (msg.what) {
+        case MSG_PENDING_SINGLE_TAP:
+            final PointerTracker tracker0 = (PointerTracker) msg.obj;
+            tracker0.onPendingSingleTapTimeout();
+            break;
         case MSG_REPEAT_KEY:
             final PointerTracker tracker1 = (PointerTracker) msg.obj;
             tracker1.onKeyRepeat(msg.arg1 /* code */, msg.arg2 /* repeatCount */);
@@ -177,6 +182,19 @@ public final class TimerHandler extends LeakGuardHandlerWrapper<DrawingProxy>
     public void cancelAllKeyTimers() {
         cancelKeyRepeatTimers();
         cancelLongPressTimers();
+        cancelPendingSingleTapTimer();
+    }
+
+    @Override
+    public void startPendingSingleTapTimer(final PointerTracker tracker) {
+        removeMessages(MSG_PENDING_SINGLE_TAP);
+        sendMessageDelayed(obtainMessage(MSG_PENDING_SINGLE_TAP, tracker),
+                PointerTracker.DOUBLETAP_TIMEOUT_MS);
+    }
+
+    @Override
+    public void cancelPendingSingleTapTimer() {
+        removeMessages(MSG_PENDING_SINGLE_TAP);
     }
 
     public void postDismissKeyPreview(final Key key, final long delay) {
@@ -186,5 +204,6 @@ public final class TimerHandler extends LeakGuardHandlerWrapper<DrawingProxy>
     public void cancelAllMessages() {
         cancelAllKeyTimers();
         removeMessages(MSG_DISMISS_KEY_PREVIEW);
+        removeMessages(MSG_PENDING_SINGLE_TAP);
     }
 }
