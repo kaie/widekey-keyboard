@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Serbian Cyrillic row 3: џ·ц в·б н·м [row3_8]·ж (4 pairs × 17.75%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- џ·ц (U+045F·U+0446) -->
+    <Key latin:keySpec="&#x045F;" latin:keySecondarySpec="&#x0446;" />
+    <!-- в·б -->
+    <Key latin:keySpec="&#x0432;" latin:keySecondarySpec="&#x0431;" />
+    <!-- н·м -->
+    <Key latin:keySpec="&#x043D;" latin:keySecondarySpec="&#x043C;" />
+    <!-- [row3_8]·ж -->
+    <Key latin:keySpec="!text/keyspec_south_slavic_row3_8" latin:keySecondarySpec="&#x0436;" />
+</merge>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Sakha row 2: ф·[row2_2] в·а п·р о·л д·ж [row2_11]·ө [solo:ҥ] (6 pairs + 1 solo × 14.286%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ф·[row2_2] -->
+    <Key latin:keySpec="&#x0444;" latin:keySecondarySpec="!text/keyspec_east_slavic_row2_2"
+        latin:moreKeys="!text/morekeys_east_slavic_row2_2" />
+    <!-- в·а -->
+    <Key latin:keySpec="&#x0432;" latin:keySecondarySpec="&#x0430;"
+        latin:moreKeys="!text/morekeys_cyrillic_a" />
+    <!-- п·р -->
+    <Key latin:keySpec="&#x043F;" latin:keySecondarySpec="&#x0440;" />
+    <!-- о·л -->
+    <Key latin:keySpec="&#x043E;" latin:keySecondarySpec="&#x043B;"
+        latin:moreKeys="!text/morekeys_cyrillic_o" />
+    <!-- д·ж -->
+    <Key latin:keySpec="&#x0434;" latin:keySecondarySpec="&#x0436;" />
+    <!-- [row2_11]·ө (U+04E9 CYRILLIC SMALL LETTER BARRED O) -->
+    <Key latin:keySpec="!text/keyspec_east_slavic_row2_11" latin:keySecondarySpec="&#x04E9;"
+        latin:moreKeys="!text/morekeys_east_slavic_row2_11" />
+    <!-- solo: ҥ (U+04A5 CYRILLIC SMALL LETTER NG) -->
+    <Key latin:keySpec="&#x04A5;" />
+</merge>

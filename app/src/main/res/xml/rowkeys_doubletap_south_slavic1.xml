@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap South Slavic row 1: љ·њ е·р т·[row1_6] у·и о·п [solo:ш] (5 pairs + 1 solo × 16.667%) -->
+<!-- Shared by Macedonian and Serbian Cyrillic layouts -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- љ·њ -->
+    <Key latin:keySpec="&#x0459;" latin:keySecondarySpec="&#x045A;" />
+    <!-- е·р -->
+    <Key latin:keySpec="&#x0435;" latin:keySecondarySpec="&#x0440;"
+        latin:moreKeys="!text/morekeys_cyrillic_ie" />
+    <!-- т·[row1_6] (ѓ for Macedonian, ђ for Serbian) -->
+    <Key latin:keySpec="&#x0442;" latin:keySecondarySpec="!text/keyspec_south_slavic_row1_6" />
+    <!-- у·и -->
+    <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x0438;"
+        latin:moreKeys="!text/morekeys_cyrillic_i" />
+    <!-- о·п -->
+    <Key latin:keySpec="&#x043E;" latin:keySecondarySpec="&#x043F;" />
+    <!-- solo: ш -->
+    <Key latin:keySpec="&#x0448;" />
+</merge>

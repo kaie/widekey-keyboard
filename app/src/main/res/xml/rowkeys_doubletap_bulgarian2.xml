@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Bulgarian row 2: а·с д·ф г·х й·к л·ш [solo:щ] (5 pairs + 1 solo × 16.667%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- а·с -->
+    <Key latin:keySpec="&#x0430;" latin:keySecondarySpec="&#x0441;" />
+    <!-- д·ф -->
+    <Key latin:keySpec="&#x0434;" latin:keySecondarySpec="&#x0444;" />
+    <!-- г·х -->
+    <Key latin:keySpec="&#x0433;" latin:keySecondarySpec="&#x0445;" />
+    <!-- й·к -->
+    <Key latin:keySpec="&#x0439;" latin:keySecondarySpec="&#x043A;" />
+    <!-- л·ш -->
+    <Key latin:keySpec="&#x043B;" latin:keySecondarySpec="&#x0448;" />
+    <!-- solo: щ -->
+    <Key latin:keySpec="&#x0449;" />
+</merge>

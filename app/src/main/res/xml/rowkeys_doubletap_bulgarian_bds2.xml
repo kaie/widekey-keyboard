@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Bulgarian BDS row 2: ь·я а·о ж·г т·н в·м ч·л (6 pairs × 16.667%; л moved up from row 3) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ь·я -->
+    <Key latin:keySpec="&#x044C;" latin:keySecondarySpec="&#x044F;" />
+    <!-- а·о -->
+    <Key latin:keySpec="&#x0430;" latin:keySecondarySpec="&#x043E;" />
+    <!-- ж·г -->
+    <Key latin:keySpec="&#x0436;" latin:keySecondarySpec="&#x0433;" />
+    <!-- т·н -->
+    <Key latin:keySpec="&#x0442;" latin:keySecondarySpec="&#x043D;" />
+    <!-- в·м -->
+    <Key latin:keySpec="&#x0432;" latin:keySecondarySpec="&#x043C;" />
+    <!-- ч·л -->
+    <Key latin:keySpec="&#x0447;" latin:keySecondarySpec="&#x043B;" />
+</merge>

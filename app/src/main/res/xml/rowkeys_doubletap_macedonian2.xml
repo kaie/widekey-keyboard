@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Macedonian row 2: а·с д·ф г·х ј·к л·ч [row2_11]·ж (6 pairs × 16.667%; ж moved up from row 3) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- а·с -->
+    <Key latin:keySpec="&#x0430;" latin:keySecondarySpec="&#x0441;" />
+    <!-- д·ф -->
+    <Key latin:keySpec="&#x0434;" latin:keySecondarySpec="&#x0444;" />
+    <!-- г·х -->
+    <Key latin:keySpec="&#x0433;" latin:keySecondarySpec="&#x0445;" />
+    <!-- ј·к (U+0458·U+043A) -->
+    <Key latin:keySpec="&#x0458;" latin:keySecondarySpec="&#x043A;" />
+    <!-- л·ч -->
+    <Key latin:keySpec="&#x043B;" latin:keySecondarySpec="&#x0447;" />
+    <!-- [row2_11]·ж (ќ for Macedonian, ћ for Serbian) -->
+    <Key latin:keySpec="!text/keyspec_south_slavic_row2_11" latin:keySecondarySpec="&#x0436;" />
+</merge>

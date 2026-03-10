@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap East Slavic row 1: й·ц у·к е·н г·ш [row1_9]·з [solo:х] (5 pairs + 1 solo × 16.667%) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- й·ц -->
+    <Key latin:keySpec="&#x0439;" latin:keySecondarySpec="&#x0446;" />
+    <!-- у·к -->
+    <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x043A;"
+        latin:moreKeys="!text/morekeys_cyrillic_u,!text/morekeys_cyrillic_ka" />
+    <!-- е·н -->
+    <Key latin:keySpec="&#x0435;" latin:keySecondarySpec="&#x043D;"
+        latin:moreKeys="!text/morekeys_cyrillic_ie,!text/morekeys_cyrillic_en" />
+    <!-- г·ш -->
+    <Key latin:keySpec="&#x0433;" latin:keySecondarySpec="&#x0448;"
+        latin:moreKeys="!text/morekeys_cyrillic_ghe" />
+    <!-- [row1_9]·з -->
+    <Key latin:keySpec="!text/keyspec_east_slavic_row1_9" latin:keySecondarySpec="&#x0437;" />
+    <!-- solo: х -->
+    <Key latin:keySpec="&#x0445;" />
+</merge>
