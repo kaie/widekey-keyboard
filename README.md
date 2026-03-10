@@ -1,14 +1,10 @@
-# Simple Keyboard
+# Widekey Keyboard
 
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/simple-keyboard/localized.svg)](https://crowdin.com/project/simple-keyboard)
+A keyboard designed for precision and control. Each key holds two characters — tap once for the left, tap twice for the right — giving you effectively double-wide tap targets and far fewer misses. No autocorrect, no predictions, no second-guessing.
 
-<img src="images/screenshot-0.png"
-      alt="closeup"
-      width="500"/>
-      
-## About
+## Features
 
-Features:
+- **Double-tap keys** — each key contains two characters, single-tap for the primary, double-tap for the secondary
 - Small size (<1MB)
 - Adjustable keyboard height for more screen space
 - Number row
@@ -18,23 +14,15 @@ Features:
 - Minimal permissions (only Vibrate)
 - Ads-free
 
-Feature it doesn't have and probably will never have:
-- Emojis
-- GIFs
-- Spell checker
+## Features it doesn't have and probably will never have
+
+- Autocorrect / spell checker
 - Swipe typing
-
-## Downloads
-
-[<img src="https://f-droid.org/badge/get-it-on.png"
-      alt="Get it on F-Droid"
-      height="80">](https://f-droid.org/packages/rkr.simplekeyboard.inputmethod/)
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
-      alt="Get it on Google Play"
-      height="80">](https://play.google.com/store/apps/details?id=rkr.simplekeyboard.inputmethod)
+- Emojis / GIFs
+- Word predictions
 
 ## Credits
 
-Licensed under Apache License Version 2
+Licensed under Apache License Version 2.
 
-This keyboard is based on AOSP LatinIME keyboard. You can get the original source code in https://android.googlesource.com/platform/packages/inputmethods/LatinIME/
+Widekey Keyboard is a fork of [Simple Keyboard](https://github.com/rkkr/simple-keyboard) by rkkr, which is itself based on the [AOSP LatinIME keyboard](https://android.googlesource.com/platform/packages/inputmethods/LatinIME/). We are grateful to both projects for their work.
