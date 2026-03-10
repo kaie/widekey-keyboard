@@ -6,7 +6,7 @@
             latin:bonusHeight="@fraction/config_key_bonus_height_5row"
             latin:rowHeight="20%p">
             <include latin:keyboardLayout="@xml/key_styles_common" />
-            <include latin:keyboardLayout="@xml/row_qwerty0" />
+            <include latin:keyboardLayout="@xml/row_doubletap_qwerty0" />
             <include latin:keyboardLayout="@xml/rows_doubletap_spanish" />
         </Keyboard>
     </case>
