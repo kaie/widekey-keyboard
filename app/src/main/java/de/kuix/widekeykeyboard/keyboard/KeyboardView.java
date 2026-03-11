@@ -465,6 +465,25 @@ public class KeyboardView extends View {
             final int iconX = (keyWidth - iconWidth) / 2; // Align horizontally center.
             drawIcon(canvas, icon, iconX, iconY, iconWidth, iconHeight);
         }
+
+        // Solo doubletap key: draw border (no center divider) to match paired doubletap keys.
+        if (key.getBackgroundType() == Key.BACKGROUND_TYPE_NORMAL) {
+            final Keyboard kb = getKeyboard();
+            if (kb != null && kb.isDoubleTapKeyboard()) {
+                final int textColor = key.selectTextColor(params);
+                final int borderAlpha = 70;
+                paint.setColor(Color.argb(borderAlpha,
+                        Color.red(textColor), Color.green(textColor), Color.blue(textColor)));
+                paint.setStyle(Paint.Style.STROKE);
+                paint.setStrokeWidth(1.5f);
+                final float inset = 2.0f;
+                final float radius = keyHeight * 0.18f;
+                canvas.drawRoundRect(new RectF(inset, inset, keyWidth - inset, keyHeight - inset),
+                        radius, radius, paint);
+                paint.setStyle(Paint.Style.FILL);
+                paint.setStrokeWidth(0);
+            }
+        }
     }
 
     private void onDrawDoubleTapKeyTopVisuals(final Key key, final Canvas canvas,

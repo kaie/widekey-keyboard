@@ -78,6 +78,7 @@ public class Keyboard {
     public final KeyboardIconsSet mIconsSet;
 
     private final SparseArray<Key> mKeyCache = new SparseArray<>();
+    private Boolean mIsDoubleTapKeyboard = null;
 
     private final ProximityInfo mProximityInfo;
 
@@ -110,6 +111,19 @@ public class Keyboard {
      */
     public List<Key> getSortedKeys() {
         return mSortedKeys;
+    }
+
+    public boolean isDoubleTapKeyboard() {
+        if (mIsDoubleTapKeyboard == null) {
+            mIsDoubleTapKeyboard = false;
+            for (final Key key : mSortedKeys) {
+                if (key.hasSecondaryCode()) {
+                    mIsDoubleTapKeyboard = true;
+                    break;
+                }
+            }
+        }
+        return mIsDoubleTapKeyboard;
     }
 
     public Key getKey(final int code) {

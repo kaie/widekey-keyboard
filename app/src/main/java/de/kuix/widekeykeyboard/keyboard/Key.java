@@ -928,6 +928,10 @@ public class Key implements Comparable<Key> {
      * @return the background drawable of the key.
      * @see android.graphics.drawable.StateListDrawable#setState(int[])
      */
+    public final int getBackgroundType() {
+        return mBackgroundType;
+    }
+
     public final Drawable selectBackgroundDrawable(final Drawable keyBackground,
             final Drawable functionalKeyBackground,
             final Drawable spacebarBackground) {
