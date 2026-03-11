@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Double-tap Georgian row 1: ქ·წ  ე·რ  ტ·ყ  უ·ი  ო·პ  (5 pairs × 20%) -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <!-- ქ·წ (U+10E5·U+10EC) -->
-    <Key latin:keySpec="&#x10E5;" latin:keySecondarySpec="&#x10EC;" />
-    <!-- ე·რ (U+10D4·U+10E0) -->
-    <Key latin:keySpec="&#x10D4;" latin:keySecondarySpec="&#x10E0;" />
-    <!-- ტ·ყ (U+10E2·U+10E7) -->
-    <Key latin:keySpec="&#x10E2;" latin:keySecondarySpec="&#x10E7;" />
-    <!-- უ·ი (U+10E3·U+10D8) -->
-    <Key latin:keySpec="&#x10E3;" latin:keySecondarySpec="&#x10D8;" />
+    <!-- ქ·წ (U+10E5·U+10EC); წ moreKeys: ჭ(U+10ED) -->
+    <Key latin:keySpec="&#x10E5;" latin:keySecondarySpec="&#x10EC;" latin:moreKeys="&#x10ED;" />
+    <!-- ე·რ (U+10D4·U+10E0); ე moreKeys: ჱ(U+10F1); რ moreKeys: ღ(U+10E6) -->
+    <Key latin:keySpec="&#x10D4;" latin:keySecondarySpec="&#x10E0;" latin:moreKeys="&#x10F1;,&#x10E6;" />
+    <!-- ტ·ყ (U+10E2·U+10E7); ტ moreKeys: თ(U+10D7); ყ moreKeys: ჸ(U+10F8) -->
+    <Key latin:keySpec="&#x10E2;" latin:keySecondarySpec="&#x10E7;" latin:moreKeys="&#x10D7;,&#x10F8;" />
+    <!-- უ·ი (U+10E3·U+10D8); ი moreKeys: ჲ(U+10F2) -->
+    <Key latin:keySpec="&#x10E3;" latin:keySecondarySpec="&#x10D8;" latin:moreKeys="&#x10F2;" />
     <!-- ო·პ (U+10DD·U+10DE) -->
     <Key latin:keySpec="&#x10DD;" latin:keySecondarySpec="&#x10DE;" />
 </merge>

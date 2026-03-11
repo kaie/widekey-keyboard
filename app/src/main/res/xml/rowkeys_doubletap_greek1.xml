@@ -3,12 +3,12 @@
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
     <!-- ;·ς (U+003B·U+03C2) -->
     <Key latin:keySpec="&#x003B;" latin:keySecondarySpec="&#x03C2;" />
-    <!-- ε·ρ (U+03B5·U+03C1) -->
-    <Key latin:keySpec="&#x03B5;" latin:keySecondarySpec="&#x03C1;" />
-    <!-- τ·υ (U+03C4·U+03C5) -->
-    <Key latin:keySpec="&#x03C4;" latin:keySecondarySpec="&#x03C5;" />
-    <!-- θ·ι (U+03B8·U+03B9) -->
-    <Key latin:keySpec="&#x03B8;" latin:keySecondarySpec="&#x03B9;" />
-    <!-- ο·π (U+03BF·U+03C0) -->
-    <Key latin:keySpec="&#x03BF;" latin:keySecondarySpec="&#x03C0;" />
+    <!-- ε·ρ (U+03B5·U+03C1), ε moreKeys: ά(U+03AD) -->
+    <Key latin:keySpec="&#x03B5;" latin:keySecondarySpec="&#x03C1;" latin:moreKeys="&#x03AD;" />
+    <!-- τ·υ (U+03C4·U+03C5), υ moreKeys: ύ(U+03CD),ϋ(U+03CB),ΰ(U+03B0) -->
+    <Key latin:keySpec="&#x03C4;" latin:keySecondarySpec="&#x03C5;" latin:moreKeys="&#x03CD;,&#x03CB;,&#x03B0;" />
+    <!-- θ·ι (U+03B8·U+03B9), ι moreKeys: ί(U+03AF),ϊ(U+03CA),ΐ(U+0390) -->
+    <Key latin:keySpec="&#x03B8;" latin:keySecondarySpec="&#x03B9;" latin:moreKeys="&#x03AF;,&#x03CA;,&#x0390;" />
+    <!-- ο·π (U+03BF·U+03C0), ο moreKeys: ό(U+03CC) -->
+    <Key latin:keySpec="&#x03BF;" latin:keySecondarySpec="&#x03C0;" latin:moreKeys="&#x03CC;" />
 </merge>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Double-tap Colemak row 1: q·w  f·p  g·j  l·u  y·;  (5 pairs × 20%) -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <Key latin:keySpec="q" latin:keySecondarySpec="w" />
+    <Key latin:keySpec="q" latin:keySecondarySpec="w" latin:moreKeys="!text/morekeys_w" />
     <Key latin:keySpec="f" latin:keySecondarySpec="p" />
-    <Key latin:keySpec="g" latin:keySecondarySpec="j" />
-    <Key latin:keySpec="l" latin:keySecondarySpec="u" />
-    <Key latin:keySpec="y" latin:keySecondarySpec=";" />
+    <Key latin:keySpec="g" latin:keySecondarySpec="j" latin:moreKeys="!text/morekeys_g,!text/morekeys_j" />
+    <Key latin:keySpec="l" latin:keySecondarySpec="u" latin:moreKeys="!text/morekeys_l,!text/morekeys_u" />
+    <Key latin:keySpec="y" latin:keySecondarySpec=";" latin:moreKeys="!text/morekeys_y" />
 </merge>

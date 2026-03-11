@@ -23,8 +23,8 @@
         android:translateX="12"
         android:translateY="12">
         <path
-            android:fillColor="#5695FD"
-            android:strokeColor="#5695FD"
+            android:fillColor="#FF7700"
+            android:strokeColor="#FF7700"
             android:strokeWidth="3"
             android:strokeLineJoin="round"
             android:pathData="M1,1 17,1 17,5 1,5 z"/>

@@ -3,8 +3,8 @@
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
     <!-- ք·ո (U+0584·U+0578) -->
     <Key latin:keySpec="&#x0584;" latin:keySecondarySpec="&#x0578;" />
-    <!-- ե·ռ (U+0565·U+057C) -->
-    <Key latin:keySpec="&#x0565;" latin:keySecondarySpec="&#x057C;" />
+    <!-- ե·ռ (U+0565·U+057C); ե moreKeys: և(U+0587) -->
+    <Key latin:keySpec="&#x0565;" latin:keySecondarySpec="&#x057C;" latin:moreKeys="&#x0587;" />
     <!-- տ·ը (U+057F·U+0568) -->
     <Key latin:keySpec="&#x057F;" latin:keySecondarySpec="&#x0568;" />
     <!-- ւ·ի (U+0582·U+056B) -->

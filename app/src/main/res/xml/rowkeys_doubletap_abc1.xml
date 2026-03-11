@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Double-tap ABC row 1: a·b  c·d  e·f  g·h  i·j  (5 pairs × 20%) -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <Key latin:keySpec="a" latin:keySecondarySpec="b" />
-    <Key latin:keySpec="c" latin:keySecondarySpec="d" />
-    <Key latin:keySpec="e" latin:keySecondarySpec="f" />
-    <Key latin:keySpec="g" latin:keySecondarySpec="h" />
-    <Key latin:keySpec="i" latin:keySecondarySpec="j" />
+    <Key latin:keySpec="a" latin:keySecondarySpec="b" latin:moreKeys="!text/morekeys_a" />
+    <Key latin:keySpec="c" latin:keySecondarySpec="d" latin:moreKeys="!text/morekeys_c,!text/morekeys_d" />
+    <Key latin:keySpec="e" latin:keySecondarySpec="f" latin:moreKeys="!text/morekeys_e" />
+    <Key latin:keySpec="g" latin:keySecondarySpec="h" latin:moreKeys="!text/morekeys_g,!text/morekeys_h" />
+    <Key latin:keySpec="i" latin:keySecondarySpec="j" latin:moreKeys="!text/morekeys_i,!text/morekeys_j" />
 </merge>

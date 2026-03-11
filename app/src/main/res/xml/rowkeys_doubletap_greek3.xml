@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Double-tap Greek row 3: χ·ψ  ω·β  ν·μ  (3 pairs × 23.667%) -->
+<!-- Double-tap Greek row 3: ζ·χ  ψ·ω  β·ν  (3 pairs × 23.667%) -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <!-- χ·ψ (U+03C7·U+03C8) -->
-    <Key latin:keySpec="&#x03C7;" latin:keySecondarySpec="&#x03C8;" />
-    <!-- ω·β (U+03C9·U+03B2) -->
-    <Key latin:keySpec="&#x03C9;" latin:keySecondarySpec="&#x03B2;" />
-    <!-- ν·μ (U+03BD·U+03BC) -->
-    <Key latin:keySpec="&#x03BD;" latin:keySecondarySpec="&#x03BC;" />
+    <!-- ζ·χ (U+03B6·U+03C7) -->
+    <Key latin:keySpec="&#x03B6;" latin:keySecondarySpec="&#x03C7;" />
+    <!-- ψ·ω (U+03C8·U+03C9), ω moreKeys: ώ(U+03CE) -->
+    <Key latin:keySpec="&#x03C8;" latin:keySecondarySpec="&#x03C9;" latin:moreKeys="&#x03CE;" />
+    <!-- β·ν (U+03B2·U+03BD) -->
+    <Key latin:keySpec="&#x03B2;" latin:keySecondarySpec="&#x03BD;" />
 </merge>

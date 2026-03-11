@@ -3,12 +3,12 @@
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
     <!-- ф·ц (U+0444·U+0446) -->
     <Key latin:keySpec="&#x0444;" latin:keySecondarySpec="&#x0446;" />
-    <!-- у·ж (U+0443·U+0436) -->
-    <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x0436;" />
-    <!-- э·н (U+044D·U+043D) -->
-    <Key latin:keySpec="&#x044D;" latin:keySecondarySpec="&#x043D;" />
-    <!-- г·ш (U+0433·U+0448) -->
-    <Key latin:keySpec="&#x0433;" latin:keySecondarySpec="&#x0448;" />
+    <!-- у·ж (U+0443·U+0436); у moreKeys: cyrillic_u variants -->
+    <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x0436;" latin:moreKeys="!text/morekeys_cyrillic_u" />
+    <!-- э·н (U+044D·U+043D); э moreKeys: cyrillic_ie; н moreKeys: cyrillic_en -->
+    <Key latin:keySpec="&#x044D;" latin:keySecondarySpec="&#x043D;" latin:moreKeys="!text/morekeys_cyrillic_ie,!text/morekeys_cyrillic_en" />
+    <!-- г·ш (U+0433·U+0448); г moreKeys: cyrillic_ghe; ш moreKeys: щ(U+0449) -->
+    <Key latin:keySpec="&#x0433;" latin:keySecondarySpec="&#x0448;" latin:moreKeys="!text/morekeys_cyrillic_ghe,&#x0449;" />
     <!-- ү·з (U+04AF·U+0437) -->
     <Key latin:keySpec="&#x04AF;" latin:keySecondarySpec="&#x0437;" />
     <!-- к solo (U+043A) -->
