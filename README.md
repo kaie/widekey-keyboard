@@ -1,7 +1,5 @@
 # Widekey Keyboard
 
-![Screenshot 1](screenshots/widekey-screenshot1.jpg) ![Screenshot 2](screenshots/widekey-screenshot2.jpg) ![Screenshot 3](screenshots/widekey-screenshot3.jpg)
-
 A keyboard designed for precision and control. Each key holds two characters — tap once for the left, tap twice for the right — giving you effectively double-wide tap targets and far fewer misses. No autocorrect, no predictions, no second-guessing.
 
 ## Features
@@ -28,3 +26,7 @@ A keyboard designed for precision and control. Each key holds two characters —
 Licensed under Apache License Version 2.
 
 Widekey Keyboard is a fork of [Simple Keyboard](https://github.com/rkkr/simple-keyboard) by rkkr, which is itself based on the [AOSP LatinIME keyboard](https://android.googlesource.com/platform/packages/inputmethods/LatinIME/). We are grateful to both projects for their work.
+
+## Screenshots
+
+![Screenshot 1](screenshots/widekey-screenshot1.jpg) ![Screenshot 2](screenshots/widekey-screenshot2.jpg) ![Screenshot 3](screenshots/widekey-screenshot3.jpg)
