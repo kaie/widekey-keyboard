@@ -18,6 +18,7 @@
 
 package de.kuix.widekeykeyboard.latin.settings;
 
+import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -54,6 +55,20 @@ public final class SettingsFragment extends InputMethodSettingsFragment {
             @Override
             public boolean onPreferenceClick(Preference preference) {
                 openUrl(res.getString(R.string.license_url));
+                return true;
+            }
+        });
+
+        final String versionName = ApplicationUtils.getVersionName(getActivity());
+        final Preference versionPref = findPreference("version_info");
+        versionPref.setSummary(versionName);
+        versionPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                new AlertDialog.Builder(getActivity())
+                        .setMessage(getString(R.string.version_info_author, versionName))
+                        .setPositiveButton(android.R.string.ok, null)
+                        .show();
                 return true;
             }
         });

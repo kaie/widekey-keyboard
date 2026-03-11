@@ -34,4 +34,7 @@
     <Preference
         android:title="@string/license"
         android:key="license" />
+    <Preference
+        android:title="@string/version_info"
+        android:key="version_info" />
 </PreferenceScreen>
