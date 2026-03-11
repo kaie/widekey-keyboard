@@ -26,7 +26,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
+import android.text.method.LinkMovementMethod;
+import android.text.util.Linkify;
 import android.util.Log;
+import android.util.TypedValue;
+import android.widget.TextView;
 
 import de.kuix.widekeykeyboard.R;
 import de.kuix.widekeykeyboard.latin.utils.ApplicationUtils;
@@ -65,8 +69,16 @@ public final class SettingsFragment extends InputMethodSettingsFragment {
         versionPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
+                final TextView textView = new TextView(getActivity());
+                textView.setText(getString(R.string.version_info_author, versionName));
+                textView.setAutoLinkMask(Linkify.WEB_URLS);
+                textView.setLinksClickable(true);
+                textView.setMovementMethod(LinkMovementMethod.getInstance());
+                final int padding = (int) TypedValue.applyDimension(
+                        TypedValue.COMPLEX_UNIT_DIP, 24, getResources().getDisplayMetrics());
+                textView.setPadding(padding, padding, padding, padding);
                 new AlertDialog.Builder(getActivity())
-                        .setMessage(getString(R.string.version_info_author, versionName))
+                        .setView(textView)
                         .setPositiveButton(android.R.string.ok, null)
                         .show();
                 return true;

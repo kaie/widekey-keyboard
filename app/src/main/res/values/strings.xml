@@ -128,5 +128,5 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="license">License</string>
     <string name="version_info">Version</string>
-    <string name="version_info_author">Widekey Keyboard\nVersion %s\n\nby Kai Engert &lt;kaie@kuix.de&gt;</string>
+    <string name="version_info_author">Widekey Keyboard\nVersion %s\n\nby Kai Engert &lt;kaie@kuix.de&gt;\n\nhttps://github.com/kaie/widekey-keyboard</string>
 </resources>
