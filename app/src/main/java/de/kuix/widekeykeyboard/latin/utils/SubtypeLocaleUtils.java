@@ -441,7 +441,7 @@ public final class SubtypeLocaleUtils {
                 case LOCALE_CROATIAN:
                 case LOCALE_HUNGARIAN:
                 case LOCALE_SLOVENIAN:
-                    addLayout(LAYOUT_QWERTZ);
+                    addLayout(LAYOUT_DOUBLETAP_QWERTZ);
                     addGenericLayouts();
                     break;
                 case LOCALE_FRENCH_CANADA:
