@@ -1,5 +1,7 @@
 # Widekey Keyboard
 
+![Screenshot 1](screenshots/widekey-screenshot1.jpg) ![Screenshot 2](screenshots/widekey-screenshot2.jpg) ![Screenshot 3](screenshots/widekey-screenshot3.jpg)
+
 A keyboard designed for precision and control. Each key holds two characters — tap once for the left, tap twice for the right — giving you effectively double-wide tap targets and far fewer misses. No autocorrect, no predictions, no second-guessing.
 
 ## Features
