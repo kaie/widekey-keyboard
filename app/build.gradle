@@ -16,6 +16,11 @@ android {
         }
     }
     namespace 'de.kuix.widekeykeyboard'
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
 }
 
 dependencies {
