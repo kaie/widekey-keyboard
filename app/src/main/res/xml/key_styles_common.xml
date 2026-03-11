@@ -107,6 +107,8 @@
     <key-style
         latin:styleName="languageSwitchKeyStyle"
         latin:keySpec="!icon/language_switch_key|!code/key_language_switch"
+        latin:keyLabelFlags="hasPopupHint"
+        latin:moreKeys="!icon/paste_key|!code/key_paste,!icon/settings_key|!code/key_settings"
         latin:keyActionFlags="noKeyPreview|altCodeWhileTyping|enableLongPress"
         latin:altCode="!code/key_space" />
     <key-style
