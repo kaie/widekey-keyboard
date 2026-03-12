@@ -469,7 +469,7 @@ public class KeyboardView extends View {
         // Solo doubletap key: draw border (no center divider) to match paired doubletap keys.
         if (key.getBackgroundType() == Key.BACKGROUND_TYPE_NORMAL) {
             final Keyboard kb = getKeyboard();
-            if (kb != null && kb.isDoubleTapKeyboard()) {
+            if (kb != null && kb.isDoubleTapKeyboard() && !isThemeBorderTheme()) {
                 final int textColor = key.selectTextColor(params);
                 final int borderAlpha = 70;
                 paint.setColor(Color.argb(borderAlpha,
@@ -484,6 +484,12 @@ public class KeyboardView extends View {
                 paint.setStrokeWidth(0);
             }
         }
+    }
+
+    private boolean isThemeBorderTheme() {
+        return mTheme != null && (mTheme.mThemeId == KeyboardTheme.THEME_ID_LIGHT_BORDER
+                || mTheme.mThemeId == KeyboardTheme.THEME_ID_DARK_BORDER
+                || mTheme.mThemeId == KeyboardTheme.THEME_ID_SYSTEM_BORDER);
     }
 
     private void onDrawDoubleTapKeyTopVisuals(final Key key, final Canvas canvas,
@@ -528,8 +534,10 @@ public class KeyboardView extends View {
         paint.setStrokeWidth(1.5f);
         final float inset = 2.0f;
         final float radius = keyHeight * 0.18f;
-        canvas.drawRoundRect(new RectF(inset, inset, keyWidth - inset, keyHeight - inset),
-                radius, radius, paint);
+        if (!isThemeBorderTheme()) {
+            canvas.drawRoundRect(new RectF(inset, inset, keyWidth - inset, keyHeight - inset),
+                    radius, radius, paint);
+        }
         // Faint center divider
         paint.setColor(Color.argb(borderAlpha / 2,
                 Color.red(textColor), Color.green(textColor), Color.blue(textColor)));
