@@ -63,11 +63,9 @@ public final class AudioAndHapticFeedbackManager {
     }
 
     private void initInternal(final Context context) {
+        mAudioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
+        mVibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         mBackgroundThread = Executors.newSingleThreadExecutor();
-        mBackgroundThread.execute(() -> {
-            mAudioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
-            mVibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
-        });
     }
 
     public boolean hasVibrator() {

@@ -842,6 +842,8 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
 
     private void onCancelEventInternal() {
         sTimerProxy.cancelKeyTimersOf(this);
+        sTimerProxy.cancelPendingSingleTapTimer();
+        sPendingDoubleTapKey = null;
         setReleasedKeyGraphics(mCurrentKey, true /* withAnimation */);
         resetKeySelectionByDraggingFinger();
         dismissMoreKeysPanel();
