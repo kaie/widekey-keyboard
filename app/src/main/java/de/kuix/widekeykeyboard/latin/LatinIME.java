@@ -907,18 +907,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     }
 
     public boolean shouldShowLanguageSwitchKey() {
-        if (mSettings.getCurrent().isLanguageSwitchKeyDisabled()) {
-            return false;
-        }
-        if (mRichImm.hasMultipleEnabledSubtypes()) {
-            return true;
-        }
-
-        final IBinder token = getWindow().getWindow().getAttributes().token;
-        if (token == null) {
-            return false;
-        }
-        return shouldSwitchToOtherInputMethods(token);
+        return !mSettings.getCurrent().isLanguageSwitchKeyDisabled();
     }
 
     private void setNavigationBarColor() {
