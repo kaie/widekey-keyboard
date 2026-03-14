@@ -5,27 +5,27 @@
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
     <switch>
         <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
-            <!-- Pair 1: ओ · ए (U+0913 · U+090F) -->
+            <!-- Pair 1: ओ · ए; moreKeys: ओं,ऑ,ऒ (from ओ), एं,एँ,ऍ,ऎ (from ए) -->
             <Key
                 latin:keySpec="&#x0913;"
                 latin:keySecondarySpec="&#x090F;"
-                latin:moreKeys="&#x0913;&#x0902;,&#x0911;,&#x0912;" />
-            <!-- Pair 2: अ · इ (U+0905 · U+0907) -->
+                latin:moreKeys="&#x0913;&#x0902;,&#x0911;,&#x0912;,&#x090F;&#x0902;,&#x090F;&#x0901;,&#x090D;,&#x090E;" />
+            <!-- Pair 2: अ · इ; moreKeys: अं,अँ (from अ), इं,इँ (from इ) -->
             <Key
                 latin:keySpec="&#x0905;"
                 latin:keySecondarySpec="&#x0907;"
-                latin:moreKeys="&#x0905;&#x0902;,&#x0905;&#x0901;" />
-            <!-- Pair 3: उ · फ (U+0909 · U+092B) -->
+                latin:moreKeys="&#x0905;&#x0902;,&#x0905;&#x0901;,&#x0907;&#x0902;,&#x0907;&#x0901;" />
+            <!-- Pair 3: उ · फ; moreKeys: उं,उँ (from उ), फ़ (from फ) -->
             <Key
                 latin:keySpec="&#x0909;"
                 latin:keySecondarySpec="&#x092B;"
-                latin:moreKeys="&#x0909;&#x0902;,&#x0909;&#x0901;" />
-            <!-- Pair 4: ऱ · ख (U+0931 · U+0916) -->
+                latin:moreKeys="&#x0909;&#x0902;,&#x0909;&#x0901;,&#x092B;&#x093C;" />
+            <!-- Pair 4: ऱ · ख; moreKeys: ्र,र् (from ऱ), ख़ (from ख) -->
             <Key
                 latin:keySpec="&#x0931;"
                 latin:keySecondarySpec="&#x0916;"
-                latin:moreKeys="&#x094D;&#x0930;,&#x0930;&#x094D;" />
-            <!-- Pair 5: थ · छ (U+0925 · U+091B) -->
+                latin:moreKeys="&#x094D;&#x0930;,&#x0930;&#x094D;,&#x0916;&#x093C;" />
+            <!-- Pair 5: थ · छ -->
             <Key
                 latin:keySpec="&#x0925;"
                 latin:keySecondarySpec="&#x091B;" />
@@ -35,30 +35,27 @@
                 latin:keyWidth="16.667%p" />
         </case>
         <default>
-            <!-- Pair 1: ो · े (U+094B · U+0947) -->
-            <!-- Because the font rendering system prior to API version 16 can't automatically
-                 render dotted circle for incomplete combining letter of some scripts, different
-                 set of Key definitions are needed based on the API version. -->
-            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_o" />
+            <!-- Pair 1: ो · े (U+094B · U+0947); moreKeys: ों,ॉ,ॊ (from ो), ें (from े) -->
             <Key
-                latin:keyStyle="baseKeyDevanagariVowelSignO"
-                latin:keySecondarySpec="&#x0947;" />
-            <!-- Pair 2: ् · ि (U+094D · U+093F) -->
-            <include latin:keyboardLayout="@xml/keystyle_devanagari_sign_virama" />
+                latin:keySpec="&#x094B;"
+                latin:keySecondarySpec="&#x0947;"
+                latin:moreKeys="&#x094B;&#x0902;,&#x0949;,&#x094A;,&#x0947;&#x0902;" />
+            <!-- Pair 2: ् · ि (U+094D · U+093F); moreKeys: िं (U+093F+U+0902 from ि) -->
             <Key
-                latin:keyStyle="baseKeyDevanagariSignVirama"
-                latin:keySecondarySpec="&#x093F;" />
-            <!-- Pair 3: ु · प (U+0941 · U+092A) -->
-            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_u" />
+                latin:keySpec="&#x094D;"
+                latin:keySecondarySpec="&#x093F;"
+                latin:moreKeys="&#x093F;&#x0902;" />
+            <!-- Pair 3: ु · प (U+0941 · U+092A); moreKeys: ुं,ुँ (from ु) -->
             <Key
-                latin:keyStyle="baseKeyDevanagariVowelSignU"
-                latin:keySecondarySpec="&#x092A;" />
-            <!-- Pair 4: र · क (U+0930 · U+0915) -->
+                latin:keySpec="&#x0941;"
+                latin:keySecondarySpec="&#x092A;"
+                latin:moreKeys="&#x0941;&#x0902;,&#x0941;&#x0901;" />
+            <!-- Pair 4: र · क (U+0930 · U+0915); moreKeys: ऋ,ऱ,ॠ (from र), क़ (from क) -->
             <Key
                 latin:keySpec="&#x0930;"
                 latin:keySecondarySpec="&#x0915;"
-                latin:moreKeys="&#x090B;,&#x0930;&#x093C;,&#x0960;" />
-            <!-- Pair 5: त · च (U+0924 · U+091A) -->
+                latin:moreKeys="&#x090B;,&#x0930;&#x093C;,&#x0960;,&#x0915;&#x093C;" />
+            <!-- Pair 5: त · च (U+0924 · U+091A); moreKeys: त्र (from त) -->
             <Key
                 latin:keySpec="&#x0924;"
                 latin:keySecondarySpec="&#x091A;"
