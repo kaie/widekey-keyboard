@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Thai row 4: 5 pairs @ 14.4% (used with shift+delete flanking)
+     Unshifted: ผ·ป  แ·อ  ิ·ื  ท·ม  ใ·ฝ
+     Shifted:   (·)  ฉ·ฮ  ฺ·์  ?·ฒ  ฬ·ฦ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: ( · ) -->
+            <Key
+                latin:keySpec="("
+                latin:keySecondarySpec=")"
+                latin:keyLabelFlags="fontDefault" />
+            <!-- Pair 2: ฉ · ฮ (U+0E09 · U+0E2E) -->
+            <Key
+                latin:keySpec="&#x0E09;"
+                latin:keySecondarySpec="&#x0E2E;" />
+            <!-- Pair 3: ฺ · ์ (U+0E3A PHINTHU · U+0E4C THANTHAKHAT) -->
+            <Key
+                latin:keySpec="&#x0E3A;"
+                latin:keySecondarySpec="&#x0E4C;" />
+            <!-- Pair 4: ? · ฒ (U+003F · U+0E12) -->
+            <Key
+                latin:keySpec="\?"
+                latin:keySecondarySpec="&#x0E12;"
+                latin:keyLabelFlags="fontDefault" />
+            <!-- Pair 5: ฬ · ฦ (U+0E2C · U+0E26) -->
+            <Key
+                latin:keySpec="&#x0E2C;"
+                latin:keySecondarySpec="&#x0E26;" />
+        </case>
+        <default>
+            <!-- Pair 1: ผ · ป (U+0E1C · U+0E1B) -->
+            <Key
+                latin:keySpec="&#x0E1C;"
+                latin:keySecondarySpec="&#x0E1B;" />
+            <!-- Pair 2: แ · อ (U+0E41 · U+0E2D) -->
+            <Key
+                latin:keySpec="&#x0E41;"
+                latin:keySecondarySpec="&#x0E2D;" />
+            <!-- Pair 3: ิ · ื (U+0E34 SARA I · U+0E37 SARA UEE) -->
+            <Key
+                latin:keySpec="&#x0E34;"
+                latin:keySecondarySpec="&#x0E37;" />
+            <!-- Pair 4: ท · ม (U+0E17 · U+0E21) -->
+            <Key
+                latin:keySpec="&#x0E17;"
+                latin:keySecondarySpec="&#x0E21;" />
+            <!-- Pair 5: ใ · ฝ (U+0E43 · U+0E1D) -->
+            <Key
+                latin:keySpec="&#x0E43;"
+                latin:keySecondarySpec="&#x0E1D;" />
+        </default>
+    </switch>
+</merge>

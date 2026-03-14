@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Lao row 3: 6 pairs @ 16.667%
+     Unshifted: ັ·ຫ  ກ·ດ  ເ·້  ່·າ  ສ·ວ  ງ·"
+     Shifted:   &#x0EB1;&#x0EC9;·;  .·,  :·&#x0ECA;  &#x0ECB;·!  ?·%  =·" -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: &#x0EB1;&#x0EC9; · ; (mai kan+mai tho · semicolon); primary multi-char -->
+            <Key
+                latin:keySpec="&#x0EB1;&#x0EC9;"
+                latin:keySecondarySpec=";"
+                latin:keyLabelFlags="followKeyLetterRatio" />
+            <!-- Pair 2: . · , -->
+            <Key
+                latin:keySpec="."
+                latin:keySecondarySpec=","
+                latin:keyLabelFlags="fontDefault" />
+            <!-- Pair 3: : · &#x0ECA; (U+003A · U+0ECA tone mai ti) -->
+            <Key
+                latin:keySpec=":"
+                latin:keySecondarySpec="&#x0ECA;"
+                latin:keyLabelFlags="fontDefault" />
+            <!-- Pair 4: &#x0ECB; · ! (U+0ECB tone mai catawa · U+0021) -->
+            <Key
+                latin:keySpec="&#x0ECB;"
+                latin:keySecondarySpec="!" />
+            <!-- Pair 5: ? · % -->
+            <Key
+                latin:keySpec="\?"
+                latin:keySecondarySpec="%"
+                latin:keyLabelFlags="fontDefault" />
+            <!-- Pair 6: = · " (U+003D · U+201C left double quote) -->
+            <Key
+                latin:keySpec="="
+                latin:keySecondarySpec="&#x201C;"
+                latin:keyLabelFlags="fontDefault" />
+        </case>
+        <default>
+            <!-- Pair 1: ັ · ຫ (U+0EB1 mai kan · U+0EAB ho sung) -->
+            <Key
+                latin:keySpec="&#x0EB1;"
+                latin:keySecondarySpec="&#x0EAB;" />
+            <!-- Pair 2: ກ · ດ (U+0E81 · U+0E94) -->
+            <Key
+                latin:keySpec="&#x0E81;"
+                latin:keySecondarySpec="&#x0E94;" />
+            <!-- Pair 3: ເ · ້ (U+0EC0 vowel e · U+0EC9 tone mai tho) -->
+            <Key
+                latin:keySpec="&#x0EC0;"
+                latin:keySecondarySpec="&#x0EC9;" />
+            <!-- Pair 4: ່ · າ (U+0EC8 tone mai ek · U+0EB2 sara aa) -->
+            <Key
+                latin:keySpec="&#x0EC8;"
+                latin:keySecondarySpec="&#x0EB2;" />
+            <!-- Pair 5: ສ · ວ (U+0EAA · U+0EA7) -->
+            <Key
+                latin:keySpec="&#x0EAA;"
+                latin:keySecondarySpec="&#x0EA7;" />
+            <!-- Pair 6: ງ · " (U+0E87 · U+201C left double quote) -->
+            <Key
+                latin:keySpec="&#x0E87;"
+                latin:keySecondarySpec="&#x201C;" />
+        </default>
+    </switch>
+</merge>

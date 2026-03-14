@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Khmer row 2: 6 pairs @ 16.667%
+     Unshifted: ឆ·ឹ  េ·រ  ត·យ  ុ·ិ  ោ·ផ  ៀ·ឪ
+     Shifted:   ឈ·ឺ  ែ·ឬ  ទ·ួ  ូ·ី  ៅ·ភ  ឿ·ឰ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: ឈ · ឺ (U+1788 cho · U+17BA vowel yy); moreKeys: ៜ,៝ -->
+            <Key
+                latin:keySpec="&#x1788;"
+                latin:keySecondarySpec="&#x17BA;"
+                latin:moreKeys="&#x17DC;,&#x17DD;" />
+            <!-- Pair 2: ែ · ឬ (U+17C2 · U+17AC vowel ryy); moreKeys: ឫ -->
+            <Key
+                latin:keySpec="&#x17C2;"
+                latin:keySecondarySpec="&#x17AC;"
+                latin:moreKeys="&#x17AB;" />
+            <!-- Pair 3: ទ · ួ (U+1791 · U+17BD) -->
+            <Key
+                latin:keySpec="&#x1791;"
+                latin:keySecondarySpec="&#x17BD;" />
+            <!-- Pair 4: ូ · ី (U+17BC · U+17B8) -->
+            <Key
+                latin:keySpec="&#x17BC;"
+                latin:keySecondarySpec="&#x17B8;" />
+            <!-- Pair 5: ៅ · ភ (U+17C5 · U+1797) -->
+            <Key
+                latin:keySpec="&#x17C5;"
+                latin:keySecondarySpec="&#x1797;" />
+            <!-- Pair 6: ឿ · ឰ (U+17BF · U+17B0) -->
+            <Key
+                latin:keySpec="&#x17BF;"
+                latin:keySecondarySpec="&#x17B0;" />
+        </case>
+        <default>
+            <!-- Pair 1: ឆ · ឹ (U+1786 · U+17B9) -->
+            <Key
+                latin:keySpec="&#x1786;"
+                latin:keySecondarySpec="&#x17B9;" />
+            <!-- Pair 2: េ · រ (U+17C1 · U+179A) -->
+            <Key
+                latin:keySpec="&#x17C1;"
+                latin:keySecondarySpec="&#x179A;" />
+            <!-- Pair 3: ត · យ (U+178F · U+1799) -->
+            <Key
+                latin:keySpec="&#x178F;"
+                latin:keySecondarySpec="&#x1799;" />
+            <!-- Pair 4: ុ · ិ (U+17BB · U+17B7) -->
+            <Key
+                latin:keySpec="&#x17BB;"
+                latin:keySecondarySpec="&#x17B7;" />
+            <!-- Pair 5: ោ · ផ (U+17C4 · U+1795) -->
+            <Key
+                latin:keySpec="&#x17C4;"
+                latin:keySecondarySpec="&#x1795;" />
+            <!-- Pair 6: ៀ · ឪ (U+17C0 · U+17AA); moreKeys: ឧ,ឱ,ឳ,ឩ,ឨ (from ឪ) -->
+            <Key
+                latin:keySpec="&#x17C0;"
+                latin:keySecondarySpec="&#x17AA;"
+                latin:moreKeys="&#x17A7;,&#x17B1;,&#x17B3;,&#x17A9;,&#x17A8;" />
+        </default>
+    </switch>
+</merge>

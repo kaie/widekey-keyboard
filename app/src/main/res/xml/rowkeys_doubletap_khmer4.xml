@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Khmer row 4: 5 pairs @ 14.4% (used with shift+delete flanking)
+     Unshifted: ឋ·ខ  ច·វ  ប·ន  &#x17BB;&#x17C6;·ម  ។·៊
+     Shifted:   ឍ·ឃ  &#x17C1;&#x17C7;·ជ  ព·ណ  &#x17BB;&#x17C7;·ំ  ៕·? -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: ឍ · ឃ (U+178D ttha · U+1783 kho) -->
+            <Key
+                latin:keySpec="&#x178D;"
+                latin:keySecondarySpec="&#x1783;" />
+            <!-- Pair 2: &#x17C1;&#x17C7; · ជ (e+reahmuk · U+1787 co); primary multi-char (swapped pos3/pos4) -->
+            <Key
+                latin:keySpec="&#x17C1;&#x17C7;"
+                latin:keySecondarySpec="&#x1787;"
+                latin:keyLabelFlags="followKeyLetterRatio" />
+            <!-- Pair 3: ព · ណ (U+1796 po · U+178E nno); moreKeys: ឞ -->
+            <Key
+                latin:keySpec="&#x1796;"
+                latin:keySecondarySpec="&#x178E;"
+                latin:moreKeys="&#x179E;" />
+            <!-- Pair 4: &#x17BB;&#x17C7; · ំ (u+reahmuk · U+17C6 nikahit); primary multi-char (swapped pos7/pos8) -->
+            <Key
+                latin:keySpec="&#x17BB;&#x17C7;"
+                latin:keySecondarySpec="&#x17C6;"
+                latin:keyLabelFlags="followKeyLetterRatio" />
+            <!-- Pair 5: ៕ · ? (U+17D5 bariyoosan · U+003F) -->
+            <Key
+                latin:keySpec="&#x17D5;"
+                latin:keySecondarySpec="\?" />
+        </case>
+        <default>
+            <!-- Pair 1: ឋ · ខ (U+178B ttha · U+1781 kha) -->
+            <Key
+                latin:keySpec="&#x178B;"
+                latin:keySecondarySpec="&#x1781;" />
+            <!-- Pair 2: ច · វ (U+1785 ca · U+179C vo) -->
+            <Key
+                latin:keySpec="&#x1785;"
+                latin:keySecondarySpec="&#x179C;" />
+            <!-- Pair 3: ប · ន (U+1794 ba · U+1793 no) -->
+            <Key
+                latin:keySpec="&#x1794;"
+                latin:keySecondarySpec="&#x1793;" />
+            <!-- Pair 4: &#x17BB;&#x17C6; · ម (u+nikahit · U+1798 mo); primary multi-char (swapped pos7/pos8) -->
+            <Key
+                latin:keySpec="&#x17BB;&#x17C6;"
+                latin:keySecondarySpec="&#x1798;"
+                latin:keyLabelFlags="followKeyLetterRatio" />
+            <!-- Pair 5: ។ · ៊ (U+17D4 khan · U+17CA triisap) -->
+            <Key
+                latin:keySpec="&#x17D4;"
+                latin:keySecondarySpec="&#x17CA;" />
+        </default>
+    </switch>
+</merge>

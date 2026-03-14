@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Thai row 3: 6 pairs @ 16.667% (rowkeys_thai3 + key_thai_kho_khuat merged)
+     Unshifted: ฟ·ห  ก·ด  เ·้  ่·า  ส·ว  ง·ฃ
+     Shifted:   ฤ·ฆ  ฏ·โ  ฌ·็  ๋·ษ  ศ·ซ  .·ฅ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: ฤ · ฆ (U+0E24 · U+0E06) -->
+            <Key
+                latin:keySpec="&#x0E24;"
+                latin:keySecondarySpec="&#x0E06;" />
+            <!-- Pair 2: ฏ · โ (U+0E0F · U+0E42) -->
+            <Key
+                latin:keySpec="&#x0E0F;"
+                latin:keySecondarySpec="&#x0E42;" />
+            <!-- Pair 3: ฌ · ็ (U+0E0C · U+0E47 MAITAIKHU) -->
+            <Key
+                latin:keySpec="&#x0E0C;"
+                latin:keySecondarySpec="&#x0E47;" />
+            <!-- Pair 4: ๋ · ษ (U+0E4B MAI CHATTAWA · U+0E29) -->
+            <Key
+                latin:keySpec="&#x0E4B;"
+                latin:keySecondarySpec="&#x0E29;" />
+            <!-- Pair 5: ศ · ซ (U+0E28 · U+0E0B) -->
+            <Key
+                latin:keySpec="&#x0E28;"
+                latin:keySecondarySpec="&#x0E0B;" />
+            <!-- Pair 6: . · ฅ (U+002E · U+0E05 KHO KHON) -->
+            <Key
+                latin:keySpec="."
+                latin:keySecondarySpec="&#x0E05;"
+                latin:keyLabelFlags="fontDefault" />
+        </case>
+        <default>
+            <!-- Pair 1: ฟ · ห (U+0E1F · U+0E2B) -->
+            <Key
+                latin:keySpec="&#x0E1F;"
+                latin:keySecondarySpec="&#x0E2B;" />
+            <!-- Pair 2: ก · ด (U+0E01 · U+0E14) -->
+            <Key
+                latin:keySpec="&#x0E01;"
+                latin:keySecondarySpec="&#x0E14;" />
+            <!-- Pair 3: เ · ้ (U+0E40 · U+0E49 MAI THO) -->
+            <Key
+                latin:keySpec="&#x0E40;"
+                latin:keySecondarySpec="&#x0E49;" />
+            <!-- Pair 4: ่ · า (U+0E48 MAI EK · U+0E32) -->
+            <Key
+                latin:keySpec="&#x0E48;"
+                latin:keySecondarySpec="&#x0E32;" />
+            <!-- Pair 5: ส · ว (U+0E2A · U+0E27) -->
+            <Key
+                latin:keySpec="&#x0E2A;"
+                latin:keySecondarySpec="&#x0E27;" />
+            <!-- Pair 6: ง · ฃ (U+0E07 · U+0E03 KHO KHUAT) -->
+            <Key
+                latin:keySpec="&#x0E07;"
+                latin:keySecondarySpec="&#x0E03;" />
+        </default>
+    </switch>
+</merge>

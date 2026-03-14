@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Khmer row 1: 6 pairs @ 16.667%
+     Unshifted: ១·២  ៣·៤  ៥·៦  ៧·៨  ៩·០  ឥ·ឲ
+     Shifted:   !·ៗ  "·៛  %·៍  ័·៏  (·)  ៌·៎ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: ! · ៗ (U+0021 · U+17D7); moreKeys: ZWJ, ZWNJ -->
+            <Key
+                latin:keySpec="!"
+                latin:keySecondarySpec="&#x17D7;"
+                latin:keyLabelFlags="fontDefault"
+                latin:moreKeys="!icon/zwj_key|&#x200D;,!icon/zwnj_key|&#x200C;" />
+            <!-- Pair 2: " · ៛ (U+0022 · U+17DB riel); moreKeys: ៑,$,€ -->
+            <Key
+                latin:keySpec="&quot;"
+                latin:keySecondarySpec="&#x17DB;"
+                latin:keyLabelFlags="fontDefault"
+                latin:moreKeys="&#x17D1;,$,&#x20AC;" />
+            <!-- Pair 3: % · ៍ (U+0025 · U+17CD toandakhiat); moreKeys: ៖,៙ -->
+            <Key
+                latin:keySpec="%"
+                latin:keySecondarySpec="&#x17CD;"
+                latin:keyLabelFlags="fontDefault"
+                latin:moreKeys="&#x17D6;,&#x17D9;" />
+            <!-- Pair 4: ័ · ៏ (U+17D0 samyok sannya · U+17CF ahsda); moreKeys: ៚,* -->
+            <Key
+                latin:keySpec="&#x17D0;"
+                latin:keySecondarySpec="&#x17CF;"
+                latin:moreKeys="&#x17DA;,*" />
+            <!-- Pair 5: ( · ) ; moreKeys: {,«,},» -->
+            <Key
+                latin:keySpec="("
+                latin:keySecondarySpec=")"
+                latin:keyLabelFlags="fontDefault"
+                latin:moreKeys="{,&#x00AB;,},&#x00BB;" />
+            <!-- Pair 6: ៌ · ៎ (U+17CC robat · U+17CE kakabat); moreKeys: × -->
+            <Key
+                latin:keySpec="&#x17CC;"
+                latin:keySecondarySpec="&#x17CE;"
+                latin:moreKeys="&#x00D7;" />
+        </case>
+        <default>
+            <!-- Pair 1: ១ · ២ (U+17E1 · U+17E2); moreKeys: ៱,៲ -->
+            <Key
+                latin:keySpec="&#x17E1;"
+                latin:keySecondarySpec="&#x17E2;"
+                latin:moreKeys="&#x17F1;,&#x17F2;" />
+            <!-- Pair 2: ៣ · ៤ (U+17E3 · U+17E4); moreKeys: ៳,៴ -->
+            <Key
+                latin:keySpec="&#x17E3;"
+                latin:keySecondarySpec="&#x17E4;"
+                latin:moreKeys="&#x17F3;,&#x17F4;" />
+            <!-- Pair 3: ៥ · ៦ (U+17E5 · U+17E6); moreKeys: ៵,៶ -->
+            <Key
+                latin:keySpec="&#x17E5;"
+                latin:keySecondarySpec="&#x17E6;"
+                latin:moreKeys="&#x17F5;,&#x17F6;" />
+            <!-- Pair 4: ៧ · ៨ (U+17E7 · U+17E8); moreKeys: ៷,៸ -->
+            <Key
+                latin:keySpec="&#x17E7;"
+                latin:keySecondarySpec="&#x17E8;"
+                latin:moreKeys="&#x17F7;,&#x17F8;" />
+            <!-- Pair 5: ៩ · ០ (U+17E9 · U+17E0); moreKeys: ៹,៰ -->
+            <Key
+                latin:keySpec="&#x17E9;"
+                latin:keySecondarySpec="&#x17E0;"
+                latin:moreKeys="&#x17F9;,&#x17F0;" />
+            <!-- Pair 6: ឥ · ឲ (U+17A5 · U+17B2); moreKeys: ឦ,ឱ -->
+            <Key
+                latin:keySpec="&#x17A5;"
+                latin:keySecondarySpec="&#x17B2;"
+                latin:moreKeys="&#x17A6;,&#x17B1;" />
+        </default>
+    </switch>
+</merge>

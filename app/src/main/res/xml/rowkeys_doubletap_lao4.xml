@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Lao row 4: 5 pairs @ 14.4% (used with shift+delete flanking)
+     Unshifted: ຜ·ປ  ແ·ອ  ຶ·ື  ທ·ມ  ໃ·ຝ
+     Shifted:   ₭·(  &#x0EAF;·@  &#x0EB6;&#x0EC9;·&#x0EB7;  &#x0EC6;·&#x0EDD;  $·) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: ₭ · ( (U+20AD kip sign · U+0028); fontDefault for ₭ -->
+            <Key
+                latin:keySpec="&#x20AD;"
+                latin:keySecondarySpec="("
+                latin:keyLabelFlags="fontDefault" />
+            <!-- Pair 2: &#x0EAF; · @ (U+0EAF lao ellipsis · U+0040) -->
+            <Key
+                latin:keySpec="&#x0EAF;"
+                latin:keySecondarySpec="\@" />
+            <!-- Pair 3: &#x0EB6;&#x0EC9; · &#x0EB7; (vowel y+mai tho · U+0EB7 vowel yy);
+                 primary multi-char; moreKeys: &#x0EB7;&#x0EC9; (full shifted form of secondary) -->
+            <Key
+                latin:keySpec="&#x0EB6;&#x0EC9;"
+                latin:keySecondarySpec="&#x0EB7;"
+                latin:keyLabelFlags="followKeyLetterRatio"
+                latin:moreKeys="&#x0EB7;&#x0EC9;" />
+            <!-- Pair 4: &#x0EC6; · &#x0EDD; (U+0EC6 ko la · U+0EDD ho mo) -->
+            <Key
+                latin:keySpec="&#x0EC6;"
+                latin:keySecondarySpec="&#x0EDD;" />
+            <!-- Pair 5: $ · ) -->
+            <Key
+                latin:keySpec="$"
+                latin:keySecondarySpec=")"
+                latin:keyLabelFlags="fontDefault" />
+        </case>
+        <default>
+            <!-- Pair 1: ຜ · ປ (U+0E9C · U+0E9B) -->
+            <Key
+                latin:keySpec="&#x0E9C;"
+                latin:keySecondarySpec="&#x0E9B;" />
+            <!-- Pair 2: ແ · ອ (U+0EC1 · U+0EAD) -->
+            <Key
+                latin:keySpec="&#x0EC1;"
+                latin:keySecondarySpec="&#x0EAD;" />
+            <!-- Pair 3: ຶ · ື (U+0EB6 · U+0EB7) -->
+            <Key
+                latin:keySpec="&#x0EB6;"
+                latin:keySecondarySpec="&#x0EB7;" />
+            <!-- Pair 4: ທ · ມ (U+0E97 · U+0EA1) -->
+            <Key
+                latin:keySpec="&#x0E97;"
+                latin:keySecondarySpec="&#x0EA1;" />
+            <!-- Pair 5: ໃ · ຝ (U+0EC3 · U+0E9D) -->
+            <Key
+                latin:keySpec="&#x0EC3;"
+                latin:keySecondarySpec="&#x0E9D;" />
+        </default>
+    </switch>
+</merge>

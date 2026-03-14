@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Khmer row 3: 6 pairs @ 16.667%
+     Unshifted: ា·ស  ដ·ថ  ង·ហ  ្·ក  ល·ើ  ់·ឮ
+     Shifted:   &#x17B6;&#x17C6;·ៃ  ឌ·ធ  អ·ះ  ញ·គ  &#x17C4;&#x17C7;·ឡ  ៉·ឯ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: &#x17B6;&#x17C6; · ៃ (sara aa+nikahit · U+17C3); primary multi-char -->
+            <Key
+                latin:keySpec="&#x17B6;&#x17C6;"
+                latin:keySecondarySpec="&#x17C3;"
+                latin:keyLabelFlags="followKeyLetterRatio" />
+            <!-- Pair 2: ឌ · ធ (U+178C · U+1792) -->
+            <Key
+                latin:keySpec="&#x178C;"
+                latin:keySecondarySpec="&#x1792;" />
+            <!-- Pair 3: អ · ះ (U+17A2 · U+17C7 reahmuk); moreKeys: ៈ -->
+            <Key
+                latin:keySpec="&#x17A2;"
+                latin:keySecondarySpec="&#x17C7;"
+                latin:moreKeys="&#x17C8;" />
+            <!-- Pair 4: ញ · គ (U+1789 · U+1782); moreKeys: ឝ -->
+            <Key
+                latin:keySpec="&#x1789;"
+                latin:keySecondarySpec="&#x1782;"
+                latin:moreKeys="&#x179D;" />
+            <!-- Pair 5: &#x17C4;&#x17C7; · ឡ (oo+reahmuk · U+17A1); primary multi-char (swapped pos9/pos10) -->
+            <Key
+                latin:keySpec="&#x17C4;&#x17C7;"
+                latin:keySecondarySpec="&#x17A1;"
+                latin:keyLabelFlags="followKeyLetterRatio|autoScale" />
+            <!-- Pair 6: ៉ · ឯ (U+17C9 muusikatoan · U+17AF) -->
+            <Key
+                latin:keySpec="&#x17C9;"
+                latin:keySecondarySpec="&#x17AF;" />
+        </case>
+        <default>
+            <!-- Pair 1: ា · ស (U+17B6 · U+179F) -->
+            <Key
+                latin:keySpec="&#x17B6;"
+                latin:keySecondarySpec="&#x179F;" />
+            <!-- Pair 2: ដ · ថ (U+178A · U+1790) -->
+            <Key
+                latin:keySpec="&#x178A;"
+                latin:keySecondarySpec="&#x1790;" />
+            <!-- Pair 3: ង · ហ (U+1784 · U+17A0) -->
+            <Key
+                latin:keySpec="&#x1784;"
+                latin:keySecondarySpec="&#x17A0;" />
+            <!-- Pair 4: ្ · ក (U+17D2 coeng · U+1780) -->
+            <Key
+                latin:keySpec="&#x17D2;"
+                latin:keySecondarySpec="&#x1780;" />
+            <!-- Pair 5: ល · ើ (U+179B · U+17BE) -->
+            <Key
+                latin:keySpec="&#x179B;"
+                latin:keySecondarySpec="&#x17BE;" />
+            <!-- Pair 6: ់ · ឮ (U+17CB bantoc · U+17AE); moreKeys: ឭ,ឰ (from ឮ) -->
+            <Key
+                latin:keySpec="&#x17CB;"
+                latin:keySecondarySpec="&#x17AE;"
+                latin:moreKeys="&#x17AD;,&#x17B0;" />
+        </default>
+    </switch>
+</merge>

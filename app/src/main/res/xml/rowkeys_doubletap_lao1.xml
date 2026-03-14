@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Lao row 1: 6 pairs @ 16.667%
+     Unshifted: ຢ·ຟ  ໂ·ຖ  ຸ·ູ  ຄ·ຕ  ຈ·ຂ  ຊ·ໍ
+     Shifted:   ໑·໒  ໓·໔  ໌·ຼ  ໕·໖  ໗·໘  &#x0ECD;&#x0EC8;·໙ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: ໑ · ໒ (U+0ED1 · U+0ED2) -->
+            <Key
+                latin:keySpec="&#x0ED1;"
+                latin:keySecondarySpec="&#x0ED2;" />
+            <!-- Pair 2: ໓ · ໔ (U+0ED3 · U+0ED4) -->
+            <Key
+                latin:keySpec="&#x0ED3;"
+                latin:keySecondarySpec="&#x0ED4;" />
+            <!-- Pair 3: ໌ · ຼ (U+0ECC cancellation mark · U+0EBC semivowel lo) -->
+            <Key
+                latin:keySpec="&#x0ECC;"
+                latin:keySecondarySpec="&#x0EBC;" />
+            <!-- Pair 4: ໕ · ໖ (U+0ED5 · U+0ED6) -->
+            <Key
+                latin:keySpec="&#x0ED5;"
+                latin:keySecondarySpec="&#x0ED6;" />
+            <!-- Pair 5: ໗ · ໘ (U+0ED7 · U+0ED8) -->
+            <Key
+                latin:keySpec="&#x0ED7;"
+                latin:keySecondarySpec="&#x0ED8;" />
+            <!-- Pair 6: &#x0ECD;&#x0EC8; · ໙ (niggahita+mai ek · U+0ED9); primary is multi-char -->
+            <Key
+                latin:keySpec="&#x0ECD;&#x0EC8;"
+                latin:keySecondarySpec="&#x0ED9;"
+                latin:keyLabelFlags="followKeyLetterRatio" />
+        </case>
+        <default>
+            <!-- Pair 1: ຢ · ຟ (U+0EA2 · U+0E9F); moreKeys: ໑,໒ -->
+            <Key
+                latin:keySpec="&#x0EA2;"
+                latin:keySecondarySpec="&#x0E9F;"
+                latin:moreKeys="&#x0ED1;,&#x0ED2;" />
+            <!-- Pair 2: ໂ · ຖ (U+0EC2 · U+0E96); moreKeys: ໓,໔ -->
+            <Key
+                latin:keySpec="&#x0EC2;"
+                latin:keySecondarySpec="&#x0E96;"
+                latin:moreKeys="&#x0ED3;,&#x0ED4;" />
+            <!-- Pair 3: ຸ · ູ (U+0EB8 · U+0EB9) -->
+            <Key
+                latin:keySpec="&#x0EB8;"
+                latin:keySecondarySpec="&#x0EB9;" />
+            <!-- Pair 4: ຄ · ຕ (U+0E84 · U+0E95); moreKeys: ໕,໖ -->
+            <Key
+                latin:keySpec="&#x0E84;"
+                latin:keySecondarySpec="&#x0E95;"
+                latin:moreKeys="&#x0ED5;,&#x0ED6;" />
+            <!-- Pair 5: ຈ · ຂ (U+0E88 · U+0E82); moreKeys: ໗,໘ -->
+            <Key
+                latin:keySpec="&#x0E88;"
+                latin:keySecondarySpec="&#x0E82;"
+                latin:moreKeys="&#x0ED7;,&#x0ED8;" />
+            <!-- Pair 6: ຊ · ໍ (U+0E8A · U+0ECD niggahita); moreKeys: ໙ -->
+            <Key
+                latin:keySpec="&#x0E8A;"
+                latin:keySecondarySpec="&#x0ECD;"
+                latin:moreKeys="&#x0ED9;" />
+        </default>
+    </switch>
+</merge>
