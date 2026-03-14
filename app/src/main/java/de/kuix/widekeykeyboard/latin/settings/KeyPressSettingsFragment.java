@@ -57,6 +57,7 @@ public final class KeyPressSettingsFragment extends SubScreenFragment {
 
         setupKeypressSoundVolumeSettings();
         setupKeyLongpressTimeoutSettings();
+        setupDoubleTapTimeoutSettings();
     }
 
     private void setupKeypressSoundVolumeSettings() {
@@ -141,6 +142,45 @@ public final class KeyPressSettingsFragment extends SubScreenFragment {
             @Override
             public int readDefaultValue(final String key) {
                 return Settings.readDefaultKeyLongpressTimeout(res);
+            }
+
+            @Override
+            public String getValueText(final int value) {
+                return res.getString(R.string.abbreviation_unit_milliseconds, value);
+            }
+
+            @Override
+            public void feedbackValue(final int value) {}
+        });
+    }
+
+    private void setupDoubleTapTimeoutSettings() {
+        final SharedPreferences prefs = getSharedPreferences();
+        final Resources res = getResources();
+        final SeekBarDialogPreference pref = (SeekBarDialogPreference)findPreference(
+                Settings.PREF_DOUBLETAP_TIMEOUT);
+        if (pref == null) {
+            return;
+        }
+        pref.setInterface(new SeekBarDialogPreference.ValueProxy() {
+            @Override
+            public void writeValue(final int value, final String key) {
+                prefs.edit().putInt(key, value).apply();
+            }
+
+            @Override
+            public void writeDefaultValue(final String key) {
+                prefs.edit().remove(key).apply();
+            }
+
+            @Override
+            public int readValue(final String key) {
+                return Settings.readDoubleTapTimeout(prefs, res);
+            }
+
+            @Override
+            public int readDefaultValue(final String key) {
+                return res.getInteger(R.integer.config_default_doubletap_timeout);
             }
 
             @Override

@@ -33,6 +33,11 @@
     <integer name="config_max_longpress_timeout">700</integer>
     <integer name="config_min_longpress_timeout">100</integer>
     <integer name="config_longpress_timeout_step">10</integer>
+
+    <integer name="config_default_doubletap_timeout">333</integer>
+    <integer name="config_max_doubletap_timeout">600</integer>
+    <integer name="config_min_doubletap_timeout">100</integer>
+    <integer name="config_doubletap_timeout_step">25</integer>
     <integer name="config_max_more_keys_column">5</integer>
 
     <!-- Long pressing shift will invoke caps-lock if > 0, never invoke caps-lock if == 0 -->

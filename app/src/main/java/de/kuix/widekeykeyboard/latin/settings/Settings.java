@@ -57,6 +57,7 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
     public static final String PREF_ENABLED_SUBTYPES = "pref_enabled_subtypes";
     public static final String PREF_KEYPRESS_SOUND_VOLUME = "pref_keypress_sound_volume";
     public static final String PREF_KEY_LONGPRESS_TIMEOUT = "pref_key_longpress_timeout";
+    public static final String PREF_DOUBLETAP_TIMEOUT = "pref_doubletap_timeout";
     public static final String PREF_KEYBOARD_HEIGHT = "pref_keyboard_height";
     public static final String PREF_BOTTOM_OFFSET_PORTRAIT = "pref_bottom_offset_portrait";
     public static final String PREF_KEYBOARD_COLOR = "pref_keyboard_color";
@@ -282,6 +283,14 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
 
     public static int readDefaultKeyLongpressTimeout(final Resources res) {
         return res.getInteger(R.integer.config_default_longpress_key_timeout);
+    }
+
+    public static int readDoubleTapTimeout(final SharedPreferences prefs,
+            final Resources res) {
+        final int milliseconds = prefs.getInt(
+                PREF_DOUBLETAP_TIMEOUT, UNDEFINED_PREFERENCE_VALUE_INT);
+        return (milliseconds != UNDEFINED_PREFERENCE_VALUE_INT) ? milliseconds
+                : res.getInteger(R.integer.config_default_doubletap_timeout);
     }
 
     public static float readKeyboardHeight(final SharedPreferences prefs,

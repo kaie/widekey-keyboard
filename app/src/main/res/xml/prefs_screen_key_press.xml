@@ -44,4 +44,10 @@
         latin:minValue="@integer/config_min_longpress_timeout"
         latin:maxValue="@integer/config_max_longpress_timeout"
         latin:stepValue="@integer/config_longpress_timeout_step" />
+    <de.kuix.widekeykeyboard.latin.settings.SeekBarDialogPreference
+        android:key="pref_doubletap_timeout"
+        android:title="@string/prefs_doubletap_timeout_settings"
+        latin:minValue="@integer/config_min_doubletap_timeout"
+        latin:maxValue="@integer/config_max_doubletap_timeout"
+        latin:stepValue="@integer/config_doubletap_timeout_step" />
 </PreferenceScreen>

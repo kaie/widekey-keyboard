@@ -189,7 +189,7 @@ public final class TimerHandler extends LeakGuardHandlerWrapper<DrawingProxy>
     public void startPendingSingleTapTimer(final PointerTracker tracker) {
         removeMessages(MSG_PENDING_SINGLE_TAP);
         sendMessageDelayed(obtainMessage(MSG_PENDING_SINGLE_TAP, tracker),
-                PointerTracker.DOUBLETAP_TIMEOUT_MS);
+                PointerTracker.getDoubleTapTimeoutMs());
     }
 
     @Override

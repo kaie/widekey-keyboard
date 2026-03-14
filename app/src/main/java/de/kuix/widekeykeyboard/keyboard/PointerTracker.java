@@ -113,7 +113,10 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
     private MoreKeysPanel mMoreKeysPanel;
 
     // Timeout (ms) to wait for a second tap before committing the primary code.
-    public static final int DOUBLETAP_TIMEOUT_MS = 333;
+    // Read from settings; this fallback is only used before settings are available.
+    public static int getDoubleTapTimeoutMs() {
+        return Settings.getInstance().getCurrent().mDoubleTapTimeout;
+    }
 
     // Pending double-tap state: the key whose primary code is deferred waiting for a second tap.
     private static Key sPendingDoubleTapKey = null;

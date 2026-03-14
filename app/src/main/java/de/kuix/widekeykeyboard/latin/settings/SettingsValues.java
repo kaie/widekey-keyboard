@@ -45,6 +45,7 @@ public class SettingsValues {
     public final boolean mShowsLanguageSwitchKey;
     public final boolean mImeSwitchEnabled;
     public final int mKeyLongpressTimeout;
+    public final int mDoubleTapTimeout;
     public final boolean mShowSpecialChars;
     public final boolean mShowNumberRow;
     public final boolean mSpaceSwipeEnabled;
@@ -82,6 +83,7 @@ public class SettingsValues {
 
         // Compute other readable settings
         mKeyLongpressTimeout = Settings.readKeyLongpressTimeout(prefs, res);
+        mDoubleTapTimeout = Settings.readDoubleTapTimeout(prefs, res);
         mKeypressSoundVolume = Settings.readKeypressSoundVolume(prefs);
         mKeyPreviewPopupDismissDelay = res.getInteger(R.integer.config_key_preview_linger_timeout);
         mKeyboardHeightScale = Settings.readKeyboardHeight(prefs, DEFAULT_SIZE_SCALE);
