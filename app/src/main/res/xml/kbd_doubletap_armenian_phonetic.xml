@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<switch xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <case latin:showNumberRow="true">
-        <Keyboard
-            latin:verticalGap="@fraction/config_key_vertical_gap_5row"
-            latin:bonusHeight="@fraction/config_key_bonus_height_5row"
-            latin:rowHeight="20%p">
-            <include latin:keyboardLayout="@xml/key_styles_common" />
-            <include latin:keyboardLayout="@xml/row_doubletap_qwerty0" />
-            <include latin:keyboardLayout="@xml/rows_doubletap_armenian_phonetic" />
-        </Keyboard>
-    </case>
-    <default>
-        <Keyboard
-            latin:verticalGap="@fraction/config_key_vertical_gap_5row"
-            latin:bonusHeight="@fraction/config_key_bonus_height_5row"
-            latin:rowHeight="20%p">
-            <include latin:keyboardLayout="@xml/key_styles_common" />
-            <include latin:keyboardLayout="@xml/rows_doubletap_armenian_phonetic" />
-        </Keyboard>
-    </default>
-</switch>
+<!-- Armenian phonetic already has 5 key rows + spacebar = 5 rows total.
+     A number row would add a 6th row which doesn't fit with 5-row sizing,
+     so the number row setting is intentionally ignored here. -->
+<Keyboard
+    xmlns:latin="http://schemas.android.com/apk/res-auto"
+    latin:verticalGap="@fraction/config_key_vertical_gap_5row"
+    latin:bonusHeight="@fraction/config_key_bonus_height_5row"
+    latin:rowHeight="20%p">
+    <include latin:keyboardLayout="@xml/key_styles_common" />
+    <include latin:keyboardLayout="@xml/rows_doubletap_armenian_phonetic" />
+</Keyboard>
