@@ -648,6 +648,29 @@ public class Key implements Comparable<Key> {
         return isShiftedLetterActivated() ? mHintLabel : mLabel;
     }
 
+    // Returns the label to show in the key preview popup for a single tap.
+    // For doubletap keys: RTL single-tap commits the secondary (right) char, so show that.
+    //                     LTR single-tap commits the primary (left) char, so show that.
+    public final String getPreviewLabelForSingleTap(final boolean isRtl) {
+        if (hasSecondaryCode() && isRtl && mSecondaryLabel != null) {
+            return mSecondaryLabel;
+        }
+        return getPreviewLabel();
+    }
+
+    // Returns the label to show in the key preview popup for a double tap.
+    // For doubletap keys: RTL double-tap commits the primary (left) char, so show that.
+    //                     LTR double-tap commits the secondary (right) char, so show that.
+    public final String getPreviewLabelForDoubleTap(final boolean isRtl) {
+        if (hasSecondaryCode()) {
+            if (isRtl) {
+                return getPreviewLabel();
+            }
+            return mSecondaryLabel != null ? mSecondaryLabel : getPreviewLabel();
+        }
+        return getPreviewLabel();
+    }
+
     private boolean previewHasLetterSize() {
         return (mLabelFlags & LABEL_FLAGS_FOLLOW_KEY_LETTER_RATIO) != 0
                 || StringUtils.codePointCount(getPreviewLabel()) == 1;

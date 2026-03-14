@@ -363,8 +363,15 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         // Even if the key is disabled, it should respond if it is in the altCodeWhileTyping state.
         final boolean altersCode = key.altCodeWhileTyping() && sTimerProxy.isTypingState();
 
-        // Suppress popup preview on second tap of a double-tap key (it would show the wrong char).
-        sDrawingProxy.onKeyPressed(key, !mIsSecondDoubleTap);
+        // For the second tap of a doubletap key, show a preview for the char that will be
+        // committed (primary for RTL, secondary for LTR). For all other presses, show the
+        // standard single-tap preview (which getPreviewLabelForSingleTap handles correctly).
+        if (mIsSecondDoubleTap && key.hasSecondaryCode()) {
+            final boolean isRtl = mKeyboard != null && mKeyboard.isRtlKeyboard();
+            sDrawingProxy.onKeyPressedDoubleTap(key, isRtl);
+        } else {
+            sDrawingProxy.onKeyPressed(key, true);
+        }
 
         if (key.isShift()) {
             for (final Key shiftKey : mKeyboard.mShiftKeys) {

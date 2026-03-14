@@ -50,7 +50,8 @@ public class KeyPreviewView extends TextView {
     }
 
     public void setPreviewVisual(final Key key, final KeyboardIconsSet iconsSet,
-            final KeyDrawParams drawParams, final int backgroundColor) {
+            final KeyDrawParams drawParams, final int backgroundColor,
+            final String overrideLabel) {
         // What we show as preview should match what we show on a key top in onDraw().
         final int iconId = key.getIconId();
         if (iconId != KeyboardIconsSet.ICON_UNDEFINED) {
@@ -64,7 +65,8 @@ public class KeyPreviewView extends TextView {
         setTextSize(TypedValue.COMPLEX_UNIT_PX, key.selectPreviewTextSize(drawParams));
         setTypeface(key.selectPreviewTypeface(drawParams));
         // TODO Should take care of temporaryShiftLabel here.
-        setTextAndScaleX(key.getPreviewLabel());
+        final String label = overrideLabel != null ? overrideLabel : key.getPreviewLabel();
+        setTextAndScaleX(label);
         setColor(backgroundColor);
     }
 

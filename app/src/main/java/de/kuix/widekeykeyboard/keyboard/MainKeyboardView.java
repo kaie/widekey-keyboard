@@ -298,11 +298,23 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
         key.onPressed();
         invalidateKey(key);
         if (withPreview && !key.noKeyPreview()) {
-            showKeyPreview(key);
+            final Keyboard keyboard = getKeyboard();
+            final boolean isRtl = keyboard != null && keyboard.isRtlKeyboard();
+            showKeyPreview(key, key.getPreviewLabelForSingleTap(isRtl));
         }
     }
 
-    private void showKeyPreview(final Key key) {
+    // Implements {@link DrawingProxy#onKeyPressedDoubleTap(Key,boolean)}.
+    @Override
+    public void onKeyPressedDoubleTap(final Key key, final boolean isRtl) {
+        key.onPressed();
+        invalidateKey(key);
+        if (!key.noKeyPreview()) {
+            showKeyPreview(key, key.getPreviewLabelForDoubleTap(isRtl));
+        }
+    }
+
+    private void showKeyPreview(final Key key, final String overrideLabel) {
         final Keyboard keyboard = getKeyboard();
         if (keyboard == null) {
             return;
@@ -317,7 +329,8 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
         getLocationInWindow(mOriginCoords);
         final int backgroundColor = mTheme.mCustomColorSupport ? mCustomColor : Color.TRANSPARENT;
         mKeyPreviewChoreographer.placeAndShowKeyPreview(key, keyboard.mIconsSet, getKeyDrawParams(),
-                mOriginCoords, mDrawingPreviewPlacerView, isHardwareAccelerated(), backgroundColor);
+                mOriginCoords, mDrawingPreviewPlacerView, isHardwareAccelerated(), backgroundColor,
+                overrideLabel);
     }
 
     private void dismissKeyPreviewWithoutDelay(final Key key) {

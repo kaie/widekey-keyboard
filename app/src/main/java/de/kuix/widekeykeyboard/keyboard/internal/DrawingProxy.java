@@ -30,6 +30,14 @@ public interface DrawingProxy {
     void onKeyPressed(Key key, boolean withPreview);
 
     /**
+     * Called when the second tap of a doubletap sequence is detected. Shows a popup preview
+     * for the character that will actually be committed (primary for RTL, secondary for LTR).
+     * @param key the doubletap {@link Key} being pressed for the second time.
+     * @param isRtl true if the keyboard is RTL.
+     */
+    void onKeyPressedDoubleTap(Key key, boolean isRtl);
+
+    /**
      * Called when a key is being released.
      * @param key the {@link Key} that is being released.
      * @param withAnimation when true, key popup preview should be dismissed with animation.
