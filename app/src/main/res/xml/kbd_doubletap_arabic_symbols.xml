@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<switch xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <case latin:showNumberRow="true">
+        <Keyboard
+            latin:bonusHeight="@fraction/config_key_bonus_height_5row">
+            <include latin:keyboardLayout="@xml/rows_doubletap_arabic_symbols" />
+        </Keyboard>
+    </case>
+    <default>
+        <Keyboard>
+            <include latin:keyboardLayout="@xml/rows_doubletap_arabic_symbols" />
+        </Keyboard>
+    </default>
+</switch>

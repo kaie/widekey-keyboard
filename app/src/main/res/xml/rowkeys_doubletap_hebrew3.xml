@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Hebrew row 3: 4 pairs + 1 solo × 20%
+     Pairs (left·right): ז·ס  ב·ה  נ·מ  צ·ת  solo: ץ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ז·ס -->
+    <Key
+        latin:keySpec="&#x05D6;"
+        latin:keySecondarySpec="&#x05E1;"
+        latin:moreKeys="&#x05D6;&#x05F3;" />
+    <!-- ב·ה -->
+    <Key
+        latin:keySpec="&#x05D1;"
+        latin:keySecondarySpec="&#x05D4;" />
+    <!-- נ·מ -->
+    <Key
+        latin:keySpec="&#x05E0;"
+        latin:keySecondarySpec="&#x05DE;" />
+    <!-- צ·ת -->
+    <Key
+        latin:keySpec="&#x05E6;"
+        latin:keySecondarySpec="&#x05EA;"
+        latin:moreKeys="&#x05E6;&#x05F3;" />
+    <!-- ץ solo -->
+    <Key
+        latin:keySpec="&#x05E5;"
+        latin:moreKeys="&#x05E5;&#x05F3;" />
+</merge>

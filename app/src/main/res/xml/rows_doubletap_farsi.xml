@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Farsi layout rows.
+     Row 1: 5 pairs × 16.667% + 1 solo × 16.667% = 100%
+     Row 2: 5 pairs × 16.667% + 1 solo × 16.667% = 100%
+     Row 3: 5 pairs × 18% + delete(fillRight) = 100%
+            Farsi has no uppercase so no shift key.
+     Row 4: doubletap spacebar row -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Row
+        latin:keyWidth="16.667%p"
+        latin:keyLabelFlags="fontNormal">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_farsi1" />
+    </Row>
+    <Row
+        latin:keyWidth="16.667%p"
+        latin:keyLabelFlags="fontNormal">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_farsi2" />
+    </Row>
+    <Row
+        latin:keyWidth="18%p"
+        latin:keyLabelFlags="fontNormal">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_farsi3" />
+        <Key
+            latin:keyStyle="deleteKeyStyle"
+            latin:keyWidth="fillRight" />
+    </Row>
+    <include latin:keyboardLayout="@xml/row_doubletap_farsi4" />
+</merge>

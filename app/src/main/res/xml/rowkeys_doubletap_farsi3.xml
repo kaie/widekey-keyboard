@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Farsi row 3: 5 pairs × 18%
+     Pairs (left·right): ظ·ط  ژ·ز  ر·ذ  د·پ  و·چ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ظ·ط -->
+    <Key
+        latin:keySpec="&#x0638;"
+        latin:keySecondarySpec="&#x0637;" />
+    <!-- ژ·ز -->
+    <Key
+        latin:keySpec="&#x0698;"
+        latin:keySecondarySpec="&#x0632;" />
+    <!-- ر·ذ -->
+    <Key
+        latin:keySpec="&#x0631;"
+        latin:keySecondarySpec="&#x0630;" />
+    <!-- د·پ -->
+    <Key
+        latin:keySpec="&#x062F;"
+        latin:keySecondarySpec="&#x067E;" />
+    <!-- و·چ -->
+    <Key
+        latin:keySpec="&#x0648;"
+        latin:keySecondarySpec="&#x0686;"
+        latin:moreKeys="&#x0624;" />
+</merge>

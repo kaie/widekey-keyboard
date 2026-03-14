@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Arabic symbols row 1: 5 Arabic-Indic digit pairs × 20%
+     ١·٢  ٣·٤  ٥·٦  ٧·٨  ٩·٠ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="&#x0661;" latin:keySecondarySpec="&#x0662;"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_1"
+        latin:moreKeys="!text/morekeys_symbols_1" />
+    <Key latin:keySpec="&#x0663;" latin:keySecondarySpec="&#x0664;"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_3"
+        latin:moreKeys="!text/morekeys_symbols_3" />
+    <Key latin:keySpec="&#x0665;" latin:keySecondarySpec="&#x0666;"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_5"
+        latin:moreKeys="!text/morekeys_symbols_5" />
+    <Key latin:keySpec="&#x0667;" latin:keySecondarySpec="&#x0668;"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_7"
+        latin:moreKeys="!text/morekeys_symbols_7" />
+    <Key latin:keySpec="&#x0669;" latin:keySecondarySpec="&#x0660;"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_9"
+        latin:moreKeys="!text/morekeys_symbols_9" />
+</merge>

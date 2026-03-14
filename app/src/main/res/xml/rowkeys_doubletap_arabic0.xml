@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Arabic number row: 5 Arabic-Indic digit pairs.
+     ١·٢  ٣·٤  ٥·٦  ٧·٨  ٩·٠ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="&#x0661;" latin:keySecondarySpec="&#x0662;" />
+    <Key latin:keySpec="&#x0663;" latin:keySecondarySpec="&#x0664;" />
+    <Key latin:keySpec="&#x0665;" latin:keySecondarySpec="&#x0666;" />
+    <Key latin:keySpec="&#x0667;" latin:keySecondarySpec="&#x0668;" />
+    <Key latin:keySpec="&#x0669;" latin:keySecondarySpec="&#x0660;" />
+</merge>

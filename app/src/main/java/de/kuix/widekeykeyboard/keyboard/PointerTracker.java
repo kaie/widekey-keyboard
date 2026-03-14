@@ -751,13 +751,15 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
             return;
         }
         if (currentKey != null && currentKey.hasSecondaryCode() && !isInDraggingFinger) {
+            final boolean isRtl = mKeyboard != null && mKeyboard.isRtlKeyboard();
             if (mIsSecondDoubleTap) {
-                // Second tap confirmed: commit secondary code immediately.
+                // Second tap confirmed: commit the "double-tap" code immediately.
+                // For RTL keyboards, double tap commits the primary (left) code.
+                // For LTR keyboards, double tap commits the secondary (right) code.
                 mIsSecondDoubleTap = false;
-                callListenerOnCodeInput(currentKey, currentKey.getSecondaryCode(),
-                        mKeyX, mKeyY, false /* isKeyRepeat */);
-                callListenerOnRelease(currentKey, currentKey.getSecondaryCode(),
-                        false /* withSliding */);
+                final int code = isRtl ? currentKey.getCode() : currentKey.getSecondaryCode();
+                callListenerOnCodeInput(currentKey, code, mKeyX, mKeyY, false /* isKeyRepeat */);
+                callListenerOnRelease(currentKey, code, false /* withSliding */);
             } else {
                 // First tap: defer commit until timeout or second tap.
                 sPendingDoubleTapKey = currentKey;
@@ -928,7 +930,7 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         callListenerOnRelease(key, code, false /* withSliding */);
     }
 
-    /** Commit the pending primary code immediately (called when a different key is pressed). */
+    /** Commit the pending single-tap code immediately (called when a different key is pressed). */
     private void flushPendingDoubleTap() {
         sTimerProxy.cancelPendingSingleTapTimer();
         final Key key = sPendingDoubleTapKey;
@@ -936,8 +938,9 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         final int y = sPendingDoubleTapKeyY;
         sPendingDoubleTapKey = null;
         if (key == null) return;
-        callListenerOnCodeInput(key, key.getCode(), x, y, false /* isKeyRepeat */);
-        callListenerOnRelease(key, key.getCode(), false /* withSliding */);
+        final int code = getSingleTapCode(key);
+        callListenerOnCodeInput(key, code, x, y, false /* isKeyRepeat */);
+        callListenerOnRelease(key, code, false /* withSliding */);
     }
 
     /** Called by TimerHandler when the single-tap timeout expires with no second tap. */
@@ -947,8 +950,21 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         final int y = sPendingDoubleTapKeyY;
         sPendingDoubleTapKey = null;
         if (key == null) return;
-        callListenerOnCodeInput(key, key.getCode(), x, y, false /* isKeyRepeat */);
-        callListenerOnRelease(key, key.getCode(), false /* withSliding */);
+        final int code = getSingleTapCode(key);
+        callListenerOnCodeInput(key, code, x, y, false /* isKeyRepeat */);
+        callListenerOnRelease(key, code, false /* withSliding */);
+    }
+
+    /**
+     * Returns the code to commit on a single tap for a doubletap key.
+     * For LTR keyboards: primary code (left character).
+     * For RTL keyboards: secondary code (right character).
+     */
+    private int getSingleTapCode(final Key key) {
+        if (mKeyboard != null && mKeyboard.isRtlKeyboard()) {
+            return key.getSecondaryCode();
+        }
+        return key.getCode();
     }
 
     private void startRepeatKey(final Key key) {

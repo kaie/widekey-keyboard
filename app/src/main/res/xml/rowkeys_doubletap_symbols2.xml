@@ -27,6 +27,16 @@
             <Key latin:keySpec="\#" latin:keySecondarySpec="&#x00A3;"
                 latin:moreKeys="&#x2116;,&#x00A2;" />
         </case>
+        <!-- U+20AA: "₪" NEW SHEKEL SIGN -->
+        <case latin:languageCode="he|iw">
+            <Key latin:keySpec="\#" latin:keySecondarySpec="&#x20AA;"
+                latin:moreKeys="&#x2116;,&#x00A2;" />
+        </case>
+        <!-- U+FDFC: "﷼" RIAL SIGN -->
+        <case latin:languageCode="fa">
+            <Key latin:keySpec="\#" latin:keySecondarySpec="&#xFDFC;"
+                latin:moreKeys="&#x2116;,&#x00A2;" />
+        </case>
         <default>
             <Key latin:keySpec="\#" latin:keySecondarySpec="$"
                 latin:moreKeys="&#x2116;,&#x00A2;" />

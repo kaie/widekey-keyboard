@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Farsi symbols row 1: 5 Extended Arabic-Indic digit pairs × 20%
+     ۱·۲  ۳·۴  ۵·۶  ۷·۸  ۹·۰ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="&#x06F1;" latin:keySecondarySpec="&#x06F2;"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_1"
+        latin:moreKeys="!text/morekeys_symbols_1" />
+    <Key latin:keySpec="&#x06F3;" latin:keySecondarySpec="&#x06F4;"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_3"
+        latin:moreKeys="!text/morekeys_symbols_3" />
+    <Key latin:keySpec="&#x06F5;" latin:keySecondarySpec="&#x06F6;"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_5"
+        latin:moreKeys="!text/morekeys_symbols_5" />
+    <Key latin:keySpec="&#x06F7;" latin:keySecondarySpec="&#x06F8;"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_7"
+        latin:moreKeys="!text/morekeys_symbols_7" />
+    <Key latin:keySpec="&#x06F9;" latin:keySecondarySpec="&#x06F0;"
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_9"
+        latin:moreKeys="!text/morekeys_symbols_9" />
+</merge>

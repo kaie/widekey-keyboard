@@ -113,6 +113,14 @@ public class Keyboard {
         return mSortedKeys;
     }
 
+    public boolean isRtlKeyboard() {
+        if (mId == null) return false;
+        final java.util.Locale locale = mId.getLocale();
+        if (locale == null) return false;
+        return android.text.TextUtils.getLayoutDirectionFromLocale(locale)
+                == android.view.View.LAYOUT_DIRECTION_RTL;
+    }
+
     public boolean isDoubleTapKeyboard() {
         if (mIsDoubleTapKeyboard == null) {
             mIsDoubleTapKeyboard = false;

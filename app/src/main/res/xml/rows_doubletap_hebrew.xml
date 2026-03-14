@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Hebrew layout rows.
+     Row 1: 5 pairs × 20% = 100%
+     Row 2: 5 pairs × 20% = 100%
+     Row 3: 4 pairs × 18% + 1 solo × 18% + delete(fillRight=10%) = 100%
+            Hebrew has no uppercase so no shift key.
+     Row 4: doubletap spacebar row -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Row latin:keyWidth="20%p">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_hebrew1" />
+    </Row>
+    <Row latin:keyWidth="20%p">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_hebrew2" />
+    </Row>
+    <Row latin:keyWidth="18%p">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_hebrew3" />
+        <Key
+            latin:keyStyle="deleteKeyStyle"
+            latin:keyWidth="fillRight" />
+    </Row>
+    <include latin:keyboardLayout="@xml/row_doubletap_qwerty4" />
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Farsi number row: 5 Extended Arabic-Indic digit pairs.
+     ۱·۲  ۳·۴  ۵·۶  ۷·۸  ۹·۰ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="&#x06F1;" latin:keySecondarySpec="&#x06F2;" />
+    <Key latin:keySpec="&#x06F3;" latin:keySecondarySpec="&#x06F4;" />
+    <Key latin:keySpec="&#x06F5;" latin:keySecondarySpec="&#x06F6;" />
+    <Key latin:keySpec="&#x06F7;" latin:keySecondarySpec="&#x06F8;" />
+    <Key latin:keySpec="&#x06F9;" latin:keySecondarySpec="&#x06F0;" />
+</merge>

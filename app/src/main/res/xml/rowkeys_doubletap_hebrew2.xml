@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Hebrew row 2: 5 pairs × 20%
+     Pairs (left·right): ש·ד  ג·כ  ע·י  ח·ל  ך·ף -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ש·ד -->
+    <Key
+        latin:keySpec="&#x05E9;"
+        latin:keySecondarySpec="&#x05D3;" />
+    <!-- ג·כ -->
+    <Key
+        latin:keySpec="&#x05D2;"
+        latin:keySecondarySpec="&#x05DB;"
+        latin:moreKeys="&#x05D2;&#x05F3;" />
+    <!-- ע·י -->
+    <Key
+        latin:keySpec="&#x05E2;"
+        latin:keySecondarySpec="&#x05D9;"
+        latin:moreKeys="&#x05F2;&#x05B7;" />
+    <!-- ח·ל -->
+    <Key
+        latin:keySpec="&#x05D7;"
+        latin:keySecondarySpec="&#x05DC;"
+        latin:moreKeys="&#x05D7;&#x05F3;" />
+    <!-- ך·ף -->
+    <Key
+        latin:keySpec="&#x05DA;"
+        latin:keySecondarySpec="&#x05E3;" />
+</merge>

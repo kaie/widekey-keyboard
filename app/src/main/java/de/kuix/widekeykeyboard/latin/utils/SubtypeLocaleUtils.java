@@ -232,6 +232,9 @@ public final class SubtypeLocaleUtils {
     public static final String LAYOUT_GREEK = "greek";
     public static final String LAYOUT_HCESAR = "hcesar";
     public static final String LAYOUT_HEBREW = "hebrew";
+    public static final String LAYOUT_DOUBLETAP_ARABIC = "doubletap_arabic";
+    public static final String LAYOUT_DOUBLETAP_FARSI = "doubletap_farsi";
+    public static final String LAYOUT_DOUBLETAP_HEBREW = "doubletap_hebrew";
     public static final String LAYOUT_HINDI = "hindi";
     public static final String LAYOUT_HINDI_COMPACT = "hindi_compact";
     public static final String LAYOUT_KANNADA = "kannada";
@@ -502,7 +505,7 @@ public final class SubtypeLocaleUtils {
                     addGenericLayouts();
                     break;
                 case LOCALE_ARABIC:
-                    addLayout(LAYOUT_ARABIC);
+                    addLayout(LAYOUT_DOUBLETAP_ARABIC);
                     break;
                 case LOCALE_BELARUSIAN_BELARUS:
                 case LOCALE_KAZAKH:
@@ -526,7 +529,7 @@ public final class SubtypeLocaleUtils {
                     addLayout(LAYOUT_DOUBLETAP_GREEK);
                     break;
                 case LOCALE_PERSIAN:
-                    addLayout(LAYOUT_FARSI);
+                    addLayout(LAYOUT_DOUBLETAP_FARSI);
                     break;
                 case LOCALE_HINDI:
                     addLayout(LAYOUT_HINDI);
@@ -537,7 +540,7 @@ public final class SubtypeLocaleUtils {
                     break;
                 case LOCALE_HEBREW_1:
                 case LOCALE_HEBREW_2:
-                    addLayout(LAYOUT_HEBREW);
+                    addLayout(LAYOUT_DOUBLETAP_HEBREW);
                     break;
                 case LOCALE_GEORGIAN_GEORGIA:
                     addLayout(LAYOUT_DOUBLETAP_GEORGIAN);

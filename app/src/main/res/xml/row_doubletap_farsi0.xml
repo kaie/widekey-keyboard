@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Farsi number row wrapper: 5 keys × 20%. -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Row latin:keyWidth="20%p">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_farsi0" />
+    </Row>
+</merge>

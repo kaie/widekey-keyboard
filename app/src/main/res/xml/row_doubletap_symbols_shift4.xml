@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Doubletap shifted symbols spacebar row (all languages).
+     toAlpha(15%) + ,·<(15%) + space(40%) + >·.(15%) + enter(15%) = 100%
+     LTR: single-tap=comma and greater. RTL: single-tap=less and period. -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Row
+        latin:keyWidth="10%p"
+        latin:backgroundType="functional">
+        <Key
+            latin:keyStyle="toAlphaKeyStyle"
+            latin:keyWidth="15%p" />
+        <!-- ,·< doubletap: LTR single-tap=comma, RTL single-tap=< -->
+        <Key
+            latin:keySpec=","
+            latin:keySecondarySpec="&lt;"
+            latin:keyWidth="15%p"
+            latin:moreKeys="!text/morekeys_less_than" />
+        <Key
+            latin:keyStyle="spaceKeyStyle"
+            latin:keyWidth="40%p" />
+        <!-- >·. doubletap: LTR single-tap=>, RTL single-tap=. -->
+        <Key
+            latin:keySpec="&gt;"
+            latin:keySecondarySpec="."
+            latin:keyWidth="15%p"
+            latin:moreKeys="!text/morekeys_greater_than,&#x2026;" />
+        <Key
+            latin:keyStyle="enterKeyStyle"
+            latin:keyWidth="15%p" />
+    </Row>
+</merge>

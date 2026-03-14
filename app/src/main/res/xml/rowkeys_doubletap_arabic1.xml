@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Arabic row 1: 5 pairs + 1 solo × 16.667%
+     Pairs (left·right): ض·ص  ث·ق  ف·غ  ع·ه  خ·ح  solo: ج -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ض·ص -->
+    <Key
+        latin:keySpec="&#x0636;"
+        latin:keySecondarySpec="&#x0635;" />
+    <!-- ث·ق -->
+    <Key
+        latin:keySpec="&#x062B;"
+        latin:keySecondarySpec="&#x0642;"
+        latin:moreKeys="&#x06A8;" />
+    <!-- ف·غ -->
+    <Key
+        latin:keySpec="&#x0641;"
+        latin:keySecondarySpec="&#x063A;"
+        latin:moreKeys="&#x06A4;,&#x06A2;,&#x06A5;" />
+    <!-- ع·ه -->
+    <Key
+        latin:keySpec="&#x0639;"
+        latin:keySecondarySpec="&#x0647;"
+        latin:moreKeys="&#xFEEB;|&#x0647;&#x200D;" />
+    <!-- خ·ح -->
+    <Key
+        latin:keySpec="&#x062E;"
+        latin:keySecondarySpec="&#x062D;" />
+    <!-- ج solo -->
+    <Key
+        latin:keySpec="&#x062C;"
+        latin:moreKeys="&#x0686;" />
+</merge>
