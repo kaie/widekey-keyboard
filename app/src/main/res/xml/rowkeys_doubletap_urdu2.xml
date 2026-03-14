@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Urdu row 2: 5 pairs @ 20%
+     (م unshifted / ؁ shifted moved here from row 3 to balance rows)
+     Unshifted: ا·س  د·ف  گ·ح  ج·ک  ل·م
+     Shifted:   ؏·؎  ؔ·ؒ  ؓ·ؑ  ؐ·ﷺ  ﷻ·؁ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: ؏ · ؎ (U+060F sign misra · U+060E poetic verse sign) -->
+            <Key
+                latin:keySpec="&#x060F;"
+                latin:keySecondarySpec="&#x060E;" />
+            <!-- Pair 2: ؔ · ؒ (U+0614 sign takhallus · U+0612 sign rahmatullah alayhe) -->
+            <Key
+                latin:keySpec="&#x0614;"
+                latin:keySecondarySpec="&#x0612;" />
+            <!-- Pair 3: ؓ · ؑ (U+0613 sign radi allahou anhu · U+0611 sign alayhe assallam) -->
+            <Key
+                latin:keySpec="&#x0613;"
+                latin:keySecondarySpec="&#x0611;" />
+            <!-- Pair 4: ؐ · ﷺ (U+0610 sign sallallahou · U+FDFA ligature sallallahou alayhe wasallam) -->
+            <Key
+                latin:keySpec="&#x0610;"
+                latin:keySecondarySpec="&#xFDFA;" />
+            <!-- Pair 5: ﷻ · ؁ (U+FDFB ligature jallajalalouhou · U+0601 sign sanah) -->
+            <Key
+                latin:keySpec="&#xFDFB;"
+                latin:keySecondarySpec="&#x0601;" />
+        </case>
+        <default>
+            <!-- Pair 1: ا · س (U+0627 alef · U+0633 seen); moreKeys: آ,أ (U+0622, U+0623), ص sad (U+0635) -->
+            <Key
+                latin:keySpec="&#x0627;"
+                latin:keySecondarySpec="&#x0633;"
+                latin:moreKeys="&#x0622;,&#x0623;,&#x0635;" />
+            <!-- Pair 2: د · ف (U+062F dal · U+0641 feh); moreKeys: ڈ ddal (U+0688) -->
+            <Key
+                latin:keySpec="&#x062F;"
+                latin:keySecondarySpec="&#x0641;"
+                latin:moreKeys="&#x0688;" />
+            <!-- Pair 3: گ · ح (U+06AF gaf · U+062D hah); moreKeys: غ ghain (U+063A), ھ doachashmee (U+06BE) -->
+            <Key
+                latin:keySpec="&#x06AF;"
+                latin:keySecondarySpec="&#x062D;"
+                latin:moreKeys="&#x063A;,&#x06BE;" />
+            <!-- Pair 4: ج · ک (U+062C jeem · U+06A9 keheh); moreKeys: ض dad (U+0636), خ khah (U+062E) -->
+            <Key
+                latin:keySpec="&#x062C;"
+                latin:keySecondarySpec="&#x06A9;"
+                latin:moreKeys="&#x0636;,&#x062E;" />
+            <!-- Pair 5: ل · م (U+0644 lam · U+0645 meem) -->
+            <Key
+                latin:keySpec="&#x0644;"
+                latin:keySecondarySpec="&#x0645;" />
+        </default>
+    </switch>
+</merge>

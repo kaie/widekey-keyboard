@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Urdu row 3: 3 pairs @ 24% (6 keys after م/؁ moved to row 2)
+     Unshifted: ز·ش  چ·ط  ن·ب
+     Shifted:   ؀·؂  ؃·؍  ٘·٫ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: ؀ · ؂ (U+0600 arabic number sign · U+0602 footnote marker) -->
+            <Key
+                latin:keySpec="&#x0600;"
+                latin:keySecondarySpec="&#x0602;" />
+            <!-- Pair 2: ؃ · ؍ (U+0603 sign safha · U+060D date separator) -->
+            <Key
+                latin:keySpec="&#x0603;"
+                latin:keySecondarySpec="&#x060D;" />
+            <!-- Pair 3: ٘ · ٫ (U+0658 mark noon ghunna · U+066B decimal separator) -->
+            <Key
+                latin:keySpec="&#x0658;"
+                latin:keySecondarySpec="&#x066B;" />
+        </case>
+        <default>
+            <!-- Pair 1: ز · ش (U+0632 zain · U+0634 sheen); moreKeys: ذ thal (U+0630), ژ jeh (U+0698) -->
+            <Key
+                latin:keySpec="&#x0632;"
+                latin:keySecondarySpec="&#x0634;"
+                latin:moreKeys="&#x0630;,&#x0698;" />
+            <!-- Pair 2: چ · ط (U+0686 tcheh · U+0637 tah); moreKeys: ث theh (U+062B), ظ zah (U+0638) -->
+            <Key
+                latin:keySpec="&#x0686;"
+                latin:keySecondarySpec="&#x0637;"
+                latin:moreKeys="&#x062B;,&#x0638;" />
+            <!-- Pair 3: ن · ب (U+0646 noon · U+0628 beh); moreKeys: ں noon ghunna (U+06BA)
+                 (ن primary to preserve ں moreKey access) -->
+            <Key
+                latin:keySpec="&#x0646;"
+                latin:keySecondarySpec="&#x0628;"
+                latin:moreKeys="&#x06BA;" />
+        </default>
+    </switch>
+</merge>

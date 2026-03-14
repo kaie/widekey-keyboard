@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Urdu row 1: 5 pairs @ 20%
+     Unshifted: ق·و  ع·ر  ت·ے  ء·ی  ہ·پ
+     Shifted:   ٔ·ْ   ّ·ً   ٗ·ٖ   ٰ·ُ   ِ·َ -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: ٔ · ْ (U+0654 hamza above · U+0652 sukun) -->
+            <Key
+                latin:keySpec="&#x0654;"
+                latin:keySecondarySpec="&#x0652;" />
+            <!-- Pair 2: ّ · ً (U+0651 shadda · U+064B fathatan) -->
+            <Key
+                latin:keySpec="&#x0651;"
+                latin:keySecondarySpec="&#x064B;" />
+            <!-- Pair 3: ٗ · ٖ (U+0657 inverted damma · U+0656 subscript alef) -->
+            <Key
+                latin:keySpec="&#x0657;"
+                latin:keySecondarySpec="&#x0656;" />
+            <!-- Pair 4: ٰ · ُ (U+0670 superscript alef · U+064F damma) -->
+            <Key
+                latin:keySpec="&#x0670;"
+                latin:keySecondarySpec="&#x064F;" />
+            <!-- Pair 5: ِ · َ (U+0650 kasra · U+064E fatha) -->
+            <Key
+                latin:keySpec="&#x0650;"
+                latin:keySecondarySpec="&#x064E;" />
+        </case>
+        <default>
+            <!-- Pair 1: ق · و (U+0642 qaf · U+0648 waw); moreKeys: ؤ waw+hamza (U+0624) -->
+            <Key
+                latin:keySpec="&#x0642;"
+                latin:keySecondarySpec="&#x0648;"
+                latin:moreKeys="&#x0624;" />
+            <!-- Pair 2: ع · ر (U+0639 ain · U+0631 reh); moreKeys: ڑ rreh (U+0691) -->
+            <Key
+                latin:keySpec="&#x0639;"
+                latin:keySecondarySpec="&#x0631;"
+                latin:moreKeys="&#x0691;" />
+            <!-- Pair 3: ت · ے (U+062A teh · U+06D2 yeh barree); moreKeys: ٹ tteh (U+0679), ۓ yeh barree+hamza (U+06D3) -->
+            <Key
+                latin:keySpec="&#x062A;"
+                latin:keySecondarySpec="&#x06D2;"
+                latin:moreKeys="&#x0679;,&#x06D3;" />
+            <!-- Pair 4: ء · ی (U+0621 hamza · U+06CC farsi yeh); moreKeys: ئ yeh+hamza (U+0626) -->
+            <Key
+                latin:keySpec="&#x0621;"
+                latin:keySecondarySpec="&#x06CC;"
+                latin:moreKeys="&#x0626;" />
+            <!-- Pair 5: ہ · پ (U+06C1 heh goal · U+067E peh); moreKeys: ۂ,ۃ (U+06C2, U+06C3) -->
+            <Key
+                latin:keySpec="&#x06C1;"
+                latin:keySecondarySpec="&#x067E;"
+                latin:moreKeys="&#x06C2;,&#x06C3;" />
+        </default>
+    </switch>
+</merge>

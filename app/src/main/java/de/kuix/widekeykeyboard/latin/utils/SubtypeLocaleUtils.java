@@ -281,6 +281,7 @@ public final class SubtypeLocaleUtils {
     public static final String LAYOUT_DOUBLETAP_MARATHI = "doubletap_marathi";
     public static final String LAYOUT_DOUBLETAP_NEPALI_TRADITIONAL = "doubletap_nepali_traditional";
     public static final String LAYOUT_DOUBLETAP_NEPALI_ROMANIZED = "doubletap_nepali_romanized";
+    public static final String LAYOUT_DOUBLETAP_URDU = "doubletap_urdu";
     public static final String LAYOUT_SAKHA = "sakha";
     public static final String LAYOUT_SERBIAN = "serbian";
     public static final String LAYOUT_SERBIAN_QWERTZ = "serbian_qwertz";
@@ -595,7 +596,7 @@ public final class SubtypeLocaleUtils {
                     addLayout(LAYOUT_THAI);
                     break;
                 case LOCALE_URDU:
-                    addLayout(LAYOUT_URDU);
+                    addLayout(LAYOUT_DOUBLETAP_URDU);
                     break;
                 case LOCALE_PORTUGUESE_BRAZIL:
                 case LOCALE_PORTUGUESE_PORTUGAL:
