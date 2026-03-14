@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Bengali Akkhor row 3: 4 pairs + 1 solo at 15.68%p (after shift 10.8%p) -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Shifted: । · ঙ -->
+            <Key
+                latin:keySpec="&#x0964;"
+                latin:keySecondarySpec="&#x0999;"
+                latin:moreKeys="&#x0965;,&#x0999;&#x09CD;&#x0995;,&#x0999;&#x09CD;&#x0997;" />
+            <!-- ছ · ঃ -->
+            <Key
+                latin:keySpec="&#x099B;"
+                latin:keySecondarySpec="&#x0983;" />
+            <!-- ঁ · ণ -->
+            <Key
+                latin:keySpec="&#x0981;"
+                latin:keySecondarySpec="&#x09A3;"
+                latin:moreKeys="&#x09A3;&#x09CD;&#x099F;,&#x09A3;&#x09CD;&#x09A1;" />
+            <!-- ং · ঐ -->
+            <Key
+                latin:keySpec="&#x0982;"
+                latin:keySecondarySpec="&#x0990;" />
+            <!-- ঔ solo -->
+            <Key latin:keySpec="&#x0994;" />
+        </case>
+        <default>
+            <!-- Unshifted: য · ষ -->
+            <Key
+                latin:keySpec="&#x09AF;"
+                latin:keySecondarySpec="&#x09B7;"
+                latin:moreKeys="&#x09B7;&#x09CD;&#x099F;,&#x09B7;&#x09CD;&#x09A3;" />
+            <!-- চ · ভ -->
+            <Key
+                latin:keySpec="&#x099A;"
+                latin:keySecondarySpec="&#x09AD;" />
+            <!-- ব · ন -->
+            <Key
+                latin:keySpec="&#x09AC;"
+                latin:keySecondarySpec="&#x09A8;"
+                latin:moreKeys="&#x09A8;&#x09CD;&#x09A4;,&#x09A8;&#x09CD;&#x09A6;" />
+            <!-- ম · এ -->
+            <Key
+                latin:keySpec="&#x09AE;"
+                latin:keySecondarySpec="&#x098F;" />
+            <!-- ও solo -->
+            <Key latin:keySpec="&#x0993;" />
+        </default>
+    </switch>
+</merge>

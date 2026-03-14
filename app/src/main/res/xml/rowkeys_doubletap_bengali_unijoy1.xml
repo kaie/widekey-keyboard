@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Bengali Unijoy row 1: 5 pairs at 20%p -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Shifted: ং · য় -->
+            <Key
+                latin:keySpec="&#x0982;"
+                latin:keySecondarySpec="&#x09DF;" />
+            <!-- ঢ · ফ -->
+            <Key
+                latin:keySpec="&#x09A2;"
+                latin:keySecondarySpec="&#x09AB;" />
+            <!-- ঠ · ছ -->
+            <Key
+                latin:keySpec="&#x09A0;"
+                latin:keySecondarySpec="&#x099B;" />
+            <!-- ঝ · ঞ -->
+            <Key
+                latin:keySpec="&#x099D;"
+                latin:keySecondarySpec="&#x099E;" />
+            <!-- ঘ · ড় (RHA) -->
+            <Key
+                latin:keySpec="&#x0998;"
+                latin:keySecondarySpec="&#x09DD;" />
+        </case>
+        <default>
+            <!-- Unshifted: ঙ · য -->
+            <Key
+                latin:keySpec="&#x0999;"
+                latin:keySecondarySpec="&#x09AF;"
+                latin:moreKeys="&#x0982;" />
+            <!-- ড · প -->
+            <Key
+                latin:keySpec="&#x09A1;"
+                latin:keySecondarySpec="&#x09AA;"
+                latin:moreKeys="&#x09A2;" />
+            <!-- ট · চ -->
+            <Key
+                latin:keySpec="&#x099F;"
+                latin:keySecondarySpec="&#x099A;"
+                latin:moreKeys="&#x09A0;" />
+            <!-- জ · হ -->
+            <Key
+                latin:keySpec="&#x099C;"
+                latin:keySecondarySpec="&#x09B9;"
+                latin:moreKeys="&#x099D;" />
+            <!-- গ · ড় (RRA) -->
+            <Key
+                latin:keySpec="&#x0997;"
+                latin:keySecondarySpec="&#x09DC;"
+                latin:moreKeys="&#x0998;" />
+        </default>
+    </switch>
+</merge>

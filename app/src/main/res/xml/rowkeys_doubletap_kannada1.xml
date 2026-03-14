@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Kannada row 1: 5 pairs + 1 solo at 16.667%p -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ೌ · ೈ (vowel signs AU, AI) -->
+    <Key
+        latin:keySpec="&#x0CCC;"
+        latin:keySecondarySpec="&#x0CC8;"
+        latin:moreKeys="&#x0C94;,&#x0CE7;,&#x0C90;,&#x0CE8;" />
+    <!-- ಾ · ೀ (vowel signs AA, II) -->
+    <Key
+        latin:keySpec="&#x0CBE;"
+        latin:keySecondarySpec="&#x0CC0;"
+        latin:moreKeys="&#x0C86;,&#x0CE9;,&#x0C88;,&#x0CEA;" />
+    <!-- ೂ · ಬ (vowel sign UU, BA) -->
+    <Key
+        latin:keySpec="&#x0CC2;"
+        latin:keySecondarySpec="&#x0CAC;"
+        latin:moreKeys="&#x0C8A;,&#x0CEB;,&#x0CAD;,&#x0CEC;" />
+    <!-- ಹ · ಗ -->
+    <Key
+        latin:keySpec="&#x0CB9;"
+        latin:keySecondarySpec="&#x0C97;"
+        latin:moreKeys="&#x0C99;,&#x0CED;,&#x0C98;,&#x0CEE;" />
+    <!-- ದ · ಜ -->
+    <Key
+        latin:keySpec="&#x0CA6;"
+        latin:keySecondarySpec="&#x0C9C;"
+        latin:moreKeys="&#x0CA7;,&#x0CEF;,&#x0C9D;,&#x0CE6;" />
+    <!-- ಡ solo -->
+    <Key
+        latin:keySpec="&#x0CA1;"
+        latin:moreKeys="&#x0CA2;" />
+</merge>

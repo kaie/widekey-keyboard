@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Malayalam row 3: 5 pairs at 18%p then delete fillRight -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- പ · ബ -->
+    <Key
+        latin:keySpec="&#x0D2A;"
+        latin:keySecondarySpec="&#x0D2C;"
+        latin:moreKeys="&#x0D2B;,&#x0D2D;" />
+    <!-- മ · യ -->
+    <Key
+        latin:keySpec="&#x0D2E;"
+        latin:keySecondarySpec="&#x0D2F;"
+        latin:moreKeys="&#x0D02;,&#x0D4D;&#x0D2F;" />
+    <!-- ര · ല -->
+    <Key
+        latin:keySpec="&#x0D30;"
+        latin:keySecondarySpec="&#x0D32;"
+        latin:moreKeys="&#x0D4D;&#x0D30;,&#x0D7C;,&#x0D31;,&#x0D7D;" />
+    <!-- വ · ശ -->
+    <Key
+        latin:keySpec="&#x0D35;"
+        latin:keySecondarySpec="&#x0D36;"
+        latin:moreKeys="&#x0D4D;&#x0D35;,&#x0D37;,&#x0D38;" />
+    <!-- ഹ · ള -->
+    <Key
+        latin:keySpec="&#x0D39;"
+        latin:keySecondarySpec="&#x0D33;"
+        latin:moreKeys="&#x0D03;,&#x0D7E;,&#x0D34;" />
+</merge>

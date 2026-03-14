@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Bengali keyboard rows. -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Row
+        latin:keyWidth="16.667%p"
+        latin:keyLabelFlags="fontNormal">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_bengali1" />
+    </Row>
+    <Row
+        latin:keyWidth="16.667%p"
+        latin:keyLabelFlags="fontNormal">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_bengali2" />
+    </Row>
+    <Row
+        latin:keyWidth="18%p"
+        latin:keyLabelFlags="fontNormal">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_bengali3" />
+        <Key
+            latin:keyStyle="deleteKeyStyle"
+            latin:keyWidth="fillRight" />
+    </Row>
+    <include latin:keyboardLayout="@xml/row_doubletap_qwerty4" />
+</merge>

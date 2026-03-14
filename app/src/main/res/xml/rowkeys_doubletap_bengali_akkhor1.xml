@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Bengali Akkhor row 1: 5 pairs + 1 solo at 16.667%p -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Shifted: ঢ · ঠ -->
+            <Key
+                latin:keySpec="&#x09A2;"
+                latin:keySecondarySpec="&#x09A0;" />
+            <!-- ৈ · ড় -->
+            <Key
+                latin:keySpec="&#x09C8;"
+                latin:keySecondarySpec="&#x09DC;"
+                latin:moreKeys="&#x0990;" />
+            <!-- ট · ঞ -->
+            <Key
+                latin:keySpec="&#x099F;"
+                latin:keySecondarySpec="&#x099E;"
+                latin:moreKeys="&#x09F3;" />
+            <!-- ূ · ী -->
+            <Key
+                latin:keySpec="&#x09C2;"
+                latin:keySecondarySpec="&#x09C0;"
+                latin:moreKeys="&#x098A;,&#x0988;" />
+            <!-- ৌ · ফ -->
+            <Key
+                latin:keySpec="&#x09CC;"
+                latin:keySecondarySpec="&#x09AB;"
+                latin:moreKeys="&#x09D7;" />
+            <!-- ঋ solo -->
+            <Key
+                latin:keySpec="&#x098B;"
+                latin:moreKeys="&#x098C;,&#x09E1;,&#x09E2;,&#x09E3;" />
+        </case>
+        <default>
+            <!-- Unshifted: ধ · থ -->
+            <Key
+                latin:keySpec="&#x09A7;"
+                latin:keySecondarySpec="&#x09A5;" />
+            <!-- ে · র -->
+            <Key
+                latin:keySpec="&#x09C7;"
+                latin:keySecondarySpec="&#x09B0;"
+                latin:moreKeys="&#x098F;" />
+            <!-- ত · য় -->
+            <Key
+                latin:keySpec="&#x09A4;"
+                latin:keySecondarySpec="&#x09DF;"
+                latin:moreKeys="&#x09CE;" />
+            <!-- ু · ি -->
+            <Key
+                latin:keySpec="&#x09C1;"
+                latin:keySecondarySpec="&#x09BF;"
+                latin:moreKeys="&#x0989;,&#x0987;" />
+            <!-- ো · প -->
+            <Key
+                latin:keySpec="&#x09CB;"
+                latin:keySecondarySpec="&#x09AA;"
+                latin:moreKeys="&#x0993;" />
+            <!-- আ solo -->
+            <Key latin:keySpec="&#x0986;" />
+        </default>
+    </switch>
+</merge>

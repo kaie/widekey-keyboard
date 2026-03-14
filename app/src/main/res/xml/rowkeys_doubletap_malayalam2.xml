@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Malayalam row 2: 5 pairs + 1 solo at 16.667%p -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ക · ഗ -->
+    <Key
+        latin:keySpec="&#x0D15;"
+        latin:keySecondarySpec="&#x0D17;"
+        latin:moreKeys="&#x0D16;,&#x0D18;" />
+    <!-- ങ · ച -->
+    <Key
+        latin:keySpec="&#x0D19;"
+        latin:keySecondarySpec="&#x0D1A;"
+        latin:moreKeys="&#x0D1E;,&#x0D1B;" />
+    <!-- ജ · ട -->
+    <Key
+        latin:keySpec="&#x0D1C;"
+        latin:keySecondarySpec="&#x0D1F;"
+        latin:moreKeys="&#x0D1D;,&#x0D20;" />
+    <!-- ഡ · ണ -->
+    <Key
+        latin:keySpec="&#x0D21;"
+        latin:keySecondarySpec="&#x0D23;"
+        latin:moreKeys="&#x0D22;,&#x0D7A;" />
+    <!-- ത · ദ -->
+    <Key
+        latin:keySpec="&#x0D24;"
+        latin:keySecondarySpec="&#x0D26;"
+        latin:moreKeys="&#x0D25;,&#x0D27;" />
+    <!-- ന solo -->
+    <Key
+        latin:keySpec="&#x0D28;"
+        latin:moreKeys="&#x0D7B;" />
+</merge>

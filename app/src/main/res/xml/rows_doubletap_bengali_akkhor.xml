@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Bengali Akkhor keyboard rows. -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Row
+        latin:keyWidth="16.667%p"
+        latin:keyLabelFlags="fontNormal">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_bengali_akkhor1" />
+    </Row>
+    <Row
+        latin:keyWidth="16.667%p"
+        latin:keyLabelFlags="fontNormal">
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_bengali_akkhor2" />
+    </Row>
+    <Row
+        latin:keyWidth="15.68%p"
+        latin:keyLabelFlags="fontNormal">
+        <Key
+            latin:keyStyle="shiftKeyStyle"
+            latin:keyWidth="10.8%p" />
+        <include latin:keyboardLayout="@xml/rowkeys_doubletap_bengali_akkhor3" />
+        <Key
+            latin:keyStyle="deleteKeyStyle"
+            latin:keyWidth="fillRight" />
+    </Row>
+    <include latin:keyboardLayout="@xml/row_doubletap_qwerty4" />
+</merge>

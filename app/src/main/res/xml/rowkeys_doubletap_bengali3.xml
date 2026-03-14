@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Bengali row 3: 5 pairs at 18%p then delete fillRight -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ঁ · ঢ -->
+    <Key
+        latin:keySpec="&#x0981;"
+        latin:keySecondarySpec="&#x09A2;"
+        latin:moreKeys="&#x0983;,&#x0982;,&#x09A2;&#x09BC;" />
+    <!-- ম · ন -->
+    <Key
+        latin:keySpec="&#x09AE;"
+        latin:keySecondarySpec="&#x09A8;"
+        latin:moreKeys="&#x09A3;" />
+    <!-- ঞ · ল -->
+    <Key
+        latin:keySpec="&#x099E;"
+        latin:keySecondarySpec="&#x09B2;"
+        latin:moreKeys="&#x0999;,&#x099E;&#x09CD;&#x099C;" />
+    <!-- ষ · স -->
+    <Key
+        latin:keySpec="&#x09B7;"
+        latin:keySecondarySpec="&#x09B8;"
+        latin:moreKeys="&#x0995;&#x09CD;&#x09B7;,&#x09B6;" />
+    <!-- য় · । -->
+    <Key
+        latin:keySpec="&#x09DF;"
+        latin:keySecondarySpec="&#x0964;"
+        latin:moreKeys="&#x09AF;,&#x0965;" />
+</merge>

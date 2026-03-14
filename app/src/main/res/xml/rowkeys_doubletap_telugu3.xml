@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Telugu row 3: 5 pairs at 18%p then delete fillRight -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ొ · ె (vowel signs O, E) -->
+    <Key
+        latin:keySpec="&#x0C4A;"
+        latin:keySecondarySpec="&#x0C46;"
+        latin:moreKeys="&#x0C12;,&#x0C0E;" />
+    <!-- మ · న -->
+    <Key
+        latin:keySpec="&#x0C2E;"
+        latin:keySecondarySpec="&#x0C28;"
+        latin:moreKeys="&#x0C02;,&#x0C01;,&#x0C23;" />
+    <!-- వ · ల -->
+    <Key
+        latin:keySpec="&#x0C35;"
+        latin:keySecondarySpec="&#x0C32;"
+        latin:moreKeys="&#x0C33;" />
+    <!-- స · ఋ -->
+    <Key
+        latin:keySpec="&#x0C38;"
+        latin:keySecondarySpec="&#x0C0B;"
+        latin:moreKeys="&#x0C36;,&#x0C43;" />
+    <!-- ష · య -->
+    <Key
+        latin:keySpec="&#x0C37;"
+        latin:keySecondarySpec="&#x0C2F;"
+        latin:moreKeys="&#x0C15;&#x0C4D;&#x0C37;,&#x0C1C;&#x0C4D;&#x0C1E;" />
+</merge>

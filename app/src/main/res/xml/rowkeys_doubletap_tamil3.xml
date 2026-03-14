@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Tamil row 3: 5 pairs at 18%p then delete fillRight -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ஒ · எ -->
+    <Key
+        latin:keySpec="&#x0B92;"
+        latin:keySecondarySpec="&#x0B8E;"
+        latin:moreKeys="&#x0BCA;,&#x0BC6;" />
+    <!-- ் · ர -->
+    <Key
+        latin:keySpec="&#x0BCD;"
+        latin:keySecondarySpec="&#x0BB0;" />
+    <!-- வ · ழ -->
+    <Key
+        latin:keySpec="&#x0BB5;"
+        latin:keySecondarySpec="&#x0BB4;" />
+    <!-- ல · ள -->
+    <Key
+        latin:keySpec="&#x0BB2;"
+        latin:keySecondarySpec="&#x0BB3;" />
+    <!-- ய · ஷ -->
+    <Key
+        latin:keySpec="&#x0BAF;"
+        latin:keySecondarySpec="&#x0BB7;"
+        latin:moreKeys="&#x0B9C;" />
+</merge>

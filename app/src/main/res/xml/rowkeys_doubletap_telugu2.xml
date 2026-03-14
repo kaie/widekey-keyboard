@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Telugu row 2: 5 pairs + 1 solo at 16.667%p -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ో · ే (vowel signs OO, EE) -->
+    <Key
+        latin:keySpec="&#x0C4B;"
+        latin:keySecondarySpec="&#x0C47;"
+        latin:moreKeys="&#x0C13;,&#x0C0F;" />
+    <!-- ్ · ి (virama, vowel sign I) -->
+    <Key
+        latin:keySpec="&#x0C4D;"
+        latin:keySecondarySpec="&#x0C3F;"
+        latin:moreKeys="&#x0C05;,&#x0C07;" />
+    <!-- ు · ప (vowel sign U, PA) -->
+    <Key
+        latin:keySpec="&#x0C41;"
+        latin:keySecondarySpec="&#x0C2A;"
+        latin:moreKeys="&#x0C09;,&#x0C2B;" />
+    <!-- ర · క -->
+    <Key
+        latin:keySpec="&#x0C30;"
+        latin:keySecondarySpec="&#x0C15;"
+        latin:moreKeys="&#x0C31;,&#x0C4D;&#x0C30;,&#x0C16;" />
+    <!-- త · చ -->
+    <Key
+        latin:keySpec="&#x0C24;"
+        latin:keySecondarySpec="&#x0C1A;"
+        latin:moreKeys="&#x0C25;,&#x0C1B;" />
+    <!-- ట solo -->
+    <Key
+        latin:keySpec="&#x0C1F;"
+        latin:moreKeys="&#x0C20;" />
+</merge>

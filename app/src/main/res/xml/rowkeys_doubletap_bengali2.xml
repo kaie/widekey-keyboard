@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Bengali row 2: 5 pairs + 1 solo at 16.667%p -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- ও · এ -->
+    <Key
+        latin:keySpec="&#x0993;"
+        latin:keySecondarySpec="&#x098F;"
+        latin:moreKeys="&#x09CB;,&#x09C7;" />
+    <!-- অ · ই -->
+    <Key
+        latin:keySpec="&#x0985;"
+        latin:keySecondarySpec="&#x0987;"
+        latin:moreKeys="&#x09CD;,&#x09BF;" />
+    <!-- উ · প -->
+    <Key
+        latin:keySpec="&#x0989;"
+        latin:keySecondarySpec="&#x09AA;"
+        latin:moreKeys="&#x09C1;,&#x09AB;" />
+    <!-- র · ক -->
+    <Key
+        latin:keySpec="&#x09B0;"
+        latin:keySecondarySpec="&#x0995;"
+        latin:moreKeys="&#x09C3;,&#x098B;,&#x09A4;&#x09CD;&#x09B0;,&#x0996;" />
+    <!-- ত · চ -->
+    <Key
+        latin:keySpec="&#x09A4;"
+        latin:keySecondarySpec="&#x099A;"
+        latin:moreKeys="&#x09CE;,&#x09A5;,&#x099B;" />
+    <!-- ট solo -->
+    <Key
+        latin:keySpec="&#x099F;"
+        latin:moreKeys="&#x09A0;" />
+</merge>

@@ -285,6 +285,13 @@ public final class SubtypeLocaleUtils {
     public static final String LAYOUT_DOUBLETAP_THAI = "doubletap_thai";
     public static final String LAYOUT_DOUBLETAP_LAO = "doubletap_lao";
     public static final String LAYOUT_DOUBLETAP_KHMER = "doubletap_khmer";
+    public static final String LAYOUT_DOUBLETAP_TAMIL = "doubletap_tamil";
+    public static final String LAYOUT_DOUBLETAP_TELUGU = "doubletap_telugu";
+    public static final String LAYOUT_DOUBLETAP_KANNADA = "doubletap_kannada";
+    public static final String LAYOUT_DOUBLETAP_MALAYALAM = "doubletap_malayalam";
+    public static final String LAYOUT_DOUBLETAP_BENGALI = "doubletap_bengali";
+    public static final String LAYOUT_DOUBLETAP_BENGALI_AKKHOR = "doubletap_bengali_akkhor";
+    public static final String LAYOUT_DOUBLETAP_BENGALI_UNIJOY = "doubletap_bengali_unijoy";
     public static final String LAYOUT_SAKHA = "sakha";
     public static final String LAYOUT_SERBIAN = "serbian";
     public static final String LAYOUT_SERBIAN_QWERTZ = "serbian_qwertz";
@@ -528,11 +535,11 @@ public final class SubtypeLocaleUtils {
                     addLayout(LAYOUT_DOUBLETAP_BULGARIAN_BDS, R.string.subtype_bds);
                     break;
                 case LOCALE_BENGALI_BANGLADESH:
-                    addLayout(LAYOUT_BENGALI_UNIJOY);
-                    addLayout(LAYOUT_BENGALI_AKKHOR, R.string.subtype_akkhor);
+                    addLayout(LAYOUT_DOUBLETAP_BENGALI_UNIJOY);
+                    addLayout(LAYOUT_DOUBLETAP_BENGALI_AKKHOR, R.string.subtype_akkhor);
                     break;
                 case LOCALE_BENGALI_INDIA:
-                    addLayout(LAYOUT_BENGALI);
+                    addLayout(LAYOUT_DOUBLETAP_BENGALI);
                     break;
                 case LOCALE_GREEK:
                     addLayout(LAYOUT_DOUBLETAP_GREEK);
@@ -558,7 +565,7 @@ public final class SubtypeLocaleUtils {
                     addLayout(LAYOUT_DOUBLETAP_KHMER);
                     break;
                 case LOCALE_KANNADA_INDIA:
-                    addLayout(LAYOUT_KANNADA);
+                    addLayout(LAYOUT_DOUBLETAP_KANNADA);
                     break;
                 case LOCALE_LAO_LAOS:
                     addLayout(LAYOUT_DOUBLETAP_LAO);
@@ -567,7 +574,7 @@ public final class SubtypeLocaleUtils {
                     addLayout(LAYOUT_DOUBLETAP_MACEDONIAN);
                     break;
                 case LOCALE_MALAYALAM_INDIA:
-                    addLayout(LAYOUT_MALAYALAM);
+                    addLayout(LAYOUT_DOUBLETAP_MALAYALAM);
                     break;
                 case LOCALE_MONGOLIAN_MONGOLIA:
                     addLayout(LAYOUT_DOUBLETAP_MONGOLIAN);
@@ -590,10 +597,10 @@ public final class SubtypeLocaleUtils {
                     break;
                 case LOCALE_TAMIL_INDIA:
                 case LOCALE_TAMIL_SINGAPORE:
-                    addLayout(LAYOUT_TAMIL);
+                    addLayout(LAYOUT_DOUBLETAP_TAMIL);
                     break;
                 case LOCALE_TELUGU_INDIA:
-                    addLayout(LAYOUT_TELUGU);
+                    addLayout(LAYOUT_DOUBLETAP_TELUGU);
                     break;
                 case LOCALE_THAI:
                     addLayout(LAYOUT_DOUBLETAP_THAI);
