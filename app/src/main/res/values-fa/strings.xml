@@ -42,6 +42,7 @@
     <string name="remove">"حذف"</string>
     <string name="prefs_keypress_sound_volume_settings">"میزان صدای فشردن کلید"</string>
     <string name="prefs_key_longpress_timeout_settings">"تأخیر فشار طولانی کلید"</string>
+    <string name="prefs_doubletap_timeout_settings">"تأخیر دوضربه‌ای"</string>
     <string name="button_default">"پیش‌فرض"</string>
     <string name="prefs_keyboard_height_settings">ارتفاع صفحه کلید</string>
     <string name="keyboard_color">تنظیم رنگ صفحه کلید سفارشی</string>

@@ -43,6 +43,7 @@
     <string name="remove">"Премахване"</string>
     <string name="prefs_keypress_sound_volume_settings">"Сила на звука при натиск. на клавиш"</string>
     <string name="prefs_key_longpress_timeout_settings">"Забавяне при продълж. натискане"</string>
+    <string name="prefs_doubletap_timeout_settings">"Закъснение при двойно докосване"</string>
     <string name="button_default">"Стандартно"</string>
     <string name="prefs_keyboard_height_settings">Височина на клавиатурата</string>
     <string name="prefs_bottom_offset_portrait_settings">Долно отместване</string>

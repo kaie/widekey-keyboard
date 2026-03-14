@@ -41,6 +41,7 @@
     <string name="remove">"Quitar"</string>
     <string name="prefs_keypress_sound_volume_settings">"Volumen de sonido al pulsar tecla"</string>
     <string name="prefs_key_longpress_timeout_settings">"Retraso al mantener pulsado"</string>
+    <string name="prefs_doubletap_timeout_settings">"Retardo de doble toque"</string>
     <string name="button_default">"Predeterminado"</string>
     <string name="prefs_keyboard_height_settings">Altura del teclado</string>
     <string name="prefs_bottom_offset_portrait_settings">Desplazamiento inferior</string>

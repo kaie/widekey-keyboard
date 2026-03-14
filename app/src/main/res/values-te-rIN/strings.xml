@@ -40,5 +40,6 @@
     <string name="remove">"తీసివేయి"</string>
     <string name="prefs_keypress_sound_volume_settings">"కీని నొక్కినప్పుడు చేసే ధ్వని వాల్యూమ్"</string>
     <string name="prefs_key_longpress_timeout_settings">"కీని ఎక్కువసేపు నొక్కి ఉంచాల్సిన సమయంలో ఆలస్యం"</string>
+    <string name="prefs_doubletap_timeout_settings">"డబుల్-ట్యాప్ జాప్యం"</string>
     <string name="button_default">"డిఫాల్ట్"</string>
 </resources>

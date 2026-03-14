@@ -41,5 +41,6 @@
     <string name="remove">"Khipha"</string>
     <string name="prefs_keypress_sound_volume_settings">"Ivolumu yomsindo wokucindezela ukhiye"</string>
     <string name="prefs_key_longpress_timeout_settings">"Ukulibazisa ukucindezela isikhashana ukhiye"</string>
+    <string name="prefs_doubletap_timeout_settings">"Ukubambezeleka kwethintelo eliphindwe kabili"</string>
     <string name="button_default">"Okuzenzakalelayo"</string>
 </resources>

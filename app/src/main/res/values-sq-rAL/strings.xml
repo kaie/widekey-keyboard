@@ -41,6 +41,7 @@
     <string name="remove">"Hiq"</string>
     <string name="prefs_keypress_sound_volume_settings">"Volumi i tingullit të tastit"</string>
     <string name="prefs_key_longpress_timeout_settings">"Vonesa e shtypjes së gjatë të tastit"</string>
+    <string name="prefs_doubletap_timeout_settings">"Vonesa e prekjes së dyfishtë"</string>
     <string name="button_default">"I parazgjedhur"</string>
     <string name="prefs_keyboard_height_settings">Lartësia e tastierës</string>
     <string name="prefs_bottom_offset_portrait_settings">Zhvendosja e poshtme</string>

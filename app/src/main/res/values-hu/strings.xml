@@ -41,6 +41,7 @@
     <string name="remove">"Eltávolítás"</string>
     <string name="prefs_keypress_sound_volume_settings">"Gombnyomás hangereje"</string>
     <string name="prefs_key_longpress_timeout_settings">"Hosszú nyomás késleltetése"</string>
+    <string name="prefs_doubletap_timeout_settings">"Dupla érintés késleltetése"</string>
     <string name="button_default">"Alapértelmezett"</string>
     <string name="prefs_keyboard_height_settings">Billentyűzet magassága</string>
     <string name="prefs_bottom_offset_portrait_settings">Alsó eltolás</string>

@@ -40,5 +40,6 @@
     <string name="remove">"Устгах"</string>
     <string name="prefs_keypress_sound_volume_settings">"Товчны дууны хэмжээ"</string>
     <string name="prefs_key_longpress_timeout_settings">"Товчны удаан даралтын тохиргоо"</string>
+    <string name="prefs_doubletap_timeout_settings">"Давхар товших хоцролт"</string>
     <string name="button_default">"Үндсэн"</string>
 </resources>

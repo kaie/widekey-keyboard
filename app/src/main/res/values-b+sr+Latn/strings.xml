@@ -39,6 +39,7 @@
     <string name="remove">"Ukloni"</string>
     <string name="prefs_keypress_sound_volume_settings">"Jačina zvuka pri pritisku"</string>
     <string name="prefs_key_longpress_timeout_settings">"Odlaganje pri dugom pritisku"</string>
+    <string name="prefs_doubletap_timeout_settings">"Kašnjenje dvostrukog dodira"</string>
     <string name="button_default">"Podrazumevano"</string>
     <string name="prefs_keyboard_height_settings">Visina tastature</string>
     <string name="keyboard_color">Postavi boju tastature</string>

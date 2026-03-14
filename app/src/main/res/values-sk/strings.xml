@@ -41,6 +41,7 @@
     <string name="remove">"Odstrániť"</string>
     <string name="prefs_keypress_sound_volume_settings">"Hlasitosť stlačenia klávesu"</string>
     <string name="prefs_key_longpress_timeout_settings">"Oneskorenie dlhého stlačenia"</string>
+    <string name="prefs_doubletap_timeout_settings">"Oneskorenie dvojitého klepnutia"</string>
     <string name="button_default">"Predvolené"</string>
     <string name="prefs_keyboard_height_settings">Výška klávesnice</string>
     <string name="prefs_bottom_offset_portrait_settings">Spodný odsadenie</string>

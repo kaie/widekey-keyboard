@@ -41,6 +41,7 @@
     <string name="remove">"Pašalinti"</string>
     <string name="prefs_keypress_sound_volume_settings">"Garso paspaudus mygt. garsumas"</string>
     <string name="prefs_key_longpress_timeout_settings">"Klavišo ilgo paspaudimo delsa"</string>
+    <string name="prefs_doubletap_timeout_settings">"Dvigubo bakstelėjimo vėlavimas"</string>
     <string name="button_default">"Numatytieji"</string>
     <string name="prefs_keyboard_height_settings">Klaviatūros aukštis</string>
     <string name="prefs_bottom_offset_portrait_settings">Apatinio tarpo aukštis</string>

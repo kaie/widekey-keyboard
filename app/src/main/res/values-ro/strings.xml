@@ -42,6 +42,7 @@
     <string name="remove">"Eliminați"</string>
     <string name="prefs_keypress_sound_volume_settings">"Sunet la apăsarea tastelor"</string>
     <string name="prefs_key_longpress_timeout_settings">"Timpul apăsării lungi a tastei"</string>
+    <string name="prefs_doubletap_timeout_settings">"Întârziere la atingere dublă"</string>
     <string name="button_default">"Prestabilit"</string>
     <string name="prefs_keyboard_height_settings">Înălțime tastatură</string>
     <string name="prefs_bottom_offset_portrait_settings">Decalaj inferior</string>

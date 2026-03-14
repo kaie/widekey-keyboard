@@ -41,6 +41,7 @@
     <string name="remove">"Poista"</string>
     <string name="prefs_keypress_sound_volume_settings">"Näppäinpainalluksen äänenvoimakkuus"</string>
     <string name="prefs_key_longpress_timeout_settings">"Pitkän painalluksen viive"</string>
+    <string name="prefs_doubletap_timeout_settings">"Kaksoisnapautuksen viive"</string>
     <string name="button_default">"Oletusarvot"</string>
     <string name="prefs_keyboard_height_settings">Näppäimistön korkeus</string>
     <string name="prefs_bottom_offset_portrait_settings">Pohjan siirtymä</string>

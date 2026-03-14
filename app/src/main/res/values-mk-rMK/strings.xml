@@ -41,6 +41,7 @@
     <string name="remove">"Отстрани"</string>
     <string name="prefs_keypress_sound_volume_settings">"Копче за јачина на звук"</string>
     <string name="prefs_key_longpress_timeout_settings">"Доцнење на долго притискање копче"</string>
+    <string name="prefs_doubletap_timeout_settings">"Доцнење при двојно допирање"</string>
     <string name="button_default">"Стандардно"</string>
     <string name="prefs_keyboard_height_settings">Висина на тастатурата</string>
     <string name="prefs_bottom_offset_portrait_settings">Долен офсет</string>

@@ -41,6 +41,7 @@
     <string name="remove">"Odebrat"</string>
     <string name="prefs_keypress_sound_volume_settings">"Hlasitost stisknutí klávesy"</string>
     <string name="prefs_key_longpress_timeout_settings">"Prodleva dlouhého stisknutí"</string>
+    <string name="prefs_doubletap_timeout_settings">"Prodleva dvojitého klepnutí"</string>
     <string name="button_default">"Výchozí"</string>
     <string name="prefs_keyboard_height_settings">Výška klávesnice</string>
     <string name="prefs_bottom_offset_portrait_settings">Spodní odsazení</string>

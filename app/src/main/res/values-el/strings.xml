@@ -42,6 +42,7 @@
     <string name="remove">"Κατάργηση"</string>
     <string name="prefs_keypress_sound_volume_settings">"Ένταση ήχου πατήματος πλήκτρου"</string>
     <string name="prefs_key_longpress_timeout_settings">"Καθυστέρηση παρατεταμένου πατήματος"</string>
+    <string name="prefs_doubletap_timeout_settings">"Καθυστέρηση διπλού πατήματος"</string>
     <string name="button_default">"Προεπιλογή"</string>
     <string name="prefs_keyboard_height_settings">Ύψος πληκτρολογίου</string>
     <string name="prefs_bottom_offset_portrait_settings">Κάτω μετατόπιση</string>

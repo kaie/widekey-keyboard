@@ -40,5 +40,6 @@
     <string name="remove">"Алып салуу"</string>
     <string name="prefs_keypress_sound_volume_settings">"Басылган баскычтын үнүнүн катуулугу"</string>
     <string name="prefs_key_longpress_timeout_settings">"Баскычты көпкө басуунун узактыгы"</string>
+    <string name="prefs_doubletap_timeout_settings">"Кош тийүү кечигүүсү"</string>
     <string name="button_default">"Демейки"</string>
 </resources>

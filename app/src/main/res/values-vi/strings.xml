@@ -42,6 +42,7 @@
     <string name="remove">"Xóa"</string>
     <string name="prefs_keypress_sound_volume_settings">"Âm lượng khi nhấn phím"</string>
     <string name="prefs_key_longpress_timeout_settings">"Thời gian trễ nhấn và giữ phím"</string>
+    <string name="prefs_doubletap_timeout_settings">"Độ trễ nhấn đúp"</string>
     <string name="button_default">"Mặc định"</string>
     <string name="prefs_keyboard_height_settings">"Chiều cao bàn phím"</string>
     <string name="prefs_bottom_offset_portrait_settings">Độ lệch dưới</string>

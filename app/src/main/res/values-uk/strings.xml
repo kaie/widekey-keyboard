@@ -42,6 +42,7 @@
     <string name="remove">"Видалити"</string>
     <string name="prefs_keypress_sound_volume_settings">"Гучність натискання клавіш"</string>
     <string name="prefs_key_longpress_timeout_settings">"Затримка довгого натискання"</string>
+    <string name="prefs_doubletap_timeout_settings">"Затримка подвійного дотику"</string>
     <string name="button_default">"За умовчанням"</string>
     <string name="prefs_keyboard_height_settings">Висота клавіатури</string>
     <string name="prefs_bottom_offset_portrait_settings">Зсув знизу</string>

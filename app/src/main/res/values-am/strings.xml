@@ -40,5 +40,6 @@
     <string name="remove">"አስወግድ"</string>
     <string name="prefs_keypress_sound_volume_settings">"የቁልፍ ጭነት ድምጽ መጠን"</string>
     <string name="prefs_key_longpress_timeout_settings">"የሰሌዳ ቁልፍ ጠቅታ በመጫን መዘግየት"</string>
+    <string name="prefs_doubletap_timeout_settings">"የድርብ መታ ዘግይቶ"</string>
     <string name="button_default">"ነባሪ"</string>
 </resources>
