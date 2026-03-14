@@ -277,6 +277,7 @@ public final class SubtypeLocaleUtils {
     public static final String LAYOUT_DOUBLETAP_GEORGIAN = "doubletap_georgian";
     public static final String LAYOUT_DOUBLETAP_MONGOLIAN = "doubletap_mongolian";
     public static final String LAYOUT_DOUBLETAP_HINDI = "doubletap_hindi";
+    public static final String LAYOUT_DOUBLETAP_HINDI_COMPACT = "doubletap_hindi_compact";
     public static final String LAYOUT_DOUBLETAP_MARATHI = "doubletap_marathi";
     public static final String LAYOUT_DOUBLETAP_NEPALI_TRADITIONAL = "doubletap_nepali_traditional";
     public static final String LAYOUT_DOUBLETAP_NEPALI_ROMANIZED = "doubletap_nepali_romanized";
@@ -537,6 +538,7 @@ public final class SubtypeLocaleUtils {
                     break;
                 case LOCALE_HINDI:
                     addLayout(LAYOUT_DOUBLETAP_HINDI);
+                    addLayout(LAYOUT_DOUBLETAP_HINDI_COMPACT, R.string.subtype_compact);
                     break;
                 case LOCALE_ARMENIAN_ARMENIA:
                     addLayout(LAYOUT_DOUBLETAP_ARMENIAN_PHONETIC);

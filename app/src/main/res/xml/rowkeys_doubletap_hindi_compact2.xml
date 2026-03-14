@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Hindi Compact row 2: 5 pairs + 1 solo @ 16.667%
+     ओ·ए  अ·इ  उ·प  र·क  त·च  [ट solo] -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- Pair 1: ओ · ए (U+0913 · U+090F); moreKeys: ो vowel sign O (U+094B) -->
+    <Key
+        latin:keySpec="&#x0913;"
+        latin:keySecondarySpec="&#x090F;"
+        latin:moreKeys="&#x094B;" />
+    <!-- Pair 2: अ · इ (U+0905 · U+0907); moreKeys: ् virama (U+094D) -->
+    <Key
+        latin:keySpec="&#x0905;"
+        latin:keySecondarySpec="&#x0907;"
+        latin:moreKeys="&#x094D;" />
+    <!-- Pair 3: उ · प (U+0909 · U+092A); moreKeys: ु vowel sign U (U+0941) -->
+    <Key
+        latin:keySpec="&#x0909;"
+        latin:keySecondarySpec="&#x092A;"
+        latin:moreKeys="&#x0941;" />
+    <!-- Pair 4: र · क (U+0930 · U+0915); moreKeys: ऋ vocalic R (U+090B), ृ vowel sign (U+0943) -->
+    <Key
+        latin:keySpec="&#x0930;"
+        latin:keySecondarySpec="&#x0915;"
+        latin:moreKeys="&#x090B;,&#x0943;" />
+    <!-- Pair 5: त · च (U+0924 · U+091A); moreKeys: थ THA (U+0925), त्र tra ligature -->
+    <Key
+        latin:keySpec="&#x0924;"
+        latin:keySecondarySpec="&#x091A;"
+        latin:moreKeys="&#x0925;,&#x0924;&#x094D;&#x0930;" />
+    <!-- Solo: ट (U+091F); moreKeys: ठ TTHA (U+0920) -->
+    <Key
+        latin:keySpec="&#x091F;"
+        latin:keyWidth="16.667%p"
+        latin:moreKeys="&#x0920;" />
+</merge>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Hindi Compact row 1: 5 pairs + 1 solo @ 16.667%
+     औ·ऐ  आ·ई  ऊ·ब  ह·ग  द·ज  [ड solo] -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- Pair 1: औ · ऐ (U+0914 · U+0910); moreKeys: ौ vowel sign AU (U+094C) -->
+    <Key
+        latin:keySpec="&#x0914;"
+        latin:keySecondarySpec="&#x0910;"
+        latin:moreKeys="&#x094C;" />
+    <!-- Pair 2: आ · ई (U+0906 · U+0908); moreKeys: ा vowel sign AA (U+093E) -->
+    <Key
+        latin:keySpec="&#x0906;"
+        latin:keySecondarySpec="&#x0908;"
+        latin:moreKeys="&#x093E;" />
+    <!-- Pair 3: ऊ · ब (U+090A · U+092C); moreKeys: ू vowel sign UU (U+0942) -->
+    <Key
+        latin:keySpec="&#x090A;"
+        latin:keySecondarySpec="&#x092C;"
+        latin:moreKeys="&#x0942;" />
+    <!-- Pair 4: ह · ग (U+0939 · U+0917) -->
+    <Key
+        latin:keySpec="&#x0939;"
+        latin:keySecondarySpec="&#x0917;" />
+    <!-- Pair 5: द · ज (U+0926 · U+091C); moreKeys: ध DHA (U+0927) -->
+    <Key
+        latin:keySpec="&#x0926;"
+        latin:keySecondarySpec="&#x091C;"
+        latin:moreKeys="&#x0927;" />
+    <!-- Solo: ड (U+0921); moreKeys: ढ DDHA (U+0922) -->
+    <Key
+        latin:keySpec="&#x0921;"
+        latin:keyWidth="16.667%p"
+        latin:moreKeys="&#x0922;" />
+</merge>
