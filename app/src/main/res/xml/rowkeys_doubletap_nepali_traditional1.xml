@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Nepali Traditional row 1: 5 pairs + 1 solo @ 16.667%
+     Unshifted: ट·ध  भ·च  त·थ  ग·ष  य·उ  [इ solo]
+     Shifted:   त्त·ड्ढ  ऐ·द्व  ट्ट·ठ्ठ  ऊ·क्ष  इ·ए  [ृ solo] -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: त्त · ड्ढ -->
+            <Key
+                latin:keySpec="&#x0924;&#x094D;&#x0924;"
+                latin:keySecondarySpec="&#x0921;&#x094D;&#x0922;"
+                latin:keyLabelFlags="followKeyLetterRatio"
+                latin:moreKeys="&#x091E;,&#x091C;&#x094D;&#x091E;,&#x0965;" />
+            <!-- Pair 2: ऐ · द्व -->
+            <Key
+                latin:keySpec="&#x0910;"
+                latin:keySecondarySpec="&#x0926;&#x094D;&#x0935;"
+                latin:moreKeys="&#x0918;" />
+            <!-- Pair 3: ट्ट · ठ्ठ -->
+            <Key
+                latin:keySpec="&#x091F;&#x094D;&#x091F;"
+                latin:keySecondarySpec="&#x0920;&#x094D;&#x0920;"
+                latin:keyLabelFlags="followKeyLetterRatio"
+                latin:moreKeys="&#x091B;" />
+            <!-- Pair 4: ऊ · क्ष -->
+            <Key
+                latin:keySpec="&#x090A;"
+                latin:keySecondarySpec="&#x0915;&#x094D;&#x0937;"
+                latin:moreKeys="&#x0920;" />
+            <!-- Pair 5: इ · ए -->
+            <Key
+                latin:keySpec="&#x0907;"
+                latin:keySecondarySpec="&#x090F;"
+                latin:moreKeys="&#x0922;" />
+            <!-- Solo: ृ (U+0943 vocalic-r sign) -->
+            <!-- Because the font rendering system prior to API version 16 can't automatically
+                 render dotted circle for incomplete combining letter of some scripts, different
+                 set of Key definitions are needed based on the API version. -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_vocalic_r" />
+            <Key
+                latin:keyStyle="baseKeyDevanagariVowelSignVocalicR"
+                latin:keyWidth="16.667%p" />
+        </case>
+        <default>
+            <!-- Pair 1: ट · ध -->
+            <Key
+                latin:keySpec="&#x091F;"
+                latin:keySecondarySpec="&#x0927;" />
+            <!-- Pair 2: भ · च -->
+            <Key
+                latin:keySpec="&#x092D;"
+                latin:keySecondarySpec="&#x091A;" />
+            <!-- Pair 3: त · थ -->
+            <Key
+                latin:keySpec="&#x0924;"
+                latin:keySecondarySpec="&#x0925;" />
+            <!-- Pair 4: ग · ष -->
+            <Key
+                latin:keySpec="&#x0917;"
+                latin:keySecondarySpec="&#x0937;" />
+            <!-- Pair 5: य · उ -->
+            <Key
+                latin:keySpec="&#x092F;"
+                latin:keySecondarySpec="&#x0909;" />
+            <!-- Solo: इ (U+0907) -->
+            <Key
+                latin:keySpec="&#x0907;"
+                latin:keyWidth="16.667%p"
+                latin:moreKeys="&#x0914;" />
+        </default>
+    </switch>
+</merge>

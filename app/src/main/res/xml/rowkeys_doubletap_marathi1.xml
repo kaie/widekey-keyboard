@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Marathi row 1: 5 pairs + 1 solo @ 16.667%
+     ौ·ै  ा·ी  ू·ब  ह·ग  द·ज  [ड solo] -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- Pair 1: ौ · ै (U+094C · U+0948) -->
+    <!-- Because the font rendering system prior to API version 16 can't automatically
+         render dotted circle for incomplete combining letter of some scripts, different
+         set of Key definitions are needed based on the API version. -->
+    <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_au" />
+    <Key
+        latin:keyStyle="baseKeyDevanagariVowelSignAu"
+        latin:keySecondarySpec="&#x0948;" />
+    <!-- Pair 2: ा · ी (U+093E · U+0940) -->
+    <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_aa" />
+    <Key
+        latin:keyStyle="baseKeyDevanagariVowelSignAa"
+        latin:keySecondarySpec="&#x0940;" />
+    <!-- Pair 3: ू · ब (U+0942 · U+092C) -->
+    <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_uu" />
+    <Key
+        latin:keyStyle="baseKeyDevanagariVowelSignUu"
+        latin:keySecondarySpec="&#x092C;"
+        latin:moreKeys="&#x092D;,%" />
+    <!-- Pair 4: ह · ग (U+0939 · U+0917) -->
+    <Key
+        latin:keySpec="&#x0939;"
+        latin:keySecondarySpec="&#x0917;" />
+    <!-- Pair 5: द · ज (U+0926 · U+091C) -->
+    <Key
+        latin:keySpec="&#x0926;"
+        latin:keySecondarySpec="&#x091C;"
+        latin:moreKeys="&#x0927;,%" />
+    <!-- Solo: ड (U+0921) -->
+    <Key
+        latin:keySpec="&#x0921;"
+        latin:keyWidth="16.667%p"
+        latin:moreKeys="&#x0922;" />
+</merge>

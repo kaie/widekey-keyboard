@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Marathi row 2: 5 pairs + 1 solo @ 16.667%
+     ो·े  ्·ि  ु·प  र·क  त·च  [ट solo] -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <!-- Pair 1: ो · े (U+094B · U+0947) -->
+    <!-- Because the font rendering system prior to API version 16 can't automatically
+         render dotted circle for incomplete combining letter of some scripts, different
+         set of Key definitions are needed based on the API version. -->
+    <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_o" />
+    <Key
+        latin:keyStyle="baseKeyDevanagariVowelSignO"
+        latin:keySecondarySpec="&#x0947;" />
+    <!-- Pair 2: ् · ि (U+094D · U+093F) -->
+    <include latin:keyboardLayout="@xml/keystyle_devanagari_sign_virama" />
+    <Key
+        latin:keyStyle="baseKeyDevanagariSignVirama"
+        latin:keySecondarySpec="&#x093F;" />
+    <!-- Pair 3: ु · प (U+0941 · U+092A) -->
+    <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_u" />
+    <Key
+        latin:keyStyle="baseKeyDevanagariVowelSignU"
+        latin:keySecondarySpec="&#x092A;"
+        latin:moreKeys="&#x092B;" />
+    <!-- Pair 4: र · क (U+0930 · U+0915) -->
+    <Key
+        latin:keySpec="&#x0930;"
+        latin:keySecondarySpec="&#x0915;"
+        latin:moreKeys="&#x0931;,&#x090B;,&#x0943;" />
+    <!-- Pair 5: त · च (U+0924 · U+091A) -->
+    <Key
+        latin:keySpec="&#x0924;"
+        latin:keySecondarySpec="&#x091A;"
+        latin:moreKeys="&#x0925;,&#x0924;&#x094D;&#x0930;" />
+    <!-- Solo: ट (U+091F) -->
+    <Key
+        latin:keySpec="&#x091F;"
+        latin:keyWidth="16.667%p"
+        latin:moreKeys="&#x0920;" />
+</merge>

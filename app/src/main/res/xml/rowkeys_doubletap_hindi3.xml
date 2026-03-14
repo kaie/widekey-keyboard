@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Hindi row 3: 4 pairs + 1 solo @ 15.68%
+     Unshifted: ॉ·ं  म·न  व·ल  स·य  [़ solo]
+     Shifted:   ऑ·ँ  ण·ऩ  ळ·श  ष·ृ  [ञ solo] -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: ऑ · ँ (U+0911 · U+0901 candrabindu) -->
+            <Key
+                latin:keySpec="&#x0911;"
+                latin:keySecondarySpec="&#x0901;" />
+            <!-- Pair 2: ण · ऩ (U+0923 · U+0929) -->
+            <Key
+                latin:keySpec="&#x0923;"
+                latin:keySecondarySpec="&#x0929;" />
+            <!-- Pair 3: ळ · श (U+0933 · U+0936) -->
+            <Key
+                latin:keySpec="&#x0933;"
+                latin:keySecondarySpec="&#x0936;"
+                latin:moreKeys="&#x0934;" />
+            <!-- Pair 4: ष · ृ (U+0937 · U+0943 vocalic-r sign) -->
+            <Key
+                latin:keySpec="&#x0937;"
+                latin:keySecondarySpec="&#x0943;" />
+            <!-- Solo: ञ (U+091E) -->
+            <Key
+                latin:keySpec="&#x091E;"
+                latin:keyWidth="15.68%p" />
+        </case>
+        <default>
+            <!-- Pair 1: ॉ · ं (U+0949 candra-o sign · U+0902 anusvara) -->
+            <!-- Because the font rendering system prior to API version 16 can't automatically
+                 render dotted circle for incomplete combining letter of some scripts, different
+                 set of Key definitions are needed based on the API version. -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_candra_o" />
+            <Key
+                latin:keyStyle="baseKeyDevanagariVowelSignCandraO"
+                latin:keySecondarySpec="&#x0902;" />
+            <!-- Pair 2: म · न (U+092E · U+0928) -->
+            <Key
+                latin:keySpec="&#x092E;"
+                latin:keySecondarySpec="&#x0928;"
+                latin:moreKeys="&#x0950;" />
+            <!-- Pair 3: व · ल (U+0935 · U+0932) -->
+            <Key
+                latin:keySpec="&#x0935;"
+                latin:keySecondarySpec="&#x0932;" />
+            <!-- Pair 4: स · य (U+0938 · U+092F) -->
+            <Key
+                latin:keySpec="&#x0938;"
+                latin:keySecondarySpec="&#x092F;" />
+            <!-- Solo: ़ (U+093C nukta) -->
+            <!-- Because the font rendering system prior to API version 16 can't automatically
+                 render dotted circle for incomplete combining letter of some scripts, different
+                 set of Key definitions are needed based on the API version. -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_sign_nukta" />
+            <Key
+                latin:keyStyle="baseKeyDevanagariSignNukta"
+                latin:keyWidth="15.68%p" />
+        </default>
+    </switch>
+</merge>

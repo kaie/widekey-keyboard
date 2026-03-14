@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Hindi row 1: 5 pairs + 1 solo @ 16.667%
+     Unshifted: ौ·ै  ा·ी  ू·ब  ह·ग  द·ज  [ड solo]
+     Shifted:   औ·ऐ  आ·ई  ऊ·भ  ः·घ  ध·झ  [ढ solo] -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: औ · ऐ (U+0914 · U+0910) -->
+            <Key
+                latin:keySpec="&#x0914;"
+                latin:keySecondarySpec="&#x0910;" />
+            <!-- Pair 2: आ · ई (U+0906 · U+0908) -->
+            <Key
+                latin:keySpec="&#x0906;"
+                latin:keySecondarySpec="&#x0908;" />
+            <!-- Pair 3: ऊ · भ (U+090A · U+092D) -->
+            <Key
+                latin:keySpec="&#x090A;"
+                latin:keySecondarySpec="&#x092D;" />
+            <!-- Pair 4: ः · घ (U+0903 · U+0918) -->
+            <Key
+                latin:keySpec="&#x0903;"
+                latin:keySecondarySpec="&#x0918;" />
+            <!-- Pair 5: ध · झ (U+0927 · U+091D) -->
+            <Key
+                latin:keySpec="&#x0927;"
+                latin:keySecondarySpec="&#x091D;"
+                latin:moreKeys="&#x0915;&#x094D;&#x0937;,&#x0936;&#x094D;&#x0930;" />
+            <!-- Solo: ढ (U+0922) -->
+            <Key
+                latin:keySpec="&#x0922;"
+                latin:keyWidth="16.667%p" />
+        </case>
+        <default>
+            <!-- Pair 1: ौ · ै (U+094C · U+0948) -->
+            <!-- Because the font rendering system prior to API version 16 can't automatically
+                 render dotted circle for incomplete combining letter of some scripts, different
+                 set of Key definitions are needed based on the API version. -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_au" />
+            <Key
+                latin:keyStyle="baseKeyDevanagariVowelSignAu"
+                latin:keySecondarySpec="&#x0948;" />
+            <!-- Pair 2: ा · ी (U+093E · U+0940) -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_aa" />
+            <Key
+                latin:keyStyle="baseKeyDevanagariVowelSignAa"
+                latin:keySecondarySpec="&#x0940;" />
+            <!-- Pair 3: ू · ब (U+0942 · U+092C) -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_uu" />
+            <Key
+                latin:keyStyle="baseKeyDevanagariVowelSignUu"
+                latin:keySecondarySpec="&#x092C;"
+                latin:moreKeys="&#x092D;,%" />
+            <!-- Pair 4: ह · ग (U+0939 · U+0917) -->
+            <Key
+                latin:keySpec="&#x0939;"
+                latin:keySecondarySpec="&#x0917;" />
+            <!-- Pair 5: द · ज (U+0926 · U+091C) -->
+            <Key
+                latin:keySpec="&#x0926;"
+                latin:keySecondarySpec="&#x091C;"
+                latin:moreKeys="&#x0927;,%" />
+            <!-- Solo: ड (U+0921) -->
+            <Key
+                latin:keySpec="&#x0921;"
+                latin:keyWidth="16.667%p"
+                latin:moreKeys="&#x0922;" />
+        </default>
+    </switch>
+</merge>

@@ -276,6 +276,10 @@ public final class SubtypeLocaleUtils {
     public static final String LAYOUT_DOUBLETAP_ARMENIAN_PHONETIC = "doubletap_armenian_phonetic";
     public static final String LAYOUT_DOUBLETAP_GEORGIAN = "doubletap_georgian";
     public static final String LAYOUT_DOUBLETAP_MONGOLIAN = "doubletap_mongolian";
+    public static final String LAYOUT_DOUBLETAP_HINDI = "doubletap_hindi";
+    public static final String LAYOUT_DOUBLETAP_MARATHI = "doubletap_marathi";
+    public static final String LAYOUT_DOUBLETAP_NEPALI_TRADITIONAL = "doubletap_nepali_traditional";
+    public static final String LAYOUT_DOUBLETAP_NEPALI_ROMANIZED = "doubletap_nepali_romanized";
     public static final String LAYOUT_SAKHA = "sakha";
     public static final String LAYOUT_SERBIAN = "serbian";
     public static final String LAYOUT_SERBIAN_QWERTZ = "serbian_qwertz";
@@ -532,8 +536,7 @@ public final class SubtypeLocaleUtils {
                     addLayout(LAYOUT_DOUBLETAP_FARSI);
                     break;
                 case LOCALE_HINDI:
-                    addLayout(LAYOUT_HINDI);
-                    addLayout(LAYOUT_HINDI_COMPACT, R.string.subtype_compact);
+                    addLayout(LAYOUT_DOUBLETAP_HINDI);
                     break;
                 case LOCALE_ARMENIAN_ARMENIA:
                     addLayout(LAYOUT_DOUBLETAP_ARMENIAN_PHONETIC);
@@ -564,11 +567,11 @@ public final class SubtypeLocaleUtils {
                     addLayout(LAYOUT_DOUBLETAP_MONGOLIAN);
                     break;
                 case LOCALE_MARATHI_INDIA:
-                    addLayout(LAYOUT_MARATHI);
+                    addLayout(LAYOUT_DOUBLETAP_MARATHI);
                     break;
                 case LOCALE_NEPALI_NEPAL:
-                    addLayout(LAYOUT_NEPALI_ROMANIZED);
-                    addLayout(LAYOUT_NEPALI_TRADITIONAL, R.string.subtype_traditional);
+                    addLayout(LAYOUT_DOUBLETAP_NEPALI_ROMANIZED);
+                    addLayout(LAYOUT_DOUBLETAP_NEPALI_TRADITIONAL, R.string.subtype_traditional);
                     break;
                 case LOCALE_SAKHA:
                     addLayout(LAYOUT_DOUBLETAP_SAKHA);

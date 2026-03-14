@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Nepali Romanized row 1: 5 pairs + 1 solo @ 16.667%
+     Unshifted: ट·ौ  े·र  त·य  ु·ि  ो·प  [इ solo]
+     Shifted:   ठ·औ  ै·ृ  थ·ञ  ू·ी  ओ·फ  [ई solo] -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: ठ · औ (U+0920 · U+0914) -->
+            <Key
+                latin:keySpec="&#x0920;"
+                latin:keySecondarySpec="&#x0914;" />
+            <!-- Pair 2: ै · ृ (U+0948 vowelAI · U+0943 vocalicR sign) -->
+            <!-- Because the font rendering system prior to API version 16 can't automatically
+                 render dotted circle for incomplete combining letter of some scripts, different
+                 set of Key definitions are needed based on the API version. -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_ai" />
+            <Key
+                latin:keyStyle="baseKeyDevanagariVowelSignAi"
+                latin:keySecondarySpec="&#x0943;" />
+            <!-- Pair 3: थ · ञ (U+0925 · U+091E) -->
+            <Key
+                latin:keySpec="&#x0925;"
+                latin:keySecondarySpec="&#x091E;" />
+            <!-- Pair 4: ू · ी (U+0942 vowelUU · U+0940 vowelII) -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_uu" />
+            <Key
+                latin:keyStyle="baseKeyDevanagariVowelSignUu"
+                latin:keySecondarySpec="&#x0940;" />
+            <!-- Pair 5: ओ · फ (U+0913 · U+092B) -->
+            <Key
+                latin:keySpec="&#x0913;"
+                latin:keySecondarySpec="&#x092B;" />
+            <!-- Solo: ई (U+0908) -->
+            <Key
+                latin:keySpec="&#x0908;"
+                latin:keyWidth="16.667%p" />
+        </case>
+        <default>
+            <!-- Pair 1: ट · ौ (nukta-ट · U+094C vowelAU) -->
+            <!-- Because the font rendering system prior to API version 16 can't automatically
+                 render dotted circle for incomplete combining letter of some scripts, different
+                 set of Key definitions are needed based on the API version. -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_sign_nukta" />
+            <Key
+                latin:keySpec="&#x091F;"
+                latin:keyStyle="moreKeysDevanagariSignNukta"
+                latin:keySecondarySpec="&#x094C;" />
+            <!-- Pair 2: े · र (U+0947 vowelE · U+0930) -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_e" />
+            <Key
+                latin:keyStyle="baseKeyDevanagariVowelSignE"
+                latin:keySecondarySpec="&#x0930;" />
+            <!-- Pair 3: त · य (U+0924 · U+092F) -->
+            <Key
+                latin:keySpec="&#x0924;"
+                latin:keySecondarySpec="&#x092F;" />
+            <!-- Pair 4: ु · ि (U+0941 vowelU · U+093F vowelI) -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_u" />
+            <Key
+                latin:keyStyle="baseKeyDevanagariVowelSignU"
+                latin:keySecondarySpec="&#x093F;" />
+            <!-- Pair 5: ो · प (U+094B vowelO · U+092A) -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_o" />
+            <Key
+                latin:keyStyle="baseKeyDevanagariVowelSignO"
+                latin:keySecondarySpec="&#x092A;" />
+            <!-- Solo: इ (U+0907) -->
+            <Key
+                latin:keySpec="&#x0907;"
+                latin:keyWidth="16.667%p" />
+        </default>
+    </switch>
+</merge>

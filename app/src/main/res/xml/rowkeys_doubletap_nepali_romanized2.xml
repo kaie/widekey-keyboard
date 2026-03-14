@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Double-tap Nepali Romanized row 2: 5 pairs + 1 solo @ 16.667%
+     Unshifted: ा·स  द·उ  ग·ह  ज·क  ल·ए  [ॐ solo]
+     Shifted:   आ·श  ध·ऊ  घ·अ  झ·ख  ॥·ऐ  [ः solo] -->
+<merge xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="alphabetManualShifted|alphabetShiftLocked">
+            <!-- Pair 1: आ · श (U+0906 · U+0936) -->
+            <Key
+                latin:keySpec="&#x0906;"
+                latin:keySecondarySpec="&#x0936;" />
+            <!-- Pair 2: ध · ऊ (U+0927 · U+090A) -->
+            <Key
+                latin:keySpec="&#x0927;"
+                latin:keySecondarySpec="&#x090A;" />
+            <!-- Pair 3: घ · अ (U+0918 · U+0905) -->
+            <Key
+                latin:keySpec="&#x0918;"
+                latin:keySecondarySpec="&#x0905;" />
+            <!-- Pair 4: झ · ख (U+091D · U+0916) -->
+            <Key
+                latin:keySpec="&#x091D;"
+                latin:keySecondarySpec="&#x0916;" />
+            <!-- Pair 5: ॥ · ऐ (U+0965 · U+0910) -->
+            <Key
+                latin:keySpec="&#x0965;"
+                latin:keySecondarySpec="&#x0910;" />
+            <!-- Solo: ः (U+0903 visarga) -->
+            <!-- Because the font rendering system prior to API version 16 can't automatically
+                 render dotted circle for incomplete combining letter of some scripts, different
+                 set of Key definitions are needed based on the API version. -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_sign_visarga" />
+            <Key
+                latin:keyStyle="baseKeyDevanagariSignVisarga"
+                latin:keyWidth="16.667%p" />
+        </case>
+        <default>
+            <!-- Pair 1: ा · स (U+093E vowelAA · U+0938) -->
+            <!-- Because the font rendering system prior to API version 16 can't automatically
+                 render dotted circle for incomplete combining letter of some scripts, different
+                 set of Key definitions are needed based on the API version. -->
+            <include latin:keyboardLayout="@xml/keystyle_devanagari_vowel_sign_aa" />
+            <Key
+                latin:keyStyle="baseKeyDevanagariVowelSignAa"
+                latin:keySecondarySpec="&#x0938;" />
+            <!-- Pair 2: द · उ (U+0926 · U+0909) -->
+            <Key
+                latin:keySpec="&#x0926;"
+                latin:keySecondarySpec="&#x0909;" />
+            <!-- Pair 3: ग · ह (U+0917 · U+0939) -->
+            <Key
+                latin:keySpec="&#x0917;"
+                latin:keySecondarySpec="&#x0939;" />
+            <!-- Pair 4: ज · क (U+091C · U+0915) -->
+            <Key
+                latin:keySpec="&#x091C;"
+                latin:keySecondarySpec="&#x0915;" />
+            <!-- Pair 5: ल · ए (U+0932 · U+090F) -->
+            <Key
+                latin:keySpec="&#x0932;"
+                latin:keySecondarySpec="&#x090F;" />
+            <!-- Solo: ॐ (U+0950) -->
+            <Key
+                latin:keySpec="&#x0950;"
+                latin:keyWidth="16.667%p" />
+        </default>
+    </switch>
+</merge>
