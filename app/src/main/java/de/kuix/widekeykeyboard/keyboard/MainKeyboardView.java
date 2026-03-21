@@ -563,8 +563,9 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
                 // Only one language: show emoji hint permanently, no need to cycle.
                 mShowingSpacebarHint = Settings.getInstance().getCurrent().mSpacebarHintEnabled;
             } else {
-                mShowingSpacebarHint = !subtypeChanged;
-                if (Settings.getInstance().getCurrent().mSpacebarHintEnabled) {
+                final boolean hintEnabled = Settings.getInstance().getCurrent().mSpacebarHintEnabled;
+                mShowingSpacebarHint = hintEnabled && !subtypeChanged;
+                if (hintEnabled) {
                     mSpacebarCycleHandler.postDelayed(mSpacebarCycleRunnable, SPACEBAR_CYCLE_MS);
                 }
             }
