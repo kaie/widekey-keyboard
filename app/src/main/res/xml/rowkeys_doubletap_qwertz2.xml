@@ -5,17 +5,32 @@
     <!-- morekeys_s included for ß access (normally on long-press of 's') -->
     <Key latin:keySpec="a"
         latin:keySecondarySpec="s"
-        latin:moreKeys="!text/morekeys_a,!text/morekeys_s" />
+        latin:moreKeys="!text/morekeys_a,!text/morekeys_s"
+        latin:keyHintLabel="#"
+        latin:keyHintLabelLeft="\@"
+        latin:additionalMoreKeys="\@,#" />
     <Key latin:keySpec="d"
         latin:keySecondarySpec="f"
-        latin:moreKeys="!text/morekeys_d" />
+        latin:moreKeys="!text/morekeys_d"
+        latin:keyHintLabel="%"
+        latin:keyHintLabelLeft="$"
+        latin:additionalMoreKeys="$,%" />
     <Key latin:keySpec="g"
         latin:keySecondarySpec="h"
-        latin:moreKeys="!text/morekeys_g,!text/morekeys_h" />
+        latin:moreKeys="!text/morekeys_g,!text/morekeys_h"
+        latin:keyHintLabel="-"
+        latin:keyHintLabelLeft="&amp;"
+        latin:additionalMoreKeys="&amp;,-" />
     <Key latin:keySpec="j"
         latin:keySecondarySpec="k"
-        latin:moreKeys="!text/morekeys_j,!text/morekeys_k" />
+        latin:moreKeys="!text/morekeys_j,!text/morekeys_k"
+        latin:keyHintLabel="("
+        latin:keyHintLabelLeft="+"
+        latin:additionalMoreKeys="+,(" />
     <Key latin:keySpec="l"
         latin:keySecondarySpec="m"
-        latin:moreKeys="!text/morekeys_l" />
+        latin:moreKeys="!text/morekeys_l"
+        latin:keyHintLabel="\?"
+        latin:keyHintLabelLeft=")"
+        latin:additionalMoreKeys="\?,)" />
 </merge>

@@ -192,6 +192,8 @@
         <attr name="keySecondarySpec" format="string" />
         <!-- The hint label to display on the key in conjunction with the label. -->
         <attr name="keyHintLabel" format="string" />
+        <!-- Extra-char hint shown in the top-left corner of a double-tap key. -->
+        <attr name="keyHintLabelLeft" format="string" />
         <!-- The vertical adjustment of key hint label in proportion to its height. -->
         <attr name="keyHintLabelVerticalAdjustment" format="fraction" />
         <!-- The key label flags. -->

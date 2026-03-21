@@ -238,7 +238,7 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
     }
 
     public static boolean readShowSpecialChars(final SharedPreferences prefs) {
-        return prefs.getBoolean(PREF_SHOW_SPECIAL_CHARS, true);
+        return prefs.getBoolean(PREF_SHOW_SPECIAL_CHARS, false);
     }
 
     public static boolean readShowNumberRow(final SharedPreferences prefs) {

@@ -3,17 +3,31 @@
      The conditional »/. key is simplified to period secondary with » in moreKeys. -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
     <Key latin:keySpec="q"
-        latin:keySecondarySpec="t" />
+        latin:keySecondarySpec="t"
+        latin:keyHintLabel="#"
+        latin:keyHintLabelLeft="\@"
+        latin:additionalMoreKeys="\@,#" />
     <Key latin:keySpec="d"
         latin:keySecondarySpec="i"
-        latin:moreKeys="!text/morekeys_i" />
+        latin:moreKeys="!text/morekeys_i"
+        latin:keyHintLabel="%"
+        latin:keyHintLabelLeft="$"
+        latin:additionalMoreKeys="$,%" />
     <Key latin:keySpec="n"
         latin:keySecondarySpec="u"
-        latin:moreKeys="!text/morekeys_u" />
+        latin:moreKeys="!text/morekeys_u"
+        latin:keyHintLabel="-"
+        latin:keyHintLabelLeft="&amp;"
+        latin:additionalMoreKeys="&amp;,-" />
     <Key latin:keySpec="l"
-        latin:keySecondarySpec="m" />
+        latin:keySecondarySpec="m"
+        latin:keyHintLabel="("
+        latin:keyHintLabelLeft="+"
+        latin:additionalMoreKeys="+,(" />
     <!-- U+00BB: "»" RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK in moreKeys -->
     <Key latin:keySpec="x"
         latin:keySecondarySpec="."
-        latin:moreKeys="&#x00BB;,\\?" />
+        latin:moreKeys="&#x00BB;,\\?"
+        latin:keyHintLabelLeft=")"
+        latin:additionalMoreKeys=")" />
 </merge>

@@ -62,6 +62,8 @@ public class Key implements Comparable<Key> {
     private final String mLabel;
     /** Hint label to display on the key in conjunction with the label */
     private final String mHintLabel;
+    /** Extra-char hint shown in the top-left corner of a double-tap key */
+    private final String mHintLabelLeft;
     /** Flags of the label */
     private final int mLabelFlags;
     private static final int LABEL_FLAGS_ALIGN_HINT_LABEL_TO_BOTTOM = 0x02;
@@ -206,6 +208,7 @@ public class Key implements Comparable<Key> {
         mCode = code;
         mSecondaryCode = CODE_UNSPECIFIED;
         mSecondaryLabel = null;
+        mHintLabelLeft = null;
         mIconId = iconId;
         mKeyVisualAttributes = null;
 
@@ -326,6 +329,7 @@ public class Key implements Comparable<Key> {
                     ? StringUtils.toTitleCaseOfKeyLabel(hintLabel, localeForUpcasing)
                     : hintLabel;
         }
+        mHintLabelLeft = style.getString(keyAttr, R.styleable.Keyboard_Key_keyHintLabelLeft);
         String outputText = KeySpecParser.getOutputText(keySpec);
         if (needsToUpcase) {
             outputText = StringUtils.toTitleCaseOfKeyLabel(outputText, localeForUpcasing);
@@ -406,6 +410,7 @@ public class Key implements Comparable<Key> {
         mSecondaryLabel = key.mSecondaryLabel;
         mLabel = key.mLabel;
         mHintLabel = key.mHintLabel;
+        mHintLabelLeft = key.mHintLabelLeft;
         mLabelFlags = key.mLabelFlags;
         mIconId = key.mIconId;
         mWidth = key.mWidth;
@@ -463,6 +468,7 @@ public class Key implements Comparable<Key> {
                 key.mLabelFlags,
                 key.mSecondaryCode,
                 key.mSecondaryLabel,
+                key.mHintLabelLeft,
                 // Key can be distinguishable without the following members.
                 // key.mOptionalAttributes.mAltCode,
                 // key.mOptionalAttributes.mDisabledIconId,
@@ -489,7 +495,8 @@ public class Key implements Comparable<Key> {
                 && o.mActionFlags == mActionFlags
                 && o.mLabelFlags == mLabelFlags
                 && o.mSecondaryCode == mSecondaryCode
-                && TextUtils.equals(o.mSecondaryLabel, mSecondaryLabel);
+                && TextUtils.equals(o.mSecondaryLabel, mSecondaryLabel)
+                && TextUtils.equals(o.mHintLabelLeft, mHintLabelLeft);
     }
 
     @Override
@@ -544,6 +551,10 @@ public class Key implements Comparable<Key> {
 
     public String getHintLabel() {
         return mHintLabel;
+    }
+
+    public String getHintLabelLeft() {
+        return mHintLabelLeft;
     }
 
     public MoreKeySpec[] getMoreKeys() {

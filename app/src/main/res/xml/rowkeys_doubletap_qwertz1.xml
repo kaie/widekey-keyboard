@@ -3,17 +3,32 @@
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
     <Key latin:keySpec="q"
         latin:keySecondarySpec="w"
-        latin:moreKeys="!text/morekeys_w" />
+        latin:moreKeys="!text/morekeys_w"
+        latin:keyHintLabel="\\"
+        latin:keyHintLabelLeft="_"
+        latin:additionalMoreKeys="_,\\" />
     <Key latin:keySpec="e"
         latin:keySecondarySpec="r"
-        latin:moreKeys="!text/morekeys_e,!text/morekeys_r" />
+        latin:moreKeys="!text/morekeys_e,!text/morekeys_r"
+        latin:keyHintLabel="="
+        latin:keyHintLabelLeft="|"
+        latin:additionalMoreKeys="\|,=" />
     <Key latin:keySpec="t"
         latin:keySecondarySpec="z"
-        latin:moreKeys="!text/morekeys_t,!text/morekeys_z" />
+        latin:moreKeys="!text/morekeys_t,!text/morekeys_z"
+        latin:keyHintLabel="]"
+        latin:keyHintLabelLeft="["
+        latin:additionalMoreKeys="[,]" />
     <Key latin:keySpec="u"
         latin:keySecondarySpec="i"
-        latin:moreKeys="!text/morekeys_u,!text/morekeys_i" />
+        latin:moreKeys="!text/morekeys_u,!text/morekeys_i"
+        latin:keyHintLabel="&gt;"
+        latin:keyHintLabelLeft="&lt;"
+        latin:additionalMoreKeys="&lt;,&gt;" />
     <Key latin:keySpec="o"
         latin:keySecondarySpec="p"
-        latin:moreKeys="!text/morekeys_o" />
+        latin:moreKeys="!text/morekeys_o"
+        latin:keyHintLabel="}"
+        latin:keyHintLabelLeft="{"
+        latin:additionalMoreKeys="},{" />
 </merge>

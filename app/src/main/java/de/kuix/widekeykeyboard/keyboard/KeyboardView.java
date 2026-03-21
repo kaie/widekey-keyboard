@@ -93,6 +93,7 @@ public class KeyboardView extends View {
     private static final float KET_TEXT_SHADOW_RADIUS_DISABLED = -1.0f;
     protected int mCustomColor = 0;
     protected KeyboardTheme mTheme;
+    protected boolean mShowSpecialChars = false;
 
     // The maximum key label width in the proportion to the key width.
     private static final float MAX_LABEL_RATIO = 0.90f;
@@ -174,6 +175,7 @@ public class KeyboardView extends View {
         final SharedPreferences prefs = PreferenceManagerCompat.getDeviceSharedPreferences(getContext());
         mCustomColor = Settings.readKeyboardColor(prefs, getContext());
         mTheme = Settings.getKeyboardTheme(getContext());
+        mShowSpecialChars = Settings.readShowSpecialChars(prefs);
         invalidateAllKeys();
         requestLayout();
     }
@@ -524,6 +526,32 @@ public class KeyboardView extends View {
 
         paint.clearShadowLayer();
         paint.setTextScaleX(1.0f);
+
+        // Draw extra-char corner hints (top-right = right key's symbol, top-left = left key's symbol).
+        final String rightHint = mShowSpecialChars ? key.getHintLabel() : null;
+        final String leftHint = mShowSpecialChars ? key.getHintLabelLeft() : null;
+        if (rightHint != null || leftHint != null) {
+            paint.setTypeface(Typeface.DEFAULT_BOLD);
+            paint.setTextSize(params.mHintLetterSize);
+            paint.setColor(key.selectHintTextColor(params));
+            blendAlpha(paint, params.mAnimAlpha);
+            final float hintDigitWidth = TypefaceUtils.getReferenceDigitWidth(paint);
+            final float hintBaseline = -paint.ascent();
+            if (rightHint != null) {
+                final float w = TypefaceUtils.getStringWidth(rightHint, paint);
+                final float hintX = keyWidth - mKeyHintLetterPadding - Math.max(hintDigitWidth, w) / 2.0f;
+                paint.setTextAlign(Align.CENTER);
+                canvas.drawText(rightHint, 0, rightHint.length(), hintX, hintBaseline, paint);
+            }
+            if (leftHint != null) {
+                final float w = TypefaceUtils.getStringWidth(leftHint, paint);
+                final float hintX = mKeyHintLetterPadding + Math.max(hintDigitWidth, w) / 2.0f;
+                paint.setTextAlign(Align.CENTER);
+                canvas.drawText(leftHint, 0, leftHint.length(), hintX, hintBaseline, paint);
+            }
+            paint.clearShadowLayer();
+            paint.setTextScaleX(1.0f);
+        }
 
         // Border around the key group + faint center divider
         final int textColor = key.selectTextColor(params);

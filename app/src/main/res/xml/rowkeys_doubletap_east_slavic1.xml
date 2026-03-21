@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Double-tap East Slavic row 1: й·ц у·к е·н г·ш [row1_9]·з [solo:х] (5 pairs + 1 solo × 16.667%) -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <!-- й·ц -->
-    <Key latin:keySpec="&#x0439;" latin:keySecondarySpec="&#x0446;" />
-    <!-- у·к -->
+    <!-- й·ц: left=\ right=| -->
+    <Key latin:keySpec="&#x0439;" latin:keySecondarySpec="&#x0446;"
+        latin:keyHintLabel="|"
+        latin:keyHintLabelLeft="\\"
+        latin:additionalMoreKeys="\|,\\" />
+    <!-- у·к: left== right=[ -->
     <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x043A;"
-        latin:moreKeys="!text/morekeys_cyrillic_u,!text/morekeys_cyrillic_ka" />
-    <!-- е·н -->
+        latin:moreKeys="!text/morekeys_cyrillic_u,!text/morekeys_cyrillic_ka"
+        latin:keyHintLabel="["
+        latin:keyHintLabelLeft="="
+        latin:additionalMoreKeys="=,[" />
+    <!-- е·н: left=] right={ -->
     <Key latin:keySpec="&#x0435;" latin:keySecondarySpec="&#x043D;"
-        latin:moreKeys="!text/morekeys_cyrillic_ie,!text/morekeys_cyrillic_en" />
-    <!-- г·ш -->
+        latin:moreKeys="!text/morekeys_cyrillic_ie,!text/morekeys_cyrillic_en"
+        latin:keyHintLabel="{"
+        latin:keyHintLabelLeft="]"
+        latin:additionalMoreKeys="],{" />
+    <!-- г·ш: left=} right=~ -->
     <Key latin:keySpec="&#x0433;" latin:keySecondarySpec="&#x0448;"
-        latin:moreKeys="!text/morekeys_cyrillic_ghe" />
-    <!-- [row1_9]·з -->
-    <Key latin:keySpec="!text/keyspec_east_slavic_row1_9" latin:keySecondarySpec="&#x0437;" />
+        latin:moreKeys="!text/morekeys_cyrillic_ghe"
+        latin:keyHintLabel="~"
+        latin:keyHintLabelLeft="}"
+        latin:additionalMoreKeys="},~" />
+    <!-- [row1_9]·з: left=° right=^ -->
+    <Key latin:keySpec="!text/keyspec_east_slavic_row1_9" latin:keySecondarySpec="&#x0437;"
+        latin:keyHintLabel="^"
+        latin:keyHintLabelLeft="°"
+        latin:additionalMoreKeys="°,^" />
     <!-- solo: х -->
     <Key latin:keySpec="&#x0445;" />
 </merge>
