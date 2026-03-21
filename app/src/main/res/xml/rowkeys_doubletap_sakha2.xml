@@ -1,22 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Double-tap Sakha row 2: ф·[row2_2] в·а п·р о·л д·ж [row2_11]·ө [solo:ҥ] (6 pairs + 1 solo × 14.286%) -->
+<!-- Double-tap Sakha row 2: ф·[row2_2] в·а п·р о·л д·ж [row2_11]·ő [solo:ҥ] (6 pairs + 1 solo × 14.286%) -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <!-- ф·[row2_2] -->
+    <!-- ф·[row2_2]: left=@(ф) right=#([row2_2]) -->
     <Key latin:keySpec="&#x0444;" latin:keySecondarySpec="!text/keyspec_east_slavic_row2_2"
-        latin:moreKeys="!text/morekeys_east_slavic_row2_2" />
-    <!-- в·а -->
+        latin:moreKeys="!text/morekeys_east_slavic_row2_2"
+        latin:keyHintLabel="#"
+        latin:keyHintLabelLeft="\@"
+        latin:additionalMoreKeys="\@,#" />
+    <!-- в·а: left=currency(в) right=%(а) -->
     <Key latin:keySpec="&#x0432;" latin:keySecondarySpec="&#x0430;"
-        latin:moreKeys="!text/morekeys_cyrillic_a" />
-    <!-- п·р -->
-    <Key latin:keySpec="&#x043F;" latin:keySecondarySpec="&#x0440;" />
-    <!-- о·л -->
+        latin:moreKeys="!text/morekeys_cyrillic_a"
+        latin:keyHintLabel="%"
+        latin:keyHintLabelLeft="!text/keyspec_currency"
+        latin:additionalMoreKeys="!text/keyspec_currency,%" />
+    <!-- п·р: left=&(п) right=_(р) -->
+    <Key latin:keySpec="&#x043F;" latin:keySecondarySpec="&#x0440;"
+        latin:keyHintLabel="_"
+        latin:keyHintLabelLeft="&amp;"
+        latin:additionalMoreKeys="&amp;,_" />
+    <!-- о·л: left=/(о) right=-(л) -->
     <Key latin:keySpec="&#x043E;" latin:keySecondarySpec="&#x043B;"
-        latin:moreKeys="!text/morekeys_cyrillic_o" />
-    <!-- д·ж -->
-    <Key latin:keySpec="&#x0434;" latin:keySecondarySpec="&#x0436;" />
-    <!-- [row2_11]·ө (U+04E9 CYRILLIC SMALL LETTER BARRED O) -->
+        latin:moreKeys="!text/morekeys_cyrillic_o"
+        latin:keyHintLabel="-"
+        latin:keyHintLabelLeft="/"
+        latin:additionalMoreKeys="/,-" />
+    <!-- д·ж: left=+(д) right=((ж) -->
+    <Key latin:keySpec="&#x0434;" latin:keySecondarySpec="&#x0436;"
+        latin:keyHintLabel="("
+        latin:keyHintLabelLeft="+"
+        latin:additionalMoreKeys="+,(" />
+    <!-- [row2_11]·ő: left=)([row2_11]), no right hint for ő (followed by solo, not right-edge) -->
     <Key latin:keySpec="!text/keyspec_east_slavic_row2_11" latin:keySecondarySpec="&#x04E9;"
-        latin:moreKeys="!text/morekeys_east_slavic_row2_11" />
-    <!-- solo: ҥ (U+04A5 CYRILLIC SMALL LETTER NG) -->
+        latin:moreKeys="!text/morekeys_east_slavic_row2_11"
+        latin:keyHintLabelLeft=")"
+        latin:additionalMoreKeys=")" />
+    <!-- solo: ҥ -->
     <Key latin:keySpec="&#x04A5;" />
 </merge>

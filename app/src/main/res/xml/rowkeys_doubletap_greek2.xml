@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Double-tap Greek row 2: α·σ  δ·φ  γ·η  ξ·κ  λ·μ  (5 pairs × 20%; μ moved up from row 3) -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <!-- α·σ (U+03B1·U+03C3), α moreKeys: ά(U+03AC) -->
-    <Key latin:keySpec="&#x03B1;" latin:keySecondarySpec="&#x03C3;" latin:moreKeys="&#x03AC;" />
-    <!-- δ·φ (U+03B4·U+03C6) -->
-    <Key latin:keySpec="&#x03B4;" latin:keySecondarySpec="&#x03C6;" />
-    <!-- γ·η (U+03B3·U+03B7), η moreKeys: ή(U+03AE) -->
-    <Key latin:keySpec="&#x03B3;" latin:keySecondarySpec="&#x03B7;" latin:moreKeys="&#x03AE;" />
-    <!-- ξ·κ (U+03BE·U+03BA) -->
-    <Key latin:keySpec="&#x03BE;" latin:keySecondarySpec="&#x03BA;" />
-    <!-- λ·μ (U+03BB·U+03BC; μ moved up from row 3) -->
-    <Key latin:keySpec="&#x03BB;" latin:keySecondarySpec="&#x03BC;" />
+    <!-- α·σ: left=@(α) right=#(σ) -->
+    <Key latin:keySpec="&#x03B1;" latin:keySecondarySpec="&#x03C3;" latin:moreKeys="&#x03AC;"
+        latin:keyHintLabel="#"
+        latin:keyHintLabelLeft="\@"
+        latin:additionalMoreKeys="\@,#" />
+    <!-- δ·φ: left=€(δ) right=%(φ) -->
+    <Key latin:keySpec="&#x03B4;" latin:keySecondarySpec="&#x03C6;"
+        latin:keyHintLabel="%"
+        latin:keyHintLabelLeft="€"
+        latin:additionalMoreKeys="€,%" />
+    <!-- γ·η: left=&(γ) right=-(η) -->
+    <Key latin:keySpec="&#x03B3;" latin:keySecondarySpec="&#x03B7;" latin:moreKeys="&#x03AE;"
+        latin:keyHintLabel="-"
+        latin:keyHintLabelLeft="&amp;"
+        latin:additionalMoreKeys="&amp;,-" />
+    <!-- ξ·κ: left=+(ξ) right=((κ) -->
+    <Key latin:keySpec="&#x03BE;" latin:keySecondarySpec="&#x03BA;"
+        latin:keyHintLabel="("
+        latin:keyHintLabelLeft="+"
+        latin:additionalMoreKeys="+,(" />
+    <!-- λ·μ: left=)(λ) right=?(μ) — right-edge: additionalMoreKeys right-first -->
+    <Key latin:keySpec="&#x03BB;" latin:keySecondarySpec="&#x03BC;"
+        latin:keyHintLabel="\?"
+        latin:keyHintLabelLeft=")"
+        latin:additionalMoreKeys="\?,)" />
 </merge>

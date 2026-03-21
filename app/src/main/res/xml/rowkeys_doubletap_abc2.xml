@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Double-tap ABC row 2: k·l  m·n  o·p  q·r  s·t  (5 pairs × 20%; t moved up from row 3) -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <Key latin:keySpec="k" latin:keySecondarySpec="l" latin:moreKeys="!text/morekeys_k,!text/morekeys_l" />
-    <Key latin:keySpec="m" latin:keySecondarySpec="n" latin:moreKeys="!text/morekeys_n" />
-    <Key latin:keySpec="o" latin:keySecondarySpec="p" latin:moreKeys="!text/morekeys_o" />
-    <Key latin:keySpec="q" latin:keySecondarySpec="r" latin:moreKeys="!text/morekeys_q,!text/morekeys_r" />
-    <Key latin:keySpec="s" latin:keySecondarySpec="t" latin:moreKeys="!text/morekeys_s,!text/morekeys_t" />
+    <!-- k·l: left=@(k) right=#(l) -->
+    <Key latin:keySpec="k" latin:keySecondarySpec="l" latin:moreKeys="!text/morekeys_k,!text/morekeys_l"
+        latin:keyHintLabel="#"
+        latin:keyHintLabelLeft="\@"
+        latin:additionalMoreKeys="\@,#" />
+    <!-- m·n: left=$(m) right=%(n) -->
+    <Key latin:keySpec="m" latin:keySecondarySpec="n" latin:moreKeys="!text/morekeys_n"
+        latin:keyHintLabel="%"
+        latin:keyHintLabelLeft="$"
+        latin:additionalMoreKeys="$,%" />
+    <!-- o·p: left=&(o) right=-(p) -->
+    <Key latin:keySpec="o" latin:keySecondarySpec="p" latin:moreKeys="!text/morekeys_o"
+        latin:keyHintLabel="-"
+        latin:keyHintLabelLeft="&amp;"
+        latin:additionalMoreKeys="&amp;,-" />
+    <!-- q·r: left=+(q) right=((r) -->
+    <Key latin:keySpec="q" latin:keySecondarySpec="r" latin:moreKeys="!text/morekeys_q,!text/morekeys_r"
+        latin:keyHintLabel="("
+        latin:keyHintLabelLeft="+"
+        latin:additionalMoreKeys="+,(" />
+    <!-- s·t: left=)(s) right=*(t) — right-edge: additionalMoreKeys right-first -->
+    <Key latin:keySpec="s" latin:keySecondarySpec="t" latin:moreKeys="!text/morekeys_s,!text/morekeys_t"
+        latin:keyHintLabel="*"
+        latin:keyHintLabelLeft=")"
+        latin:additionalMoreKeys="*,)" />
 </merge>

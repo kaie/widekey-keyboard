@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Double-tap Sakha row 1: й·ц у·к е·н г·ш [row1_9]·з х·ҕ [solo:һ] (6 pairs + 1 solo × 14.286%) -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <!-- й·ц -->
-    <Key latin:keySpec="&#x0439;" latin:keySecondarySpec="&#x0446;" />
-    <!-- у·к -->
+    <!-- й·ц: left=\(й) right=|(ц) — pipe first to avoid \,| parsing issue -->
+    <Key latin:keySpec="&#x0439;" latin:keySecondarySpec="&#x0446;"
+        latin:keyHintLabel="|"
+        latin:keyHintLabelLeft="\\"
+        latin:additionalMoreKeys="\|,\\" />
+    <!-- у·к: left==(у) right=[(к) -->
     <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x043A;"
-        latin:moreKeys="!text/morekeys_cyrillic_u,!text/morekeys_cyrillic_ka" />
-    <!-- е·н -->
+        latin:moreKeys="!text/morekeys_cyrillic_u,!text/morekeys_cyrillic_ka"
+        latin:keyHintLabel="["
+        latin:keyHintLabelLeft="="
+        latin:additionalMoreKeys="=,[" />
+    <!-- е·н: left=](е) right={(н) -->
     <Key latin:keySpec="&#x0435;" latin:keySecondarySpec="&#x043D;"
-        latin:moreKeys="!text/morekeys_cyrillic_ie,!text/morekeys_cyrillic_en" />
-    <!-- г·ш -->
+        latin:moreKeys="!text/morekeys_cyrillic_ie,!text/morekeys_cyrillic_en"
+        latin:keyHintLabel="{"
+        latin:keyHintLabelLeft="]"
+        latin:additionalMoreKeys="],{" />
+    <!-- г·ш: left=}(г) right=~(ш) -->
     <Key latin:keySpec="&#x0433;" latin:keySecondarySpec="&#x0448;"
-        latin:moreKeys="!text/morekeys_cyrillic_ghe" />
-    <!-- [row1_9]·з -->
-    <Key latin:keySpec="!text/keyspec_east_slavic_row1_9" latin:keySecondarySpec="&#x0437;" />
-    <!-- х·ҕ (U+0445·U+0495 CYRILLIC SMALL LETTER GH) -->
-    <Key latin:keySpec="&#x0445;" latin:keySecondarySpec="&#x0495;" />
-    <!-- solo: һ (U+04BB CYRILLIC SMALL LETTER SHHA) -->
+        latin:moreKeys="!text/morekeys_cyrillic_ghe"
+        latin:keyHintLabel="~"
+        latin:keyHintLabelLeft="}"
+        latin:additionalMoreKeys="},~" />
+    <!-- [row1_9]·з: left=°([row1_9]) right=^(з) -->
+    <Key latin:keySpec="!text/keyspec_east_slavic_row1_9" latin:keySecondarySpec="&#x0437;"
+        latin:keyHintLabel="^"
+        latin:keyHintLabelLeft="°"
+        latin:additionalMoreKeys="°,^" />
+    <!-- х·ҕ: left=`(х), no right hint for ҕ -->
+    <Key latin:keySpec="&#x0445;" latin:keySecondarySpec="&#x0495;"
+        latin:keyHintLabelLeft="`"
+        latin:additionalMoreKeys="`" />
+    <!-- solo: һ -->
     <Key latin:keySpec="&#x04BB;" />
 </merge>
