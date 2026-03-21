@@ -520,10 +520,16 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         // Resolve any pending double-tap from a previous key press.
         if (sPendingDoubleTapKey != null) {
             if (key == sPendingDoubleTapKey) {
-                // Second tap on the same key: cancel the timer and flag this as the second tap.
+                // Second tap on the same key: cancel the timer and commit secondary immediately.
+                // Committing on DOWN (not UP) prevents a race where another key (e.g. Enter)
+                // fires between the second tap's DOWN and UP events.
                 sTimerProxy.cancelPendingSingleTapTimer();
                 sPendingDoubleTapKey = null;
                 mIsSecondDoubleTap = true;
+                final boolean isRtl = mKeyboard != null && mKeyboard.isRtlKeyboard();
+                final int secondaryCode = isRtl ? key.getCode() : key.getSecondaryCode();
+                callListenerOnCodeInput(key, secondaryCode, x, y, false /* isKeyRepeat */);
+                callListenerOnRelease(key, secondaryCode, false /* withSliding */);
             } else {
                 // Different key pressed: commit the pending primary code immediately.
                 flushPendingDoubleTap();
@@ -761,15 +767,9 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
             return;
         }
         if (currentKey != null && currentKey.hasSecondaryCode() && !isInDraggingFinger) {
-            final boolean isRtl = mKeyboard != null && mKeyboard.isRtlKeyboard();
             if (mIsSecondDoubleTap) {
-                // Second tap confirmed: commit the "double-tap" code immediately.
-                // For RTL keyboards, double tap commits the primary (left) code.
-                // For LTR keyboards, double tap commits the secondary (right) code.
+                // Secondary was already committed on DOWN - just clear the flag.
                 mIsSecondDoubleTap = false;
-                final int code = isRtl ? currentKey.getCode() : currentKey.getSecondaryCode();
-                callListenerOnCodeInput(currentKey, code, mKeyX, mKeyY, false /* isKeyRepeat */);
-                callListenerOnRelease(currentKey, code, false /* withSliding */);
             } else {
                 // First tap: defer commit until timeout or second tap.
                 sPendingDoubleTapKey = currentKey;
