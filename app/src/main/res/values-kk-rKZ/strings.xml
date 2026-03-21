@@ -41,5 +41,6 @@
     <string name="prefs_keypress_sound_volume_settings">"Пернені басқан кездегі дыбыс деңгейі"</string>
     <string name="prefs_key_longpress_timeout_settings">"Пернені ұзақ басу кідірісі"</string>
     <string name="prefs_doubletap_timeout_settings">"Екі рет түрту кідірісі"</string>
+    <string name="pref_spacebar_hint">Көрсет &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"Әдепкі"</string>
 </resources>

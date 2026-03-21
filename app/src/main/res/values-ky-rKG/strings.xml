@@ -41,5 +41,6 @@
     <string name="prefs_keypress_sound_volume_settings">"Басылган баскычтын үнүнүн катуулугу"</string>
     <string name="prefs_key_longpress_timeout_settings">"Баскычты көпкө басуунун узактыгы"</string>
     <string name="prefs_doubletap_timeout_settings">"Кош тийүү кечигүүсү"</string>
+    <string name="pref_spacebar_hint">Көрсөт &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"Демейки"</string>
 </resources>

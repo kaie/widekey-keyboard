@@ -41,5 +41,6 @@
     <string name="prefs_keypress_sound_volume_settings">"Taustiņu nosp. skaņas skaļums"</string>
     <string name="prefs_key_longpress_timeout_settings">"Taustiņa ilgās nosp. noildze"</string>
     <string name="prefs_doubletap_timeout_settings">"Dubultskāriena aizkavēšanās"</string>
+    <string name="pref_spacebar_hint">Rādi &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"Noklusējums"</string>
 </resources>

@@ -43,6 +43,7 @@
     <string name="prefs_keypress_sound_volume_settings">"விசையழுத்த ஒலியளவு"</string>
     <string name="prefs_key_longpress_timeout_settings">"விசைக்கான நீண்ட அழுத்த நேரம்"</string>
     <string name="prefs_doubletap_timeout_settings">"இரட்டை-தட்டல் தாமதம்"</string>
+    <string name="pref_spacebar_hint">காட்டு &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"இயல்புநிலை"</string>
     <string name="prefs_keyboard_height_settings">விசைப்பலகை உயரம்</string>
     <string name="keyboard_color">தனிப்பயன் விசைப்பலகை வண்ணத்தை அமை</string>

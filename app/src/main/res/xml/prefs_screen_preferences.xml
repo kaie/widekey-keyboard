@@ -52,4 +52,8 @@
         android:key="pref_delete_swipe"
         android:title="@string/delete_swipe"
         android:defaultValue="false" />
+    <SwitchPreference
+        android:key="pref_spacebar_hint"
+        android:title="@string/pref_spacebar_hint"
+        android:defaultValue="true" />
 </PreferenceScreen>

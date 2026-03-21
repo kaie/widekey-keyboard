@@ -50,6 +50,7 @@ public class SettingsValues {
     public final boolean mShowNumberRow;
     public final boolean mSpaceSwipeEnabled;
     public final boolean mDeleteSwipeEnabled;
+    public final boolean mSpacebarHintEnabled;
 
     // From the input box
     public final InputAttributes mInputAttributes;
@@ -92,6 +93,7 @@ public class SettingsValues {
         mShowSpecialChars = Settings.readShowSpecialChars(prefs);
         mShowNumberRow = Settings.readShowNumberRow(prefs);
         mSpaceSwipeEnabled = Settings.readSpaceSwipeEnabled(prefs);
+        mSpacebarHintEnabled = prefs.getBoolean(Settings.PREF_SPACEBAR_HINT, true);
         mDeleteSwipeEnabled = Settings.readDeleteSwipeEnabled(prefs);
     }
 

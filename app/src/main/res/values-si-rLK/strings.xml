@@ -43,6 +43,7 @@
     <string name="prefs_keypress_sound_volume_settings">"යතුරු එබීම් හඬ තීව්‍රතාවය"</string>
     <string name="prefs_key_longpress_timeout_settings">"යතුරු දිගු එබීම් ප්‍රමාදය"</string>
     <string name="prefs_doubletap_timeout_settings">"දෙවරක් තට්ටු කිරීමේ ප්‍රමාදය"</string>
+    <string name="pref_spacebar_hint">පෙන්වන්න &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"සුපුරුදු"</string>
     <string name="prefs_keyboard_height_settings">යතුරුපුවරුවේ උස</string>
     <string name="keyboard_color">අභිරුචි වර්ණයක් සකසන්න</string>

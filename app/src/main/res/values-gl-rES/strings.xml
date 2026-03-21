@@ -40,6 +40,7 @@
     <string name="prefs_keypress_sound_volume_settings">"Volume do son ao premer teclas"</string>
     <string name="prefs_key_longpress_timeout_settings">"Retraso de pulsación prolongada"</string>
     <string name="prefs_doubletap_timeout_settings">"Atraso de dobre toque"</string>
+    <string name="pref_spacebar_hint">Mostra &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"Predeterminado"</string>
     <string name="prefs_keyboard_height_settings">Altura do teclado</string>
     <string name="keyboard_color">Establecer cor personalizada do teclado</string>

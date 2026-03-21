@@ -40,5 +40,6 @@
     <string name="prefs_keypress_sound_volume_settings">"Styrkur lyklahljóða"</string>
     <string name="prefs_key_longpress_timeout_settings">"Töf áður en lykli er haldið inni"</string>
     <string name="prefs_doubletap_timeout_settings">"Seinkun tvöfaldra högg"</string>
+    <string name="pref_spacebar_hint">Sýna &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"Sjálfgefið"</string>
 </resources>

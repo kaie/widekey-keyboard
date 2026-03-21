@@ -43,6 +43,7 @@
     <string name="prefs_keypress_sound_volume_settings">"키를 누를 때 소리 볼륨"</string>
     <string name="prefs_key_longpress_timeout_settings">"키 길게 누르기 지연"</string>
     <string name="prefs_doubletap_timeout_settings">"두 번 탭 지연"</string>
+    <string name="pref_spacebar_hint">표시 &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"기본값"</string>
     <string name="prefs_bottom_offset_portrait_settings">하단 오프셋</string>
     <string name="keyboard_color">사용자 지정 키보드 색상 설정</string>

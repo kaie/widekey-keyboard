@@ -43,6 +43,7 @@
     <string name="prefs_keypress_sound_volume_settings">"میزان صدای فشردن کلید"</string>
     <string name="prefs_key_longpress_timeout_settings">"تأخیر فشار طولانی کلید"</string>
     <string name="prefs_doubletap_timeout_settings">"تأخیر دوضربه‌ای"</string>
+    <string name="pref_spacebar_hint">نمایش &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"پیش‌فرض"</string>
     <string name="prefs_keyboard_height_settings">ارتفاع صفحه کلید</string>
     <string name="keyboard_color">تنظیم رنگ صفحه کلید سفارشی</string>

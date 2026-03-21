@@ -41,5 +41,6 @@
     <string name="prefs_keypress_sound_volume_settings">"કીપ્રેસ ધ્વનિ વોલ્યુમ"</string>
     <string name="prefs_key_longpress_timeout_settings">"લાંબા કી પ્રેસનો વિલંબ"</string>
     <string name="prefs_doubletap_timeout_settings">"ડબલ-ટૅપ વિલંબ"</string>
+    <string name="pref_spacebar_hint">બતાવો &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"ડિફોલ્ટ"</string>
 </resources>

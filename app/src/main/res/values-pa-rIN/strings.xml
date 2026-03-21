@@ -41,5 +41,6 @@
     <string name="prefs_keypress_sound_volume_settings">"ਕੀਪ੍ਰੈਸ ਅਵਾਜ਼ ਵੌਲਿਊਮ"</string>
     <string name="prefs_key_longpress_timeout_settings">"ਕੁੰਜੀ ਦਬਾਈ ਰੱਖਣ ਦੀ ਮਿਆਦ"</string>
     <string name="prefs_doubletap_timeout_settings">"ਦੋਹਰੇ-ਟੈਪ ਦੀ ਦੇਰੀ"</string>
+    <string name="pref_spacebar_hint">ਦਿਖਾਓ &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"ਡਿਫੌਲਟ"</string>
 </resources>

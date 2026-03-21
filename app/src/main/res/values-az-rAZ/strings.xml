@@ -41,6 +41,7 @@
     <string name="prefs_keypress_sound_volume_settings">"Səsli klikləmə səsi"</string>
     <string name="prefs_key_longpress_timeout_settings">"Klavişi uzun müddət basmada gecikmə"</string>
     <string name="prefs_doubletap_timeout_settings">"İki dəfə toxunma gecikmə müddəti"</string>
+    <string name="pref_spacebar_hint">Göstər &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"Defolt"</string>
     <string name="prefs_keyboard_height_settings">Klaviatura hündürlüyü</string>
     <string name="keyboard_color">Fərdi klaviatura rəngi təyin et</string>

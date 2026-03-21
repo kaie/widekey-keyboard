@@ -41,5 +41,6 @@
     <string name="prefs_keypress_sound_volume_settings">"Jačina zvuka pritisnute tipke"</string>
     <string name="prefs_key_longpress_timeout_settings">"Odgoda dugog pritiska tipke"</string>
     <string name="prefs_doubletap_timeout_settings">"Kašnjenje dvostrukog dodira"</string>
+    <string name="pref_spacebar_hint">Prikaži &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"Zadano"</string>
 </resources>

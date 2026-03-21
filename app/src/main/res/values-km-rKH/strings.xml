@@ -41,5 +41,6 @@
     <string name="prefs_keypress_sound_volume_settings">"កម្រិត​សំឡេង​ពេល​ចុច​គ្រាប់​ចុច"</string>
     <string name="prefs_key_longpress_timeout_settings">"ពន្យារពេល​​​ចុច​គ្រាប់​ចុច​ឲ្យ​​យូរ"</string>
     <string name="prefs_doubletap_timeout_settings">"ការពន្យាពេលចុចពីរដង"</string>
+    <string name="pref_spacebar_hint">បង្ហាញ &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"លំនាំដើម"</string>
 </resources>

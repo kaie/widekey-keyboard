@@ -42,6 +42,7 @@
     <string name="prefs_keypress_sound_volume_settings">"Głośność przy naciśniętym klawiszu"</string>
     <string name="prefs_key_longpress_timeout_settings">"Opóźnienie przy długim naciśnięciu"</string>
     <string name="prefs_doubletap_timeout_settings">"Opóźnienie podwójnego dotknięcia"</string>
+    <string name="pref_spacebar_hint">Pokaż &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"Domyślne"</string>
     <string name="prefs_keyboard_height_settings">Wysokość klawiatury</string>
     <string name="prefs_bottom_offset_portrait_settings">Dolne przesunięcie</string>

@@ -40,5 +40,6 @@
     <string name="prefs_keypress_sound_volume_settings">"Volumen al presionar teclas"</string>
     <string name="prefs_key_longpress_timeout_settings">"Demora al mantener presionado"</string>
     <string name="prefs_doubletap_timeout_settings">"Retardo de doble toque"</string>
+    <string name="pref_spacebar_hint">Muestra &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"Predeterminado"</string>
 </resources>

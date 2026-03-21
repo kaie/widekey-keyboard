@@ -28,6 +28,8 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
 import android.graphics.Typeface;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -49,6 +51,7 @@ import de.kuix.widekeykeyboard.keyboard.internal.NonDistinctMultitouchHelper;
 import de.kuix.widekeykeyboard.keyboard.internal.TimerHandler;
 import de.kuix.widekeykeyboard.latin.Subtype;
 import de.kuix.widekeykeyboard.latin.RichInputMethodManager;
+import de.kuix.widekeykeyboard.latin.settings.Settings;
 import de.kuix.widekeykeyboard.latin.common.Constants;
 import de.kuix.widekeykeyboard.latin.common.CoordinateUtils;
 import de.kuix.widekeykeyboard.latin.utils.LanguageOnSpacebarUtils;
@@ -74,6 +77,21 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
     private final int mLanguageOnSpacebarTextColor;
     // The minimum x-scale to fit the language name on spacebar.
     private static final float MINIMUM_XSCALE_OF_LANGUAGE_NAME = 0.8f;
+    // Cycling hint on spacebar: alternates between language name and tap hint every 2 seconds.
+    private static final long SPACEBAR_CYCLE_MS = 5000L;
+    private boolean mShowingSpacebarHint = false;
+    private final Handler mSpacebarCycleHandler = new Handler(Looper.getMainLooper());
+    private final Runnable mSpacebarCycleRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (!Settings.getInstance().getCurrent().mSpacebarHintEnabled) {
+                return;
+            }
+            mShowingSpacebarHint = !mShowingSpacebarHint;
+            invalidateKey(mSpaceKey);
+            mSpacebarCycleHandler.postDelayed(mSpacebarCycleRunnable, SPACEBAR_CYCLE_MS);
+        }
+    };
 
     // Stuff to draw altCodeWhileTyping keys.
     private final ObjectAnimator mAltCodeKeyWhileTypingFadeoutAnimator;
@@ -371,6 +389,7 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         mDrawingPreviewPlacerView.removeAllViews();
+        mSpacebarCycleHandler.removeCallbacks(mSpacebarCycleRunnable);
     }
 
     // Implements {@link DrawingProxy@showMoreKeysKeyboard(Key,PointerTracker)}.
@@ -522,6 +541,7 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
 
     public void onHideWindow() {
         onDismissMoreKeysPanel();
+        mSpacebarCycleHandler.removeCallbacks(mSpacebarCycleRunnable);
     }
 
     public void startDisplayLanguageOnSpacebar(final boolean subtypeChanged,
@@ -530,6 +550,11 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
             KeyPreviewView.clearTextCache();
         }
         mLanguageOnSpacebarFormatType = languageOnSpacebarFormatType;
+        mShowingSpacebarHint = false;
+        mSpacebarCycleHandler.removeCallbacks(mSpacebarCycleRunnable);
+        if (Settings.getInstance().getCurrent().mSpacebarHintEnabled) {
+            mSpacebarCycleHandler.postDelayed(mSpacebarCycleRunnable, SPACEBAR_CYCLE_MS);
+        }
         invalidateKey(mSpaceKey);
     }
 
@@ -542,10 +567,14 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
         super.onDrawKeyTopVisuals(key, canvas, paint, params);
         final int code = key.getCode();
         if (code == Constants.CODE_SPACE) {
-            // If more than one language is enabled in current input method
-            final RichInputMethodManager imm = RichInputMethodManager.getInstance();
-            if (imm.hasMultipleEnabledSubtypes()) {
-                drawLanguageOnSpacebar(key, canvas, paint);
+            if (mShowingSpacebarHint) {
+                drawHintOnSpacebar(key, canvas, paint);
+            } else {
+                // If more than one language is enabled in current input method
+                final RichInputMethodManager imm = RichInputMethodManager.getInstance();
+                if (imm.hasMultipleEnabledSubtypes()) {
+                    drawLanguageOnSpacebar(key, canvas, paint);
+                }
             }
         }
     }
@@ -586,6 +615,25 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
         }
 
         return "";
+    }
+
+    private void drawHintOnSpacebar(final Key key, final Canvas canvas, final Paint paint) {
+        final int width = key.getWidth();
+        final int height = key.getHeight();
+        paint.setTypeface(Typeface.DEFAULT);
+        paint.setTextSize(mLanguageOnSpacebarTextSize);
+        paint.setColor(mLanguageOnSpacebarTextColor);
+        paint.setAlpha(mLanguageOnSpacebarFinalAlpha);
+        paint.setTextScaleX(1.0f);
+        final float descent = paint.descent();
+        final float textHeight = -paint.ascent() + descent;
+        final float y = height / 2 + textHeight / 2 - descent;
+        paint.setTextAlign(Align.LEFT);
+        canvas.drawText("\uD83D\uDC46 1\u00D7", mLanguageOnSpacebarHorizontalMargin, y, paint);
+        paint.setTextAlign(Align.RIGHT);
+        canvas.drawText("\uD83D\uDC46\uD83D\uDC46 2\u00D7", width - mLanguageOnSpacebarHorizontalMargin, y, paint);
+        paint.clearShadowLayer();
+        paint.setTextScaleX(1.0f);
     }
 
     private void drawLanguageOnSpacebar(final Key key, final Canvas canvas, final Paint paint) {

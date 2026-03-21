@@ -41,6 +41,7 @@
     <string name="prefs_keypress_sound_volume_settings">"Tekla sakatzearen bolumena"</string>
     <string name="prefs_key_longpress_timeout_settings">"Luze sakatzearen atzerapena"</string>
     <string name="prefs_doubletap_timeout_settings">"Bi aldiz sakatzeko atzerapena"</string>
+    <string name="pref_spacebar_hint">Erakutsi &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"Lehenetsia"</string>
     <string name="prefs_keyboard_height_settings">Teklatuaren altuera</string>
     <string name="prefs_bottom_offset_portrait_settings">Beheko desplazamendua</string>

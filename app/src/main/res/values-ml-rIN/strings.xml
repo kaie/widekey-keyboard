@@ -42,6 +42,7 @@
     <string name="prefs_keypress_sound_volume_settings">"കീ അമർത്തുമ്പോഴുള്ള ശബ്‌ദ വോളിയം"</string>
     <string name="prefs_key_longpress_timeout_settings">"കീ അമർത്തിപ്പിടിക്കുന്നതിലെ കാലതാമസം"</string>
     <string name="prefs_doubletap_timeout_settings">"ഡബിൾ-ടാപ്പ് കാലതാമസം"</string>
+    <string name="pref_spacebar_hint">കാണിക്കുക &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
     <string name="button_default">"സ്ഥിരമായത്"</string>
     <string name="prefs_keyboard_height_settings">"കീബോർഡ് ഉയരം"</string>
     <string name="keyboard_color">"ഇഷ്ടാനുസൃത കീബോർഡ് നിറം സജ്ജമാക്കുക"</string>
