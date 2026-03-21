@@ -29,4 +29,4 @@ Widekey Keyboard is a fork of [Simple Keyboard](https://github.com/rkkr/simple-k
 
 ## Screenshots
 
-![Screenshot 1](screenshots/widekey-screenshot1.jpg) ![Screenshot 2](screenshots/widekey-screenshot2.jpg) ![Screenshot 3](screenshots/widekey-screenshot3.jpg)
+![Screenshot 1](screenshots/widekey-screenshot1.png) ![Screenshot 4](screenshots/widekey-screenshot4.png) ![Screenshot 2](screenshots/widekey-screenshot2.png) ![Screenshot 3](screenshots/widekey-screenshot3.png)
