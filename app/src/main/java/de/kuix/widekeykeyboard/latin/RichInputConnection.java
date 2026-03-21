@@ -375,7 +375,9 @@ public final class RichInputConnection {
             }
         }
 
-        mIC.performContextMenuAction(android.R.id.paste);
+        if (mIC != null) {
+            mIC.performContextMenuAction(android.R.id.paste);
+        }
     }
 
     public void sendKeyEvent(final KeyEvent keyEvent) {
