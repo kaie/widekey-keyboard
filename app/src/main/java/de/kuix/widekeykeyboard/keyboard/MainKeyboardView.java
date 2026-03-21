@@ -550,7 +550,7 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
             KeyPreviewView.clearTextCache();
         }
         mLanguageOnSpacebarFormatType = languageOnSpacebarFormatType;
-        mShowingSpacebarHint = false;
+        mShowingSpacebarHint = !subtypeChanged;
         mSpacebarCycleHandler.removeCallbacks(mSpacebarCycleRunnable);
         if (Settings.getInstance().getCurrent().mSpacebarHintEnabled) {
             mSpacebarCycleHandler.postDelayed(mSpacebarCycleRunnable, SPACEBAR_CYCLE_MS);
