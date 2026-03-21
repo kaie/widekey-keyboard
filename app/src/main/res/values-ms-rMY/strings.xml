@@ -41,6 +41,6 @@
     <string name="prefs_keypress_sound_volume_settings">"Kelantangan bunyi tekan kekunci"</string>
     <string name="prefs_key_longpress_timeout_settings">"Lengah tekan lama kekunci"</string>
     <string name="prefs_doubletap_timeout_settings">"Kelewatan ketukan berganda"</string>
-    <string name="pref_spacebar_hint">Tunjuk &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
+    <string name="pref_spacebar_hint">Tunjuk &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Lalai"</string>
 </resources>

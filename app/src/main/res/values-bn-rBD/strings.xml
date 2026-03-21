@@ -47,7 +47,7 @@
     <string name="prefs_keypress_sound_volume_settings">কিপ্রেস শব্দের ভলিউম</string>
     <string name="prefs_key_longpress_timeout_settings">দীর্ঘ কিপ্রেসের বিলম্ব</string>
     <string name="prefs_doubletap_timeout_settings">"দ্বৈত-ট্যাপ বিলম্ব"</string>
-    <string name="pref_spacebar_hint">দেখাও &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
+    <string name="pref_spacebar_hint">দেখাও &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">ডিফল্ট</string>
     <string name="prefs_keyboard_height_settings">কিবোর্ডের উচ্চতা</string>
     <string name="prefs_bottom_offset_portrait_settings">নীচের অফসেট</string>

@@ -40,7 +40,7 @@
     <string name="prefs_keypress_sound_volume_settings">"Јачина звука при притиску"</string>
     <string name="prefs_key_longpress_timeout_settings">"Одлагање при дугом притиску"</string>
     <string name="prefs_doubletap_timeout_settings">"Кашњење двоструког додира"</string>
-    <string name="pref_spacebar_hint">Прикажи &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
+    <string name="pref_spacebar_hint">Прикажи &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Подразумевано"</string>
     <string name="prefs_keyboard_height_settings">Висина тастатуре</string>
     <string name="keyboard_color">Постави боју тастатуре</string>

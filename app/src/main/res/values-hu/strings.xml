@@ -42,7 +42,7 @@
     <string name="prefs_keypress_sound_volume_settings">"Gombnyomás hangereje"</string>
     <string name="prefs_key_longpress_timeout_settings">"Hosszú nyomás késleltetése"</string>
     <string name="prefs_doubletap_timeout_settings">"Dupla érintés késleltetése"</string>
-    <string name="pref_spacebar_hint">Mutasd &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
+    <string name="pref_spacebar_hint">Mutasd &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Alapértelmezett"</string>
     <string name="prefs_keyboard_height_settings">Billentyűzet magassága</string>
     <string name="prefs_bottom_offset_portrait_settings">Alsó eltolás</string>

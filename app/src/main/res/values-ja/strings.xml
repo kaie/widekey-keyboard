@@ -44,7 +44,7 @@
     <string name="prefs_keypress_sound_volume_settings">"キー操作音の音量"</string>
     <string name="prefs_key_longpress_timeout_settings">"キーの長押し時間"</string>
     <string name="prefs_doubletap_timeout_settings">"ダブルタップの遅延"</string>
-    <string name="pref_spacebar_hint">表示 &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
+    <string name="pref_spacebar_hint">表示 &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"デフォルト"</string>
     <string name="prefs_keyboard_height_settings">キーボードの高さ</string>
     <string name="prefs_bottom_offset_portrait_settings">下部オフセット</string>

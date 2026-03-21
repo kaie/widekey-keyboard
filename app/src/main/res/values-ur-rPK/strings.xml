@@ -41,7 +41,7 @@
     <string name="prefs_keypress_sound_volume_settings">"کلید دبانے پر آواز کا والیوم"</string>
     <string name="prefs_key_longpress_timeout_settings">"کلید کو دیر تک دبانے کی تاخیر"</string>
     <string name="prefs_doubletap_timeout_settings">"ڈبل ٹیپ تاخیر"</string>
-    <string name="pref_spacebar_hint">دکھائیں &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
+    <string name="pref_spacebar_hint">دکھائیں &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"ڈیفالٹ"</string>
     <string name="prefs_keyboard_height_settings">کی بورڈ کی اونچائی</string>
     <string name="keyboard_color">کی بورڈ کا کسٹم رنگ منتخب کریں</string>

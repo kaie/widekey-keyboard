@@ -42,7 +42,7 @@
     <string name="prefs_keypress_sound_volume_settings">"Klahvivajutuse helitugevus"</string>
     <string name="prefs_key_longpress_timeout_settings">"Pika klahvivajutuse viide"</string>
     <string name="prefs_doubletap_timeout_settings">"Topeltpuudutuse viivitus"</string>
-    <string name="pref_spacebar_hint">Näita &#x1F446;1&#xD7; &#x1F446;&#x1F446;2&#xD7;</string>
+    <string name="pref_spacebar_hint">Näita &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Vaikeväärtus"</string>
     <string name="prefs_keyboard_height_settings">Klaviatuuri kõrgus</string>
     <string name="prefs_bottom_offset_portrait_settings">Veerised all ääres</string>

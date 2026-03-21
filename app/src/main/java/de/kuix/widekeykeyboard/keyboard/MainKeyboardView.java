@@ -635,12 +635,16 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
         final float descent = paint.descent();
         final float textHeight = -paint.ascent() + descent;
         final float y = height / 2 + textHeight / 2 - descent;
+        final String leftHint = "\uD83D\uDC46 \u25C4";
+        final String rightHint = "\u25BA \uD83D\uDC46\uD83D\uDC46";
+        final float leftEnd = mLanguageOnSpacebarHorizontalMargin + paint.measureText(leftHint);
+        final float rightStart = width - mLanguageOnSpacebarHorizontalMargin - paint.measureText(rightHint);
         paint.setTextAlign(Align.LEFT);
-        canvas.drawText("\uD83D\uDC46\u25C4", mLanguageOnSpacebarHorizontalMargin, y, paint);
+        canvas.drawText(leftHint, mLanguageOnSpacebarHorizontalMargin, y, paint);
         paint.setTextAlign(Align.CENTER);
-        canvas.drawText("\u24D8", width / 2.0f, y, paint);
+        canvas.drawText("\u24D8", (leftEnd + rightStart) / 2.0f, y, paint);
         paint.setTextAlign(Align.RIGHT);
-        canvas.drawText("\u25BA\uD83D\uDC46\uD83D\uDC46", width - mLanguageOnSpacebarHorizontalMargin, y, paint);
+        canvas.drawText(rightHint, width - mLanguageOnSpacebarHorizontalMargin, y, paint);
         paint.clearShadowLayer();
         paint.setTextScaleX(1.0f);
     }
