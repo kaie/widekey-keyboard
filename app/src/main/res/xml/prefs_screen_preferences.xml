@@ -31,10 +31,6 @@
         android:title="@string/show_special_chars"
         android:defaultValue="true" />
     <SwitchPreference
-        android:key="pref_show_language_switch_key"
-        android:title="@string/show_language_switch_key"
-        android:defaultValue="true" />
-    <SwitchPreference
         android:key="pref_use_on_screen"
         android:title="@string/pref_use_on_screen"
         android:summary="@string/pref_use_on_screen_summary"
@@ -42,7 +38,6 @@
     <SwitchPreference
         android:key="pref_enable_ime_switch"
         android:title="@string/pref_enable_ime_switch"
-        android:dependency="pref_show_language_switch_key"
         android:defaultValue="false" />
     <SwitchPreference
         android:key="pref_space_swipe"

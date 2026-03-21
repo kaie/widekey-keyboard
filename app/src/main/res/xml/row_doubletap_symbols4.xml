@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Double-tap symbols spacebar row.
-     With globe:    ABC(18%) + globe(12%) + space(32%) + ,.(20%) + enter(18%) = 100%
-     Without globe: ABC(18%) + space(44%) + ,.(20%) + enter(18%) = 100% -->
+     ABC(18%) + globe(10%) + space(42%) + ,.(15%) + enter(15%) = 100% -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
     <Row
         latin:keyWidth="10%p"
@@ -9,28 +8,20 @@
         <Key
             latin:keyStyle="toAlphaKeyStyle"
             latin:keyWidth="18%p" />
-        <switch>
-            <case latin:languageSwitchKeyEnabled="true">
-                <Key latin:keyStyle="languageSwitchKeyStyle"
-                    latin:keyWidth="12%p" />
-                <Key latin:keyStyle="spaceKeyStyle"
-                    latin:keyWidth="32%p" />
-            </case>
-            <default>
-                <Key latin:keyStyle="spaceKeyStyle"
-                    latin:keyWidth="44%p" />
-            </default>
-        </switch>
+        <Key latin:keyStyle="languageSwitchKeyStyle"
+            latin:keyWidth="10%p" />
+        <Key latin:keyStyle="spaceKeyStyle"
+            latin:keyWidth="42%p" />
         <!-- Merged comma·period doubletap key: single-tap=comma, double-tap=period -->
         <Key
             latin:keySpec=","
             latin:keySecondarySpec="."
-            latin:keyWidth="20%p"
+            latin:keyWidth="15%p"
             latin:keyLabelFlags="hasPopupHint"
             latin:moreKeys="!text/morekeys_period"
             latin:backgroundType="functional" />
         <Key
             latin:keyStyle="enterKeyStyle"
-            latin:keyWidth="18%p" />
+            latin:keyWidth="15%p" />
     </Row>
 </merge>
