@@ -3,18 +3,18 @@
      ١·٢  ٣·٤  ٥·٦  ٧·٨  ٩·٠ -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
     <Key latin:keySpec="&#x0661;" latin:keySecondarySpec="&#x0662;"
-        latin:additionalMoreKeys="!text/additional_morekeys_symbols_1"
-        latin:moreKeys="!text/morekeys_symbols_1" />
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_1,!text/additional_morekeys_symbols_2"
+        latin:moreKeys="!text/morekeys_symbols_1,!text/morekeys_symbols_2" />
     <Key latin:keySpec="&#x0663;" latin:keySecondarySpec="&#x0664;"
-        latin:additionalMoreKeys="!text/additional_morekeys_symbols_3"
-        latin:moreKeys="!text/morekeys_symbols_3" />
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_3,!text/additional_morekeys_symbols_4"
+        latin:moreKeys="!text/morekeys_symbols_3,!text/morekeys_symbols_4" />
     <Key latin:keySpec="&#x0665;" latin:keySecondarySpec="&#x0666;"
-        latin:additionalMoreKeys="!text/additional_morekeys_symbols_5"
-        latin:moreKeys="!text/morekeys_symbols_5" />
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_5,!text/additional_morekeys_symbols_6"
+        latin:moreKeys="!text/morekeys_symbols_5,!text/morekeys_symbols_6" />
     <Key latin:keySpec="&#x0667;" latin:keySecondarySpec="&#x0668;"
-        latin:additionalMoreKeys="!text/additional_morekeys_symbols_7"
-        latin:moreKeys="!text/morekeys_symbols_7" />
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_7,!text/additional_morekeys_symbols_8"
+        latin:moreKeys="!text/morekeys_symbols_7,!text/morekeys_symbols_8" />
     <Key latin:keySpec="&#x0669;" latin:keySecondarySpec="&#x0660;"
-        latin:additionalMoreKeys="!text/additional_morekeys_symbols_9"
-        latin:moreKeys="!text/morekeys_symbols_9" />
+        latin:additionalMoreKeys="!text/additional_morekeys_symbols_9,!text/additional_morekeys_symbols_0"
+        latin:moreKeys="!text/morekeys_symbols_9,!text/morekeys_symbols_0" />
 </merge>
