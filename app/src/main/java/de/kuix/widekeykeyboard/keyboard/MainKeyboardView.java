@@ -550,10 +550,17 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
             KeyPreviewView.clearTextCache();
         }
         mLanguageOnSpacebarFormatType = languageOnSpacebarFormatType;
-        mShowingSpacebarHint = !subtypeChanged;
         mSpacebarCycleHandler.removeCallbacks(mSpacebarCycleRunnable);
-        if (Settings.getInstance().getCurrent().mSpacebarHintEnabled) {
-            mSpacebarCycleHandler.postDelayed(mSpacebarCycleRunnable, SPACEBAR_CYCLE_MS);
+        final boolean singleLanguage =
+                !RichInputMethodManager.getInstance().hasMultipleEnabledSubtypes();
+        if (singleLanguage) {
+            // Only one language: show emoji hint permanently, no need to cycle.
+            mShowingSpacebarHint = Settings.getInstance().getCurrent().mSpacebarHintEnabled;
+        } else {
+            mShowingSpacebarHint = !subtypeChanged;
+            if (Settings.getInstance().getCurrent().mSpacebarHintEnabled) {
+                mSpacebarCycleHandler.postDelayed(mSpacebarCycleRunnable, SPACEBAR_CYCLE_MS);
+            }
         }
         invalidateKey(mSpaceKey);
     }
