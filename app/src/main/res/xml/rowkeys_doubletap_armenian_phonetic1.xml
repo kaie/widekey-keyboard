@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Double-tap Armenian Phonetic row 1: է·թ  փ·ձ  ջ·ր  չ·ճ  ժ·ծ  (5 pairs × 20%) -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <!-- է·թ (U+0567·U+0569) -->
-    <Key latin:keySpec="&#x0567;" latin:keySecondarySpec="&#x0569;" />
-    <!-- փ·ձ (U+0583·U+0571) -->
-    <Key latin:keySpec="&#x0583;" latin:keySecondarySpec="&#x0571;" />
-    <!-- ջ·ր (U+057B·U+0580) -->
-    <Key latin:keySpec="&#x057B;" latin:keySecondarySpec="&#x0580;" />
-    <!-- չ·ճ (U+0579·U+0573) -->
-    <Key latin:keySpec="&#x0579;" latin:keySecondarySpec="&#x0573;" />
-    <!-- ժ·ծ (U+056A·U+056E) -->
-    <Key latin:keySpec="&#x056A;" latin:keySecondarySpec="&#x056E;" />
+    <switch>
+        <case latin:showNumberRow="true">
+            <!-- է·թ (U+0567·U+0569) -->
+            <Key latin:keySpec="&#x0567;" latin:keySecondarySpec="&#x0569;" />
+            <!-- փ·ձ (U+0583·U+0571) -->
+            <Key latin:keySpec="&#x0583;" latin:keySecondarySpec="&#x0571;" />
+            <!-- ջ·ր (U+057B·U+0580) -->
+            <Key latin:keySpec="&#x057B;" latin:keySecondarySpec="&#x0580;" />
+            <!-- չ·ճ (U+0579·U+0573) -->
+            <Key latin:keySpec="&#x0579;" latin:keySecondarySpec="&#x0573;" />
+            <!-- ժ·ծ (U+056A·U+056E) -->
+            <Key latin:keySpec="&#x056A;" latin:keySecondarySpec="&#x056E;" />
+        </case>
+        <default>
+            <Key latin:keySpec="&#x0567;" latin:keySecondarySpec="&#x0569;"
+                latin:keyHintLabelLeft="1"
+                latin:keyHintLabel="2"
+                latin:additionalMoreKeys="1,2" />
+            <Key latin:keySpec="&#x0583;" latin:keySecondarySpec="&#x0571;"
+                latin:keyHintLabelLeft="3"
+                latin:keyHintLabel="4"
+                latin:additionalMoreKeys="3,4" />
+            <Key latin:keySpec="&#x057B;" latin:keySecondarySpec="&#x0580;"
+                latin:keyHintLabelLeft="5"
+                latin:keyHintLabel="6"
+                latin:additionalMoreKeys="5,6" />
+            <Key latin:keySpec="&#x0579;" latin:keySecondarySpec="&#x0573;"
+                latin:keyHintLabelLeft="7"
+                latin:keyHintLabel="8"
+                latin:additionalMoreKeys="7,8" />
+            <Key latin:keySpec="&#x056A;" latin:keySecondarySpec="&#x056E;"
+                latin:keyHintLabelLeft="9"
+                latin:keyHintLabel="0"
+                latin:additionalMoreKeys="0,9" />
+        </default>
+    </switch>
 </merge>

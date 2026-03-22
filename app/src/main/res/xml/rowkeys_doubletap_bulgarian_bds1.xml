@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Double-tap Bulgarian BDS row 1: у·е и·ш щ·к с·д з·ц [solo:б] (5 pairs + 1 solo × 16.667%) -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <!-- у·е -->
-    <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x0435;" />
-    <!-- и·ш (и has moreKey: ѝ U+045D) -->
-    <Key latin:keySpec="&#x0438;" latin:keySecondarySpec="&#x0448;"
-        latin:moreKeys="&#x045D;" />
-    <!-- щ·к -->
-    <Key latin:keySpec="&#x0449;" latin:keySecondarySpec="&#x043A;" />
-    <!-- с·д -->
-    <Key latin:keySpec="&#x0441;" latin:keySecondarySpec="&#x0434;" />
-    <!-- з·ц -->
-    <Key latin:keySpec="&#x0437;" latin:keySecondarySpec="&#x0446;" />
+    <switch>
+        <case latin:showNumberRow="true">
+            <!-- у·е -->
+            <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x0435;" />
+            <!-- и·ш (и has moreKey: ѝ U+045D) -->
+            <Key latin:keySpec="&#x0438;" latin:keySecondarySpec="&#x0448;"
+                latin:moreKeys="&#x045D;" />
+            <!-- щ·к -->
+            <Key latin:keySpec="&#x0449;" latin:keySecondarySpec="&#x043A;" />
+            <!-- с·д -->
+            <Key latin:keySpec="&#x0441;" latin:keySecondarySpec="&#x0434;" />
+            <!-- з·ц -->
+            <Key latin:keySpec="&#x0437;" latin:keySecondarySpec="&#x0446;" />
+        </case>
+        <default>
+            <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x0435;"
+                latin:keyHintLabelLeft="1"
+                latin:keyHintLabel="2"
+                latin:additionalMoreKeys="1,2" />
+            <Key latin:keySpec="&#x0438;" latin:keySecondarySpec="&#x0448;"
+                latin:moreKeys="&#x045D;"
+                latin:keyHintLabelLeft="3"
+                latin:keyHintLabel="4"
+                latin:additionalMoreKeys="3,4" />
+            <Key latin:keySpec="&#x0449;" latin:keySecondarySpec="&#x043A;"
+                latin:keyHintLabelLeft="5"
+                latin:keyHintLabel="6"
+                latin:additionalMoreKeys="5,6" />
+            <Key latin:keySpec="&#x0441;" latin:keySecondarySpec="&#x0434;"
+                latin:keyHintLabelLeft="7"
+                latin:keyHintLabel="8"
+                latin:additionalMoreKeys="7,8" />
+            <Key latin:keySpec="&#x0437;" latin:keySecondarySpec="&#x0446;"
+                latin:keyHintLabelLeft="9"
+                latin:keyHintLabel="0"
+                latin:additionalMoreKeys="9,0" />
+        </default>
+    </switch>
     <!-- solo: б -->
     <Key latin:keySpec="&#x0431;" />
 </merge>

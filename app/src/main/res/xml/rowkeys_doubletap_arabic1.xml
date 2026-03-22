@@ -2,29 +2,73 @@
 <!-- Double-tap Arabic row 1: 5 pairs + 1 solo × 16.667%
      Pairs (left·right): ض·ص  ث·ق  ف·غ  ع·ه  خ·ح  solo: ج -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <!-- ض·ص -->
-    <Key
-        latin:keySpec="&#x0636;"
-        latin:keySecondarySpec="&#x0635;" />
-    <!-- ث·ق -->
-    <Key
-        latin:keySpec="&#x062B;"
-        latin:keySecondarySpec="&#x0642;"
-        latin:moreKeys="&#x06A8;" />
-    <!-- ف·غ -->
-    <Key
-        latin:keySpec="&#x0641;"
-        latin:keySecondarySpec="&#x063A;"
-        latin:moreKeys="&#x06A4;,&#x06A2;,&#x06A5;" />
-    <!-- ع·ه -->
-    <Key
-        latin:keySpec="&#x0639;"
-        latin:keySecondarySpec="&#x0647;"
-        latin:moreKeys="&#xFEEB;|&#x0647;&#x200D;" />
-    <!-- خ·ح -->
-    <Key
-        latin:keySpec="&#x062E;"
-        latin:keySecondarySpec="&#x062D;" />
+    <switch>
+        <case latin:showNumberRow="true">
+            <!-- ض·ص -->
+            <Key
+                latin:keySpec="&#x0636;"
+                latin:keySecondarySpec="&#x0635;" />
+            <!-- ث·ق -->
+            <Key
+                latin:keySpec="&#x062B;"
+                latin:keySecondarySpec="&#x0642;"
+                latin:moreKeys="&#x06A8;" />
+            <!-- ف·غ -->
+            <Key
+                latin:keySpec="&#x0641;"
+                latin:keySecondarySpec="&#x063A;"
+                latin:moreKeys="&#x06A4;,&#x06A2;,&#x06A5;" />
+            <!-- ع·ه -->
+            <Key
+                latin:keySpec="&#x0639;"
+                latin:keySecondarySpec="&#x0647;"
+                latin:moreKeys="&#xFEEB;|&#x0647;&#x200D;" />
+            <!-- خ·ح -->
+            <Key
+                latin:keySpec="&#x062E;"
+                latin:keySecondarySpec="&#x062D;" />
+        </case>
+        <default>
+            <!-- ض·ص: digits 1·2 + Arabic-Indic ١·٢ -->
+            <Key
+                latin:keySpec="&#x0636;"
+                latin:keySecondarySpec="&#x0635;"
+                latin:keyHintLabelLeft="1"
+                latin:keyHintLabel="2"
+                latin:additionalMoreKeys="1,&#x0661;,2,&#x0662;" />
+            <!-- ث·ق: digits 3·4 + Arabic-Indic ٣·٤ -->
+            <Key
+                latin:keySpec="&#x062B;"
+                latin:keySecondarySpec="&#x0642;"
+                latin:moreKeys="&#x06A8;"
+                latin:keyHintLabelLeft="3"
+                latin:keyHintLabel="4"
+                latin:additionalMoreKeys="3,&#x0663;,4,&#x0664;" />
+            <!-- ف·غ: digits 5·6 + Arabic-Indic ٥·٦ -->
+            <Key
+                latin:keySpec="&#x0641;"
+                latin:keySecondarySpec="&#x063A;"
+                latin:moreKeys="&#x06A4;,&#x06A2;,&#x06A5;"
+                latin:keyHintLabelLeft="5"
+                latin:keyHintLabel="6"
+                latin:additionalMoreKeys="5,&#x0665;,6,&#x0666;" />
+            <!-- ع·ه: digits 7·8 + Arabic-Indic ٧·٨ -->
+            <Key
+                latin:keySpec="&#x0639;"
+                latin:keySecondarySpec="&#x0647;"
+                latin:moreKeys="&#xFEEB;|&#x0647;&#x200D;"
+                latin:keyHintLabelLeft="7"
+                latin:keyHintLabel="8"
+                latin:additionalMoreKeys="7,&#x0667;,8,&#x0668;" />
+            <!-- خ·ح: digits 9·0 + Arabic-Indic ٩·٠ (solo follows, so left-first) -->
+            <Key
+                latin:keySpec="&#x062E;"
+                latin:keySecondarySpec="&#x062D;"
+                latin:keyHintLabelLeft="9"
+                latin:keyHintLabel="0"
+                latin:additionalMoreKeys="9,&#x0669;,0,&#x0660;" />
+        </default>
+    </switch>
     <!-- ج solo -->
     <Key
         latin:keySpec="&#x062C;"

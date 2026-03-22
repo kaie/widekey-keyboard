@@ -1,34 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Double-tap East Slavic row 1: й·ц у·к е·н г·ш [row1_9]·з [solo:х] (5 pairs + 1 solo × 16.667%) -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <!-- й·ц: left=\ right=| -->
-    <Key latin:keySpec="&#x0439;" latin:keySecondarySpec="&#x0446;"
-        latin:keyHintLabel="|"
-        latin:keyHintLabelLeft="\\"
-        latin:additionalMoreKeys="\|,\\" />
-    <!-- у·к: left== right=[ -->
-    <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x043A;"
-        latin:moreKeys="!text/morekeys_cyrillic_u,!text/morekeys_cyrillic_ka"
-        latin:keyHintLabel="["
-        latin:keyHintLabelLeft="="
-        latin:additionalMoreKeys="=,[" />
-    <!-- е·н: left=] right={ -->
-    <Key latin:keySpec="&#x0435;" latin:keySecondarySpec="&#x043D;"
-        latin:moreKeys="!text/morekeys_cyrillic_ie,!text/morekeys_cyrillic_en"
-        latin:keyHintLabel="{"
-        latin:keyHintLabelLeft="]"
-        latin:additionalMoreKeys="],{" />
-    <!-- г·ш: left=} right=~ -->
-    <Key latin:keySpec="&#x0433;" latin:keySecondarySpec="&#x0448;"
-        latin:moreKeys="!text/morekeys_cyrillic_ghe"
-        latin:keyHintLabel="~"
-        latin:keyHintLabelLeft="}"
-        latin:additionalMoreKeys="},~" />
-    <!-- [row1_9]·з: left=° right=^ -->
-    <Key latin:keySpec="!text/keyspec_east_slavic_row1_9" latin:keySecondarySpec="&#x0437;"
-        latin:keyHintLabel="^"
-        latin:keyHintLabelLeft="°"
-        latin:additionalMoreKeys="°,^" />
+    <switch>
+        <case latin:showNumberRow="true">
+            <!-- й·ц: left=\ right=| -->
+            <Key latin:keySpec="&#x0439;" latin:keySecondarySpec="&#x0446;"
+                latin:keyHintLabel="|"
+                latin:keyHintLabelLeft="\\"
+                latin:additionalMoreKeys="\|,\\" />
+            <!-- у·к: left== right=[ -->
+            <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x043A;"
+                latin:moreKeys="!text/morekeys_cyrillic_u,!text/morekeys_cyrillic_ka"
+                latin:keyHintLabel="["
+                latin:keyHintLabelLeft="="
+                latin:additionalMoreKeys="=,[" />
+            <!-- е·н: left=] right={ -->
+            <Key latin:keySpec="&#x0435;" latin:keySecondarySpec="&#x043D;"
+                latin:moreKeys="!text/morekeys_cyrillic_ie,!text/morekeys_cyrillic_en"
+                latin:keyHintLabel="{"
+                latin:keyHintLabelLeft="]"
+                latin:additionalMoreKeys="],{" />
+            <!-- г·ш: left=} right=~ -->
+            <Key latin:keySpec="&#x0433;" latin:keySecondarySpec="&#x0448;"
+                latin:moreKeys="!text/morekeys_cyrillic_ghe"
+                latin:keyHintLabel="~"
+                latin:keyHintLabelLeft="}"
+                latin:additionalMoreKeys="},~" />
+            <!-- [row1_9]·з: left=° right=^ -->
+            <Key latin:keySpec="!text/keyspec_east_slavic_row1_9" latin:keySecondarySpec="&#x0437;"
+                latin:keyHintLabel="^"
+                latin:keyHintLabelLeft="°"
+                latin:additionalMoreKeys="°,^" />
+        </case>
+        <default>
+            <!-- й·ц: left=1 right=2 -->
+            <Key latin:keySpec="&#x0439;" latin:keySecondarySpec="&#x0446;"
+                latin:keyHintLabelLeft="1"
+                latin:keyHintLabel="2"
+                latin:additionalMoreKeys="1,2" />
+            <!-- у·к: left=3 right=4 -->
+            <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x043A;"
+                latin:moreKeys="!text/morekeys_cyrillic_u,!text/morekeys_cyrillic_ka"
+                latin:keyHintLabelLeft="3"
+                latin:keyHintLabel="4"
+                latin:additionalMoreKeys="3,4" />
+            <!-- е·н: left=5 right=6 -->
+            <Key latin:keySpec="&#x0435;" latin:keySecondarySpec="&#x043D;"
+                latin:moreKeys="!text/morekeys_cyrillic_ie,!text/morekeys_cyrillic_en"
+                latin:keyHintLabelLeft="5"
+                latin:keyHintLabel="6"
+                latin:additionalMoreKeys="5,6" />
+            <!-- г·ш: left=7 right=8 -->
+            <Key latin:keySpec="&#x0433;" latin:keySecondarySpec="&#x0448;"
+                latin:moreKeys="!text/morekeys_cyrillic_ghe"
+                latin:keyHintLabelLeft="7"
+                latin:keyHintLabel="8"
+                latin:additionalMoreKeys="7,8" />
+            <!-- [row1_9]·з: left=9 right=0 (solo follows, so left-first) -->
+            <Key latin:keySpec="!text/keyspec_east_slavic_row1_9" latin:keySecondarySpec="&#x0437;"
+                latin:keyHintLabelLeft="9"
+                latin:keyHintLabel="0"
+                latin:additionalMoreKeys="9,0" />
+        </default>
+    </switch>
     <!-- solo: х -->
     <Key latin:keySpec="&#x0445;" />
 </merge>

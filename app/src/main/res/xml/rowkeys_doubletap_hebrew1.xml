@@ -1,26 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Double-tap Hebrew row 1: 5 pairs × 20%
-     Pairs (left·right): '·-  ק·ר  א·ט  ו·ן  ם·פ
+<!-- Double-tap Hebrew row 1: '·-  ק·ר  א·ט  ו·ן  ם·פ  (5 pairs × 20%)
      RTL tap convention: single tap = right char, double tap = left char -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <!-- '·- -->
-    <Key
-        latin:keySpec="\'"
-        latin:keySecondarySpec="-" />
-    <!-- ק·ר -->
-    <Key
-        latin:keySpec="&#x05E7;"
-        latin:keySecondarySpec="&#x05E8;" />
-    <!-- א·ט -->
-    <Key
-        latin:keySpec="&#x05D0;"
-        latin:keySecondarySpec="&#x05D8;" />
-    <!-- ו·ן -->
-    <Key
-        latin:keySpec="&#x05D5;"
-        latin:keySecondarySpec="&#x05DF;" />
-    <!-- ם·פ -->
-    <Key
-        latin:keySpec="&#x05DD;"
-        latin:keySecondarySpec="&#x05E4;" />
+    <switch>
+        <case latin:showNumberRow="true">
+            <!-- '·- -->
+            <Key
+                latin:keySpec="\'"
+                latin:keySecondarySpec="-" />
+            <!-- ק·ר -->
+            <Key
+                latin:keySpec="&#x05E7;"
+                latin:keySecondarySpec="&#x05E8;" />
+            <!-- א·ט -->
+            <Key
+                latin:keySpec="&#x05D0;"
+                latin:keySecondarySpec="&#x05D8;" />
+            <!-- ו·ן -->
+            <Key
+                latin:keySpec="&#x05D5;"
+                latin:keySecondarySpec="&#x05DF;" />
+            <!-- ם·פ -->
+            <Key
+                latin:keySpec="&#x05DD;"
+                latin:keySecondarySpec="&#x05E4;" />
+        </case>
+        <default>
+            <Key
+                latin:keySpec="\'"
+                latin:keySecondarySpec="-"
+                latin:keyHintLabelLeft="1"
+                latin:keyHintLabel="2"
+                latin:additionalMoreKeys="1,2" />
+            <Key
+                latin:keySpec="&#x05E7;"
+                latin:keySecondarySpec="&#x05E8;"
+                latin:keyHintLabelLeft="3"
+                latin:keyHintLabel="4"
+                latin:additionalMoreKeys="3,4" />
+            <Key
+                latin:keySpec="&#x05D0;"
+                latin:keySecondarySpec="&#x05D8;"
+                latin:keyHintLabelLeft="5"
+                latin:keyHintLabel="6"
+                latin:additionalMoreKeys="5,6" />
+            <Key
+                latin:keySpec="&#x05D5;"
+                latin:keySecondarySpec="&#x05DF;"
+                latin:keyHintLabelLeft="7"
+                latin:keyHintLabel="8"
+                latin:additionalMoreKeys="7,8" />
+            <Key
+                latin:keySpec="&#x05DD;"
+                latin:keySecondarySpec="&#x05E4;"
+                latin:keyHintLabelLeft="9"
+                latin:keyHintLabel="0"
+                latin:additionalMoreKeys="0,9" />
+        </default>
+    </switch>
 </merge>
