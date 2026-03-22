@@ -29,6 +29,7 @@ import android.graphics.Paint;
 import android.graphics.Paint.Align;
 import android.graphics.Typeface;
 import android.os.Handler;
+import android.text.TextUtils;
 import android.os.Looper;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -53,6 +54,7 @@ import de.kuix.widekeykeyboard.latin.Subtype;
 import de.kuix.widekeykeyboard.latin.RichInputMethodManager;
 import de.kuix.widekeykeyboard.latin.settings.Settings;
 import de.kuix.widekeykeyboard.latin.common.Constants;
+import de.kuix.widekeykeyboard.latin.common.LocaleUtils;
 import de.kuix.widekeykeyboard.latin.common.CoordinateUtils;
 import de.kuix.widekeykeyboard.latin.utils.LanguageOnSpacebarUtils;
 import de.kuix.widekeykeyboard.latin.utils.LocaleResourceUtils;
@@ -643,8 +645,14 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
         final float descent = paint.descent();
         final float textHeight = -paint.ascent() + descent;
         final float y = height / 2 + textHeight / 2 - descent;
-        final String leftHint = "\uD83D\uDC46 \u25C4";
-        final String rightHint = "\u25BA \uD83D\uDC46\uD83D\uDC46";
+        final Keyboard keyboard = getKeyboard();
+        final boolean isRtl = keyboard != null
+                && TextUtils.getLayoutDirectionFromLocale(
+                        LocaleUtils.constructLocaleFromString(keyboard.mId.mSubtype.getLocale()))
+                        == View.LAYOUT_DIRECTION_RTL;
+        // For RTL layouts single tap = right char, double tap = left char — mirror the hint.
+        final String leftHint = isRtl ? "\uD83D\uDC46\uD83D\uDC46 \u25C4" : "\uD83D\uDC46 \u25C4";
+        final String rightHint = isRtl ? "\u25BA \uD83D\uDC46" : "\u25BA \uD83D\uDC46\uD83D\uDC46";
         final float leftEnd = mLanguageOnSpacebarHorizontalMargin + paint.measureText(leftHint);
         final float rightStart = width - mLanguageOnSpacebarHorizontalMargin - paint.measureText(rightHint);
         paint.setTextAlign(Align.LEFT);
