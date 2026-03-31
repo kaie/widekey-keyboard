@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"કીપ્રેસ પર વાઇબ્રેટ કરો"</string>
     <string name="sound_on_keypress">"કીપ્રેસ પર ધ્વનિ"</string>
-    <string name="popup_on_keypress">"કીપ્રેસ પર પોપઅપ"</string>
+    <string name="popup_on_keypress">"પસંદ કરેલ કી પૉપઅપમાં દર્શાવો"</string>
     <string name="settings_screen_preferences">"પસંદગી"</string>
     <string name="settings_screen_theme">"થીમ"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>ms"</string>
@@ -39,8 +39,12 @@
     <string name="add">"ઉમેરો"</string>
     <string name="remove">"દૂર કરો"</string>
     <string name="prefs_keypress_sound_volume_settings">"કીપ્રેસ ધ્વનિ વોલ્યુમ"</string>
-    <string name="prefs_key_longpress_timeout_settings">"લાંબા કી પ્રેસનો વિલંબ"</string>
+    <string name="prefs_key_longpress_timeout_settings">"પૉપઅપ સૂચિ વિલંબ"</string>
     <string name="prefs_doubletap_timeout_settings">"ડબલ-ટૅપ વિલંબ"</string>
+    <string name="prefs_long_tap_delay_settings">"લાંબા-ટૅપ વિલંબ"</string>
+    <string name="pref_use_long_tap">"લાંબા ટૅપ મોડ"</string>
+    <string name="pref_use_long_tap_summary">"(ડબલ ટૅપ અક્ષમ કરે છે અને પૉપઅપ સૂચિ વિલંબ વધારે છે.)"</string>
+    <string name="pref_include_secondary_in_popup">"પૉપઅપ બીજો અક્ષર સમાવે છે"</string>
     <string name="pref_spacebar_hint">બતાવો &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"ડિફોલ્ટ"</string>
 </resources>

@@ -38,6 +38,7 @@ import de.kuix.widekeykeyboard.keyboard.internal.KeyboardRow;
 import de.kuix.widekeykeyboard.keyboard.internal.MoreKeySpec;
 import de.kuix.widekeykeyboard.latin.common.Constants;
 import de.kuix.widekeykeyboard.latin.common.StringUtils;
+import de.kuix.widekeykeyboard.latin.settings.Settings;
 
 import static de.kuix.widekeykeyboard.latin.common.Constants.CODE_OUTPUT_TEXT;
 import static de.kuix.widekeykeyboard.latin.common.Constants.CODE_SHIFT;
@@ -558,7 +559,19 @@ public class Key implements Comparable<Key> {
     }
 
     public MoreKeySpec[] getMoreKeys() {
-        return mMoreKeys;
+        if (mMoreKeys == null || mSecondaryCode == CODE_UNSPECIFIED || mSecondaryLabel == null
+                || !Settings.getInstance().getCurrent().mIncludeSecondaryInPopup) {
+            return mMoreKeys;
+        }
+        // Prepend secondary label as the first popup item so users who accidentally hold too
+        // long and trigger the popup can still reach the secondary char.
+        if (mMoreKeys[0].mCode == mSecondaryCode) {
+            return mMoreKeys; // already first
+        }
+        final MoreKeySpec[] result = new MoreKeySpec[mMoreKeys.length + 1];
+        result[0] = new MoreKeySpec(mSecondaryLabel, false /* needsToUpcase */, Locale.ROOT);
+        System.arraycopy(mMoreKeys, 0, result, 1, mMoreKeys.length);
+        return result;
     }
 
     public void setHitboxRightEdge(final int right) {

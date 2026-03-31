@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Při stisku klávesy vibrovat"</string>
     <string name="sound_on_keypress">"Zvuk při stisku klávesy"</string>
-    <string name="popup_on_keypress">"Detail znaku při stisku klávesy"</string>
+    <string name="popup_on_keypress">"Zobrazit zvolenou klávesu ve vyskakovacím okně"</string>
     <string name="settings_screen_preferences">"Předvolby"</string>
     <string name="settings_screen_key_press">Stisk klávesy</string>
     <string name="settings_screen_appearance">Vzhled</string>
@@ -40,8 +40,12 @@
     <string name="add">"Přidat"</string>
     <string name="remove">"Odebrat"</string>
     <string name="prefs_keypress_sound_volume_settings">"Hlasitost stisknutí klávesy"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Prodleva dlouhého stisknutí"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Prodleva vyskakovacího seznamu"</string>
     <string name="prefs_doubletap_timeout_settings">"Prodleva dvojitého klepnutí"</string>
+    <string name="prefs_long_tap_delay_settings">"Prodleva dlouhého klepnutí"</string>
+    <string name="pref_use_long_tap">"Režim dlouhého klepnutí"</string>
+    <string name="pref_use_long_tap_summary">"(Zakáže dvojité klepnutí a zvýší prodlevu vyskakovacího seznamu.)"</string>
+    <string name="pref_include_secondary_in_popup">"Vyskakovací okno obsahuje druhý znak"</string>
     <string name="pref_spacebar_hint">Zobraz &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Výchozí"</string>
     <string name="prefs_keyboard_height_settings">Výška klávesnice</string>

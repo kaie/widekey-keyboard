@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"키를 누를 때 진동 발생"</string>
     <string name="sound_on_keypress">"키를 누를 때 소리 발생"</string>
-    <string name="popup_on_keypress">"키를 누를 때 팝업"</string>
+    <string name="popup_on_keypress">"선택한 키를 팝업으로 표시"</string>
     <string name="settings_screen_preferences">"환경설정"</string>
     <string name="settings_screen_appearance">모습</string>
     <string name="settings_screen_theme">"테마"</string>
@@ -41,8 +41,12 @@
     <string name="add">"추가"</string>
     <string name="remove">"삭제"</string>
     <string name="prefs_keypress_sound_volume_settings">"키를 누를 때 소리 볼륨"</string>
-    <string name="prefs_key_longpress_timeout_settings">"키 길게 누르기 지연"</string>
+    <string name="prefs_key_longpress_timeout_settings">"팝업 목록 지연"</string>
     <string name="prefs_doubletap_timeout_settings">"두 번 탭 지연"</string>
+    <string name="prefs_long_tap_delay_settings">"길게 탭 지연"</string>
+    <string name="pref_use_long_tap">"길게 탭 모드"</string>
+    <string name="pref_use_long_tap_summary">"(두 번 탭을 비활성화하고 팝업 목록 지연을 늘립니다.)"</string>
+    <string name="pref_include_secondary_in_popup">"팝업에 두 번째 문자 포함"</string>
     <string name="pref_spacebar_hint">표시 &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"기본값"</string>
     <string name="prefs_bottom_offset_portrait_settings">하단 오프셋</string>

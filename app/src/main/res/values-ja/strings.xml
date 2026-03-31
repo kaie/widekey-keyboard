@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"キー操作バイブ"</string>
     <string name="sound_on_keypress">"キー操作音"</string>
-    <string name="popup_on_keypress">"キー押下時ポップアップ"</string>
+    <string name="popup_on_keypress">"選択したキーをポップアップで表示"</string>
     <string name="settings_screen_preferences">"設定"</string>
     <string name="settings_screen_key_press">キープレス</string>
     <string name="settings_screen_appearance">外観</string>
@@ -42,8 +42,12 @@
     <string name="add">"追加"</string>
     <string name="remove">"削除"</string>
     <string name="prefs_keypress_sound_volume_settings">"キー操作音の音量"</string>
-    <string name="prefs_key_longpress_timeout_settings">"キーの長押し時間"</string>
+    <string name="prefs_key_longpress_timeout_settings">"ポップアップリストの遅延"</string>
     <string name="prefs_doubletap_timeout_settings">"ダブルタップの遅延"</string>
+    <string name="prefs_long_tap_delay_settings">"長押しの遅延"</string>
+    <string name="pref_use_long_tap">"長押しモード"</string>
+    <string name="pref_use_long_tap_summary">"(ダブルタップを無効にし、ポップアップリストの遅延を増やします。)"</string>
+    <string name="pref_include_secondary_in_popup">"ポップアップに2番目の文字を含む"</string>
     <string name="pref_spacebar_hint">表示 &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"デフォルト"</string>
     <string name="prefs_keyboard_height_settings">キーボードの高さ</string>

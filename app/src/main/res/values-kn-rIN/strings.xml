@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"ಕೀಪ್ರೆಸ್‌ನ ವೈಬ್ರೇಟ್"</string>
     <string name="sound_on_keypress">"ಕೀಪ್ರೆಸ್ ಶಬ್ದ"</string>
-    <string name="popup_on_keypress">"ಕೀಪ್ರೆಸ್‌ನಲ್ಲಿ ಪಾಪ್ಅಪ್"</string>
+    <string name="popup_on_keypress">"ಆಯ್ಕೆ ಮಾಡಿದ ಕೀಯನ್ನು ಪಾಪ್ಅಪ್‌ನಲ್ಲಿ ತೋರಿಸಿ"</string>
     <string name="settings_screen_preferences">"ಪ್ರಾಶಸ್ತ್ಯಗಳು"</string>
     <string name="settings_screen_theme">"ಥೀಮ್"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>ಮಿ.ಸೆ."</string>
@@ -39,8 +39,12 @@
     <string name="add">"ಸೇರಿಸು"</string>
     <string name="remove">"ತೆಗೆದುಹಾಕಿ"</string>
     <string name="prefs_keypress_sound_volume_settings">"ಕೀಒತ್ತುವ ಶಬ್ದದ ವಾಲ್ಯೂಮ್"</string>
-    <string name="prefs_key_longpress_timeout_settings">"ಕೀಯ ದೀರ್ಘ ಒತ್ತುವ ವಿಳಂಬ"</string>
+    <string name="prefs_key_longpress_timeout_settings">"ಪಾಪ್ಅಪ್ ಪಟ್ಟಿ ವಿಳಂಬ"</string>
     <string name="prefs_doubletap_timeout_settings">"ಡಬಲ್-ಟ್ಯಾಪ್ ವಿಳಂಬ"</string>
+    <string name="prefs_long_tap_delay_settings">"ದೀರ್ಘ-ಟ್ಯಾಪ್ ವಿಳಂಬ"</string>
+    <string name="pref_use_long_tap">"ದೀರ್ಘ ಟ್ಯಾಪ್ ಮೋಡ್"</string>
+    <string name="pref_use_long_tap_summary">"(ಡಬಲ್ ಟ್ಯಾಪ್ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ಪಾಪ್ಅಪ್ ಪಟ್ಟಿ ವಿಳಂಬವನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ.)"</string>
+    <string name="pref_include_secondary_in_popup">"ಪಾಪ್ಅಪ್ ಎರಡನೇ ಅಕ್ಷರವನ್ನು ಒಳಗೊಂಡಿದೆ"</string>
     <string name="pref_spacebar_hint">ತೋರಿಸು &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"ಡಿಫಾಲ್ಟ್"</string>
 </resources>

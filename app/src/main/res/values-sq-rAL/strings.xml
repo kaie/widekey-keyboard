@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Lësho dridhje kur shtyp tastin"</string>
     <string name="sound_on_keypress">"Lësho tingull kur shtyp tastin"</string>
-    <string name="popup_on_keypress">"Zmadhim germe kur shtyp"</string>
+    <string name="popup_on_keypress">"Shfaq tastin e zgjedhur në dritare kërcyese"</string>
     <string name="settings_screen_preferences">"Preferencat"</string>
     <string name="settings_screen_appearance">Pamja</string>
     <string name="settings_screen_theme">"Tema"</string>
@@ -40,8 +40,12 @@
     <string name="add">"Shto"</string>
     <string name="remove">"Hiq"</string>
     <string name="prefs_keypress_sound_volume_settings">"Volumi i tingullit të tastit"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Vonesa e shtypjes së gjatë të tastit"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Vonesa e listës kërcyese"</string>
     <string name="prefs_doubletap_timeout_settings">"Vonesa e prekjes së dyfishtë"</string>
+    <string name="prefs_long_tap_delay_settings">"Vonesa e prekjes së gjatë"</string>
+    <string name="pref_use_long_tap">"Modaliteti i shtypjes së gjatë"</string>
+    <string name="pref_use_long_tap_summary">"(Çaktivizon prekjen e dyfishtë dhe rrit vonesën e listës kërcyese.)"</string>
+    <string name="pref_include_secondary_in_popup">"Dritarja kërcyese përfshin karakterin e dytë"</string>
     <string name="pref_spacebar_hint">Shfaq &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"I parazgjedhur"</string>
     <string name="prefs_keyboard_height_settings">Lartësia e tastierës</string>

@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Rung khi nhấn phím"</string>
     <string name="sound_on_keypress">"Âm thanh khi nhấn phím"</string>
-    <string name="popup_on_keypress">"Bật lên khi nhấn phím"</string>
+    <string name="popup_on_keypress">"Hiển thị phím đã chọn trong popup"</string>
     <string name="settings_screen_preferences">"Tùy chọn"</string>
     <string name="settings_screen_key_press">"Nhấn phím"</string>
     <string name="settings_screen_appearance">"Bề ngoài"</string>
@@ -41,8 +41,12 @@
     <string name="add">"Thêm"</string>
     <string name="remove">"Xóa"</string>
     <string name="prefs_keypress_sound_volume_settings">"Âm lượng khi nhấn phím"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Thời gian trễ nhấn và giữ phím"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Độ trễ danh sách popup"</string>
     <string name="prefs_doubletap_timeout_settings">"Độ trễ nhấn đúp"</string>
+    <string name="prefs_long_tap_delay_settings">"Độ trễ nhấn giữ"</string>
+    <string name="pref_use_long_tap">"Chế độ nhấn giữ"</string>
+    <string name="pref_use_long_tap_summary">"(Tắt nhấn đúp và tăng độ trễ danh sách popup.)"</string>
+    <string name="pref_include_secondary_in_popup">"Popup bao gồm ký tự thứ hai"</string>
     <string name="pref_spacebar_hint">Hiển thị &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Mặc định"</string>
     <string name="prefs_keyboard_height_settings">"Chiều cao bàn phím"</string>

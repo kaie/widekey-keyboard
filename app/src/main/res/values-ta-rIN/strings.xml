@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"விசையழுத்தின்போது அதிர்வுரு"</string>
     <string name="sound_on_keypress">"விசையழுத்தத்தின்போது ஒலியெழுப்பு"</string>
-    <string name="popup_on_keypress">"விழை அழுத்தத்தின்போது பாப்அப் செய்"</string>
+    <string name="popup_on_keypress">"தேர்ந்தெடுத்த விசையை பாப்அப்பில் காட்டு"</string>
     <string name="settings_screen_preferences">"விருப்பங்கள்"</string>
     <string name="settings_screen_key_press">விசை அழுத்தல்</string>
     <string name="settings_screen_appearance">தோற்றம்</string>
@@ -41,8 +41,12 @@
     <string name="add">"சேர்"</string>
     <string name="remove">"அகற்று"</string>
     <string name="prefs_keypress_sound_volume_settings">"விசையழுத்த ஒலியளவு"</string>
-    <string name="prefs_key_longpress_timeout_settings">"விசைக்கான நீண்ட அழுத்த நேரம்"</string>
+    <string name="prefs_key_longpress_timeout_settings">"பாப்அப் பட்டியல் தாமதம்"</string>
     <string name="prefs_doubletap_timeout_settings">"இரட்டை-தட்டல் தாமதம்"</string>
+    <string name="prefs_long_tap_delay_settings">"நீண்ட-தட்டல் தாமதம்"</string>
+    <string name="pref_use_long_tap">"நீண்ட தட்டல் முறை"</string>
+    <string name="pref_use_long_tap_summary">"(இரட்டை தட்டலை முடக்கி பாப்அப் பட்டியல் தாமதத்தை அதிகரிக்கும்.)"</string>
+    <string name="pref_include_secondary_in_popup">"பாப்அப்பில் இரண்டாவது எழுத்து உள்ளடங்கும்"</string>
     <string name="pref_spacebar_hint">காட்டு &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"இயல்புநிலை"</string>
     <string name="prefs_keyboard_height_settings">விசைப்பலகை உயரம்</string>

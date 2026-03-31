@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"ញ័រ​នៅ​ពេល​ចុច​គ្រាប់ចុច"</string>
     <string name="sound_on_keypress">"សំឡេង​នៅ​ពេល​ចុច​គ្រាប់ចុច"</string>
-    <string name="popup_on_keypress">"លេច​ឡើង​នៅ​​ពេល​ចុច​គ្រាប់​ចុច"</string>
+    <string name="popup_on_keypress">"បង្ហាញ​គ្រាប់​ចុច​ដែល​បាន​ជ្រើស​នៅ​ក្នុង​ផ្ទាំង​លេចឡើង"</string>
     <string name="settings_screen_preferences">"ចំណូលចិត្ត"</string>
     <string name="settings_screen_theme">"រូបរាង"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> មិល្លី​វិនាទី"</string>
@@ -39,8 +39,12 @@
     <string name="add">"បន្ថែម"</string>
     <string name="remove">"លុប​ចេញ"</string>
     <string name="prefs_keypress_sound_volume_settings">"កម្រិត​សំឡេង​ពេល​ចុច​គ្រាប់​ចុច"</string>
-    <string name="prefs_key_longpress_timeout_settings">"ពន្យារពេល​​​ចុច​គ្រាប់​ចុច​ឲ្យ​​យូរ"</string>
+    <string name="prefs_key_longpress_timeout_settings">"ការ​ពន្យារ​ពេល​​​បញ្ជី​ផ្ទាំង​លេចឡើង"</string>
     <string name="prefs_doubletap_timeout_settings">"ការពន្យាពេលចុចពីរដង"</string>
+    <string name="prefs_long_tap_delay_settings">"ការពន្យាពេលចុចយូរ"</string>
+    <string name="pref_use_long_tap">"របៀប​ចុច​យូរ"</string>
+    <string name="pref_use_long_tap_summary">"(បិទ​ការ​ចុច​ពីរ​ដង​ ​និង​បង្កើន​ការ​ពន្យារ​ពេល​​​បញ្ជី​ផ្ទាំង​លេចឡើង។)"</string>
+    <string name="pref_include_secondary_in_popup">"ផ្ទាំង​លេចឡើង​​រួម​មាន​តួ​​អក្សរ​ទីពីរ"</string>
     <string name="pref_spacebar_hint">បង្ហាញ &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"លំនាំដើម"</string>
 </resources>

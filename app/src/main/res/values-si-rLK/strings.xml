@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"යතුර එබීමට කම්පනය කිරීම සක්‍රියයි"</string>
     <string name="sound_on_keypress">"යතුරු එබිම මත හඬ"</string>
-    <string name="popup_on_keypress">"යතුරු එබීම මත උත්පතනය"</string>
+    <string name="popup_on_keypress">"තෝරාගත් යතුර උත්පතන කවුළුවේ පෙන්වන්න"</string>
     <string name="settings_screen_preferences">"අභිරුචි"</string>
     <string name="settings_screen_key_press">යතුර එබීම</string>
     <string name="settings_screen_appearance">පෙනුම</string>
@@ -41,8 +41,12 @@
     <string name="add">"එක් කරන්න"</string>
     <string name="remove">"ඉවත් කරන්න"</string>
     <string name="prefs_keypress_sound_volume_settings">"යතුරු එබීම් හඬ තීව්‍රතාවය"</string>
-    <string name="prefs_key_longpress_timeout_settings">"යතුරු දිගු එබීම් ප්‍රමාදය"</string>
+    <string name="prefs_key_longpress_timeout_settings">"උත්පතන ලැයිස්තු ප්‍රමාදය"</string>
     <string name="prefs_doubletap_timeout_settings">"දෙවරක් තට්ටු කිරීමේ ප්‍රමාදය"</string>
+    <string name="prefs_long_tap_delay_settings">"දිගු-ස්පර්ශ ප්‍රමාදය"</string>
+    <string name="pref_use_long_tap">"දිගු තට්ටු ප්‍රකාරය"</string>
+    <string name="pref_use_long_tap_summary">"(ද්විත්ව තට්ටුව අක්‍රිය කර උත්පතන ලැයිස්තු ප්‍රමාදය වැඩි කරයි.)"</string>
+    <string name="pref_include_secondary_in_popup">"උත්පතනයට දෙවන අක්‍ෂරය ඇතුළත් වේ"</string>
     <string name="pref_spacebar_hint">පෙන්වන්න &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"සුපුරුදු"</string>
     <string name="prefs_keyboard_height_settings">යතුරුපුවරුවේ උස</string>

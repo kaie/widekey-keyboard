@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Вібрацыя пры націску клавіш"</string>
     <string name="sound_on_keypress">"Гук пры націску"</string>
-    <string name="popup_on_keypress">"Па націску на клавішы ўсплывае акно"</string>
+    <string name="popup_on_keypress">"Паказваць выбраную клавішу ва ўсплывальным акне"</string>
     <string name="settings_screen_preferences">"Параметры"</string>
     <string name="settings_screen_key_press">Націск клавіш</string>
     <string name="settings_screen_appearance">Знешні выгляд</string>
@@ -41,8 +41,12 @@
     <string name="add">"Дадаць"</string>
     <string name="remove">"Выдаліць"</string>
     <string name="prefs_keypress_sound_volume_settings">"Гучнасць гуку пры націску клавіш"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Затрымка доўгага націску клавішы"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Затрымка ўсплывальнага спісу"</string>
     <string name="prefs_doubletap_timeout_settings">"Затрымка падвойнага дотыку"</string>
+    <string name="prefs_long_tap_delay_settings">"Затрымка доўгага дотыку"</string>
+    <string name="pref_use_long_tap">"Рэжым доўгага дотыку"</string>
+    <string name="pref_use_long_tap_summary">"(Адключае падвойны дотык і павялічвае затрымку ўсплывальнага спісу.)"</string>
+    <string name="pref_include_secondary_in_popup">"Ва ўсплывальным акне ёсць другі сімвал"</string>
     <string name="pref_spacebar_hint">Пакажы &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Па змаўчанні"</string>
     <string name="prefs_keyboard_height_settings">Вышыня клавіятуры</string>

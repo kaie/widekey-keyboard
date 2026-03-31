@@ -51,6 +51,9 @@ public class SettingsValues {
     public final boolean mSpaceSwipeEnabled;
     public final boolean mDeleteSwipeEnabled;
     public final boolean mSpacebarHintEnabled;
+    public final boolean mUseLongTap;
+    public final int mLongTapThreshold;
+    public final boolean mIncludeSecondaryInPopup;
 
     // From the input box
     public final InputAttributes mInputAttributes;
@@ -95,6 +98,9 @@ public class SettingsValues {
         mSpaceSwipeEnabled = Settings.readSpaceSwipeEnabled(prefs);
         mSpacebarHintEnabled = prefs.getBoolean(Settings.PREF_SPACEBAR_HINT, true);
         mDeleteSwipeEnabled = Settings.readDeleteSwipeEnabled(prefs);
+        mUseLongTap = Settings.readUseLongTap(prefs);
+        mLongTapThreshold = Settings.readLongTapThreshold(prefs, res);
+        mIncludeSecondaryInPopup = Settings.readIncludeSecondaryInPopup(prefs);
     }
 
     public boolean isWordSeparator(final int code) {

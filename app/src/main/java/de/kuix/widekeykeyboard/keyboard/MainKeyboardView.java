@@ -372,6 +372,18 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
         }
     }
 
+    private static final int KEY_CONFIRMATION_PREVIEW_LINGER_MS = 150;
+
+    // Implements {@link DrawingProxy#showKeyConfirmationPreview(Key,String)}.
+    @Override
+    public void showKeyConfirmationPreview(final Key key, final String label) {
+        if (key == null || key.noKeyPreview()) return;
+        showKeyPreview(key, label);
+        // Use a fixed longer linger so the confirmation is clearly visible.
+        // Bypass the hardware-accelerated immediate-animation path by always using the timer.
+        mTimerHandler.postDismissKeyPreview(key, KEY_CONFIRMATION_PREVIEW_LINGER_MS);
+    }
+
     private void dismissKeyPreview(final Key key) {
         if (isHardwareAccelerated()) {
             mKeyPreviewChoreographer.dismissKeyPreview(key, true /* withAnimation */);
@@ -650,9 +662,17 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
                 && TextUtils.getLayoutDirectionFromLocale(
                         LocaleUtils.constructLocaleFromString(keyboard.mId.mSubtype.getLocale()))
                         == View.LAYOUT_DIRECTION_RTL;
-        // For RTL layouts single tap = right char, double tap = left char — mirror the hint.
-        final String leftHint = isRtl ? "\uD83D\uDC46\uD83D\uDC46 \u25C4" : "\uD83D\uDC46 \u25C4";
-        final String rightHint = isRtl ? "\u25BA \uD83D\uDC46" : "\u25BA \uD83D\uDC46\uD83D\uDC46";
+        // For RTL layouts single tap = right char, second input method = left char — mirror the hint.
+        final boolean useLongTap = Settings.getInstance().getCurrent().mUseLongTap;
+        final String leftHint;
+        final String rightHint;
+        if (useLongTap) {
+            leftHint = isRtl ? "\uD83D\uDC46\u23F3 \u25C4" : "\uD83D\uDC46 \u25C4";
+            rightHint = isRtl ? "\u25BA \uD83D\uDC46" : "\u25BA \uD83D\uDC46\u23F3";
+        } else {
+            leftHint = isRtl ? "\uD83D\uDC46\uD83D\uDC46 \u25C4" : "\uD83D\uDC46 \u25C4";
+            rightHint = isRtl ? "\u25BA \uD83D\uDC46" : "\u25BA \uD83D\uDC46\uD83D\uDC46";
+        }
         final float leftEnd = mLanguageOnSpacebarHorizontalMargin + paint.measureText(leftHint);
         final float rightStart = width - mLanguageOnSpacebarHorizontalMargin - paint.measureText(rightHint);
         paint.setTextAlign(Align.LEFT);

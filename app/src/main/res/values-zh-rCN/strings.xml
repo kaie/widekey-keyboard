@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"按键振动"</string>
     <string name="sound_on_keypress">"按键音效"</string>
-    <string name="popup_on_keypress">"按键时弹出显示字符"</string>
+    <string name="popup_on_keypress">"在弹出窗口中显示所选按键"</string>
     <string name="settings_screen_preferences">"偏好设置"</string>
     <string name="settings_screen_appearance">外观</string>
     <string name="settings_screen_key_press">"按键"</string>
@@ -42,8 +42,12 @@
     <string name="add">"添加"</string>
     <string name="remove">"删除"</string>
     <string name="prefs_keypress_sound_volume_settings">"按键音量"</string>
-    <string name="prefs_key_longpress_timeout_settings">"按键长按延迟"</string>
+    <string name="prefs_key_longpress_timeout_settings">"弹出列表延迟"</string>
     <string name="prefs_doubletap_timeout_settings">"双击延迟"</string>
+    <string name="prefs_long_tap_delay_settings">"长按延迟"</string>
+    <string name="pref_use_long_tap">"长按模式"</string>
+    <string name="pref_use_long_tap_summary">"（禁用双击并增加弹出列表延迟。）"</string>
+    <string name="pref_include_secondary_in_popup">"弹出窗口包含第二个字符"</string>
     <string name="pref_spacebar_hint">显示 &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"默认"</string>
     <string name="prefs_keyboard_height_settings">键盘高度</string>

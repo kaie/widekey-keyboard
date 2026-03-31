@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"按鍵時震動"</string>
     <string name="sound_on_keypress">"按鍵時播放音效"</string>
-    <string name="popup_on_keypress">"按鍵時顯示彈出式視窗"</string>
+    <string name="popup_on_keypress">"在彈出式視窗中顯示所選按鍵"</string>
     <string name="settings_screen_preferences">"偏好設定"</string>
     <string name="settings_screen_theme">"主題背景"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> 毫秒"</string>
@@ -39,8 +39,12 @@
     <string name="add">"新增"</string>
     <string name="remove">"移除"</string>
     <string name="prefs_keypress_sound_volume_settings">"按鍵音量"</string>
-    <string name="prefs_key_longpress_timeout_settings">"長按鍵延遲"</string>
+    <string name="prefs_key_longpress_timeout_settings">"彈出列表延遲"</string>
     <string name="prefs_doubletap_timeout_settings">"雙擊延遲"</string>
+    <string name="prefs_long_tap_delay_settings">"長按延遲"</string>
+    <string name="pref_use_long_tap">"長按模式"</string>
+    <string name="pref_use_long_tap_summary">"（停用雙擊並增加彈出列表延遲。）"</string>
+    <string name="pref_include_secondary_in_popup">"彈出式視窗包含第二個字元"</string>
     <string name="pref_spacebar_hint">顯示 &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"預設"</string>
 </resources>

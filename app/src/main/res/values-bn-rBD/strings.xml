@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">কিপ্রেস কম্পন</string>
     <string name="sound_on_keypress">কিপ্রেসের শব্দ</string>
-    <string name="popup_on_keypress">কিপ্রেস পপআপ</string>
+    <string name="popup_on_keypress">নির্বাচিত কী পপআপে দেখাও</string>
     <string name="settings_screen_preferences">অভিরুচি</string>
     <string name="settings_screen_key_press">কিপ্রেস</string>
     <string name="settings_screen_appearance">অবয়ব</string>
@@ -45,8 +45,12 @@
     <string name="add">যোগ করুন</string>
     <string name="remove">অপসারণ করুন</string>
     <string name="prefs_keypress_sound_volume_settings">কিপ্রেস শব্দের ভলিউম</string>
-    <string name="prefs_key_longpress_timeout_settings">দীর্ঘ কিপ্রেসের বিলম্ব</string>
+    <string name="prefs_key_longpress_timeout_settings">পপআপ তালিকার বিলম্ব</string>
     <string name="prefs_doubletap_timeout_settings">"দ্বৈত-ট্যাপ বিলম্ব"</string>
+    <string name="prefs_long_tap_delay_settings">"দীর্ঘ-ট্যাপ বিলম্ব"</string>
+    <string name="pref_use_long_tap">দীর্ঘ ট্যাপ মোড</string>
+    <string name="pref_use_long_tap_summary">(দ্বৈত ট্যাপ নিষ্ক্রিয় করে এবং পপআপ তালিকার বিলম্ব বাড়ায়।)</string>
+    <string name="pref_include_secondary_in_popup">পপআপে দ্বিতীয় অক্ষর অন্তর্ভুক্ত</string>
     <string name="pref_spacebar_hint">দেখাও &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">ডিফল্ট</string>
     <string name="prefs_keyboard_height_settings">কিবোর্ডের উচ্চতা</string>

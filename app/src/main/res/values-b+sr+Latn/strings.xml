@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Vibriraj na pritisak tastera"</string>
     <string name="sound_on_keypress">"Zvuk na pritisak tastera"</string>
-    <string name="popup_on_keypress">"Iskačući prozor prilikom pritiska tastera"</string>
+    <string name="popup_on_keypress">"Prikaži izabrani taster u iskačućem prozoru"</string>
     <string name="settings_screen_preferences">"Podešavanja"</string>
     <string name="settings_screen_theme">"Tema"</string>
     <string name="settings_system_default">"Podrazumevano"</string>
@@ -38,8 +38,12 @@
     <string name="add">"Dodaj"</string>
     <string name="remove">"Ukloni"</string>
     <string name="prefs_keypress_sound_volume_settings">"Jačina zvuka pri pritisku"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Odlaganje pri dugom pritisku"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Kašnjenje iskačuće liste"</string>
     <string name="prefs_doubletap_timeout_settings">"Kašnjenje dvostrukog dodira"</string>
+    <string name="prefs_long_tap_delay_settings">"Kašnjenje dugog dodira"</string>
+    <string name="pref_use_long_tap">"Način dugog pritiska"</string>
+    <string name="pref_use_long_tap_summary">"(Onemogućava dvostruki pritisak i povećava kašnjenje iskačuće liste.)"</string>
+    <string name="pref_include_secondary_in_popup">"Iskačući prozor uključuje drugi znak"</string>
     <string name="pref_spacebar_hint">Prikaži &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Podrazumevano"</string>
     <string name="prefs_keyboard_height_settings">Visina tastature</string>

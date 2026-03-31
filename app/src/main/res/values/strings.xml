@@ -25,7 +25,7 @@
     <string name="sound_on_keypress">Sound on keypress</string>
 
     <!-- Option to control whether or not to show a popup with a larger font on each key press. -->
-    <string name="popup_on_keypress">Popup on keypress</string>
+    <string name="popup_on_keypress">Display chosen key in popup</string>
 
     <!-- Settings screen title for preferences [CHAR LIMIT=33]-->
     <string name="settings_screen_preferences">Preferences</string>
@@ -100,10 +100,15 @@
     <!-- Title of the settings for keypress sound volume [CHAR LIMIT=35] -->
     <string name="prefs_keypress_sound_volume_settings">Keypress sound volume</string>
     <!-- Title of the settings for key long press delay [CHAR LIMIT=35] -->
-    <string name="prefs_key_longpress_timeout_settings">Key long press delay</string>
+    <string name="prefs_key_longpress_timeout_settings">Popup list delay</string>
     <!-- Title of the settings for double-tap delay [CHAR LIMIT=35] -->
     <string name="prefs_doubletap_timeout_settings">Double-tap delay</string>
+    <!-- Title of the settings for long-tap delay [CHAR LIMIT=35] -->
+    <string name="prefs_long_tap_delay_settings">Long-tap delay</string>
     <string name="pref_spacebar_hint">Show &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
+    <string name="pref_use_long_tap">Long tap mode</string>
+    <string name="pref_use_long_tap_summary">(Disables double tap and increases popup list delay.)</string>
+    <string name="pref_include_secondary_in_popup">Popup includes second character</string>
 
     <!-- Title of the button to revert to the default value of the device in the settings dialog [CHAR LIMIT=15] -->
     <string name="button_default">Default</string>

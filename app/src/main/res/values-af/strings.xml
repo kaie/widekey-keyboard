@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Vibreer met sleuteldruk"</string>
     <string name="sound_on_keypress">"Klank met sleuteldruk"</string>
-    <string name="popup_on_keypress">"Opspring met sleuteldruk"</string>
+    <string name="popup_on_keypress">"Wys geselekteerde sleutel in opspring"</string>
     <string name="settings_screen_preferences">"Voorkeure"</string>
     <string name="settings_screen_appearance">Voorkoms</string>
     <string name="settings_screen_theme">"Tema"</string>
@@ -40,8 +40,12 @@
     <string name="add">"Voeg by"</string>
     <string name="remove">"Verwyder"</string>
     <string name="prefs_keypress_sound_volume_settings">"Sleuteldruk se klankvolume"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Vertraging van sleutellangdruk"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Vertraging van opspringlys"</string>
     <string name="prefs_doubletap_timeout_settings">"Dubbeltik-vertraging"</string>
+    <string name="prefs_long_tap_delay_settings">"Lang-tik-vertraging"</string>
+    <string name="pref_use_long_tap">"Lang-tik modus"</string>
+    <string name="pref_use_long_tap_summary">"(Deaktiveer dubbeltik en verhoog opspringlys-vertraging.)"</string>
+    <string name="pref_include_secondary_in_popup">"Opspring sluit tweede karakter in"</string>
     <string name="pref_spacebar_hint">Wys &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Verstek"</string>
     <string name="prefs_keyboard_height_settings">Sleutelbordhoogte</string>

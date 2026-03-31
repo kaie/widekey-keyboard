@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Dlidlizelisa ngokucindezela inkinobho"</string>
     <string name="sound_on_keypress">"Umsindo wokucindezela ukhiye"</string>
-    <string name="popup_on_keypress">"Ugaxekile ngokucindezela ukhiye"</string>
+    <string name="popup_on_keypress">"Bonisa ukhiye okhethiwe ku-popup"</string>
     <string name="settings_screen_preferences">"Izintandokazi"</string>
     <string name="settings_screen_theme">"Itimu"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>ms"</string>
@@ -40,8 +40,12 @@
     <string name="add">"Engeza"</string>
     <string name="remove">"Khipha"</string>
     <string name="prefs_keypress_sound_volume_settings">"Ivolumu yomsindo wokucindezela ukhiye"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Ukulibazisa ukucindezela isikhashana ukhiye"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Ukulibaziseka kwehlelo le-popup"</string>
     <string name="prefs_doubletap_timeout_settings">"Ukubambezeleka kwethintelo eliphindwe kabili"</string>
+    <string name="prefs_long_tap_delay_settings">"Ukubambezeleka kwethintelo elide"</string>
+    <string name="pref_use_long_tap">"Imodi yokucindezela isikhashana"</string>
+    <string name="pref_use_long_tap_summary">"(Ivimbela ukuthinta kabili futhi yandisa ukulibaziseka kwehlelo le-popup.)"</string>
+    <string name="pref_include_secondary_in_popup">"I-popup ifaka uphawu lwesibili"</string>
     <string name="pref_spacebar_hint">Bonisa &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Okuzenzakalelayo"</string>
 </resources>

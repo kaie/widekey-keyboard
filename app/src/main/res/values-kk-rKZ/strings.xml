@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Пернені басқан кездегі діріл"</string>
     <string name="sound_on_keypress">"Пернені басу кезіндегі дыбыс"</string>
-    <string name="popup_on_keypress">"Басылған пернені үлкейтіп көрсету"</string>
+    <string name="popup_on_keypress">"Таңдалған пернені қалқыма терезеде көрсету"</string>
     <string name="settings_screen_preferences">"Қалауларыңыз"</string>
     <string name="settings_screen_theme">"Тақырып"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>мс"</string>
@@ -39,8 +39,12 @@
     <string name="add">"Қосу"</string>
     <string name="remove">"Өшіру"</string>
     <string name="prefs_keypress_sound_volume_settings">"Пернені басқан кездегі дыбыс деңгейі"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Пернені ұзақ басу кідірісі"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Қалқыма тізімнің кідірісі"</string>
     <string name="prefs_doubletap_timeout_settings">"Екі рет түрту кідірісі"</string>
+    <string name="prefs_long_tap_delay_settings">"Ұзақ басу кідірісі"</string>
+    <string name="pref_use_long_tap">"Ұзақ түрту режимі"</string>
+    <string name="pref_use_long_tap_summary">"(Екі рет түртуді өшіреді және қалқыма тізімнің кідірісін арттырады.)"</string>
+    <string name="pref_include_secondary_in_popup">"Қалқыма терезеде екінші таңба бар"</string>
     <string name="pref_spacebar_hint">Көрсет &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Әдепкі"</string>
 </resources>

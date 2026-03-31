@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Tugma bosilganda tebranish"</string>
     <string name="sound_on_keypress">"Tugma bosilganda ovoz"</string>
-    <string name="popup_on_keypress">"Tugma bosilganda qalqib chiqish"</string>
+    <string name="popup_on_keypress">"Tanlangan tugmani qalqib chiquvchi oynada ko'rsatish"</string>
     <string name="settings_screen_preferences">"Sozlamalar"</string>
     <string name="settings_screen_theme">"Mavzu"</string>
     <string name="settings_system_default">"Tizim standarti"</string>
@@ -38,8 +38,12 @@
     <string name="add">"Qo‘shish"</string>
     <string name="remove">"Olib tashlash"</string>
     <string name="prefs_keypress_sound_volume_settings">"Tugma bosilgandagi ovoz"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Tugmani bosib turish"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Qalqib chiquvchi ro'yxat kechikishi"</string>
     <string name="prefs_doubletap_timeout_settings">"Ikki marta bosish kechikishi"</string>
+    <string name="prefs_long_tap_delay_settings">"Uzoq bosish kechikishi"</string>
+    <string name="pref_use_long_tap">"Uzoq bosish rejimi"</string>
+    <string name="pref_use_long_tap_summary">"(Ikki marta bosishni o'chiradi va qalqib chiquvchi ro'yxat kechikishini oshiradi.)"</string>
+    <string name="pref_include_secondary_in_popup">"Qalqib chiquvchi oynada ikkinchi belgi mavjud"</string>
     <string name="pref_spacebar_hint">Koʻrsating &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Standart"</string>
 </resources>

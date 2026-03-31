@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"لرزش با فشار کلید"</string>
     <string name="sound_on_keypress">"صدا با فشار کلید"</string>
-    <string name="popup_on_keypress">"بازشدن با فشار کلید"</string>
+    <string name="popup_on_keypress">"نمایش کلید انتخاب‌شده در پنجره بازشو"</string>
     <string name="settings_screen_preferences">"تنظیمات برگزیده"</string>
     <string name="settings_screen_key_press">فشردن دکمه</string>
     <string name="settings_screen_appearance">ظاهر</string>
@@ -41,8 +41,12 @@
     <string name="add">"افزودن"</string>
     <string name="remove">"حذف"</string>
     <string name="prefs_keypress_sound_volume_settings">"میزان صدای فشردن کلید"</string>
-    <string name="prefs_key_longpress_timeout_settings">"تأخیر فشار طولانی کلید"</string>
+    <string name="prefs_key_longpress_timeout_settings">"تأخیر فهرست بازشو"</string>
     <string name="prefs_doubletap_timeout_settings">"تأخیر دوضربه‌ای"</string>
+    <string name="prefs_long_tap_delay_settings">"تأخیر ضربه طولانی"</string>
+    <string name="pref_use_long_tap">"حالت ضربه طولانی"</string>
+    <string name="pref_use_long_tap_summary">"(ضربه دوتایی را غیرفعال می‌کند و تأخیر فهرست بازشو را افزایش می‌دهد.)"</string>
+    <string name="pref_include_secondary_in_popup">"پنجره بازشو شامل نویسه دوم است"</string>
     <string name="pref_spacebar_hint">نمایش &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"پیش‌فرض"</string>
     <string name="prefs_keyboard_height_settings">ارتفاع صفحه کلید</string>

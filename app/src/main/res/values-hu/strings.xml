@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Rezgés gombnyomásra"</string>
     <string name="sound_on_keypress">"Hangjelzés gombnyomásra"</string>
-    <string name="popup_on_keypress">"Nagyobb billentyű gombnyomásra"</string>
+    <string name="popup_on_keypress">"Kiválasztott billentyű megjelenítése felugró ablakban"</string>
     <string name="settings_screen_preferences">"Beállítások"</string>
     <string name="settings_screen_key_press">Gombnyomás</string>
     <string name="settings_screen_appearance">Megjelenés</string>
@@ -40,8 +40,12 @@
     <string name="add">"Hozzáadás"</string>
     <string name="remove">"Eltávolítás"</string>
     <string name="prefs_keypress_sound_volume_settings">"Gombnyomás hangereje"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Hosszú nyomás késleltetése"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Felugró lista késleltetése"</string>
     <string name="prefs_doubletap_timeout_settings">"Dupla érintés késleltetése"</string>
+    <string name="prefs_long_tap_delay_settings">"Hosszú érintés késleltetése"</string>
+    <string name="pref_use_long_tap">"Hosszú nyomás mód"</string>
+    <string name="pref_use_long_tap_summary">"(Letiltja a dupla érintést és növeli a felugró lista késleltetését.)"</string>
+    <string name="pref_include_secondary_in_popup">"A felugró ablak tartalmazza a második karaktert"</string>
     <string name="pref_spacebar_hint">Mutasd &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Alapértelmezett"</string>
     <string name="prefs_keyboard_height_settings">Billentyűzet magassága</string>

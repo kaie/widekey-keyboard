@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"ສັ່ນເຕືອນເມື່ອພິມ"</string>
     <string name="sound_on_keypress">"ສຽງໃນການກົດປຸ່ມ"</string>
-    <string name="popup_on_keypress">"ໂຕອັກສອນເວລາພິມ"</string>
+    <string name="popup_on_keypress">"ສະ​ແດງ​ປຸ່ມ​ທີ່​ເລືອກ​ໃນ​ປ໋ອບ​ອັບ"</string>
     <string name="settings_screen_preferences">"​​ການ​ຕັ້ງ​ຄ່າ"</string>
     <string name="settings_screen_theme">"ຮູບແບບສີສັນ"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>ms"</string>
@@ -39,8 +39,12 @@
     <string name="add">"ເພີ່ມ"</string>
     <string name="remove">"ລຶບອອກ"</string>
     <string name="prefs_keypress_sound_volume_settings">"ລະດັບສຽງຂອງການກົດປຸ່ມ"</string>
-    <string name="prefs_key_longpress_timeout_settings">"ໄລຍະເວລາຂອງການກົດປຸ່ມ"</string>
+    <string name="prefs_key_longpress_timeout_settings">"ການ​ຊັກ​ຊ້າ​ຂອງ​ລາຍ​ການ​ປ໋ອບ​ອັບ"</string>
     <string name="prefs_doubletap_timeout_settings">"ການຊັກຊ້າຂອງການແຕະສອງຄັ້ງ"</string>
+    <string name="prefs_long_tap_delay_settings">"ການຊັກຊ້າຂອງການແຕະດົນ"</string>
+    <string name="pref_use_long_tap">"ໂໝດ​ແຕະ​ຍາວ"</string>
+    <string name="pref_use_long_tap_summary">"(ປິດ​ການ​ແຕະ​ສອງ​ຄັ້ງ ​ແລະ​ເພີ່ມ​ການ​ຊັກ​ຊ້າ​ຂອງ​ລາຍ​ການ​ປ໋ອບ​ອັບ.)"</string>
+    <string name="pref_include_secondary_in_popup">"ປ໋ອບ​ອັບ​ລວມ​ມີ​ຕົວ​ອັກ​ສອນ​ທີ​ສອງ"</string>
     <string name="pref_spacebar_hint">ສະແດງ &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"ຄ່າເລີ່ມຕົ້ນ"</string>
 </resources>

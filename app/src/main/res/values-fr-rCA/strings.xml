@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Vibrer à chaque touche"</string>
     <string name="sound_on_keypress">"Son à chaque touche"</string>
-    <string name="popup_on_keypress">"Agrandir les caractères"</string>
+    <string name="popup_on_keypress">"Afficher la touche choisie dans une fenêtre contextuelle"</string>
     <string name="settings_screen_preferences">"Préférences"</string>
     <string name="settings_screen_theme">"Thème"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> ms"</string>
@@ -39,8 +39,12 @@
     <string name="add">"Ajouter"</string>
     <string name="remove">"Supprimer"</string>
     <string name="prefs_keypress_sound_volume_settings">"Volume pression de touche"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Délai appui prolongé sur touche"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Délai de la liste contextuelle"</string>
     <string name="prefs_doubletap_timeout_settings">"Délai du double appui"</string>
+    <string name="prefs_long_tap_delay_settings">"Délai de l'appui long"</string>
+    <string name="pref_use_long_tap">"Mode d\'appui long"</string>
+    <string name="pref_use_long_tap_summary">"(Désactive le double appui et augmente le délai de la liste contextuelle.)"</string>
+    <string name="pref_include_secondary_in_popup">"La fenêtre contextuelle inclut le deuxième caractère"</string>
     <string name="pref_spacebar_hint">Affiche &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Par défaut"</string>
 </resources>

@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"కీని నొక్కినప్పుడు వైబ్రేట్"</string>
     <string name="sound_on_keypress">"కీని నొక్కినప్పుడు ధ్వని"</string>
-    <string name="popup_on_keypress">"కీని నొక్కినప్పుడు పాప్‌అప్ చూపు"</string>
+    <string name="popup_on_keypress">"ఎంచుకున్న కీని పాప్‌అప్‌లో చూపు"</string>
     <string name="settings_screen_preferences">"ప్రాధాన్యతలు"</string>
     <string name="settings_screen_theme">"థీమ్"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>మిసె"</string>
@@ -39,8 +39,12 @@
     <string name="add">"జోడించండి"</string>
     <string name="remove">"తీసివేయి"</string>
     <string name="prefs_keypress_sound_volume_settings">"కీని నొక్కినప్పుడు చేసే ధ్వని వాల్యూమ్"</string>
-    <string name="prefs_key_longpress_timeout_settings">"కీని ఎక్కువసేపు నొక్కి ఉంచాల్సిన సమయంలో ఆలస్యం"</string>
+    <string name="prefs_key_longpress_timeout_settings">"పాప్‌అప్ జాబితా ఆలస్యం"</string>
     <string name="prefs_doubletap_timeout_settings">"డబుల్-ట్యాప్ జాప్యం"</string>
+    <string name="prefs_long_tap_delay_settings">"లాంగ్-ట్యాప్ జాప్యం"</string>
+    <string name="pref_use_long_tap">"లాంగ్ ట్యాప్ మోడ్"</string>
+    <string name="pref_use_long_tap_summary">"(డబుల్ ట్యాప్‌ను నిలిపివేసి పాప్‌అప్ జాబితా ఆలస్యాన్ని పెంచుతుంది.)"</string>
+    <string name="pref_include_secondary_in_popup">"పాప్‌అప్ రెండవ అక్షరాన్ని కలిగి ఉంటుంది"</string>
     <string name="pref_spacebar_hint">చూపించు &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"డిఫాల్ట్"</string>
 </resources>

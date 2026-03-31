@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"በቁልፍመጫንጊዜ አንዝር"</string>
     <string name="sound_on_keypress">"በቁልፍ መጫን ላይ የሚወጣ ድምፅ"</string>
-    <string name="popup_on_keypress">"ቁልፍ ጫን ላይ ብቅ ባይ"</string>
+    <string name="popup_on_keypress">"የተመረጠው ቁልፍ በብቅ ባይ ውስጥ አሳይ"</string>
     <string name="settings_screen_preferences">"ምርጫዎች"</string>
     <string name="settings_screen_theme">"ገፅታ"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>ሚሊሰከንድ"</string>
@@ -39,8 +39,12 @@
     <string name="add">"አክል"</string>
     <string name="remove">"አስወግድ"</string>
     <string name="prefs_keypress_sound_volume_settings">"የቁልፍ ጭነት ድምጽ መጠን"</string>
-    <string name="prefs_key_longpress_timeout_settings">"የሰሌዳ ቁልፍ ጠቅታ በመጫን መዘግየት"</string>
+    <string name="prefs_key_longpress_timeout_settings">"የብቅ ባይ ዝርዝር ዘግይቶ"</string>
     <string name="prefs_doubletap_timeout_settings">"የድርብ መታ ዘግይቶ"</string>
+    <string name="prefs_long_tap_delay_settings">"የረጅም ጊዜ መታ ዘግይቶ"</string>
+    <string name="pref_use_long_tap">"ረዥም ቁልፍ ሁነታ"</string>
+    <string name="pref_use_long_tap_summary">"(ድርብ መቆንጠጥን ያሰናክላል እና የብቅ ባይ ዝርዝር ዘግዮን ይጨምራል.)"</string>
+    <string name="pref_include_secondary_in_popup">"ብቅ ባይ ሁለተኛ ቁልፍ ያካትታል"</string>
     <string name="pref_spacebar_hint">አሳይ &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"ነባሪ"</string>
 </resources>

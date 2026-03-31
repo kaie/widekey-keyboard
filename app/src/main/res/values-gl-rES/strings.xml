@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Vibrar ao premer as teclas"</string>
     <string name="sound_on_keypress">"Son ao premer as teclas"</string>
-    <string name="popup_on_keypress">"Ventás emerxentes ao premer as teclas"</string>
+    <string name="popup_on_keypress">"Mostrar a tecla escollida na ventá emerxente"</string>
     <string name="settings_screen_preferences">"Preferencias"</string>
     <string name="settings_screen_theme">"Tema"</string>
     <string name="settings_system_default">"Predeterminado do sistema"</string>
@@ -38,8 +38,12 @@
     <string name="add">"Engadir"</string>
     <string name="remove">"Eliminar"</string>
     <string name="prefs_keypress_sound_volume_settings">"Volume do son ao premer teclas"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Retraso de pulsación prolongada"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Atraso da lista emerxente"</string>
     <string name="prefs_doubletap_timeout_settings">"Atraso de dobre toque"</string>
+    <string name="prefs_long_tap_delay_settings">"Atraso de toque longo"</string>
+    <string name="pref_use_long_tap">"Modo de toque longo"</string>
+    <string name="pref_use_long_tap_summary">"(Desactiva o dobre toque e aumenta o atraso da lista emerxente.)"</string>
+    <string name="pref_include_secondary_in_popup">"A ventá emerxente inclúe o segundo carácter"</string>
     <string name="pref_spacebar_hint">Mostra &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Predeterminado"</string>
     <string name="prefs_keyboard_height_settings">Altura do teclado</string>

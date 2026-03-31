@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Tuşa basıldığında titret"</string>
     <string name="sound_on_keypress">"Tuşa basıldığında ses çıkar"</string>
-    <string name="popup_on_keypress">"Tuşa basıldığında pop-up aç"</string>
+    <string name="popup_on_keypress">"Seçilen tuşu açılır pencerede göster"</string>
     <string name="settings_screen_preferences">"Tercihler"</string>
     <string name="settings_screen_key_press">Tuşa basma</string>
     <string name="settings_screen_appearance">Görünüm</string>
@@ -40,8 +40,12 @@
     <string name="add">"Ekle"</string>
     <string name="remove">"Kaldır"</string>
     <string name="prefs_keypress_sound_volume_settings">"Tuşa basma ses seviyesi"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Tuşa uzun basma gecikmesi"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Açılır liste gecikmesi"</string>
     <string name="prefs_doubletap_timeout_settings">"Çift dokunma gecikmesi"</string>
+    <string name="prefs_long_tap_delay_settings">"Uzun dokunma gecikmesi"</string>
+    <string name="pref_use_long_tap">"Uzun basma modu"</string>
+    <string name="pref_use_long_tap_summary">"(Çift dokunmayı devre dışı bırakır ve açılır liste gecikmesini artırır.)"</string>
+    <string name="pref_include_secondary_in_popup">"Açılır pencere ikinci karakteri içerir"</string>
     <string name="pref_spacebar_hint">Göster &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Varsayılan"</string>
     <string name="prefs_keyboard_height_settings">Klavye yüksekliği</string>

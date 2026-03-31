@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"کلید دبانے پر وائبریٹ کریں"</string>
     <string name="sound_on_keypress">"کلید دبانے پر آواز"</string>
-    <string name="popup_on_keypress">"کلید دبانے پر پاپ اپ"</string>
+    <string name="popup_on_keypress">"منتخب کلید کو پاپ اپ میں دکھائیں"</string>
     <string name="settings_screen_preferences">"ترجیحات"</string>
     <string name="settings_screen_theme">"تھیم"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>ملی سیکنڈ"</string>
@@ -39,8 +39,12 @@
     <string name="add">"شامل کریں"</string>
     <string name="remove">"ہٹائیں"</string>
     <string name="prefs_keypress_sound_volume_settings">"کلید دبانے پر آواز کا والیوم"</string>
-    <string name="prefs_key_longpress_timeout_settings">"کلید کو دیر تک دبانے کی تاخیر"</string>
+    <string name="prefs_key_longpress_timeout_settings">"پاپ اپ فہرست تاخیر"</string>
     <string name="prefs_doubletap_timeout_settings">"ڈبل ٹیپ تاخیر"</string>
+    <string name="prefs_long_tap_delay_settings">"لمبا ٹیپ تاخیر"</string>
+    <string name="pref_use_long_tap">"لانگ ٹیپ موڈ"</string>
+    <string name="pref_use_long_tap_summary">"(ڈبل ٹیپ کو غیر فعال کرتا ہے اور پاپ اپ فہرست تاخیر بڑھاتا ہے۔)"</string>
+    <string name="pref_include_secondary_in_popup">"پاپ اپ میں دوسرا حرف شامل ہے"</string>
     <string name="pref_spacebar_hint">دکھائیں &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"ڈیفالٹ"</string>
     <string name="prefs_keyboard_height_settings">کی بورڈ کی اونچائی</string>

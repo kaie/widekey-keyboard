@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Vibrasiyalı klikləmə"</string>
     <string name="sound_on_keypress">"Klikləmə səsi"</string>
-    <string name="popup_on_keypress">"Klikləmədə popup"</string>
+    <string name="popup_on_keypress">"Seçilmiş düyməni açılır pəncərədə göstər"</string>
     <string name="settings_screen_preferences">"Seçimlər"</string>
     <string name="settings_screen_theme">"Tema"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> millisaniyə"</string>
@@ -39,8 +39,12 @@
     <string name="add">"Əlavə et"</string>
     <string name="remove">"Ləğv et"</string>
     <string name="prefs_keypress_sound_volume_settings">"Səsli klikləmə səsi"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Klavişi uzun müddət basmada gecikmə"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Açılır siyahı gecikməsi"</string>
     <string name="prefs_doubletap_timeout_settings">"İki dəfə toxunma gecikmə müddəti"</string>
+    <string name="prefs_long_tap_delay_settings">"Uzun toxunma gecikmə müddəti"</string>
+    <string name="pref_use_long_tap">"Uzun toxunma rejimi"</string>
+    <string name="pref_use_long_tap_summary">"(İki dəfə toxunmanı deaktiv edir və açılır siyahı gecikmesini artırır.)"</string>
+    <string name="pref_include_secondary_in_popup">"Açılır pəncərə ikinci simvolu daxil edir"</string>
     <string name="pref_spacebar_hint">Göstər &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Defolt"</string>
     <string name="prefs_keyboard_height_settings">Klaviatura hündürlüyü</string>

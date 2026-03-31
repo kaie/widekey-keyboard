@@ -147,6 +147,7 @@ public class MoreKeysKeyboardView extends KeyboardView implements MoreKeysPanel 
      * Performs the specific action for this panel when the user presses a key on the panel.
      */
     protected void onKeyInput(final Key key) {
+        PointerTracker.notifyMoreKeysPanelCommitted(key.getPreviewLabel());
         final int code = key.getCode();
         if (code == Constants.CODE_OUTPUT_TEXT) {
             mListener.onTextInput(mCurrentKey.getOutputText());

@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Вибрирање при притисок на копче"</string>
     <string name="sound_on_keypress">"Звук на притискање копче"</string>
-    <string name="popup_on_keypress">"Појавен прозорец на притискање копче"</string>
+    <string name="popup_on_keypress">"Прикажи избрано копче во скокачки прозорец"</string>
     <string name="settings_screen_preferences">"Претпочитани поставки"</string>
     <string name="settings_screen_key_press">Притискање на копчињата</string>
     <string name="settings_screen_appearance">Изглед</string>
@@ -40,8 +40,12 @@
     <string name="add">"Додај"</string>
     <string name="remove">"Отстрани"</string>
     <string name="prefs_keypress_sound_volume_settings">"Копче за јачина на звук"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Доцнење на долго притискање копче"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Задоцнување на скокачкиот список"</string>
     <string name="prefs_doubletap_timeout_settings">"Доцнење при двојно допирање"</string>
+    <string name="prefs_long_tap_delay_settings">"Доцнење при долго допирање"</string>
+    <string name="pref_use_long_tap">"Режим на долго допирање"</string>
+    <string name="pref_use_long_tap_summary">"(Ги оневозможува двојните допири и го зголемува задоцнувањето на скокачкиот список.)"</string>
+    <string name="pref_include_secondary_in_popup">"Скокачкиот прозорец вклучува втор знак"</string>
     <string name="pref_spacebar_hint">Прикажи &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Стандардно"</string>
     <string name="prefs_keyboard_height_settings">Висина на тастатурата</string>

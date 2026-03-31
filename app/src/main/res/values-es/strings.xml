@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Vibrar al pulsar tecla"</string>
     <string name="sound_on_keypress">"Sonar al pulsar tecla"</string>
-    <string name="popup_on_keypress">"Ampliar al pulsar tecla"</string>
+    <string name="popup_on_keypress">"Mostrar tecla seleccionada en ventana emergente"</string>
     <string name="settings_screen_preferences">"Preferencias"</string>
     <string name="settings_screen_key_press">Presionar tecla</string>
     <string name="settings_screen_appearance">Apariencia</string>
@@ -40,8 +40,12 @@
     <string name="add">"Añadir"</string>
     <string name="remove">"Quitar"</string>
     <string name="prefs_keypress_sound_volume_settings">"Volumen de sonido al pulsar tecla"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Retraso al mantener pulsado"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Retraso de la lista emergente"</string>
     <string name="prefs_doubletap_timeout_settings">"Retardo de doble toque"</string>
+    <string name="prefs_long_tap_delay_settings">"Retardo de toque largo"</string>
+    <string name="pref_use_long_tap">"Modo de toque largo"</string>
+    <string name="pref_use_long_tap_summary">"(Desactiva el doble toque y aumenta el retraso de la lista emergente.)"</string>
+    <string name="pref_include_secondary_in_popup">"La ventana emergente incluye el segundo carácter"</string>
     <string name="pref_spacebar_hint">Muestra &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Predeterminado"</string>
     <string name="prefs_keyboard_height_settings">Altura del teclado</string>

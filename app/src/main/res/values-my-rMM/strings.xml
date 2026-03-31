@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"ခလုတ်နှိပ်သည်နှင့် တုံခါစေပါ"</string>
     <string name="sound_on_keypress">"ခလုတ်နှိပ်လျှင် အသံမြည်"</string>
-    <string name="popup_on_keypress">"ကီးနှိပ်လိုက်သည်နှင့် ပေါ်လာရန်"</string>
+    <string name="popup_on_keypress">"ရွေးချယ်ထားသောကီးကို ပေါ်လာသောဝင်းဒိုးတွင် ပြပါ"</string>
     <string name="settings_screen_preferences">"ရွေးချယ်စရာများ"</string>
     <string name="settings_screen_theme">"အပြင်အဆင်"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>ms"</string>
@@ -39,8 +39,12 @@
     <string name="add">"ထည့်ရန်"</string>
     <string name="remove">"ဖယ်ရှားပါ"</string>
     <string name="prefs_keypress_sound_volume_settings">"ခလုတ်နှိပ်သည့် အသံအတိုးကျယ်"</string>
-    <string name="prefs_key_longpress_timeout_settings">"ကီးကြာမြင့်စွာ ဖိနှိပ်မှုနှုန်း"</string>
+    <string name="prefs_key_longpress_timeout_settings">"ပေါ်လာသောဝင်းဒိုး စာရင်း နှောင့်နှေးမှု"</string>
     <string name="prefs_doubletap_timeout_settings">"နှစ်ချက်တို့ကြာချိန်"</string>
+    <string name="prefs_long_tap_delay_settings">"ကြာရှည်နှိပ်ကြာချိန်"</string>
+    <string name="pref_use_long_tap">"ကြာမြင့်စွာ နှိပ်မှု မုဒ်"</string>
+    <string name="pref_use_long_tap_summary">"(နှစ်ချက်တို့ကို ပိတ်ကာ ပေါ်လာသောဝင်းဒိုး စာရင်း နှောင့်နှေးမှု တိုးမြင့်ပါသည်.)"</string>
+    <string name="pref_include_secondary_in_popup">"ပေါ်လာသောဝင်းဒိုးတွင် ဒုတိယစာလုံး ပါဝင်သည်"</string>
     <string name="pref_spacebar_hint">ပြပါ &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"ပုံသေ"</string>
 </resources>

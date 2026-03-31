@@ -20,34 +20,58 @@
     android:title="@string/settings_screen_key_press">
     <SwitchPreference
         android:key="vibrate_on"
+        android:order="10"
         android:title="@string/vibrate_on_keypress"
         android:defaultValue="@bool/config_default_vibration_enabled"
         android:persistent="true" />
     <SwitchPreference
         android:key="sound_on"
+        android:order="20"
         android:title="@string/sound_on_keypress"
         android:defaultValue="@bool/config_default_sound_enabled"
         android:persistent="true" />
     <de.kuix.widekeykeyboard.latin.settings.SeekBarDialogPreference
         android:key="pref_keypress_sound_volume"
+        android:order="30"
         android:title="@string/prefs_keypress_sound_volume_settings"
         android:dependency="sound_on"
         latin:maxValue="100" /> <!-- percent -->
     <SwitchPreference
         android:key="popup_on"
+        android:order="40"
         android:title="@string/popup_on_keypress"
         android:defaultValue="@bool/config_default_key_preview_popup"
         android:persistent="true" />
     <de.kuix.widekeykeyboard.latin.settings.SeekBarDialogPreference
         android:key="pref_key_longpress_timeout"
+        android:order="50"
         android:title="@string/prefs_key_longpress_timeout_settings"
         latin:minValue="@integer/config_min_longpress_timeout"
         latin:maxValue="@integer/config_max_longpress_timeout"
         latin:stepValue="@integer/config_longpress_timeout_step" />
     <de.kuix.widekeykeyboard.latin.settings.SeekBarDialogPreference
         android:key="pref_doubletap_timeout"
+        android:order="60"
         android:title="@string/prefs_doubletap_timeout_settings"
         latin:minValue="@integer/config_min_doubletap_timeout"
         latin:maxValue="@integer/config_max_doubletap_timeout"
         latin:stepValue="@integer/config_doubletap_timeout_step" />
+    <de.kuix.widekeykeyboard.latin.settings.SeekBarDialogPreference
+        android:key="pref_long_tap_threshold"
+        android:order="60"
+        android:title="@string/prefs_long_tap_delay_settings"
+        latin:minValue="@integer/config_min_longtap_threshold"
+        latin:maxValue="@integer/config_max_longtap_threshold"
+        latin:stepValue="@integer/config_longtap_threshold_step" />
+    <SwitchPreference
+        android:key="pref_use_long_tap"
+        android:order="70"
+        android:title="@string/pref_use_long_tap"
+        android:summary="@string/pref_use_long_tap_summary"
+        android:defaultValue="false" />
+    <SwitchPreference
+        android:key="pref_include_secondary_in_popup"
+        android:order="80"
+        android:title="@string/pref_include_secondary_in_popup"
+        android:defaultValue="false" />
 </PreferenceScreen>

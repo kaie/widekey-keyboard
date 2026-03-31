@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Mag-vibrate sa keypress"</string>
     <string name="sound_on_keypress">"Tumunog sa keypress"</string>
-    <string name="popup_on_keypress">"Mag-popup sa keypress"</string>
+    <string name="popup_on_keypress">"Ipakita ang napiling key sa popup"</string>
     <string name="settings_screen_preferences">"Mga Kagustuhan"</string>
     <string name="settings_screen_theme">"Tema"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>ms"</string>
@@ -39,8 +39,12 @@
     <string name="add">"Idagdag"</string>
     <string name="remove">"Alisin"</string>
     <string name="prefs_keypress_sound_volume_settings">"Volume ng tunog ng keypress"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Delay sa long press ng key"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Pagkaantala ng listahan sa popup"</string>
     <string name="prefs_doubletap_timeout_settings">"Pagkaantala ng dobleng tap"</string>
+    <string name="prefs_long_tap_delay_settings">"Pagkaantala ng matagal na tap"</string>
+    <string name="pref_use_long_tap">"Long tap mode"</string>
+    <string name="pref_use_long_tap_summary">"(Ipinapahinto ang dobleng tap at pinapataas ang pagkaantala ng listahan sa popup.)"</string>
+    <string name="pref_include_secondary_in_popup">"Kasama ang pangalawang karakter sa popup"</string>
     <string name="pref_spacebar_hint">Ipakita &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Default"</string>
 </resources>

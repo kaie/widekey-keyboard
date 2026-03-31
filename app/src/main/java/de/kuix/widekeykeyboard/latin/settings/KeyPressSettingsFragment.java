@@ -23,6 +23,7 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.preference.Preference;
 
 import de.kuix.widekeykeyboard.R;
 import de.kuix.widekeykeyboard.latin.AudioAndHapticFeedbackManager;
@@ -39,6 +40,9 @@ import de.kuix.widekeykeyboard.latin.AudioAndHapticFeedbackManager;
  * - Key long press delay
  */
 public final class KeyPressSettingsFragment extends SubScreenFragment {
+    private Preference mDoubleTapTimeoutPref;
+    private Preference mLongTapThresholdPref;
+
     @Override
     public void onCreate(final Bundle icicle) {
         super.onCreate(icicle);
@@ -55,9 +59,50 @@ public final class KeyPressSettingsFragment extends SubScreenFragment {
             removePreference(Settings.PREF_VIBRATE_ON);
         }
 
+        mDoubleTapTimeoutPref = findPreference(Settings.PREF_DOUBLETAP_TIMEOUT);
+        mLongTapThresholdPref = findPreference(Settings.PREF_LONG_TAP_THRESHOLD);
+
         setupKeypressSoundVolumeSettings();
         setupKeyLongpressTimeoutSettings();
         setupDoubleTapTimeoutSettings();
+        setupLongTapThresholdSettings();
+        updateTapModePrefsVisibility();
+    }
+
+    @Override
+    public void onSharedPreferenceChanged(final SharedPreferences prefs, final String key) {
+        if (Settings.PREF_USE_LONG_TAP.equals(key)) {
+            updateTapModePrefsVisibility();
+            scaleLongpressTimeoutForMode(prefs);
+        }
+    }
+
+    private void scaleLongpressTimeoutForMode(final SharedPreferences prefs) {
+        final Resources res = getResources();
+        final int current = Settings.readKeyLongpressTimeout(prefs, res);
+        final boolean useLongTap = Settings.readUseLongTap(prefs);
+        final int scaled = Math.round((useLongTap ? current * 1.5f : current / 1.5f) / 10) * 10;
+        final int min = res.getInteger(R.integer.config_min_longpress_timeout);
+        final int max = res.getInteger(R.integer.config_max_longpress_timeout);
+        final int clamped = Math.max(min, Math.min(max, scaled));
+        prefs.edit().putInt(Settings.PREF_KEY_LONGPRESS_TIMEOUT, clamped).apply();
+        final SeekBarDialogPreference pref = (SeekBarDialogPreference) findPreference(
+                Settings.PREF_KEY_LONGPRESS_TIMEOUT);
+        if (pref != null) {
+            pref.setSummary(res.getString(R.string.abbreviation_unit_milliseconds, clamped));
+        }
+    }
+
+    private void updateTapModePrefsVisibility() {
+        final boolean useLongTap = Settings.readUseLongTap(getSharedPreferences());
+        final android.preference.PreferenceScreen screen = getPreferenceScreen();
+        if (useLongTap) {
+            screen.removePreference(mDoubleTapTimeoutPref);
+            screen.addPreference(mLongTapThresholdPref);
+        } else {
+            screen.removePreference(mLongTapThresholdPref);
+            screen.addPreference(mDoubleTapTimeoutPref);
+        }
     }
 
     private void setupKeypressSoundVolumeSettings() {
@@ -181,6 +226,45 @@ public final class KeyPressSettingsFragment extends SubScreenFragment {
             @Override
             public int readDefaultValue(final String key) {
                 return res.getInteger(R.integer.config_default_doubletap_timeout);
+            }
+
+            @Override
+            public String getValueText(final int value) {
+                return res.getString(R.string.abbreviation_unit_milliseconds, value);
+            }
+
+            @Override
+            public void feedbackValue(final int value) {}
+        });
+    }
+
+    private void setupLongTapThresholdSettings() {
+        final SharedPreferences prefs = getSharedPreferences();
+        final Resources res = getResources();
+        final SeekBarDialogPreference pref = (SeekBarDialogPreference)findPreference(
+                Settings.PREF_LONG_TAP_THRESHOLD);
+        if (pref == null) {
+            return;
+        }
+        pref.setInterface(new SeekBarDialogPreference.ValueProxy() {
+            @Override
+            public void writeValue(final int value, final String key) {
+                prefs.edit().putInt(key, value).apply();
+            }
+
+            @Override
+            public void writeDefaultValue(final String key) {
+                prefs.edit().remove(key).apply();
+            }
+
+            @Override
+            public int readValue(final String key) {
+                return Settings.readLongTapThreshold(prefs, res);
+            }
+
+            @Override
+            public int readDefaultValue(final String key) {
+                return res.getInteger(R.integer.config_default_longtap_threshold);
             }
 
             @Override

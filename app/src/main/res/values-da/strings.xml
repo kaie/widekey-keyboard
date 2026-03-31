@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Vibration ved tastetryk"</string>
     <string name="sound_on_keypress">"Lyd ved tastetryk"</string>
-    <string name="popup_on_keypress">"Pop op ved tastetryk"</string>
+    <string name="popup_on_keypress">"Vis valgt tast i pop op"</string>
     <string name="settings_screen_preferences">"Præferencer"</string>
     <string name="settings_screen_theme">"Tema"</string>
     <string name="settings_system_default">"Systemstandard"</string>
@@ -38,8 +38,12 @@
     <string name="add">"Tilføj"</string>
     <string name="remove">"Fjern"</string>
     <string name="prefs_keypress_sound_volume_settings">"Lydstyrke ved tastetryk"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Forsinket langt tastetryk"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Forsinkelse for pop op-liste"</string>
     <string name="prefs_doubletap_timeout_settings">"Forsinkelse for dobbelttryk"</string>
+    <string name="prefs_long_tap_delay_settings">"Forsinkelse for langt tryk"</string>
+    <string name="pref_use_long_tap">"Langt tryk-tilstand"</string>
+    <string name="pref_use_long_tap_summary">"(Deaktiverer dobbelttryk og øger forsinkelsen for pop op-liste.)"</string>
+    <string name="pref_include_secondary_in_popup">"Pop op inkluderer andet tegn"</string>
     <string name="pref_spacebar_hint">Vis &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Standard"</string>
 </resources>

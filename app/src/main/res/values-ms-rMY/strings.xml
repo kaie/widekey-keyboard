@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Getar pada tekanan kekunci"</string>
     <string name="sound_on_keypress">"Bunyi pada tekanan kekunci"</string>
-    <string name="popup_on_keypress">"Pop timbul pada tekanan kunci"</string>
+    <string name="popup_on_keypress">"Paparkan kekunci dipilih dalam pop timbul"</string>
     <string name="settings_screen_preferences">"Pilihan"</string>
     <string name="settings_screen_theme">"Tema"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>ms"</string>
@@ -39,8 +39,12 @@
     <string name="add">"Tambah"</string>
     <string name="remove">"Alih Keluar"</string>
     <string name="prefs_keypress_sound_volume_settings">"Kelantangan bunyi tekan kekunci"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Lengah tekan lama kekunci"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Lengah senarai pop timbul"</string>
     <string name="prefs_doubletap_timeout_settings">"Kelewatan ketukan berganda"</string>
+    <string name="prefs_long_tap_delay_settings">"Kelewatan ketukan panjang"</string>
+    <string name="pref_use_long_tap">"Mod ketuk lama"</string>
+    <string name="pref_use_long_tap_summary">"(Melumpuhkan ketukan berganda dan meningkatkan lengah senarai pop timbul.)"</string>
+    <string name="pref_include_secondary_in_popup">"Pop timbul menyertakan aksara kedua"</string>
     <string name="pref_spacebar_hint">Tunjuk &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Lalai"</string>
 </resources>

@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"สั่นเมื่อกดปุ่ม"</string>
     <string name="sound_on_keypress">"ส่งเสียงเมื่อกดปุ่ม"</string>
-    <string name="popup_on_keypress">"ป๊อปอัปเมื่อกดแป้น"</string>
+    <string name="popup_on_keypress">"แสดงแป้นที่เลือกในป๊อปอัป"</string>
     <string name="settings_screen_preferences">"ค่ากำหนด"</string>
     <string name="settings_screen_theme">"ธีม"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> มิลลิวิ"</string>
@@ -39,8 +39,12 @@
     <string name="add">"เพิ่ม"</string>
     <string name="remove">"ลบ"</string>
     <string name="prefs_keypress_sound_volume_settings">"ระดับเสียงเมื่อกดแป้นพิมพ์"</string>
-    <string name="prefs_key_longpress_timeout_settings">"การหน่วงเวลาของการกดแป้นค้าง"</string>
+    <string name="prefs_key_longpress_timeout_settings">"ความล่าช้าของรายการป๊อปอัป"</string>
     <string name="prefs_doubletap_timeout_settings">"ความล่าช้าการแตะสองครั้ง"</string>
+    <string name="prefs_long_tap_delay_settings">"ความล่าช้าการแตะค้าง"</string>
+    <string name="pref_use_long_tap">"โหมดกดค้าง"</string>
+    <string name="pref_use_long_tap_summary">"(ปิดใช้งานการแตะสองครั้งและเพิ่มความล่าช้าของรายการป๊อปอัป)"</string>
+    <string name="pref_include_secondary_in_popup">"ป๊อปอัปรวมถึงอักขระที่สอง"</string>
     <string name="pref_spacebar_hint">แสดง &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"ค่าเริ่มต้น"</string>
 </resources>

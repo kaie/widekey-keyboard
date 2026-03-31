@@ -66,6 +66,9 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
     public static final String PREF_SPACE_SWIPE = "pref_space_swipe";
     public static final String PREF_DELETE_SWIPE = "pref_delete_swipe";
     public static final String PREF_SPACEBAR_HINT = "pref_spacebar_hint";
+    public static final String PREF_USE_LONG_TAP = "pref_use_long_tap";
+    public static final String PREF_LONG_TAP_THRESHOLD = "pref_long_tap_threshold";
+    public static final String PREF_INCLUDE_SECONDARY_IN_POPUP = "pref_include_secondary_in_popup";
 
     private static final float UNDEFINED_PREFERENCE_VALUE_FLOAT = -1.0f;
     private static final int UNDEFINED_PREFERENCE_VALUE_INT = -1;
@@ -251,6 +254,22 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
 
     public static boolean readDeleteSwipeEnabled(final SharedPreferences prefs) {
         return prefs.getBoolean(PREF_DELETE_SWIPE, false);
+    }
+
+    public static boolean readUseLongTap(final SharedPreferences prefs) {
+        return prefs.getBoolean(PREF_USE_LONG_TAP, false);
+    }
+
+    public static boolean readIncludeSecondaryInPopup(final SharedPreferences prefs) {
+        return prefs.getBoolean(PREF_INCLUDE_SECONDARY_IN_POPUP, false);
+    }
+
+    public static int readLongTapThreshold(final SharedPreferences prefs, final Resources res) {
+        final int ms = prefs.getInt(PREF_LONG_TAP_THRESHOLD, UNDEFINED_PREFERENCE_VALUE_INT);
+        if (ms == UNDEFINED_PREFERENCE_VALUE_INT) {
+            return res.getInteger(R.integer.config_default_longtap_threshold);
+        }
+        return ms;
     }
 
     public static String readPrefSubtypes(final SharedPreferences prefs) {

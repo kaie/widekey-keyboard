@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Vibrare la apăsarea tastei"</string>
     <string name="sound_on_keypress">"Sunet la apăsarea tastei"</string>
-    <string name="popup_on_keypress">"Pop-up la apăsarea tastei"</string>
+    <string name="popup_on_keypress">"Afișați tasta aleasă în fereastră pop-up"</string>
     <string name="settings_screen_preferences">"Preferințe"</string>
     <string name="settings_screen_key_press">Apăsarea tastelor</string>
     <string name="settings_screen_appearance">Aspect</string>
@@ -41,8 +41,12 @@
     <string name="add">"Adăugați"</string>
     <string name="remove">"Eliminați"</string>
     <string name="prefs_keypress_sound_volume_settings">"Sunet la apăsarea tastelor"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Timpul apăsării lungi a tastei"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Întârziere listă pop-up"</string>
     <string name="prefs_doubletap_timeout_settings">"Întârziere la atingere dublă"</string>
+    <string name="prefs_long_tap_delay_settings">"Întârziere la atingere lungă"</string>
+    <string name="pref_use_long_tap">"Mod apăsare lungă"</string>
+    <string name="pref_use_long_tap_summary">"(Dezactivează atingerea dublă și mărește întârzierea listei pop-up.)"</string>
+    <string name="pref_include_secondary_in_popup">"Pop-up include al doilea caracter"</string>
     <string name="pref_spacebar_hint">Arată &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Prestabilit"</string>
     <string name="prefs_keyboard_height_settings">Înălțime tastatură</string>

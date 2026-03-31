@@ -45,6 +45,14 @@ public interface DrawingProxy {
     void onKeyReleased(Key key, boolean withAnimation);
 
     /**
+     * Show a confirmation preview popup for the character that was just committed.
+     * Called after the committed code is determined (on timeout, key-up, etc.), not on key-down.
+     * @param key the {@link Key} that was committed.
+     * @param label the label to display in the preview bubble.
+     */
+    void showKeyConfirmationPreview(Key key, String label);
+
+    /**
      * Start showing more keys keyboard of a key that is being long pressed.
      * @param key the {@link Key} that is being long pressed and showing more keys keyboard.
      * @param tracker the {@link PointerTracker} that detects this long pressing.

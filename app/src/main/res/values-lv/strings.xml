@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Vibrēt, nospiežot taustiņu"</string>
     <string name="sound_on_keypress">"Skaņa, nospiežot taustiņu"</string>
-    <string name="popup_on_keypress">"Parādās, nospiežot taustiņu"</string>
+    <string name="popup_on_keypress">"Rādīt izvēlēto taustiņu uznirstošajā logā"</string>
     <string name="settings_screen_preferences">"Preferences"</string>
     <string name="settings_screen_theme">"Motīvs"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> ms"</string>
@@ -39,8 +39,12 @@
     <string name="add">"Pievienot"</string>
     <string name="remove">"Noņemt"</string>
     <string name="prefs_keypress_sound_volume_settings">"Taustiņu nosp. skaņas skaļums"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Taustiņa ilgās nosp. noildze"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Uznirstošā saraksta aizkave"</string>
     <string name="prefs_doubletap_timeout_settings">"Dubultskāriena aizkavēšanās"</string>
+    <string name="prefs_long_tap_delay_settings">"Garā skāriena aizkavēšanās"</string>
+    <string name="pref_use_long_tap">"Garā skāriena režīms"</string>
+    <string name="pref_use_long_tap_summary">"(Atspējo dubultskārienu un palielina uznirstošā saraksta aizkavi.)"</string>
+    <string name="pref_include_secondary_in_popup">"Uznirstošajā logā ietilpst otrā rakstzīme"</string>
     <string name="pref_spacebar_hint">Rādi &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Noklusējums"</string>
 </resources>

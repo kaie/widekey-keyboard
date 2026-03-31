@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Bei Tastendruck vibrieren"</string>
     <string name="sound_on_keypress">"Ton bei Tastendruck"</string>
-    <string name="popup_on_keypress">"Pop-up bei Tastendruck"</string>
+    <string name="popup_on_keypress">"Gewählte Taste im Pop-up anzeigen"</string>
     <string name="settings_screen_key_press">Tastendruck</string>
     <string name="settings_screen_appearance">Aussehen</string>
     <string name="settings_screen_preferences">"Einstellungen"</string>
@@ -41,8 +41,12 @@
     <string name="add">"Hinzufügen"</string>
     <string name="remove">"Entfernen"</string>
     <string name="prefs_keypress_sound_volume_settings">"Tonlautstärke bei Tastendruck"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Verzögerung für langes Drücken"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Pop-up-Listen-Verzögerung"</string>
     <string name="prefs_doubletap_timeout_settings">"Doppeltippen-Verzögerung"</string>
+    <string name="prefs_long_tap_delay_settings">"Langes-Tippen-Verzögerung"</string>
+    <string name="pref_use_long_tap">"Langes-Tippen-Modus"</string>
+    <string name="pref_use_long_tap_summary">"(Deaktiviert Doppeltippen und erhöht die Pop-up-Listen-Verzögerung.)"</string>
+    <string name="pref_include_secondary_in_popup">"Pop-up enthält zweites Zeichen"</string>
     <string name="pref_spacebar_hint">Zeige &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Standard"</string>
     <string name="prefs_keyboard_height_settings">Tastaturhöhe</string>

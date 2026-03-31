@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Vibriranje ob pritisku tipke"</string>
     <string name="sound_on_keypress">"Zvok ob pritisku tipke"</string>
-    <string name="popup_on_keypress">"Povečaj črko ob pritisku"</string>
+    <string name="popup_on_keypress">"Prikaži izbrano tipko v pojavnem oknu"</string>
     <string name="settings_screen_preferences">"Nastavitve"</string>
     <string name="settings_screen_theme">"Tema"</string>
     <string name="settings_system_default">"Privzeto v sistemu"</string>
@@ -38,8 +38,12 @@
     <string name="add">"Dodaj"</string>
     <string name="remove">"Odstrani"</string>
     <string name="prefs_keypress_sound_volume_settings">"Glasn. zvoka ob pritisku tipke"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Zakasn. za dolg pritisk tipke"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Zakasnitev pojavnega seznama"</string>
     <string name="prefs_doubletap_timeout_settings">"Zamik dvojnega dotika"</string>
+    <string name="prefs_long_tap_delay_settings">"Zamik dolgega dotika"</string>
+    <string name="pref_use_long_tap">"Način dolgega pritiska"</string>
+    <string name="pref_use_long_tap_summary">"(Onemogoči dvojni dotik in poveča zakasnitev pojavnega seznama.)"</string>
+    <string name="pref_include_secondary_in_popup">"Pojavno okno vključuje drugi znak"</string>
     <string name="pref_spacebar_hint">Prikaži &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Privzeto"</string>
 </resources>

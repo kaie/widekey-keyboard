@@ -126,6 +126,16 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
     // True when this tracker's current down is the second tap of a double-tap sequence.
     private boolean mIsSecondDoubleTap = false;
 
+    // Label of the key most recently committed from a more-keys popup panel, for confirmation
+    // preview. Set by notifyMoreKeysPanelCommitted (called from MoreKeysKeyboardView.onKeyInput);
+    // read and cleared by the parent tracker's onUpEventInternal after the panel is dismissed.
+    private static String sMoreKeysPanelCommittedLabel = null;
+
+    /** Called by MoreKeysKeyboardView when a popup key is committed. */
+    public static void notifyMoreKeysPanelCommitted(final String label) {
+        sMoreKeysPanelCommittedLabel = label;
+    }
+
     private static final int MULTIPLIER_FOR_LONG_PRESS_TIMEOUT_IN_SLIDING_INPUT = 3;
     // true if this pointer is in the dragging finger mode.
     boolean mIsInDraggingFinger;
@@ -369,12 +379,8 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         // For the second tap of a doubletap key, show a preview for the char that will be
         // committed (primary for RTL, secondary for LTR). For all other presses, show the
         // standard single-tap preview (which getPreviewLabelForSingleTap handles correctly).
-        if (mIsSecondDoubleTap && key.hasSecondaryCode()) {
-            final boolean isRtl = mKeyboard != null && mKeyboard.isRtlKeyboard();
-            sDrawingProxy.onKeyPressedDoubleTap(key, isRtl);
-        } else {
-            sDrawingProxy.onKeyPressed(key, true);
-        }
+        // Suppress preview for all doubletap key presses; confirmation is shown on commit.
+        sDrawingProxy.onKeyPressed(key, !key.hasSecondaryCode());
 
         if (key.isShift()) {
             for (final Key shiftKey : mKeyboard.mShiftKeys) {
@@ -746,12 +752,17 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         }
 
         if (isShowingMoreKeysPanel()) {
+            sMoreKeysPanelCommittedLabel = null;
             if (!mIsTrackingForActionDisabled) {
                 final int translatedX = mMoreKeysPanel.translateX(x);
                 final int translatedY = mMoreKeysPanel.translateY(y);
                 mMoreKeysPanel.onUpEvent(translatedX, translatedY, mPointerId);
             }
             dismissMoreKeysPanel();
+            if (sMoreKeysPanelCommittedLabel != null && currentKey != null) {
+                sDrawingProxy.showKeyConfirmationPreview(currentKey, sMoreKeysPanelCommittedLabel);
+                sMoreKeysPanelCommittedLabel = null;
+            }
             return;
         }
 
@@ -767,15 +778,34 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
             return;
         }
         if (currentKey != null && currentKey.hasSecondaryCode() && !isInDraggingFinger) {
-            if (mIsSecondDoubleTap) {
-                // Secondary was already committed on DOWN - just clear the flag.
-                mIsSecondDoubleTap = false;
+            if (Settings.getInstance().getCurrent().mUseLongTap) {
+                // Long-tap mode: single tap commits primary immediately; hold briefly for secondary.
+                final long holdDuration = System.currentTimeMillis() - mStartTime;
+                final int longTapThreshold = Settings.getInstance().getCurrent().mLongTapThreshold;
+                final int code;
+                if (holdDuration >= longTapThreshold) {
+                    final boolean isRtl = mKeyboard != null && mKeyboard.isRtlKeyboard();
+                    code = isRtl ? currentKey.getCode() : currentKey.getSecondaryCode();
+                } else {
+                    code = getSingleTapCode(currentKey);
+                }
+                callListenerOnCodeInput(currentKey, code, mKeyX, mKeyY, false /* isKeyRepeat */);
+                callListenerOnRelease(currentKey, code, false /* withSliding */);
+                sDrawingProxy.showKeyConfirmationPreview(currentKey, getConfirmationPreviewLabel(currentKey, code));
             } else {
-                // First tap: defer commit until timeout or second tap.
-                sPendingDoubleTapKey = currentKey;
-                sPendingDoubleTapKeyX = mKeyX;
-                sPendingDoubleTapKeyY = mKeyY;
-                sTimerProxy.startPendingSingleTapTimer(this);
+                // Double-tap mode: defer primary commit until timeout or second tap.
+                if (mIsSecondDoubleTap) {
+                    // Secondary was committed on DOWN — show confirmation on release.
+                    mIsSecondDoubleTap = false;
+                    final boolean isRtl = mKeyboard != null && mKeyboard.isRtlKeyboard();
+                    final int secondaryCode = isRtl ? currentKey.getCode() : currentKey.getSecondaryCode();
+                    sDrawingProxy.showKeyConfirmationPreview(currentKey, getConfirmationPreviewLabel(currentKey, secondaryCode));
+                } else {
+                    sPendingDoubleTapKey = currentKey;
+                    sPendingDoubleTapKeyX = mKeyX;
+                    sPendingDoubleTapKeyY = mKeyY;
+                    sTimerProxy.startPendingSingleTapTimer(this);
+                }
             }
         } else {
             detectAndSendKey(currentKey, mKeyX, mKeyY);
@@ -963,6 +993,7 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         final int code = getSingleTapCode(key);
         callListenerOnCodeInput(key, code, x, y, false /* isKeyRepeat */);
         callListenerOnRelease(key, code, false /* withSliding */);
+        sDrawingProxy.showKeyConfirmationPreview(key, getConfirmationPreviewLabel(key, code));
     }
 
     /**
@@ -975,6 +1006,16 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
             return key.getSecondaryCode();
         }
         return key.getCode();
+    }
+
+    /**
+     * Returns the label to display in the confirmation preview for the given committed code.
+     */
+    private String getConfirmationPreviewLabel(final Key key, final int code) {
+        final boolean isRtl = mKeyboard != null && mKeyboard.isRtlKeyboard();
+        return (code == getSingleTapCode(key))
+                ? key.getPreviewLabelForSingleTap(isRtl)
+                : key.getPreviewLabelForDoubleTap(isRtl);
     }
 
     private void startRepeatKey(final Key key) {

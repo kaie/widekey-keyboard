@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Vibreeri klahvivajutusel"</string>
     <string name="sound_on_keypress">"Heli klahvivajutusel"</string>
-    <string name="popup_on_keypress">"Klahvivajutusel kuva hüpik"</string>
+    <string name="popup_on_keypress">"Kuva valitud klahv hüpikaknas"</string>
     <string name="settings_screen_preferences">"Eelistused"</string>
     <string name="settings_screen_key_press">Nupu vajutus</string>
     <string name="settings_screen_appearance">Välimus</string>
@@ -40,8 +40,12 @@
     <string name="add">"Lisa"</string>
     <string name="remove">"Eemalda"</string>
     <string name="prefs_keypress_sound_volume_settings">"Klahvivajutuse helitugevus"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Pika klahvivajutuse viide"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Hüpikloendi viivitus"</string>
     <string name="prefs_doubletap_timeout_settings">"Topeltpuudutuse viivitus"</string>
+    <string name="prefs_long_tap_delay_settings">"Pika puudutuse viivitus"</string>
+    <string name="pref_use_long_tap">"Pika puudutuse režiim"</string>
+    <string name="pref_use_long_tap_summary">"(Keelab topeltpuudutuse ja suurendab hüpikloendi viivitust.)"</string>
+    <string name="pref_include_secondary_in_popup">"Hüpik sisaldab teist tähemärki"</string>
     <string name="pref_spacebar_hint">Näita &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Vaikeväärtus"</string>
     <string name="prefs_keyboard_height_settings">Klaviatuuri kõrgus</string>

@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"बटन दबाने पर कंपन करे"</string>
     <string name="sound_on_keypress">"बटन दबाने पर आवाज़"</string>
-    <string name="popup_on_keypress">"कुंजी दबाने पर पॉपअप दिखाएं"</string>
+    <string name="popup_on_keypress">"चुनी गई कुंजी पॉपअप में दिखाएं"</string>
     <string name="settings_screen_preferences">"प्राथमिकताएं"</string>
     <string name="settings_screen_theme">"थीम"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> मिलीसेकंड"</string>
@@ -39,8 +39,12 @@
     <string name="add">"जोड़ें"</string>
     <string name="remove">"निकालें"</string>
     <string name="prefs_keypress_sound_volume_settings">"बटन दबाने पर आवाज़ का स्तर"</string>
-    <string name="prefs_key_longpress_timeout_settings">"बटन दबाए रखने की समयाविधि"</string>
+    <string name="prefs_key_longpress_timeout_settings">"पॉपअप सूची विलंब"</string>
     <string name="prefs_doubletap_timeout_settings">"डबल-टैप विलंब"</string>
+    <string name="prefs_long_tap_delay_settings">"लंबे-टैप विलंब"</string>
+    <string name="pref_use_long_tap">"लंबे टैप मोड"</string>
+    <string name="pref_use_long_tap_summary">"(डबल टैप अक्षम करता है और पॉपअप सूची विलंब बढ़ाता है.)"</string>
+    <string name="pref_include_secondary_in_popup">"पॉपअप में दूसरा अक्षर शामिल है"</string>
     <string name="pref_spacebar_hint">दिखाएं &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"सामान्य"</string>
 </resources>

@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Titringur þegar ýtt er á lykla"</string>
     <string name="sound_on_keypress">"Hljóð þegar ýtt er á lykil"</string>
-    <string name="popup_on_keypress">"Stækkaðir stafir við innslátt"</string>
+    <string name="popup_on_keypress">"Sýna valinn lykil í sprettiglugga"</string>
     <string name="settings_screen_preferences">"Kjörstillingar"</string>
     <string name="settings_screen_theme">"Þema"</string>
     <string name="settings_system_default">"Sjálfgildi kerfis"</string>
@@ -38,8 +38,12 @@
     <string name="add">"Bæta við"</string>
     <string name="remove">"Fjarlægja"</string>
     <string name="prefs_keypress_sound_volume_settings">"Styrkur lyklahljóða"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Töf áður en lykli er haldið inni"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Seinkun sprettilistans"</string>
     <string name="prefs_doubletap_timeout_settings">"Seinkun tvöfaldra högg"</string>
+    <string name="prefs_long_tap_delay_settings">"Seinkun langs höggs"</string>
+    <string name="pref_use_long_tap">"Langstýring"</string>
+    <string name="pref_use_long_tap_summary">"(Gerir tvísmelli óvirkt og eykur seinkun sprettilistans.)"</string>
+    <string name="pref_include_secondary_in_popup">"Sprettigluggi inniheldur annan staf"</string>
     <string name="pref_spacebar_hint">Sýna &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Sjálfgefið"</string>
 </resources>

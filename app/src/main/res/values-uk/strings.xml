@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Вібр. при натисканні клавіш"</string>
     <string name="sound_on_keypress">"Звук при натиску клав."</string>
-    <string name="popup_on_keypress">"Збільшення натиснутих"</string>
+    <string name="popup_on_keypress">"Показувати вибрану клавішу у спливаючому вікні"</string>
     <string name="settings_screen_preferences">"Параметри"</string>
     <string name="settings_screen_key_press">Натискання клавіш</string>
     <string name="settings_screen_appearance">Вигляд</string>
@@ -41,8 +41,12 @@
     <string name="add">"Додати"</string>
     <string name="remove">"Видалити"</string>
     <string name="prefs_keypress_sound_volume_settings">"Гучність натискання клавіш"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Затримка довгого натискання"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Затримка спливаючого списку"</string>
     <string name="prefs_doubletap_timeout_settings">"Затримка подвійного дотику"</string>
+    <string name="prefs_long_tap_delay_settings">"Затримка довгого дотику"</string>
+    <string name="pref_use_long_tap">"Режим довгого натискання"</string>
+    <string name="pref_use_long_tap_summary">"(Вимикає подвійний дотик та збільшує затримку спливаючого списку.)"</string>
+    <string name="pref_include_secondary_in_popup">"Спливаюче вікно включає другий символ"</string>
     <string name="pref_spacebar_hint">Покажи &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"За умовчанням"</string>
     <string name="prefs_keyboard_height_settings">Висота клавіатури</string>

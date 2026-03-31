@@ -21,7 +21,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="vibrate_on_keypress">"Getar jika tombol ditekan"</string>
     <string name="sound_on_keypress">"Berbunyi jika tombol ditekan"</string>
-    <string name="popup_on_keypress">"Muncul saat tombol ditekan"</string>
+    <string name="popup_on_keypress">"Tampilkan tombol yang dipilih di popup"</string>
     <string name="settings_screen_preferences">"Preferensi"</string>
     <string name="settings_screen_appearance">Tampilan</string>
     <string name="settings_screen_key_press">Tombol ditekan</string>
@@ -41,8 +41,12 @@
     <string name="add">"Tambahkan"</string>
     <string name="remove">"Hapus"</string>
     <string name="prefs_keypress_sound_volume_settings">"Volume suara saat tekan tombol"</string>
-    <string name="prefs_key_longpress_timeout_settings">"Penundaan tekan lama tombol"</string>
+    <string name="prefs_key_longpress_timeout_settings">"Penundaan daftar popup"</string>
     <string name="prefs_doubletap_timeout_settings">"Jeda ketuk ganda"</string>
+    <string name="prefs_long_tap_delay_settings">"Jeda ketuk lama"</string>
+    <string name="pref_use_long_tap">"Mode ketuk lama"</string>
+    <string name="pref_use_long_tap_summary">"(Menonaktifkan ketuk ganda dan meningkatkan penundaan daftar popup.)"</string>
+    <string name="pref_include_secondary_in_popup">"Popup menyertakan karakter kedua"</string>
     <string name="pref_spacebar_hint">Tampilkan &#x1F446;&#x25C4; &#x24D8; &#x25BA;&#x1F446;&#x1F446;</string>
     <string name="button_default">"Default"</string>
     <string name="prefs_keyboard_height_settings">Atur Ketinggian Keyboard</string>
