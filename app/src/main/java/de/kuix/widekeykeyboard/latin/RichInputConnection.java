@@ -360,19 +360,24 @@ public final class RichInputConnection {
     }
 
     public void pasteClipboard() {
-        final ClipboardManager clipboard = (ClipboardManager) mLatinIME.getSystemService(Context.CLIPBOARD_SERVICE);
-        if (clipboard != null && clipboard.hasPrimaryClip()) {
-            final ClipData clipData = clipboard.getPrimaryClip();
-            if (clipData != null && clipData.getItemCount() == 1) {
-                final String mimeType = clipData.getDescription().getMimeType(0);
-                if (MIMETYPE_TEXT_PLAIN.equals(mimeType) || MIMETYPE_TEXT_HTML.equals(mimeType)) {
-                    final CharSequence pasteData = clipData.getItemAt(0).getText();
-                    if (pasteData != null && pasteData.length() > 0) {
-                        mLatinIME.onTextInput(pasteData.toString());
-                        return;
+        try {
+            final ClipboardManager clipboard = (ClipboardManager) mLatinIME.getSystemService(Context.CLIPBOARD_SERVICE);
+            if (clipboard != null && clipboard.hasPrimaryClip()) {
+                final ClipData clipData = clipboard.getPrimaryClip();
+                if (clipData != null && clipData.getItemCount() > 0
+                        && clipData.getDescription() != null) {
+                    final String mimeType = clipData.getDescription().getMimeType(0);
+                    if (MIMETYPE_TEXT_PLAIN.equals(mimeType) || MIMETYPE_TEXT_HTML.equals(mimeType)) {
+                        final CharSequence pasteData = clipData.getItemAt(0).getText();
+                        if (pasteData != null && pasteData.length() > 0) {
+                            mLatinIME.onTextInput(pasteData.toString());
+                            return;
+                        }
                     }
                 }
             }
+        } catch (Exception e) {
+            // hasPrimaryClip()/getPrimaryClip() can throw NPE on some Samsung devices
         }
 
         if (mIC != null) {
