@@ -22,34 +22,29 @@
         <default>
             <Key latin:keySpec="q"
                 latin:keySecondarySpec="w"
-                latin:moreKeys="!text/morekeys_w"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_w,1,2"
                 latin:keyHintLabelLeft="1"
-                latin:keyHintLabel="2"
-                latin:additionalMoreKeys="1,2" />
+                latin:keyHintLabel="2" />
             <Key latin:keySpec="e"
                 latin:keySecondarySpec="r"
-                latin:moreKeys="!text/morekeys_e,!text/morekeys_r"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_e,!text/morekeys_r,3,4"
                 latin:keyHintLabelLeft="3"
-                latin:keyHintLabel="4"
-                latin:additionalMoreKeys="3,4" />
+                latin:keyHintLabel="4" />
             <Key latin:keySpec="t"
                 latin:keySecondarySpec="z"
-                latin:moreKeys="!text/morekeys_t,!text/morekeys_z"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_t,!text/morekeys_z,5,6"
                 latin:keyHintLabelLeft="5"
-                latin:keyHintLabel="6"
-                latin:additionalMoreKeys="5,6" />
+                latin:keyHintLabel="6" />
             <Key latin:keySpec="u"
                 latin:keySecondarySpec="i"
-                latin:moreKeys="!text/morekeys_u,!text/morekeys_i"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_u,!text/morekeys_i,7,8"
                 latin:keyHintLabelLeft="7"
-                latin:keyHintLabel="8"
-                latin:additionalMoreKeys="7,8" />
+                latin:keyHintLabel="8" />
             <Key latin:keySpec="o"
                 latin:keySecondarySpec="p"
-                latin:moreKeys="!text/morekeys_o"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_o,9,0"
                 latin:keyHintLabelLeft="9"
-                latin:keyHintLabel="0"
-                latin:additionalMoreKeys="9,0" />
+                latin:keyHintLabel="0" />
         </default>
     </switch>
     <!-- Solo key: locale-specific 11th key (é, è, ö, etc.) -->

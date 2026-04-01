@@ -35,38 +35,35 @@
                 latin:keySecondarySpec="&#x0635;"
                 latin:keyHintLabelLeft="1"
                 latin:keyHintLabel="2"
-                latin:additionalMoreKeys="1,2" />
+                latin:moreKeys="!splitTopRow!2,1,2" />
             <!-- ث·ق: digits 3·4 -->
             <Key
                 latin:keySpec="&#x062B;"
                 latin:keySecondarySpec="&#x0642;"
-                latin:moreKeys="&#x06A8;"
+                latin:moreKeys="!splitTopRow!2,&#x06A8;,3,4"
                 latin:keyHintLabelLeft="3"
-                latin:keyHintLabel="4"
-                latin:additionalMoreKeys="3,4" />
+                latin:keyHintLabel="4" />
             <!-- ف·غ: digits 5·6 -->
             <Key
                 latin:keySpec="&#x0641;"
                 latin:keySecondarySpec="&#x063A;"
-                latin:moreKeys="&#x06A4;,&#x06A2;,&#x06A5;"
+                latin:moreKeys="!splitTopRow!2,&#x06A4;,&#x06A2;,&#x06A5;,5,6"
                 latin:keyHintLabelLeft="5"
-                latin:keyHintLabel="6"
-                latin:additionalMoreKeys="5,6" />
+                latin:keyHintLabel="6" />
             <!-- ع·ه: digits 7·8 -->
             <Key
                 latin:keySpec="&#x0639;"
                 latin:keySecondarySpec="&#x0647;"
-                latin:moreKeys="&#xFEEB;|&#x0647;&#x200D;"
+                latin:moreKeys="!splitTopRow!2,&#xFEEB;|&#x0647;&#x200D;,7,8"
                 latin:keyHintLabelLeft="7"
-                latin:keyHintLabel="8"
-                latin:additionalMoreKeys="7,8" />
+                latin:keyHintLabel="8" />
             <!-- خ·ح: digits 9·0 (solo follows, so left-first) -->
             <Key
                 latin:keySpec="&#x062E;"
                 latin:keySecondarySpec="&#x062D;"
                 latin:keyHintLabelLeft="9"
                 latin:keyHintLabel="0"
-                latin:additionalMoreKeys="9,0" />
+                latin:moreKeys="!splitTopRow!2,9,0" />
         </default>
     </switch>
     <!-- ج solo -->

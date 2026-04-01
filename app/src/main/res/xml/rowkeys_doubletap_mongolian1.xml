@@ -18,23 +18,20 @@
             <Key latin:keySpec="&#x0444;" latin:keySecondarySpec="&#x0446;"
                 latin:keyHintLabelLeft="1"
                 latin:keyHintLabel="2"
-                latin:additionalMoreKeys="1,2" />
-            <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x0436;" latin:moreKeys="!text/morekeys_cyrillic_u"
+                latin:moreKeys="!splitTopRow!2,1,2" />
+            <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x0436;" latin:moreKeys="!splitTopRow!2,!text/morekeys_cyrillic_u,3,4"
                 latin:keyHintLabelLeft="3"
-                latin:keyHintLabel="4"
-                latin:additionalMoreKeys="3,4" />
-            <Key latin:keySpec="&#x044D;" latin:keySecondarySpec="&#x043D;" latin:moreKeys="!text/morekeys_cyrillic_ie,!text/morekeys_cyrillic_en"
+                latin:keyHintLabel="4" />
+            <Key latin:keySpec="&#x044D;" latin:keySecondarySpec="&#x043D;" latin:moreKeys="!splitTopRow!2,!text/morekeys_cyrillic_ie,!text/morekeys_cyrillic_en,5,6"
                 latin:keyHintLabelLeft="5"
-                latin:keyHintLabel="6"
-                latin:additionalMoreKeys="5,6" />
-            <Key latin:keySpec="&#x0433;" latin:keySecondarySpec="&#x0448;" latin:moreKeys="!text/morekeys_cyrillic_ghe,&#x0449;"
+                latin:keyHintLabel="6" />
+            <Key latin:keySpec="&#x0433;" latin:keySecondarySpec="&#x0448;" latin:moreKeys="!splitTopRow!2,!text/morekeys_cyrillic_ghe,&#x0449;,7,8"
                 latin:keyHintLabelLeft="7"
-                latin:keyHintLabel="8"
-                latin:additionalMoreKeys="7,8" />
+                latin:keyHintLabel="8" />
             <Key latin:keySpec="&#x04AF;" latin:keySecondarySpec="&#x0437;"
                 latin:keyHintLabelLeft="9"
                 latin:keyHintLabel="0"
-                latin:additionalMoreKeys="9,0" />
+                latin:moreKeys="!splitTopRow!2,9,0" />
         </default>
     </switch>
     <!-- к solo (U+043A) -->

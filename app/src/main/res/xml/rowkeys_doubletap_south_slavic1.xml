@@ -21,25 +21,23 @@
             <Key latin:keySpec="&#x0459;" latin:keySecondarySpec="&#x045A;"
                 latin:keyHintLabelLeft="1"
                 latin:keyHintLabel="2"
-                latin:additionalMoreKeys="1,2" />
+                latin:moreKeys="!splitTopRow!2,1,2" />
             <Key latin:keySpec="&#x0435;" latin:keySecondarySpec="&#x0440;"
-                latin:moreKeys="!text/morekeys_cyrillic_ie"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_cyrillic_ie,3,4"
                 latin:keyHintLabelLeft="3"
-                latin:keyHintLabel="4"
-                latin:additionalMoreKeys="3,4" />
+                latin:keyHintLabel="4" />
             <Key latin:keySpec="&#x0442;" latin:keySecondarySpec="!text/keyspec_south_slavic_row1_6"
                 latin:keyHintLabelLeft="5"
                 latin:keyHintLabel="6"
-                latin:additionalMoreKeys="5,6" />
+                latin:moreKeys="!splitTopRow!2,5,6" />
             <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x0438;"
-                latin:moreKeys="!text/morekeys_cyrillic_i"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_cyrillic_i,7,8"
                 latin:keyHintLabelLeft="7"
-                latin:keyHintLabel="8"
-                latin:additionalMoreKeys="7,8" />
+                latin:keyHintLabel="8" />
             <Key latin:keySpec="&#x043E;" latin:keySecondarySpec="&#x043F;"
                 latin:keyHintLabelLeft="9"
                 latin:keyHintLabel="0"
-                latin:additionalMoreKeys="9,0" />
+                latin:moreKeys="!splitTopRow!2,9,0" />
         </default>
     </switch>
     <!-- solo: ш -->

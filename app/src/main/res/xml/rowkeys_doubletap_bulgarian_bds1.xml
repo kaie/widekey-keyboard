@@ -19,24 +19,23 @@
             <Key latin:keySpec="&#x0443;" latin:keySecondarySpec="&#x0435;"
                 latin:keyHintLabelLeft="1"
                 latin:keyHintLabel="2"
-                latin:additionalMoreKeys="1,2" />
+                latin:moreKeys="!splitTopRow!2,1,2" />
             <Key latin:keySpec="&#x0438;" latin:keySecondarySpec="&#x0448;"
-                latin:moreKeys="&#x045D;"
+                latin:moreKeys="!splitTopRow!2,&#x045D;,3,4"
                 latin:keyHintLabelLeft="3"
-                latin:keyHintLabel="4"
-                latin:additionalMoreKeys="3,4" />
+                latin:keyHintLabel="4" />
             <Key latin:keySpec="&#x0449;" latin:keySecondarySpec="&#x043A;"
                 latin:keyHintLabelLeft="5"
                 latin:keyHintLabel="6"
-                latin:additionalMoreKeys="5,6" />
+                latin:moreKeys="!splitTopRow!2,5,6" />
             <Key latin:keySpec="&#x0441;" latin:keySecondarySpec="&#x0434;"
                 latin:keyHintLabelLeft="7"
                 latin:keyHintLabel="8"
-                latin:additionalMoreKeys="7,8" />
+                latin:moreKeys="!splitTopRow!2,7,8" />
             <Key latin:keySpec="&#x0437;" latin:keySecondarySpec="&#x0446;"
                 latin:keyHintLabelLeft="9"
                 latin:keyHintLabel="0"
-                latin:additionalMoreKeys="9,0" />
+                latin:moreKeys="!splitTopRow!2,9,0" />
         </default>
     </switch>
     <!-- solo: б -->

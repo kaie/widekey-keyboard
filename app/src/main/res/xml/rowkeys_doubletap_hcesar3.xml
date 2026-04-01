@@ -5,18 +5,17 @@
         latin:keySecondarySpec="j"
         latin:keyHintLabel="&quot;"
         latin:keyHintLabelLeft="*"
-        latin:additionalMoreKeys="*,&quot;" />
+        latin:moreKeys="!splitTopRow!2,*,&quot;" />
     <Key latin:keySpec="b"
         latin:keySecondarySpec="f"
         latin:keyHintLabel=":"
         latin:keyHintLabelLeft="'"
-        latin:additionalMoreKeys="',:" />
+        latin:moreKeys="!splitTopRow!2,',:" />
     <Key latin:keySpec="v"
         latin:keySecondarySpec="g"
-        latin:moreKeys="!text/morekeys_g"
+        latin:moreKeys="!splitTopRow!2,!text/morekeys_g,;,!"
         latin:keyHintLabel="!"
-        latin:keyHintLabelLeft=";"
-        latin:additionalMoreKeys=";,!" />
+        latin:keyHintLabelLeft=";" />
     <!-- Solo key: k -->
     <Key latin:keySpec="k"
         latin:moreKeys="!text/morekeys_k" />

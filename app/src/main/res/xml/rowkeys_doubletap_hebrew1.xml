@@ -31,31 +31,31 @@
                 latin:keySecondarySpec="-"
                 latin:keyHintLabelLeft="1"
                 latin:keyHintLabel="2"
-                latin:additionalMoreKeys="1,2" />
+                latin:moreKeys="!splitTopRow!2,1,2" />
             <Key
                 latin:keySpec="&#x05E7;"
                 latin:keySecondarySpec="&#x05E8;"
                 latin:keyHintLabelLeft="3"
                 latin:keyHintLabel="4"
-                latin:additionalMoreKeys="3,4" />
+                latin:moreKeys="!splitTopRow!2,3,4" />
             <Key
                 latin:keySpec="&#x05D0;"
                 latin:keySecondarySpec="&#x05D8;"
                 latin:keyHintLabelLeft="5"
                 latin:keyHintLabel="6"
-                latin:additionalMoreKeys="5,6" />
+                latin:moreKeys="!splitTopRow!2,5,6" />
             <Key
                 latin:keySpec="&#x05D5;"
                 latin:keySecondarySpec="&#x05DF;"
                 latin:keyHintLabelLeft="7"
                 latin:keyHintLabel="8"
-                latin:additionalMoreKeys="7,8" />
+                latin:moreKeys="!splitTopRow!2,7,8" />
             <Key
                 latin:keySpec="&#x05DD;"
                 latin:keySecondarySpec="&#x05E4;"
                 latin:keyHintLabelLeft="9"
                 latin:keyHintLabel="0"
-                latin:additionalMoreKeys="0,9" />
+                latin:moreKeys="!splitTopRow!2,0,9" />
         </default>
     </switch>
 </merge>

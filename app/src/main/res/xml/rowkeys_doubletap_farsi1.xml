@@ -33,36 +33,35 @@
                 latin:keySecondarySpec="&#x0635;"
                 latin:keyHintLabelLeft="&#x06F1;"
                 latin:keyHintLabel="&#x06F2;"
-                latin:additionalMoreKeys="&#x06F1;,&#x06F2;" />
+                latin:moreKeys="!splitTopRow!2,&#x06F1;,&#x06F2;" />
             <!-- ث·ق: Farsi ۳·۴ -->
             <Key
                 latin:keySpec="&#x062B;"
                 latin:keySecondarySpec="&#x0642;"
                 latin:keyHintLabelLeft="&#x06F3;"
                 latin:keyHintLabel="&#x06F4;"
-                latin:additionalMoreKeys="&#x06F3;,&#x06F4;" />
+                latin:moreKeys="!splitTopRow!2,&#x06F3;,&#x06F4;" />
             <!-- ف·غ: Farsi ۵·۶ -->
             <Key
                 latin:keySpec="&#x0641;"
                 latin:keySecondarySpec="&#x063A;"
                 latin:keyHintLabelLeft="&#x06F5;"
                 latin:keyHintLabel="&#x06F6;"
-                latin:additionalMoreKeys="&#x06F5;,&#x06F6;" />
+                latin:moreKeys="!splitTopRow!2,&#x06F5;,&#x06F6;" />
             <!-- ع·ه: Farsi ۷·۸ -->
             <Key
                 latin:keySpec="&#x0639;"
                 latin:keySecondarySpec="&#x0647;"
-                latin:moreKeys="&#xFEEB;|&#x0647;&#x200D;,&#x0647;&#x0654;,&#x0629;,%"
+                latin:moreKeys="!splitTopRow!2,&#xFEEB;|&#x0647;&#x200D;,&#x0647;&#x0654;,&#x0629;,%,&#x06F7;,&#x06F8;"
                 latin:keyHintLabelLeft="&#x06F7;"
-                latin:keyHintLabel="&#x06F8;"
-                latin:additionalMoreKeys="&#x06F7;,&#x06F8;" />
+                latin:keyHintLabel="&#x06F8;" />
             <!-- خ·ح: Farsi ۹·۰ (solo follows, so left-first) -->
             <Key
                 latin:keySpec="&#x062E;"
                 latin:keySecondarySpec="&#x062D;"
                 latin:keyHintLabelLeft="&#x06F9;"
                 latin:keyHintLabel="&#x06F0;"
-                latin:additionalMoreKeys="&#x06F9;,&#x06F0;" />
+                latin:moreKeys="!splitTopRow!2,&#x06F9;,&#x06F0;" />
         </default>
     </switch>
     <!-- ج solo -->

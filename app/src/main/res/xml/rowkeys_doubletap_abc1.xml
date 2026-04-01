@@ -4,52 +4,42 @@
     <switch>
         <case latin:showNumberRow="true">
             <!-- a·b: left=_(a) right=\(b) -->
-            <Key latin:keySpec="a" latin:keySecondarySpec="b" latin:moreKeys="!text/morekeys_a"
+            <Key latin:keySpec="a" latin:keySecondarySpec="b" latin:moreKeys="!splitTopRow!2,!text/morekeys_a,_,\\"
                 latin:keyHintLabel="\\"
-                latin:keyHintLabelLeft="_"
-                latin:additionalMoreKeys="_,\\" />
+                latin:keyHintLabelLeft="_" />
             <!-- c·d: left=|(c) right==(d) -->
-            <Key latin:keySpec="c" latin:keySecondarySpec="d" latin:moreKeys="!text/morekeys_c,!text/morekeys_d"
+            <Key latin:keySpec="c" latin:keySecondarySpec="d" latin:moreKeys="!splitTopRow!2,!text/morekeys_c,!text/morekeys_d,\|,="
                 latin:keyHintLabel="="
-                latin:keyHintLabelLeft="|"
-                latin:additionalMoreKeys="\|,=" />
+                latin:keyHintLabelLeft="|" />
             <!-- e·f: left=[(e) right=](f) -->
-            <Key latin:keySpec="e" latin:keySecondarySpec="f" latin:moreKeys="!text/morekeys_e"
+            <Key latin:keySpec="e" latin:keySecondarySpec="f" latin:moreKeys="!splitTopRow!2,!text/morekeys_e,[,]"
                 latin:keyHintLabel="]"
-                latin:keyHintLabelLeft="["
-                latin:additionalMoreKeys="[,]" />
+                latin:keyHintLabelLeft="[" />
             <!-- g·h: left=<(g) right=>(h) -->
-            <Key latin:keySpec="g" latin:keySecondarySpec="h" latin:moreKeys="!text/morekeys_g,!text/morekeys_h"
+            <Key latin:keySpec="g" latin:keySecondarySpec="h" latin:moreKeys="!splitTopRow!2,!text/morekeys_g,!text/morekeys_h,&lt;,&gt;"
                 latin:keyHintLabel="&gt;"
-                latin:keyHintLabelLeft="&lt;"
-                latin:additionalMoreKeys="&lt;,&gt;" />
+                latin:keyHintLabelLeft="&lt;" />
             <!-- i·j: left={(i) right=}(j) — right-edge: additionalMoreKeys right-first -->
-            <Key latin:keySpec="i" latin:keySecondarySpec="j" latin:moreKeys="!text/morekeys_i,!text/morekeys_j"
+            <Key latin:keySpec="i" latin:keySecondarySpec="j" latin:moreKeys="!splitTopRow!2,!text/morekeys_i,!text/morekeys_j,},{"
                 latin:keyHintLabel="}"
-                latin:keyHintLabelLeft="{"
-                latin:additionalMoreKeys="},{" />
+                latin:keyHintLabelLeft="{" />
         </case>
         <default>
-            <Key latin:keySpec="a" latin:keySecondarySpec="b" latin:moreKeys="!text/morekeys_a"
+            <Key latin:keySpec="a" latin:keySecondarySpec="b" latin:moreKeys="!splitTopRow!2,!text/morekeys_a,1,2"
                 latin:keyHintLabelLeft="1"
-                latin:keyHintLabel="2"
-                latin:additionalMoreKeys="1,2" />
-            <Key latin:keySpec="c" latin:keySecondarySpec="d" latin:moreKeys="!text/morekeys_c,!text/morekeys_d"
+                latin:keyHintLabel="2" />
+            <Key latin:keySpec="c" latin:keySecondarySpec="d" latin:moreKeys="!splitTopRow!2,!text/morekeys_c,!text/morekeys_d,3,4"
                 latin:keyHintLabelLeft="3"
-                latin:keyHintLabel="4"
-                latin:additionalMoreKeys="3,4" />
-            <Key latin:keySpec="e" latin:keySecondarySpec="f" latin:moreKeys="!text/morekeys_e"
+                latin:keyHintLabel="4" />
+            <Key latin:keySpec="e" latin:keySecondarySpec="f" latin:moreKeys="!splitTopRow!2,!text/morekeys_e,5,6"
                 latin:keyHintLabelLeft="5"
-                latin:keyHintLabel="6"
-                latin:additionalMoreKeys="5,6" />
-            <Key latin:keySpec="g" latin:keySecondarySpec="h" latin:moreKeys="!text/morekeys_g,!text/morekeys_h"
+                latin:keyHintLabel="6" />
+            <Key latin:keySpec="g" latin:keySecondarySpec="h" latin:moreKeys="!splitTopRow!2,!text/morekeys_g,!text/morekeys_h,7,8"
                 latin:keyHintLabelLeft="7"
-                latin:keyHintLabel="8"
-                latin:additionalMoreKeys="7,8" />
-            <Key latin:keySpec="i" latin:keySecondarySpec="j" latin:moreKeys="!text/morekeys_i,!text/morekeys_j"
+                latin:keyHintLabel="8" />
+            <Key latin:keySpec="i" latin:keySecondarySpec="j" latin:moreKeys="!splitTopRow!2,!text/morekeys_i,!text/morekeys_j,0,9"
                 latin:keyHintLabelLeft="9"
-                latin:keyHintLabel="0"
-                latin:additionalMoreKeys="0,9" />
+                latin:keyHintLabel="0" />
         </default>
     </switch>
 </merge>

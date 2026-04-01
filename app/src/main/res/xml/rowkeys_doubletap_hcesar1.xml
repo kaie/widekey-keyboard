@@ -6,67 +6,57 @@
         <case latin:showNumberRow="true">
             <Key latin:keySpec="h"
                 latin:keySecondarySpec="c"
-                latin:moreKeys="!text/morekeys_c"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_c,-,\\"
                 latin:keyHintLabel="\\"
-                latin:keyHintLabelLeft="-"
-                latin:additionalMoreKeys="-,\\" />
+                latin:keyHintLabelLeft="-" />
             <Key latin:keySpec="e"
                 latin:keySecondarySpec="s"
-                latin:moreKeys="!text/morekeys_e"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_e,\|,="
                 latin:keyHintLabel="="
-                latin:keyHintLabelLeft="|"
-                latin:additionalMoreKeys="\|,=" />
+                latin:keyHintLabelLeft="|" />
             <Key latin:keySpec="a"
                 latin:keySecondarySpec="r"
-                latin:moreKeys="!text/morekeys_a"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_a,[,]"
                 latin:keyHintLabel="]"
-                latin:keyHintLabelLeft="["
-                latin:additionalMoreKeys="[,]" />
+                latin:keyHintLabelLeft="[" />
             <Key latin:keySpec="o"
                 latin:keySecondarySpec="p"
-                latin:moreKeys="!text/morekeys_o"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_o,&lt;,&gt;"
                 latin:keyHintLabel="&gt;"
-                latin:keyHintLabelLeft="&lt;"
-                latin:additionalMoreKeys="&lt;,&gt;" />
+                latin:keyHintLabelLeft="&lt;" />
             <!-- U+00AB: "«" LEFT-POINTING DOUBLE ANGLE QUOTATION MARK in moreKeys -->
             <Key latin:keySpec="z"
                 latin:keySecondarySpec=","
-                latin:moreKeys="&#x00AB;"
-                latin:keyHintLabelLeft="{"
-                latin:additionalMoreKeys="{" />
+                latin:moreKeys="!splitTopRow!1,&#x00AB;,{"
+                latin:keyHintLabelLeft="{" />
         </case>
         <default>
             <Key latin:keySpec="h"
                 latin:keySecondarySpec="c"
-                latin:moreKeys="!text/morekeys_c"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_c,1,2"
                 latin:keyHintLabelLeft="1"
-                latin:keyHintLabel="2"
-                latin:additionalMoreKeys="1,2" />
+                latin:keyHintLabel="2" />
             <Key latin:keySpec="e"
                 latin:keySecondarySpec="s"
-                latin:moreKeys="!text/morekeys_e"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_e,3,4"
                 latin:keyHintLabelLeft="3"
-                latin:keyHintLabel="4"
-                latin:additionalMoreKeys="3,4" />
+                latin:keyHintLabel="4" />
             <Key latin:keySpec="a"
                 latin:keySecondarySpec="r"
-                latin:moreKeys="!text/morekeys_a"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_a,5,6"
                 latin:keyHintLabelLeft="5"
-                latin:keyHintLabel="6"
-                latin:additionalMoreKeys="5,6" />
+                latin:keyHintLabel="6" />
             <Key latin:keySpec="o"
                 latin:keySecondarySpec="p"
-                latin:moreKeys="!text/morekeys_o"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_o,7,8"
                 latin:keyHintLabelLeft="7"
-                latin:keyHintLabel="8"
-                latin:additionalMoreKeys="7,8" />
+                latin:keyHintLabel="8" />
             <!-- U+00AB: "«" LEFT-POINTING DOUBLE ANGLE QUOTATION MARK in moreKeys -->
             <Key latin:keySpec="z"
                 latin:keySecondarySpec=","
-                latin:moreKeys="&#x00AB;"
+                latin:moreKeys="!splitTopRow!2,&#x00AB;,0,9"
                 latin:keyHintLabelLeft="9"
-                latin:keyHintLabel="0"
-                latin:additionalMoreKeys="0,9" />
+                latin:keyHintLabel="0" />
         </default>
     </switch>
 </merge>

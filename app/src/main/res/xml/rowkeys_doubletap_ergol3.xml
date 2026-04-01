@@ -3,9 +3,8 @@
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
     <Key latin:keySpec="z"
         latin:keySecondarySpec="x"
-        latin:moreKeys="!text/morekeys_z,!text/morekeys_x"
-        latin:keyHintLabelLeft="~"
-        latin:additionalMoreKeys="~" />
+        latin:moreKeys="!splitTopRow!1,!text/morekeys_z,!text/morekeys_x,~"
+        latin:keyHintLabelLeft="~" />
     <Key latin:keySpec="v"
         latin:keySecondarySpec="b"
         latin:moreKeys="!text/morekeys_v" />

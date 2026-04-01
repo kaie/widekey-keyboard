@@ -5,66 +5,56 @@
         <case latin:showNumberRow="true">
             <Key latin:keySpec="b"
                 latin:keySecondarySpec="é"
-                latin:moreKeys="!text/morekeys_e"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_e,_,\\"
                 latin:keyHintLabel="\\"
-                latin:keyHintLabelLeft="_"
-                latin:additionalMoreKeys="_,\\" />
+                latin:keyHintLabelLeft="_" />
             <Key latin:keySpec="p"
                 latin:keySecondarySpec="o"
-                latin:moreKeys="!text/morekeys_o"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_o,\|,="
                 latin:keyHintLabel="="
-                latin:keyHintLabelLeft="|"
-                latin:additionalMoreKeys="\|,=" />
+                latin:keyHintLabelLeft="|" />
             <Key latin:keySpec="w"
                 latin:keySecondarySpec="v"
-                latin:moreKeys="!text/morekeys_w,!text/morekeys_v"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_w,!text/morekeys_v,[,]"
                 latin:keyHintLabel="]"
-                latin:keyHintLabelLeft="["
-                latin:additionalMoreKeys="[,]" />
+                latin:keyHintLabelLeft="[" />
             <Key latin:keySpec="d"
                 latin:keySecondarySpec="l"
-                latin:moreKeys="!text/morekeys_d,!text/morekeys_l"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_d,!text/morekeys_l,&lt;,&gt;"
                 latin:keyHintLabel="&gt;"
-                latin:keyHintLabelLeft="&lt;"
-                latin:additionalMoreKeys="&lt;,&gt;" />
+                latin:keyHintLabelLeft="&lt;" />
             <Key latin:keySpec="j"
                 latin:keySecondarySpec="z"
-                latin:moreKeys="!text/morekeys_j,!text/morekeys_z"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_j,!text/morekeys_z,},{"
                 latin:keyHintLabel="}"
-                latin:keyHintLabelLeft="{"
-                latin:additionalMoreKeys="},{" />
+                latin:keyHintLabelLeft="{" />
         </case>
         <default>
             <Key latin:keySpec="b"
                 latin:keySecondarySpec="é"
-                latin:moreKeys="!text/morekeys_e"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_e,1,2"
                 latin:keyHintLabelLeft="1"
-                latin:keyHintLabel="2"
-                latin:additionalMoreKeys="1,2" />
+                latin:keyHintLabel="2" />
             <Key latin:keySpec="p"
                 latin:keySecondarySpec="o"
-                latin:moreKeys="!text/morekeys_o"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_o,3,4"
                 latin:keyHintLabelLeft="3"
-                latin:keyHintLabel="4"
-                latin:additionalMoreKeys="3,4" />
+                latin:keyHintLabel="4" />
             <Key latin:keySpec="w"
                 latin:keySecondarySpec="v"
-                latin:moreKeys="!text/morekeys_w,!text/morekeys_v"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_w,!text/morekeys_v,5,6"
                 latin:keyHintLabelLeft="5"
-                latin:keyHintLabel="6"
-                latin:additionalMoreKeys="5,6" />
+                latin:keyHintLabel="6" />
             <Key latin:keySpec="d"
                 latin:keySecondarySpec="l"
-                latin:moreKeys="!text/morekeys_d,!text/morekeys_l"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_d,!text/morekeys_l,7,8"
                 latin:keyHintLabelLeft="7"
-                latin:keyHintLabel="8"
-                latin:additionalMoreKeys="7,8" />
+                latin:keyHintLabel="8" />
             <Key latin:keySpec="j"
                 latin:keySecondarySpec="z"
-                latin:moreKeys="!text/morekeys_j,!text/morekeys_z"
+                latin:moreKeys="!splitTopRow!2,!text/morekeys_j,!text/morekeys_z,0,9"
                 latin:keyHintLabelLeft="9"
-                latin:keyHintLabel="0"
-                latin:additionalMoreKeys="0,9" />
+                latin:keyHintLabel="0" />
         </default>
     </switch>
 </merge>

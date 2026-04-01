@@ -122,6 +122,8 @@ public class Key implements Comparable<Key> {
     private final MoreKeySpec[] mMoreKeys;
     /** More keys column number and flags */
     private final int mMoreKeysColumnAndFlags;
+    /** Number of items to place in the top row of the more keys popup (0 = disabled). */
+    private final int mMoreKeysTopRowSplit;
     private static final int MORE_KEYS_COLUMN_NUMBER_MASK = 0x000000ff;
     // If this flag is specified, more keys keyboard should have the specified number of columns.
     // Otherwise more keys keyboard should have less than or equal to the specified maximum number
@@ -140,6 +142,7 @@ public class Key implements Comparable<Key> {
     // TODO: Rename these specifiers to !autoOrder! and !fixedOrder! respectively.
     private static final String MORE_KEYS_AUTO_COLUMN_ORDER = "!autoColumnOrder!";
     private static final String MORE_KEYS_FIXED_COLUMN_ORDER = "!fixedColumnOrder!";
+    private static final String MORE_KEYS_SPLIT_TOP_ROW = "!splitTopRow!";
     private static final String MORE_KEYS_HAS_LABELS = "!hasLabels!";
     private static final String MORE_KEYS_NO_PANEL_AUTO_MORE_KEY = "!noPanelAutoMoreKey!";
 
@@ -204,6 +207,7 @@ public class Key implements Comparable<Key> {
         mActionFlags = ACTION_FLAGS_NO_KEY_PREVIEW;
         mMoreKeys = null;
         mMoreKeysColumnAndFlags = 0;
+        mMoreKeysTopRowSplit = 0;
         mLabel = label;
         mOptionalAttributes = OptionalAttributes.newInstance(outputText, CODE_UNSPECIFIED);
         mCode = code;
@@ -285,6 +289,7 @@ public class Key implements Comparable<Key> {
             moreKeysColumnAndFlags |= MORE_KEYS_FLAGS_NO_PANEL_AUTO_MORE_KEY;
         }
         mMoreKeysColumnAndFlags = moreKeysColumnAndFlags;
+        mMoreKeysTopRowSplit = MoreKeySpec.getIntValue(moreKeys, MORE_KEYS_SPLIT_TOP_ROW, 0);
 
         final String[] additionalMoreKeys;
         if ((mLabelFlags & LABEL_FLAGS_DISABLE_ADDITIONAL_MORE_KEYS) != 0) {
@@ -423,6 +428,7 @@ public class Key implements Comparable<Key> {
         mHitbox.set(key.mHitbox);
         mMoreKeys = moreKeys;
         mMoreKeysColumnAndFlags = key.mMoreKeysColumnAndFlags;
+        mMoreKeysTopRowSplit = key.mMoreKeysTopRowSplit;
         mBackgroundType = key.mBackgroundType;
         mActionFlags = key.mActionFlags;
         mKeyVisualAttributes = key.mKeyVisualAttributes;
@@ -563,14 +569,20 @@ public class Key implements Comparable<Key> {
                 || !Settings.getInstance().getCurrent().mIncludeSecondaryInPopup) {
             return mMoreKeys;
         }
-        // Prepend secondary label as the first popup item so users who accidentally hold too
-        // long and trigger the popup can still reach the secondary char.
-        if (mMoreKeys[0].mCode == mSecondaryCode) {
-            return mMoreKeys; // already first
+        // Determine insertion point: before symbols when splitTopRow is active,
+        // so secondary appears first in the top row (order: accents…, secondary, sym1, sym2).
+        final int insertAt = (mMoreKeysTopRowSplit > 0)
+                ? mMoreKeys.length - mMoreKeysTopRowSplit
+                : mMoreKeys.length;
+        // Check if secondary is already at that position.
+        if (insertAt < mMoreKeys.length && mMoreKeys[insertAt].mCode == mSecondaryCode) {
+            return mMoreKeys;
         }
+        final MoreKeySpec secondarySpec = new MoreKeySpec(mSecondaryLabel, false /* needsToUpcase */, Locale.ROOT);
         final MoreKeySpec[] result = new MoreKeySpec[mMoreKeys.length + 1];
-        result[0] = new MoreKeySpec(mSecondaryLabel, false /* needsToUpcase */, Locale.ROOT);
-        System.arraycopy(mMoreKeys, 0, result, 1, mMoreKeys.length);
+        System.arraycopy(mMoreKeys, 0, result, 0, insertAt);
+        result[insertAt] = secondarySpec;
+        System.arraycopy(mMoreKeys, insertAt, result, insertAt + 1, mMoreKeys.length - insertAt);
         return result;
     }
 
@@ -746,6 +758,32 @@ public class Key implements Comparable<Key> {
     private final boolean isShiftedLetterActivated() {
         return (mLabelFlags & LABEL_FLAGS_SHIFTED_LETTER_ACTIVATED) != 0
                 && !TextUtils.isEmpty(mHintLabel);
+    }
+
+    public boolean hasSplitTopRow() {
+        return mMoreKeysTopRowSplit > 0;
+    }
+
+    /**
+     * Returns the effective column count for the more keys popup when !splitTopRow!N is used,
+     * or -1 if the split should not be applied (too few accent items to form a clean split).
+     */
+    public int getEffectiveMoreKeysColumnNumber(final int totalCount) {
+        if (mMoreKeysTopRowSplit <= 0) return getMoreKeysColumnNumber();
+        final int topRowCount = mMoreKeysTopRowSplit
+                + ((mSecondaryCode != CODE_UNSPECIFIED && mSecondaryLabel != null
+                    && Settings.getInstance().getCurrent().mIncludeSecondaryInPopup) ? 1 : 0);
+        final int accentCount = totalCount - topRowCount;
+        if (accentCount < topRowCount) return -1; // not enough accent items — skip split
+        // Find the largest column count <= 5 that evenly divides accentCount,
+        // so the top row always lands exactly topRowCount items.
+        // For prime accent counts > 5 (e.g. 11), no clean divisor exists — fall back
+        // to auto-layout (returns -1) which still wraps into compact rows.
+        final int maxCols = Math.min(accentCount, 5);
+        for (int c = maxCols; c >= 2; c--) {
+            if (accentCount % c == 0) return c;
+        }
+        return -1; // prime > 5: let MoreKeysKeyboard pick column count automatically
     }
 
     public final int getMoreKeysColumnNumber() {

@@ -15,26 +15,22 @@
             <Key latin:keySpec="&#x10DD;" latin:keySecondarySpec="&#x10DE;" />
         </case>
         <default>
-            <Key latin:keySpec="&#x10E5;" latin:keySecondarySpec="&#x10EC;" latin:moreKeys="&#x10ED;"
+            <Key latin:keySpec="&#x10E5;" latin:keySecondarySpec="&#x10EC;" latin:moreKeys="!splitTopRow!2,&#x10ED;,1,2"
                 latin:keyHintLabelLeft="1"
-                latin:keyHintLabel="2"
-                latin:additionalMoreKeys="1,2" />
-            <Key latin:keySpec="&#x10D4;" latin:keySecondarySpec="&#x10E0;" latin:moreKeys="&#x10F1;,&#x10E6;"
+                latin:keyHintLabel="2" />
+            <Key latin:keySpec="&#x10D4;" latin:keySecondarySpec="&#x10E0;" latin:moreKeys="!splitTopRow!2,&#x10F1;,&#x10E6;,3,4"
                 latin:keyHintLabelLeft="3"
-                latin:keyHintLabel="4"
-                latin:additionalMoreKeys="3,4" />
-            <Key latin:keySpec="&#x10E2;" latin:keySecondarySpec="&#x10E7;" latin:moreKeys="&#x10D7;,&#x10F8;"
+                latin:keyHintLabel="4" />
+            <Key latin:keySpec="&#x10E2;" latin:keySecondarySpec="&#x10E7;" latin:moreKeys="!splitTopRow!2,&#x10D7;,&#x10F8;,5,6"
                 latin:keyHintLabelLeft="5"
-                latin:keyHintLabel="6"
-                latin:additionalMoreKeys="5,6" />
-            <Key latin:keySpec="&#x10E3;" latin:keySecondarySpec="&#x10D8;" latin:moreKeys="&#x10F2;"
+                latin:keyHintLabel="6" />
+            <Key latin:keySpec="&#x10E3;" latin:keySecondarySpec="&#x10D8;" latin:moreKeys="!splitTopRow!2,&#x10F2;,7,8"
                 latin:keyHintLabelLeft="7"
-                latin:keyHintLabel="8"
-                latin:additionalMoreKeys="7,8" />
+                latin:keyHintLabel="8" />
             <Key latin:keySpec="&#x10DD;" latin:keySecondarySpec="&#x10DE;"
                 latin:keyHintLabelLeft="9"
                 latin:keyHintLabel="0"
-                latin:additionalMoreKeys="0,9" />
+                latin:moreKeys="!splitTopRow!2,0,9" />
         </default>
     </switch>
 </merge>

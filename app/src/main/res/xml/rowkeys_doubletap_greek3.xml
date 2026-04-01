@@ -5,15 +5,14 @@
     <Key latin:keySpec="&#x03B6;" latin:keySecondarySpec="&#x03C7;"
         latin:keyHintLabel="&quot;"
         latin:keyHintLabelLeft="*"
-        latin:additionalMoreKeys="*,&quot;" />
+        latin:moreKeys="!splitTopRow!2,*,&quot;" />
     <!-- ψ·ω: left='(ψ) right=:(ω) -->
-    <Key latin:keySpec="&#x03C8;" latin:keySecondarySpec="&#x03C9;" latin:moreKeys="&#x03CE;"
+    <Key latin:keySpec="&#x03C8;" latin:keySecondarySpec="&#x03C9;" latin:moreKeys="!splitTopRow!2,&#x03CE;,',:"
         latin:keyHintLabel=":"
-        latin:keyHintLabelLeft="'"
-        latin:additionalMoreKeys="',:" />
+        latin:keyHintLabelLeft="'" />
     <!-- β·ν: left=;(β) right=!(ν) — 3-pair row, no right-edge swap -->
     <Key latin:keySpec="&#x03B2;" latin:keySecondarySpec="&#x03BD;"
         latin:keyHintLabel="!"
         latin:keyHintLabelLeft=";"
-        latin:additionalMoreKeys=";,!" />
+        latin:moreKeys="!splitTopRow!2,;,!" />
 </merge>

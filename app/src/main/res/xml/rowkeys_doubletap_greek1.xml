@@ -7,49 +7,41 @@
             <Key latin:keySpec="&#x003B;" latin:keySecondarySpec="&#x03C2;"
                 latin:keyHintLabel="\\"
                 latin:keyHintLabelLeft="_"
-                latin:additionalMoreKeys="_,\\" />
+                latin:moreKeys="!splitTopRow!2,_,\\" />
             <!-- ε·ρ: left=|(ε) right==(ρ) -->
-            <Key latin:keySpec="&#x03B5;" latin:keySecondarySpec="&#x03C1;" latin:moreKeys="&#x03AD;"
+            <Key latin:keySpec="&#x03B5;" latin:keySecondarySpec="&#x03C1;" latin:moreKeys="!splitTopRow!2,&#x03AD;,\|,="
                 latin:keyHintLabel="="
-                latin:keyHintLabelLeft="|"
-                latin:additionalMoreKeys="\|,=" />
+                latin:keyHintLabelLeft="|" />
             <!-- τ·υ: left=[(τ) right=](υ) -->
-            <Key latin:keySpec="&#x03C4;" latin:keySecondarySpec="&#x03C5;" latin:moreKeys="&#x03CD;,&#x03CB;,&#x03B0;"
+            <Key latin:keySpec="&#x03C4;" latin:keySecondarySpec="&#x03C5;" latin:moreKeys="!splitTopRow!2,&#x03CD;,&#x03CB;,&#x03B0;,[,]"
                 latin:keyHintLabel="]"
-                latin:keyHintLabelLeft="["
-                latin:additionalMoreKeys="[,]" />
+                latin:keyHintLabelLeft="[" />
             <!-- θ·ι: left=<(θ) right=>(ι) -->
-            <Key latin:keySpec="&#x03B8;" latin:keySecondarySpec="&#x03B9;" latin:moreKeys="&#x03AF;,&#x03CA;,&#x0390;"
+            <Key latin:keySpec="&#x03B8;" latin:keySecondarySpec="&#x03B9;" latin:moreKeys="!splitTopRow!2,&#x03AF;,&#x03CA;,&#x0390;,&lt;,&gt;"
                 latin:keyHintLabel="&gt;"
-                latin:keyHintLabelLeft="&lt;"
-                latin:additionalMoreKeys="&lt;,&gt;" />
+                latin:keyHintLabelLeft="&lt;" />
             <!-- ο·π: left={(ο) right=}(π) — right-edge: additionalMoreKeys right-first -->
-            <Key latin:keySpec="&#x03BF;" latin:keySecondarySpec="&#x03C0;" latin:moreKeys="&#x03CC;"
+            <Key latin:keySpec="&#x03BF;" latin:keySecondarySpec="&#x03C0;" latin:moreKeys="!splitTopRow!2,&#x03CC;,},{"
                 latin:keyHintLabel="}"
-                latin:keyHintLabelLeft="{"
-                latin:additionalMoreKeys="},{" />
+                latin:keyHintLabelLeft="{" />
         </case>
         <default>
             <Key latin:keySpec="&#x003B;" latin:keySecondarySpec="&#x03C2;"
                 latin:keyHintLabelLeft="1"
                 latin:keyHintLabel="2"
-                latin:additionalMoreKeys="1,2" />
-            <Key latin:keySpec="&#x03B5;" latin:keySecondarySpec="&#x03C1;" latin:moreKeys="&#x03AD;"
+                latin:moreKeys="!splitTopRow!2,1,2" />
+            <Key latin:keySpec="&#x03B5;" latin:keySecondarySpec="&#x03C1;" latin:moreKeys="!splitTopRow!2,&#x03AD;,3,4"
                 latin:keyHintLabelLeft="3"
-                latin:keyHintLabel="4"
-                latin:additionalMoreKeys="3,4" />
-            <Key latin:keySpec="&#x03C4;" latin:keySecondarySpec="&#x03C5;" latin:moreKeys="&#x03CD;,&#x03CB;,&#x03B0;"
+                latin:keyHintLabel="4" />
+            <Key latin:keySpec="&#x03C4;" latin:keySecondarySpec="&#x03C5;" latin:moreKeys="!splitTopRow!2,&#x03CD;,&#x03CB;,&#x03B0;,5,6"
                 latin:keyHintLabelLeft="5"
-                latin:keyHintLabel="6"
-                latin:additionalMoreKeys="5,6" />
-            <Key latin:keySpec="&#x03B8;" latin:keySecondarySpec="&#x03B9;" latin:moreKeys="&#x03AF;,&#x03CA;,&#x0390;"
+                latin:keyHintLabel="6" />
+            <Key latin:keySpec="&#x03B8;" latin:keySecondarySpec="&#x03B9;" latin:moreKeys="!splitTopRow!2,&#x03AF;,&#x03CA;,&#x0390;,7,8"
                 latin:keyHintLabelLeft="7"
-                latin:keyHintLabel="8"
-                latin:additionalMoreKeys="7,8" />
-            <Key latin:keySpec="&#x03BF;" latin:keySecondarySpec="&#x03C0;" latin:moreKeys="&#x03CC;"
+                latin:keyHintLabel="8" />
+            <Key latin:keySpec="&#x03BF;" latin:keySecondarySpec="&#x03C0;" latin:moreKeys="!splitTopRow!2,&#x03CC;,0,9"
                 latin:keyHintLabelLeft="9"
-                latin:keyHintLabel="0"
-                latin:additionalMoreKeys="0,9" />
+                latin:keyHintLabel="0" />
         </default>
     </switch>
 </merge>

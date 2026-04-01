@@ -363,9 +363,12 @@ public final class MoreKeysKeyboard extends Keyboard {
                 rowHeight = keyboard.mMostCommonKeyHeight + keyboard.mVerticalGap;
             }
             final MoreKeySpec[] moreKeys = key.getMoreKeys();
-            mParams.setParameters(moreKeys.length, key.getMoreKeysColumnNumber(), keyPaddedWidth,
+            final int effectiveColumn = key.getEffectiveMoreKeysColumnNumber(moreKeys.length);
+            final boolean applySplit = effectiveColumn > 0;
+            final int columnNumber = applySplit ? effectiveColumn : key.getMoreKeysColumnNumber();
+            mParams.setParameters(moreKeys.length, columnNumber, keyPaddedWidth,
                     rowHeight, key.getX() + key.getWidth() / 2f, keyboard.mId.mWidth,
-                    key.isMoreKeysFixedColumn(), key.isMoreKeysFixedOrder());
+                    applySplit || key.isMoreKeysFixedColumn(), key.isMoreKeysFixedOrder());
         }
 
         private static float getMaxKeyWidth(final Key parentKey, final float minKeyWidth,

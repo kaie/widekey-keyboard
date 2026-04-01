@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Double-tap Dvorak row 3: j·k  x·b  m·w  [v solo]  (3 pairs + 1 solo × 17.75%) -->
 <merge xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <Key latin:keySpec="j" latin:keySecondarySpec="k" latin:moreKeys="!text/morekeys_j,!text/morekeys_k"
+    <Key latin:keySpec="j" latin:keySecondarySpec="k" latin:moreKeys="!splitTopRow!2,!text/morekeys_j,!text/morekeys_k,*,&quot;"
         latin:keyHintLabel="&quot;"
-        latin:keyHintLabelLeft="*"
-        latin:additionalMoreKeys="*,&quot;" />
+        latin:keyHintLabelLeft="*" />
     <Key latin:keySpec="x" latin:keySecondarySpec="b"
         latin:keyHintLabel=":"
         latin:keyHintLabelLeft="'"
-        latin:additionalMoreKeys="',:" />
-    <Key latin:keySpec="m" latin:keySecondarySpec="w" latin:moreKeys="!text/morekeys_w"
+        latin:moreKeys="!splitTopRow!2,',:" />
+    <Key latin:keySpec="m" latin:keySecondarySpec="w" latin:moreKeys="!splitTopRow!2,!text/morekeys_w,;,!"
         latin:keyHintLabel="!"
-        latin:keyHintLabelLeft=";"
-        latin:additionalMoreKeys=";,!" />
+        latin:keyHintLabelLeft=";" />
     <!-- v is solo: outputs immediately without delay -->
     <Key latin:keySpec="v" latin:moreKeys="!text/morekeys_v" />
 </merge>
