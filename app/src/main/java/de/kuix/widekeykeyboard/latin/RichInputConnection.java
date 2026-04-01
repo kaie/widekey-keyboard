@@ -377,11 +377,16 @@ public final class RichInputConnection {
                 }
             }
         } catch (Exception e) {
-            // hasPrimaryClip()/getPrimaryClip() can throw NPE on some Samsung devices
+            // Clipboard access or performContextMenuAction can throw NPE on some Samsung devices
+            return;
         }
 
         if (mIC != null) {
-            mIC.performContextMenuAction(android.R.id.paste);
+            try {
+                mIC.performContextMenuAction(android.R.id.paste);
+            } catch (Exception e) {
+                // performContextMenuAction can also trigger NPE internally on some Samsung devices
+            }
         }
     }
 
